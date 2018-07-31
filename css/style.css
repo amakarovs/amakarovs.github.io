@@ -451,7 +451,7 @@ a {
 @media screen and (max-width: 767px) {
 	.md-content {
 		position: relative;
-		min-height: inherit;
+		min-height: 100%;
 		padding: 145px 0 100px 0;
 		overflow: hidden;
 	}
@@ -639,11 +639,19 @@ a {
 	.md-content .row .landing,
 	.md-content .row .form,
 	.md-content .row .text-page {
+		position: absolute;
+		top: 140px;
 		padding: 0 15px;
+		height: calc(100% - 220px);
+	}
+	
+	.md-content .row {
+		height: 100%;
 	}
 	
 	.md-content .row .text-page {
-		padding: 30px 15px;
+		padding: 30px 15px 10px 15px;
+		overflow-y: auto;
 	}
 	
 	.md-content .row .text-page i.quote {
@@ -683,6 +691,14 @@ a {
 	
 	.md-content .row .form {
 		padding-bottom: 30px;
+		overflow-y: scroll;
+	}
+	
+	.md-content .row .social {
+		position: absolute;
+		z-index: 5;
+		bottom: 20px;
+		padding: 0 10px;
 	}
 }
 
