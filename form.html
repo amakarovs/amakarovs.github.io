@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MajasDarbs.lv</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" >
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<script src="js/jquery.min.v1.7.2.js"></script>
+    <script src="js/js.js"></script>
+</head>
+
+<body>
+
+<div class="container-fluid md-content">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nav">
+			<a href="/" class="logo md"></a>
+			<!-- EN logo <a href="/" class="logo cs"></a> -->
+			<a href="javascript:void(0);" class="menu-btn"><span class="bar"></span></a>
+			<div class="lng">
+				<a href="/" class="eng"></a>
+				<a href="/" class="rus"></a>
+				<a href="/" class="lat"></a>
+			</div>
+			<div class="menu">
+				<div class="btn-group">
+					<button type="button" class="btn active dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Main Page
+					</button>
+				</div><div class="btn-group">
+					<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Services
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="#">We can make</a></li>
+						<li><a href="#">We can offer</a></li>
+					</ul>
+				</div><div class="btn-group">
+					<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						About us
+					</button>
+				</div><div class="btn-group">
+					<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Payment
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="#">Payment</a></li>
+						<li><a href="#">Prices</a></li>
+					</ul>
+				</div><div class="btn-group">
+					<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						FAQ
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="#">How to make an order</a></li>
+						<li><a href="#">Main rules</a></li>
+						<li><a href="#">Confidentiality</a></li>
+					</ul>
+				</div><div class="btn-group">
+					<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Contacts
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 form">
+			<div class="container-fluid form-content">
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-12 field">
+						<input type="text" class="error" placeholder="Email address" />
+						<label class="error">Error message</label>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12 field">
+						<input type="text" placeholder="Telephone number" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12 field">
+						<select>
+							<option>Type of work</option>
+							<option value="0">Diploma thesis</option>
+							<option value="1">Master paper</option>
+							<option value="2">Term paper</option>
+							<option value="3">Qualification work</option>
+							<option value="4">Research paper</option>
+							<option value="5">Essay</option>
+							<option value="6">Test</option>
+							<option value="7">Online test</option>
+							<option value="8">Exam</option>
+							<option value="9">Business plan</option>
+							<option value="10">Praxis report</option>
+							<option value="11">Correction of a given work</option>
+							<option value="12">Any other type of work</option>
+						</select>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xs-12 field">
+						<textarea placeholder="Work description... Deadline... Number of pages..."></textarea>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xs-12 field">
+						<input type="file" class="file" />
+					</div>
+					<div class="col-md-12 col-sm-12 col-xs-12 field">
+						<a href="/" class="submit-btn">Submit</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 social">
+			<a href="/" class="btn"><i class="fa fa-facebook-square"></i></a><a href="/" class="btn"><i class="fa fa-phone"></i></a><a href="/" class="btn"><i class="fa fa-instagram"></i></a>
+		</div>
+	</div>
+</div>
+
+<div class="copyrights">© Majasdarbs.lv</div>
+
+<div class="animated-bg">
+	<video autoplay muted loop id="md-video">
+		<source src="img/animation.mp4" type="video/mp4">
+	</video>
+</div>
+
+<script>
+    $(function () {
+        $('.menu-btn').click(function(){
+            $('.menu-btn').toggleClass('open');
+            $('.menu').toggleClass('open');
+        });
+    })
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
