@@ -664,29 +664,37 @@ a {
 	
 	.md-content .row .landing {
 		min-height: 525px;
+		display: table;
+		padding-bottom: 45px;
 	}
 	
 	.md-content .row .landing:before {
-		top: 10px;
+		top: 50%;
+		margin-top: -235px;
 	}
 	
 	.md-content .row .landing:after {
-		top: 40px;
+		top: 50%;
+		margin-top: -205px;
 	}
 	
 	.md-content .row .landing .btns {
-		width: inherit;
+		margin: 0 auto;
+		display: table-cell;
+		vertical-align: middle;
+		height: 100%;
 		max-width: 360px;
 		text-align: center;
-		padding: 150px 0 0 0;
+		padding: 0;
 	}
 	
 	.md-content .row .landing .btns a.btn {
+		margin: 0 auto 10px auto;
 		width: 100%;
 	}
 
 	.md-content .row .landing .btns.single-btn {
-		padding: 185px 0 0 0;
+		padding-top: 0;
 	}
 	
 	.md-content .row .form {
@@ -705,12 +713,14 @@ a {
 @media screen and (max-width: 600px) {
 	.md-content .row .landing:before {
 		margin-left: -175px;
+		margin-top: -205px;
 		width: 350px;
 		height: 350px;
 	}
 
 	.md-content .row .landing:after {
 		margin-left: -145px;
+		margin-top: -175px;
 		width: 290px;
 		height: 290px;
 	}
@@ -721,23 +731,29 @@ a {
 	
 	.md-content .row .landing .btns {
 		max-width: 300px;
-		padding: 170px 0 0 0;
+		padding: 0;
+	}
+	
+	.md-content .row .landing .btns a.btn {
+		width: 90%;
 	}
 
 	.md-content .row .landing .btns.single-btn {
-		padding: 155px 0 0 0;
+		padding: 0;
 	}
 }
 
 @media screen and (max-width: 500px) {
 	.md-content .row .landing:before {
 		margin-left: -145px;
+		margin-top: -175px;
 		width: 290px;
 		height: 290px;
 	}
 
 	.md-content .row .landing:after {
 		margin-left: -115px;
+		margin-top: -145px;
 		width: 230px;
 		height: 230px;
 	}
@@ -748,14 +764,15 @@ a {
 	
 	.md-content .row .landing .btns {
 		max-width: 240px;
-		padding: 145px 0 0 0;
+		padding: 0;
 	}
 
 	.md-content .row .landing .btns.single-btn {
-		padding: 130px 0 0 0;
+		padding: 0;
 	}
 	
 	.md-content .row .landing .btns a.btn {
+		width: 70%;
 		min-height: 50px;
 		padding: 8px 10px 6px 10px;
 		font-size: 20px;
@@ -763,11 +780,6 @@ a {
 }
 
 @media screen and (max-width: 480px) {
-	.md-content .row .landing .btns,
-	.md-content .row .landing .btns a.btn {
-		width: 100%;
-	}
-	
 	.md-content .row .text-page h1 {
 		padding: 6px 0;
 		font-size: 24px;
@@ -786,12 +798,14 @@ a {
 @media screen and (max-width: 420px) {
 	.md-content .row .landing:before {
 		margin-left: -115px;
+		margin-top: -145px;
 		width: 230px;
 		height: 230px;
 	}
 
 	.md-content .row .landing:after {
 		margin-left: -85px;
+		margin-top: -115px;
 		width: 170px;
 		height: 170px;
 	}
@@ -802,14 +816,15 @@ a {
 	
 	.md-content .row .landing .btns {
 		max-width: 200px;
-		padding: 120px 0 0 0;
+		padding: 0;
 	}
 
 	.md-content .row .landing .btns.single-btn {
-		padding: 105px 0 0 0;
+		padding: 0;
 	}
 	
 	.md-content .row .landing .btns a.btn {
+		width: 50%;
 		min-height: 40px;
 		padding: 5px 10px 6px 10px;
 		font-size: 18px;
@@ -819,12 +834,14 @@ a {
 @media screen and (max-width: 340px) {
 	.md-content .row .landing:before {
 		margin-left: -95px;
+		margin-top: -125px;
 		width: 190px;
 		height: 190px;
 	}
 
 	.md-content .row .landing:after {
 		margin-left: -65px;
+		margin-top: -95px;
 		width: 130px;
 		height: 130px;
 	}
@@ -835,11 +852,11 @@ a {
 	
 	.md-content .row .landing .btns {
 		max-width: 180px;
-		padding: 100px 0 0 0;
+		padding: 0;
 	}
 
 	.md-content .row .landing .btns.single-btn {
-		padding: 85px 0 0 0;
+		padding: 0;
 	}
 	
 	.md-content .row .landing .btns a.btn {
