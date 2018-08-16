@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CCI</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" >
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+<body>
+
+<header>
+	<div class="container-fluid hd">
+		<div class="row">
+			<div class="col-xl-3 col-sm-2 col-3 logo"><a href="/"></a></div>
+			<div class="col-xl-3 col-sm-5 col-6 current-time">July 23, Friday 2.22pm</div>
+			<div class="col-xl-6 col-sm-5 col-3 nav justify-content-end">
+				<div class="dropdown">
+					<button type="button" class="burger" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar"><img src="img/nikita.jpg" /></span><span class="name">Nikita Kaperzov</span><i class="fas fa-chevron-down"></i><span class="bar"></span>
+					</button>
+					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+						<div class="about">
+							<span class="avatar blank"><i class="fas fa-user"></i></span>
+							<span class="name">Nikita Kaperzov</span>
+							<span class="email">n.aperzov@cci.io</span>
+						</div>
+						<a class="dropdown-item mob" href="overall.html"><i class="fas fa-th-large"></i>Overall</a>
+						<a class="dropdown-item mob" href="mycci.html"><i class="fas fa-id-card"></i>My CCI</a>
+						<a class="dropdown-item mob disabled" href="#"><i class="fas fa-arrow-alt-circle-up"></i>Withdrawals</a>
+						<a class="dropdown-item mob" href="deposits.html"><i class="fas fa-arrow-alt-circle-down"></i>Deposits</a>
+						<a class="dropdown-item mob disabled" href="#"><i class="fas fa-cube"></i>Transactions History</a>
+						<a class="dropdown-item mob disabled" href="#"><i class="fas fa-user-tie"></i>Audit</a>
+						<a class="dropdown-item mob disabled" href="#"><i class="fas fa-comments"></i>FAQ</a>
+						<a class="dropdown-item mob disabled" href="#"><i class="fas fa-life-ring"></i>Help</a>
+						<a class="dropdown-item disabled" href="#"><i class="fas fa-shield-alt"></i>Settings</a>
+						<a class="dropdown-item" href="#"><i class="fas fa-fingerprint"></i>Logout</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="container-fluid content">
+	<div class="row">
+		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 side-nav">
+			<ul class="nav flex-column">
+				<li class="nav-item">
+					<a class="nav-link" href="overall.html"><i class="fas fa-th-large"></i>Overall</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="mycci.html"><i class="fas fa-id-card"></i>My CCI</a>
+				</li>
+				<li class="nav-item disabled">
+					<a class="nav-link" href="#"><i class="fas fa-arrow-alt-circle-up"></i>Withdrawals</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="deposits.html"><i class="fas fa-arrow-alt-circle-down"></i>Deposits</a>
+				</li>
+				<li class="nav-item disabled">
+					<a class="nav-link" href="#"><i class="fas fa-cube"></i>Transactions History</a>
+				</li>
+				<li class="nav-item disabled">
+					<a class="nav-link" href="#"><i class="fas fa-user-tie"></i>Audit</a>
+				</li>
+				<li class="nav-item disabled">
+					<a class="nav-link" href="#"><i class="fas fa-comments"></i>FAQ</a>
+				</li>
+				<li class="nav-item disabled">
+					<a class="nav-link" href="#"><i class="fas fa-life-ring"></i>Help</a>
+				</li>
+				<li class="nav-item disabled">
+					<a class="nav-link" href="#"><i class="fas fa-shield-alt"></i>Settings</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12 blocks">
+			<div class="container-fluid constructor">
+				<div class="row">
+					<div class="col col-lg-7 col-md-7 col-sm-12 col-12">
+						<dl class="deposit-form">
+							<dt><label>Deposits</label></dt>
+							<dd>
+								<label>How much would you like to invest</label>
+								<div class="input-field">
+									<input type="text" value="100" placeholder="100" />
+									<div class="btn-group" role="group" aria-label="Basic example">
+										<button type="button" class="btn active">btc</button>
+										<button type="button" class="btn">eth</button>
+										<button type="button" class="btn">usd</button>
+									</div>
+								</div>
+								<label>Choose your investment period</label>
+								<span class="date-range">24 hours</span>
+								<span class="date-range end">1 year</span>
+								<div class="slider">
+									<span class="fill" style="width: 30%;"><span class="pin">72h</span></span>
+								</div>
+								<label>Your profit will be</label>
+								<div class="input-field">
+									<input type="text" value="1.5" placeholder="1.5" />
+									<div class="btn-group" role="group" aria-label="Basic example">
+										<button type="button" class="btn active">btc</button>
+										<button type="button" class="btn">eth</button>
+									</div>
+								</div>
+								<a href="pyramid.html" class="confirm-btn">Confirm</a>
+							</dd>
+						</dl>
+					</div>
+					<div class="col col-lg-5 col-md-5 col-sm-12 col-12">
+						<dl class="profit-calc">
+							<dt><label>Profit Percentage Calculation</label></dt>
+							<dd>
+								<div class="interest">
+									<label>Up to 4 weeks</label>
+									<p>Investing up to 4 weeks leads to 0.5% daily interest rate.</p>
+									<span class="percent">0.5%<span class="daily">/ daily</span></span>
+								</div>
+								<div class="interest">
+									<label>More than 4 weeks</label>
+									<p>Investing more than 4 weeks leads to 0.75% daily interest rate.</p>
+									<span class="percent">0.75%<span class="daily">/ daily</span></span>
+								</div>
+							</dd>
+						</dl>
+						<dl class="payments">
+							<dt><label>Accepted Payment Methods</label></dt>
+							<dd>
+								<span class="bitcoin"></span>
+								<span class="ethereum"></span>
+								<span class="paypal"></span>
+								<span class="visa"></span>
+								<span class="mastercard"></span>
+								<span class="amex"></span>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
+</script>
+
+</body>
+</html>

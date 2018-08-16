@@ -1056,7 +1056,577 @@ header .hd .row .nav .dropdown .dropdown-menu a.dropdown-item.disabled:hover i.f
 
 }
 
-.content .row .blocks .constructor .row .col dl.investment dd .pie-wrap2:after{display:none}
+.content .row .blocks .constructor .row .col dl.investment dd .pie-wrap2:after{
+	display: none;
+}
+
+.content .row .blocks .constructor .row .col dl.payments dd {
+	display: table;
+	width: 100%;
+	min-height: 170px;
+	padding: 10px;
+}
+
+.content .row .blocks .constructor .row .col dl.payments dd span {
+	margin: 5px;
+	width: calc((100% / 3) - 10px);
+	float: left;
+	height: 60px;
+	border: 1px solid #f5f7f8;
+	border-radius: 2px;
+}
+
+.content .row .blocks .constructor .row .col dl.payments dd span.bitcoin {
+	background: url('../img/bitcoin.svg') no-repeat center;
+	background-size: 80% auto;
+}
+
+.content .row .blocks .constructor .row .col dl.payments dd span.ethereum {
+	background: url('../img/ethereum.svg') no-repeat center;
+	background-size: auto 80%;
+}
+
+.content .row .blocks .constructor .row .col dl.payments dd span.paypal {
+	background: url('../img/paypal.svg') no-repeat center;
+	background-size: 80% auto;
+}
+
+.content .row .blocks .constructor .row .col dl.payments dd span.visa {
+	background: url('../img/visa.svg') no-repeat center;
+	background-size: 80% auto;
+}
+
+.content .row .blocks .constructor .row .col dl.payments dd span.mastercard {
+	background: url('../img/mastercard.svg') no-repeat center;
+	background-size: auto 70%;
+}
+
+.content .row .blocks .constructor .row .col dl.payments dd span.amex {
+	background: url('../img/amex.svg') no-repeat center;
+	background-size: auto 70%;
+}
+
+.content .row .blocks .constructor .row .col dl.profit-calc {
+	margin-bottom: 20px;
+}
+
+.content .row .blocks .constructor .row .col dl.profit-calc dd {
+	display: table;
+	width: 100%;
+	padding: 15px 0;
+}
+
+.content .row .blocks .constructor .row .col dl.profit-calc dd .interest {
+	float: left;
+	width: 50%;
+	padding: 0 0 0 15px;
+	border-right: 1px solid #f5f7f8;
+}
+
+.content .row .blocks .constructor .row .col dl.profit-calc dd span.interest:last-child {
+	border-right: none;
+}
+
+.content .row .blocks .constructor .row .col dl.profit-calc dd .interest label {
+	display: block;
+	padding: 0 0 8px 0;
+	font-size: 15px;
+	color: #2f3337;
+	font-weight: 600;
+}
+
+.content .row .blocks .constructor .row .col dl.profit-calc dd .interest p {
+	display: block;
+	min-height: 59px;
+	padding: 0 10px 0 0;
+	font-size: 13px;
+	color: #4d5761;
+	line-height: 1.4;
+}
+
+.content .row .blocks .constructor .row .col dl.profit-calc dd .interest span.percent {
+	display: block;
+	padding: 9px 0 6px 0;
+	font-size: 36px;
+	line-height: 1.0;
+	color: #0175f2;
+	font-weight: 600;
+}
+
+.content .row .blocks .constructor .row .col dl.profit-calc dd .interest span.percent span.daily {
+	padding-left: 4px;
+	font-size: 13px;
+}
+
+.content .row .blocks .constructor .row .col dl.deposit-form dd {
+	padding: 0 15px 24px 15px;
+}
+
+.content .row .blocks .constructor .row .col dl.deposit-form dd label {
+	display: block;
+	padding: 17px 0 10px 0;
+	font-size: 13px;
+	color: #2f3337;
+	font-weight: 600;
+}
+
+.content .row .blocks .constructor .row .col dl.deposit-form dd .input-field {
+	display: block;
+	position: relative;
+	cursor: pointer;
+}
+
+.content .row .blocks .constructor .row .col dl.deposit-form dd .input-field input {
+	display: block;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 10px;
+	font-size: 24px;
+	color: #2f3337;
+	background: #FFF;
+	outline: none;
+	border: 1px solid #c2cace;
+	border-radius: 2px;
+}
+
+.content .row .blocks .constructor .row .col dl.deposit-form dd .input-field:hover input {
+	cursor: pointer;
+	box-shadow: 0 0 10px rgba(1,117,242,0.2);
+	border: 1px solid #6fb3fc;
+}
+
+.content .row .blocks .constructor .row .col dl.deposit-form dd .input-field .btn-group {
+	position: absolute;
+	top: 9px;
+	right: 7px;
+}
+
+.content .row .blocks .constructor .row .col dl.deposit-form dd .input-field .btn-group button.btn {
+	position: relative;
+	z-index: 2;
+	height: 32px;
+	width: 48px;
+	padding: 0;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #2f3337;
+	box-shadow: none;
+	text-transform: uppercase;
+	background: #d7dfe3;
+}
+
+.content .row .blocks .constructor .row .col dl.deposit-form dd .input-field .btn-group button.btn.active {
+	color: #FFF;
+	font-weight: 500;
+	box-shadow: inset 0 5px 5px rgba(0,0,0,0.1);
+	background: #96a0a9;
+}
+
+.content .row .blocks .constructor .row .col dl.deposit-form dd .date-range {
+	display: block;
+	float: left;
+	width: 50%;
+	height: 36px;
+	padding: 6px 0 0 0;
+	font-size: 13px;
+	color: #4d5761;
+}
+
+.content .row .blocks .constructor .row .col dl.deposit-form dd .date-range.end {
+	text-align: right;
+}
+
+.content .row .blocks .constructor .row .col dl.deposit-form dd .slider {
+	display: block;
+	margin-bottom: 37px;
+	float: left;
+	width: 100%;
+	height: 6px;
+	background: #FFF;
+	border: 1px solid #c2cace;
+	border-radius: 2px;
+}
+
+.content .row .blocks .constructor .row .col dl.deposit-form dd .slider span.fill {
+	display: block;
+	position: relative;
+	height: 4px;
+	background: #d7dfe3;
+	box-shadow: inset 0 3px 3px rgba(194,202,206,0.68);
+}
+
+.content .row .blocks .constructor .row .col dl.deposit-form dd .slider span.fill span.pin {
+	display: block;
+	position: absolute;
+	top: -14px;
+	right: -16px;
+	width: 32px;
+	height: 32px;
+	padding-top: 6px;
+	text-align: center;
+	cursor: pointer;
+	color: #FFF;
+	font-weight: 600;
+	font-size: 13px;
+	background: #0175f2;
+	border-radius: 50%;
+	box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+}
+
+.content .row .blocks .constructor .row .col dl.deposit-form dd .slider span.fill span.pin:hover {
+	box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+}
+
+.content .row .blocks .constructor .row .col dl.deposit-form dd a.confirm-btn {
+	display: block;
+	margin: 36px 0 0 0;
+	width: 100%;
+	height: 60px;
+	padding-top: 9px;
+	font-size: 24px;
+	color: #FFF;
+	text-align: center;
+	font-weight: 500;
+	outline: none;
+	text-decoration: none;
+	background: #0175f2;
+	transition: background 0.3s;
+	border-radius: 3px;
+}
+
+.content .row .blocks .constructor .row .col dl.deposit-form dd a:hover.confirm-btn {
+	background: #007bff;
+}
+
+.content .row .blocks .constructor .row .col dl.deposit-form dd a:active.confirm-btn {
+	background: #005ec3;
+}
+
+.content .row .blocks .constructor .row .col .success {
+	margin: 10px 0;
+	display: block;
+	position: relative;
+	min-height: 180px;
+	padding: 40px 0 0 180px;
+	color: #FFF;
+	background: #00c57f;
+	border-radius: 4px;
+}
+
+.content .row .blocks .constructor .row .col .success a.close-btn {
+	position: absolute;
+	display: block;
+	right: 5px;
+	top: 5px;
+	width: 24px;
+	height: 24px;
+	text-align: center;
+	padding-top: 5px;
+	outline: none;
+	color: rgba(0,0,0,0.3);
+	font-size: 14px;
+	transition: color 0.3s;
+	text-decoration: none;
+}
+
+.content .row .blocks .constructor .row .col .success a:hover.close-btn {
+	color: rgba(0,0,0,0.6);
+}
+
+.content .row .blocks .constructor .row .col .success a.close-btn i.fa-times {
+	vertical-align: top;
+}
+
+.content .row .blocks .constructor .row .col .success span.icon {
+	position: absolute;
+	display: block;
+	left: 30px;
+	top: 25px;
+	width: 130px;
+	height: 130px;
+	text-align: center;
+	padding-top: 29px;
+	border-radius: 50%;
+	border: 4px solid #FFF;
+}
+
+.content .row .blocks .constructor .row .col .success span.icon i.fas {
+	font-size: 68px;
+}
+
+.content .row .blocks .constructor .row .col .success h1,
+.content .row .blocks .constructor .row .col .success label,
+.content .row .blocks .constructor .row .col .success p {
+	display: block;
+	line-height: 1.0;
+	font-weight: 500;
+}
+
+.content .row .blocks .constructor .row .col .success h1 {
+	font-size: 36px;
+}
+
+.content .row .blocks .constructor .row .col .success label {
+	padding: 4px 0 10px 0;
+	font-size: 17px;
+}
+
+.content .row .blocks .constructor .row .col .success p {
+	padding: 10px 0;
+	font-size: 14px;
+	font-weight: normal;
+	color: #2d6e57;
+}
+
+.content .row .blocks .constructor .row .users {
+	position: relative;
+	padding: 0;
+}
+
+.content .row .blocks .constructor .row .users:before,
+.content .row .blocks .constructor .row .users:after {
+	position: absolute;
+	content:'';
+}
+
+.content .row .blocks .constructor .row .users:before {
+	left: -20px;
+	z-index: 1;
+	width: 2px;
+	height: 100%;
+	background: #e4e7e8;
+}
+
+.content .row .blocks .constructor .row .users.analytics-bullet:before {
+	top: 50px;
+	height: calc(100% - 50px);
+}
+
+.content .row .blocks .constructor .row .users.trader-bullet:before {
+	top: 0;
+	height: 50px;
+}
+
+.content .row .blocks .constructor .row .users:after {
+	top: 50px;
+	left: -26px;
+	z-index: 2;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+}
+
+.content .row .blocks .constructor .row .users.analytics-bullet:after {
+	background: #00c57f;
+}
+
+.content .row .blocks .constructor .row .users.supervisor-bullet:after {
+	background: #0175f2;
+}
+
+.content .row .blocks .constructor .row .users.trader-bullet:after {
+	background: #2f3337;
+}
+
+.content .row .blocks .constructor .row .users ul {
+	display: table;
+	width: 100%;
+	padding: 20px 0;
+	border-bottom: 1px solid #e4e7e8;
+}
+
+.content .row .blocks .constructor .row .users ul li {
+	margin: 10px;
+	position: relative;
+	display: block;
+	float: left;
+	width: calc((100% / 4) - 20px);
+	height: 220px;
+	background: #FFF;
+	border-radius: 4px;
+	cursor: pointer;
+	box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+	transition: box-shadow 0.5s;
+}
+
+.content .row .blocks .constructor .row .users ul li:hover {
+	box-shadow: 0 5px 25px rgba(72,95,106,0.2);
+}
+
+.content .row .blocks .constructor .row .users ul li a.profile-btn {
+	position: absolute;
+	z-index: 3;
+	display: none;
+	top: 86px;
+	left: calc(50% - 43px);
+	width: 86px;
+	height: 32px;
+	padding-top: 7px;
+	text-align: center;
+	font-size: 13px;
+	color: #FFF;
+	outline: none;
+	text-decoration: none;
+	transition: background 0.3s, box-shadow 0.3s;
+	border-radius: 3px;
+	box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+}
+
+.content .row .blocks .constructor .row .users ul li a:hover.profile-btn {
+	box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+}
+
+.content .row .blocks .constructor .row .users ul li:hover a.profile-btn {
+	display: block;
+}
+
+.content .row .blocks .constructor .row .users ul li:hover::before {
+	position: absolute;
+	display: block;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	content:'';
+	width: 100%;
+	height: 220px;
+	text-align: center;
+	background: rgba(47,51,55,0.65);
+	border-radius: 4px;
+}
+
+.content .row .blocks .constructor .row .users ul li span.photo {
+	display: block;
+	z-index: 1;
+	position: relative;
+	width: 100%;
+	height: 150px;
+	border-radius: 4px 4px 0 0;
+	overflow: hidden;
+}
+
+.content .row .blocks .constructor .row .users ul li span.photo img {
+	height: 104%;
+}
+
+.content .row .blocks .constructor .row .users ul li span.photo span.badge {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 10px;
+	display: block;
+	width: 40px;
+	height: 32px;
+	padding-top: 9px;
+	font-size: 14px;
+	color: #FFF;
+	border-radius: 0 3px 3px 0;
+}
+
+.content .row .blocks .constructor .row .users ul li span.photo span.badge i.fas {
+	vertical-align: top;
+}
+
+.content .row .blocks .constructor .row .users ul li span.dd {
+	display: table;
+	width: 100%;
+	height: 70px;
+	padding: 0 5px 0 15px;
+}
+
+.content .row .blocks .constructor .row .users ul li span.dd span.name {
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 17px;
+	font-weight: 300;
+}
+
+.content .row .blocks .constructor .row .users ul li span.dd span.name span.surname {
+	font-weight: 600;
+}
+
+.content .row .blocks .constructor .row .users ul li span.dd span.name span.position {
+	display: block;
+	font-weight: 600;
+	font-size: 13px;
+}
+
+.content .row .blocks .constructor .row .users ul li.analyst span.photo span.badge {
+	background: #00c57f;
+}
+
+.content .row .blocks .constructor .row .users ul li.supervisor span.photo span.badge {
+	background: #0175f2;
+}
+
+.content .row .blocks .constructor .row .users ul li.trader span.photo span.badge {
+	background: #2f3337;
+}
+
+.content .row .blocks .constructor .row .users ul li.analyst span.dd span.name span.position {
+	color: #00c57f;
+}
+
+.content .row .blocks .constructor .row .users ul li.supervisor span.dd span.name span.position {
+	color: #0175f2;
+}
+
+.content .row .blocks .constructor .row .users ul li.trader span.dd span.name span.position {
+	color: #2f3337;
+}
+
+.content .row .blocks .constructor .row .users ul li.analyst a.profile-btn {
+	background: #01be7b;
+}
+
+.content .row .blocks .constructor .row .users ul li.analyst a:hover.profile-btn {
+	background: #2fcb94;
+}
+
+.content .row .blocks .constructor .row .users ul li.analyst a:active.profile-btn {
+	background: #01ac6f;
+}
+
+.content .row .blocks .constructor .row .users ul li.supervisor a.profile-btn {
+	background: #0175f2;
+}
+
+.content .row .blocks .constructor .row .users ul li.supervisor a:hover.profile-btn {
+	background: #007bff;
+}
+
+.content .row .blocks .constructor .row .users ul li.supervisor a:active.profile-btn {
+	background: #005ec3;
+}
+
+.content .row .blocks .constructor .row .users ul li.trader a.profile-btn {
+	color: #2f3337;
+	background: #FFF;
+}
+
+.content .row .blocks .constructor .row .users ul li.trader a:hover.profile-btn {
+	background: #FFF;
+}
+
+.content .row .blocks .constructor .row .users ul li.trader a:active.profile-btn {
+	background: #d8dadb;
+}
+
+.content .row .blocks .constructor .row .col label.position {
+	margin-top: 39px;
+	display: table;
+	width: 100%;
+	height: 36px;
+	padding-right: 20px;
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 1.1;
+}
+
+.content .row .blocks .constructor .row .col label.position span {
+	display: table-cell;
+	vertical-align: middle;
+}
 
 @keyframes spin {
 	from {transform: rotate(10deg);}
@@ -1065,6 +1635,132 @@ header .hd .row .nav .dropdown .dropdown-menu a.dropdown-item.disabled:hover i.f
 @keyframes spin2 {
 	from {transform: rotate(0deg);}
 	to {transform: rotate(40deg);}
+}
+
+.profile-popup .modal-dialog {
+	max-width: 580px;
+}
+
+.profile-popup .modal-dialog .modal-content {
+	border: none;
+}
+
+.profile-popup .modal-dialog .modal-content .modal-header {
+	position: relative;
+	display: table;
+	padding: 15px 30px 15px 130px;
+	min-height: 136px;
+}
+
+.profile-popup .modal-dialog .modal-content .modal-header span.avatar {
+	position: absolute;
+	left: 15px;
+	height: 15px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.profile-popup .modal-dialog .modal-content .modal-header span.avatar img {
+	width: 120px;
+}
+
+.profile-popup .modal-dialog .modal-content .modal-header h5 {
+	display: block;
+	float: left;
+	width: 100%;
+	padding: 0 0 0 0;
+	font-size: 17px;
+	font-weight: 300;
+	color: #2f3337;
+	line-height: 1.1;
+}
+
+.profile-popup .modal-dialog .modal-content .modal-header h5 span.surname {
+	font-weight: 600;
+}
+
+.profile-popup .modal-dialog .modal-content .modal-header h5 i.fas {
+	margin: 2px 0 0 6px;
+	vertical-align: top;
+	font-size: 14px;
+}
+
+.profile-popup .modal-dialog .modal-content .modal-header .earnings {
+	display: block;
+	float: left;
+	width: 60%;
+	padding: 6px 0 9px 0;
+	font-weight: 600;
+	line-height: 1.1;
+}
+
+.profile-popup .modal-dialog .modal-content .modal-header .earnings.this-week {
+	width: 40%;
+}
+
+.profile-popup .modal-dialog .modal-content .modal-header .earnings label,
+.profile-popup .modal-dialog .modal-content .modal-header .earnings span.amount {
+	display: block;
+}
+
+.profile-popup .modal-dialog .modal-content .modal-header .earnings label {
+	padding: 9px 0 3px 0;
+	font-size: 15px;
+}
+
+.profile-popup .modal-dialog .modal-content .modal-header .earnings span.amount {
+	padding: 0;
+	font-size: 36px;
+	color: #0175f2;
+	letter-spacing: -1px;
+}
+
+.profile-popup .modal-dialog .modal-content .modal-header .earnings span.amount span.percent {
+	margin: 3px 0 0 4px;
+	display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+	font-size: 9px;
+	color: #FFF;
+	padding: 1px 3px 2px 3px;
+	border-radius: 2px;
+}
+
+.profile-popup .modal-dialog .modal-content .modal-header .earnings span.amount span.percent.plus {
+	background: #01be7b;
+}
+
+.profile-popup .modal-dialog .modal-content .modal-header .earnings span.amount span.percent.minus {
+	background: #e54141;
+}
+
+.profile-popup .modal-dialog .modal-content .modal-header button.close {
+	position: absolute;
+	display: block;
+	right: 25px;
+	top: 25px;
+	width: 24px;
+	height: 24px;
+	text-align: center;
+	padding-top: 5px;
+	outline: none;
+	color: rgba(0,0,0,0.3);
+	font-size: 14px;
+	text-shadow: none;
+	transition: color 0.3s;
+	text-decoration: none;
+}
+
+.profile-popup .modal-dialog .modal-content .modal-header button.close:hover {
+	color: rgba(0,0,0,0.6);
+}
+
+.profile-popup .modal-dialog .modal-content .modal-header button.close i.fa-times {
+	vertical-align: top;
 }
 
 @media screen and (max-width: 991px) {
@@ -1086,6 +1782,52 @@ header .hd .row .nav .dropdown .dropdown-menu a.dropdown-item.disabled:hover i.f
 	.content .row .blocks .constructor .row .col dl.summary dd span.total {
 		width: 50%;
 		float: left;
+	}
+	
+	.content .row .blocks .constructor .row .col dl.profit-calc dd .interest {
+		width: 100%;
+	}
+	
+	.content .row .blocks .constructor .row .col dl.profit-calc dd .interest p {
+		min-height: inherit;
+	}
+	
+	.content .row .blocks .constructor .row .col dl.profit-calc dd .interest span.percent {
+		padding-bottom: 20px;
+	}
+	
+	.content .row .blocks .constructor .row .col dl.payments dd span {
+		width: calc(50% - 10px);
+	}
+	
+	.content .row .blocks .constructor .row .users ul li {
+		width: calc((100% / 3) - 20px);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.content .row .blocks .constructor .row .col dl.profit-calc dd .interest {
+		width: 50%;
+	}
+	
+	.content .row .blocks .constructor .row .col dl.profit-calc dd .interest p {
+		min-height: 40px;
+	}
+	
+	.content .row .blocks .constructor .row .col dl.profit-calc dd .interest span.percent {
+		padding-bottom: 0;
+	}
+	
+	.content .row .blocks .constructor .row .col dl.payments dd span.bitcoin {
+		background-size: auto 50%;
+	}
+	
+	.content .row .blocks .constructor .row .col dl.payments dd span.paypal {
+		background-size: auto 50%;
+	}
+	
+	.content .row .blocks .constructor .row .col dl.payments dd span.visa {
+		background-size: auto 50%;
 	}
 }
 
@@ -1199,6 +1941,54 @@ header .hd .row .nav .dropdown .dropdown-menu a.dropdown-item.disabled:hover i.f
 	.content .row .blocks .constructor .row .col dl.cci-distribution.mycci dd {
 		min-height: 210px;
 	}
+	
+	.content .row .blocks .constructor .row .col dl.profit-calc dd .interest {
+		width: 100%;
+	}
+	
+	.content .row .blocks .constructor .row .col dl.profit-calc dd .interest p {
+		min-height: inherit;
+	}
+	
+	.content .row .blocks .constructor .row .col dl.profit-calc dd .interest span.percent {
+		padding-bottom: 20px;
+	}
+	
+	.content .row .blocks .constructor .row .users ul li {
+		width: calc((100% / 2) - 20px);
+	}
+	
+	.content .row .blocks .constructor .row .col .success {
+		padding: 40px 20px 0 140px;
+	}
+
+	.content .row .blocks .constructor .row .col .success span.icon {
+		width: 80px;
+		height: 80px;
+		padding-top: 20px;
+	}
+
+	.content .row .blocks .constructor .row .col .success span.icon i.fas {
+		font-size: 36px;
+	}
+
+	.content .row .blocks .constructor .row .col .success h1 {
+		font-size: 24px;
+	}
+
+	.content .row .blocks .constructor .row .col .success label {
+		font-size: 15px;
+	}
+
+	.content .row .blocks .constructor .row .col .success p {
+		font-size: 13px;
+	}
+	
+	.profile-popup .modal-dialog .modal-content .modal-header .earnings,
+	.profile-popup .modal-dialog .modal-content .modal-header .earnings.this-week {
+		width: 100%;
+		padding-bottom: 0;
+	}
 }
 
 @media screen and (max-width: 500px) {
@@ -1218,44 +2008,48 @@ header .hd .row .nav .dropdown .dropdown-menu a.dropdown-item.disabled:hover i.f
 		right: 50%;
 		margin-right: -74px;
 	}
+	
+	.content .row .blocks .constructor .row .users ul li {
+		width: calc(100% - 20px);
+	}
+	
+	.content .row .blocks .constructor .row .users ul li span.photo img {
+		width: 100%;
+		height: auto;
+	}
 }
 
 @media screen and (max-width: 375px) {
 	.content .row .blocks .constructor .row .col dl.summary.mycci dd span.total {
 		width: 100%;
 	}
+	
+	.content .row .blocks .constructor .row .col .success {
+		padding: 120px 20px 20px 20px;
+		text-align: center;
+	}
+
+	.content .row .blocks .constructor .row .col .success span.icon {
+		left: calc(50% - 40px);
+	}
+
+	.content .row .blocks .constructor .row .col .success span.icon i.fas {
+		font-size: 36px;
+	}
+
+	.content .row .blocks .constructor .row .col .success h1 {
+		font-size: 24px;
+	}
+
+	.content .row .blocks .constructor .row .col .success label {
+		font-size: 15px;
+	}
+
+	.content .row .blocks .constructor .row .col .success p {
+		font-size: 13px;
+	}
+	
+	.profile-popup .modal-dialog .modal-content .modal-header .earnings span.amount {
+		font-size: 30px;
+	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
