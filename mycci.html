@@ -51,10 +51,10 @@
 	<div class="row">
 		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 side-nav">
 			<ul class="nav flex-column">
-				<li class="nav-item active">
+				<li class="nav-item">
 					<a class="nav-link" href="overall.html"><i class="fas fa-th-large"></i>Overall</a>
 				</li>
-				<li class="nav-item">
+				<li class="nav-item active">
 					<a class="nav-link" href="mycci.html"><i class="fas fa-id-card"></i>My CCI</a>
 				</li>
 				<li class="nav-item disabled">
@@ -84,24 +84,20 @@
 			<div class="container-fluid constructor">
 				<div class="row">
 					<div class="col col-lg-4 col-md-12 col-sm-12 col-12">
-						<dl class="cci-balance">
+						<dl class="cci-balance mycci">
 							<dt><label>Your CCI Balance</label></dt>
-							<dd><span class="amount"><i class="coin"></i>12.345.999<span class="abbr">cci</span></span></dd>
+							<dd><span class="amount"><i class="coin"></i>12.345.999<span class="abbr">cci</span></span><a href="deposits.html" class="deposit-btn">Deposit</a></dd>
 						</dl>
 					</div>
 					<div class="col col-lg-8 col-md-12 col-sm-12 col-12">
-						<dl class="deposits">
-							<dt><label>Your Balance<a href="/" class="deposit-btn">Deposit</a></label><i class="info" data-toggle="tooltip" data-placement="left" title="Your balance available for withdrawal and balance which is currently in hands of our professional traders.">i</i></dt>
+						<dl class="deposits mycci">
+							<dt><label>Crypto Balance</label><i class="info" data-toggle="tooltip" data-placement="left" title="You can see below how much Crypto is available for withdrawal and how much is held now and will be available after end of chosen investment period.">i</i></dt>
 							<dd>
 								<div class="currency">
 									<label><i class="icon-btc"></i>Bitcoin</label>
 									<span class="type available">
 										Available
 										<span class="amount">0.23<span class="abbr">btc</span></span>
-									</span>
-									<span class="type on-hold">
-										On Hold
-										<span class="amount">0.39<span class="abbr">btc</span></span>
 									</span>
 								</div>
 								<div class="currency">
@@ -110,10 +106,6 @@
 										Available
 										<span class="amount">4.10<span class="abbr">eth</span></span>
 									</span>
-									<span class="type on-hold">
-										On Hold
-										<span class="amount">6.98<span class="abbr">eth</span></span>
-									</span>
 								</div>
 								<div class="currency">
 									<label><i class="icon-usd">$</i>US Dollar</label>
@@ -121,37 +113,34 @@
 										Available
 										<span class="amount">1500<span class="abbr">usd</span></span>
 									</span>
-									<span class="type on-hold">
-										On Hold
-										<span class="amount">2550<span class="abbr">usd</span></span>
-									</span>
+								</div>
+								<div class="currency">
+									<a href="deposits.html" class="deposit-btn">Deposit</a>
 								</div>
 							</dd>
 						</dl>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col col-lg-4 col-md-5 col-sm-6 col-12">
-						<!-- BTC theme class <dl class="trading-pot btc-theme"> -->
-						<!-- ETH theme class <dl class="trading-pot eth-theme"> -->
-						<dl class="trading-pot usd-theme">
-							<dt><label>Current Trading Pot</label><i class="info" data-toggle="tooltip" data-placement="left" title="Assets that are currently being operated by our professional traders.">i</i></dt>
+					<div class="col col-lg-4 col-md-12 col-sm-12 col-12">
+						<dl class="summary mycci">
+							<dt><label>Your Statement</label><i class="info" data-toggle="tooltip" data-placement="left" title="Your current and last week's profit as a token holder.">i</i></dt>
 							<dd>
-								<span class="amount">10.555.690<span class="abbr">usd</span></span>
-								<div class="btn-group" role="group" aria-label="Basic example">
-									<button type="button" class="btn">btc</button>
-									<button type="button" class="btn">eth</button>
-									<button type="button" class="btn active">usd</button>
-								</div>
-								<span class="usd">usd</span>
-								<span class="btc">btc</span>
-								<span class="eth">eth</span>
+								<span class="total">
+									<label>Last week’s profit</label>
+									<span class="amount">88.23<span class="abbr">usd</span></span>
+								</span>
+								<span class="total">
+									<label>This week’s profit so far</label>
+									<span class="amount">83.56<span class="abbr">usd</span></span>
+								</span>
+								<i class="fas fa-signal"></i>
 							</dd>
 						</dl>
 					</div>
-					<div class="col col-lg-8 col-md-7 col-sm-6 col-12">
-						<dl class="cci-distribution">
-							<dt><label>CCI Distribution</label><i class="info" data-toggle="tooltip" data-placement="left" title="Below is a breakdown of CCI Tokens which are partly held on our platform and partly on exchanges and private wallets of Token Holders.">i</i></dt>
+					<div class="col col-lg-8 col-md-12 col-sm-12 col-12">
+						<dl class="cci-distribution mycci">
+							<dt><label>Total CCI</label><i class="info" data-toggle="tooltip" data-placement="left" title="Share of profit between Token holders depends on how much tokens you keep on a platform and how much tokens are kept total on a platform at the current week. Here you can see the total number of tokens on a platform right now and total number of tokens on exchanges.">i</i></dt>
 							<dd>
 								<span class="inside">
 									CCI on platform
@@ -162,6 +151,9 @@
 									<span class="amount">80.000.000</span>
 								</span>
 								<span class="distribution"></span>
+								<label>Token Holders Profit</label>
+								<p>Token Holders receive <span class="total">30%</span> of weekly generated profit.</p>
+								<p>Which means that you are receiving <span class="single">0,0234%</span> of weekly generated profit.</p>
 							</dd>
 						</dl>
 					</div>
@@ -169,47 +161,8 @@
 				<div class="row">
 					<div class="col">
 						<dl class="chart">
-							<dt><label>Reserve Trading Capital</label></dt>
+							<dt><label>Last Week Profits</label><i class="info" data-toggle="tooltip" data-placement="left" title="Total profits generated last week by our professional trading team">i</i></dt>
 							<dd>x</dd>
-						</dl>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col col-lg-4 col-md-12 col-sm-12 col-12">
-						<dl class="summary">
-							<dt><label>Platform Summary</label></dt>
-							<dd>
-								<span class="total">
-									<label>Total Active Users</label>
-									<span class="amount">16.586</span>
-								</span>
-								<span class="total">
-									<label>Total Token Holders</label>
-									<span class="amount">4.274</span>
-								</span>
-								<i class="fas fa-briefcase"></i>
-							</dd>
-						</dl>
-					</div>
-					<div class="col col-lg-8 col-md-12 col-sm-12 col-12">
-						<dl class="investment">
-							<dt><label>Investments</label></dt>
-							<dd>
-								<p>Current investments are distributed between Short-term (less than 1 month) and Long-term (more than 1 month) as follows.</p>
-								<span class="type long">
-									Long-term Investment
-									<span class="percent">60%</span>
-								</span>
-								<span class="type short">
-									Short-term Investment
-									<span class="percent">40%</span>
-								</span>
-								<div class="pie-wrap pie-wrap2">
-									<div class="slice1 slice-wrap"></div>
-									<div class="slice2 slice-wrap"></div>
-									<div class="hole"></div>
-								</div>
-							</dd>
 						</dl>
 					</div>
 				</div>

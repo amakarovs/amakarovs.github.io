@@ -176,6 +176,10 @@ header .hd .row .nav .dropdown .dropdown-menu a.dropdown-item {
 	transition: background 0.3s, color 0.3s;
 }
 
+header .hd .row .nav .dropdown .dropdown-menu a.dropdown-item.mob {
+	display: none;
+}
+
 header .hd .row .nav .dropdown .dropdown-menu a.dropdown-item i.fas {
 	position: absolute;
 	left: 5px;
@@ -432,6 +436,62 @@ header .hd .row .nav .dropdown .dropdown-menu a.dropdown-item.disabled:hover i.f
 	background-size: auto 16px;
 }
 
+.content .row .blocks .constructor .row .col dl.cci-balance.mycci dd {
+	position: relative;
+}
+
+.content .row .blocks .constructor .row .col dl.cci-balance.mycci dd span.amount {
+	vertical-align: top;
+	text-align: left;
+	font-size: 30px;
+	padding: 11px 0 0 15px;
+}
+
+.content .row .blocks .constructor .row .col dl.cci-balance.mycci dd span.amount span.abbr {
+	padding-left: 4px;
+}
+
+.content .row .blocks .constructor .row .col dl.cci-balance.mycci dd span.amount i.coin {
+	width: 22px;
+	height: 22px;
+	border-radius: 22px;
+}
+
+.content .row .blocks .constructor .row .col dl.cci-balance.mycci dd span.amount i.coin:before {
+	left: 4px;
+	top: 4px;
+	width: 14px;
+	height: 14px;
+	background-size: auto 14px;
+}
+
+.content .row .blocks .constructor .row .col dl.cci-balance.mycci dd a.deposit-btn {
+	position: absolute;
+	bottom: 17px;
+	right: 15px;
+	width: calc(40% + 2px);
+	display: block;
+	height: 32px;
+	padding: 8px 0 0 0;
+	font-size: 17px;
+	color: #FFF;
+	font-weight: 600;
+	text-align: center;
+	outline: none;
+	text-decoration: none;
+	background: #01be7b;
+	transition: background 0.3s;
+	border-radius: 3px;
+}
+
+.content .row .blocks .constructor .row .col dl.cci-balance.mycci dd a:hover.deposit-btn {
+	background: #2fcb94;
+}
+
+.content .row .blocks .constructor .row .col dl.cci-balance.mycci dd a:active.deposit-btn {
+	background: #01ac6f;
+}
+
 .content .row .blocks .constructor .row .col dl.trading-pot {
 	color: #FFF;
 	transition: background 0.3s;
@@ -639,10 +699,94 @@ header .hd .row .nav .dropdown .dropdown-menu a.dropdown-item.disabled:hover i.f
 	background: rgba(255,255,255,0.18);
 }
 
+.content .row .blocks .constructor .row .col dl.cci-distribution.mycci dd {
+	min-height: 180px;
+}
+
+.content .row .blocks .constructor .row .col dl.cci-distribution.mycci dd label,
+.content .row .blocks .constructor .row .col dl.cci-distribution.mycci dd p {
+	display: block;
+	float: left;
+	width: 100%;
+	font-size: 13px;
+    color: #4d5761;
+}
+
+.content .row .blocks .constructor .row .col dl.cci-distribution.mycci dd label {
+	display: block;
+	padding: 17px 0 9px 0;
+	font-weight: 600;
+}
+
+.content .row .blocks .constructor .row .col dl.cci-distribution.mycci dd p {
+	padding: 3px 0;
+	line-height: 1.3;
+}
+
+.content .row .blocks .constructor .row .col dl.cci-distribution.mycci dd p span.total,
+.content .row .blocks .constructor .row .col dl.cci-distribution.mycci dd p span.single {
+	float: none;
+	padding: 1px 3px;
+	color: #FFF;
+	border-radius: 2px;
+	font-weight: 600;
+}
+
+.content .row .blocks .constructor .row .col dl.cci-distribution.mycci dd p span.total {
+	background: #96a0a9;
+}
+
+.content .row .blocks .constructor .row .col dl.cci-distribution.mycci dd p span.single {
+	background: #0174f1;
+}
+
+
+
+
+
+.content .row .blocks .constructor .row .col dl.deposits dd {
+	padding-top: 10px;
+}
+
 .content .row .blocks .constructor .row .col dl.deposits dd .currency {
 	float: left;
 	width: calc(100% / 3);
 	padding-left: 15px;
+	border-right: 1px solid #f5f7f8;
+}
+
+.content .row .blocks .constructor .row .col dl.deposits.mycci dd .currency {
+	width: calc(100% / 4);
+}
+
+.content .row .blocks .constructor .row .col dl.deposits.mycci dd .currency a.deposit-btn {
+	float: right;
+	width: calc(100% - 15px);
+	display: block;
+	margin: 41px 15px 0 15px;
+	height: 32px;
+	padding: 3px 0 0 0;
+	font-size: 17px;
+	color: #FFF;
+	font-weight: 600;
+	text-align: center;
+	outline: none;
+	text-decoration: none;
+	background: #0175f2;
+	transition: background 0.3s;
+	border-radius: 3px;
+}
+
+.content .row .blocks .constructor .row .col dl.deposits.mycci dd .currency a:hover.deposit-btn {
+	background: #007bff;
+}
+
+.content .row .blocks .constructor .row .col dl.deposits.mycci dd .currency a:active.deposit-btn {
+	background: #005ec3;
+}
+
+.content .row .blocks .constructor .row .col dl.deposits dd .currency:last-child {
+	border-right: 1px solid none;
 }
 
 .content .row .blocks .constructor .row .col dl.deposits dd .currency label {
@@ -650,13 +794,13 @@ header .hd .row .nav .dropdown .dropdown-menu a.dropdown-item.disabled:hover i.f
 	width: 100%;
 	font-size: 17px;
 	font-weight: 600;
-	padding: 11px 0 12px 28px;
+	padding: 1px 0 12px 28px;
 }
 
 .content .row .blocks .constructor .row .col dl.deposits dd .currency label i {
 	position: absolute;
 	left: 0;
-	top: 13px;
+	top: 2px;
 	width: 20px;
 	height: 20px;
 	border-radius: 20px;
@@ -715,7 +859,8 @@ header .hd .row .nav .dropdown .dropdown-menu a.dropdown-item.disabled:hover i.f
 	padding: 19px 15px 0 15px;
 }
 
-.content .row .blocks .constructor .row .col dl.summary dd i.fa-briefcase {
+.content .row .blocks .constructor .row .col dl.summary dd i.fa-briefcase,
+.content .row .blocks .constructor .row .col dl.summary dd i.fa-signal {
 	position: absolute;
 	z-index: 1;
 	right: -20px;
@@ -744,6 +889,13 @@ header .hd .row .nav .dropdown .dropdown-menu a.dropdown-item.disabled:hover i.f
 	color: #0175f2;
 }
 
+.content .row .blocks .constructor .row .col dl.summary dd span.amount span.abbr {
+	padding-left: 4px;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
 .content .row .blocks .constructor .row .col dl.chart dt {
 	border-bottom: none;
 }
@@ -770,6 +922,10 @@ header .hd .row .nav .dropdown .dropdown-menu a.dropdown-item.disabled:hover i.f
 	float: left;
 	width: 50%;
 	padding: 0 0 0 15px;
+}
+
+.content .row .blocks .constructor .row .col dl.investment dd span.type.long {
+	border-right: 1px solid #f5f7f8;
 }
 
 .content .row .blocks .constructor .row .col dl.investment dd span.type span.percent {
@@ -922,7 +1078,8 @@ header .hd .row .nav .dropdown .dropdown-menu a.dropdown-item.disabled:hover i.f
 		min-height: 60px;
 	}
 	
-	.content .row .blocks .constructor .row .col dl.summary dd i.fa-briefcase {
+	.content .row .blocks .constructor .row .col dl.summary dd i.fa-briefcase,
+	.content .row .blocks .constructor .row .col dl.summary dd i.fa-signal {
 		bottom: -50px;
 	}
 	
@@ -933,6 +1090,10 @@ header .hd .row .nav .dropdown .dropdown-menu a.dropdown-item.disabled:hover i.f
 }
 
 @media screen and (max-width: 576px) {
+	.content .row .side-nav {
+		display: none;
+	}
+	
 	.content .row .blocks .constructor .row .col dl.deposits dd {
 		min-height: 260px;
 	}
@@ -950,11 +1111,54 @@ header .hd .row .nav .dropdown .dropdown-menu a.dropdown-item.disabled:hover i.f
 		height: 36px;
 	}
 
-	header .hd .row .nav .dropdown button span.avatar {
+	header .hd .row .nav .dropdown button span.bar,
+	header .hd .row .nav .dropdown button span.bar:before,
+	header .hd .row .nav .dropdown button span.bar:after	{
+		width: 24px;
+		height: 2px;
+		border-radius: 1px;
+		background: #FFF;
+	}
+	
+	header .hd .row .nav .dropdown button span.bar	{
 		position: relative;
-		width: 36px;
-		height: 36px;
-		border-radius: 36px;
+		display: block;
+		margin: 11px 6px;
+		opacity: 1;
+	}
+	
+	header .hd .row .nav .dropdown button span.bar:before,
+	header .hd .row .nav .dropdown button span.bar:after {
+		position: absolute;
+		content:'';
+		left: 0;
+		transition: transform 0.3s, position 0.3s;
+	}
+	
+	header .hd .row .nav .dropdown.show button span.bar	{
+		background: transparent;
+	}
+	
+	header .hd .row .nav .dropdown button span.bar:before {
+		top: -6px;
+	}
+	
+	header .hd .row .nav .dropdown.show button span.bar:before {
+		top: 0;
+		-ms-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+	
+	header .hd .row .nav .dropdown button span.bar:after {
+		top: 6px;
+	}
+	
+	header .hd .row .nav .dropdown.show button span.bar:after {
+		top: 0;
+		-ms-transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg);
 	}
 
 	header .hd .row .nav .dropdown button span.avatar img {
@@ -962,8 +1166,38 @@ header .hd .row .nav .dropdown .dropdown-menu a.dropdown-item.disabled:hover i.f
 	}
 	
 	header .hd .row .nav .dropdown button span.name,
-	header .hd .row .nav .dropdown button i.fa-chevron-down {
+	header .hd .row .nav .dropdown button i.fa-chevron-down,
+	header .hd .row .nav .dropdown button span.avatar	{
 		display: none;
+	}
+	
+	header .hd .row .nav .dropdown .dropdown-menu a.dropdown-item.mob {
+		display: block;
+	}
+	
+	.content .row .blocks .constructor .row .col dl.deposits dd .currency {
+		border-right: none;
+		padding-bottom: 10px;
+	}
+	
+	.content .row .blocks .constructor .row .col dl.deposits.mycci dd {
+		min-height: 320px;
+	}
+	
+	.content .row .blocks .constructor .row .col dl.deposits.mycci dd .currency {
+		width: 100%;
+	}
+	
+	.content .row .blocks .constructor .row .col dl.deposits.mycci dd .currency a.deposit-btn {
+		margin-top: 10px;
+	}
+	
+	.content .row .blocks .constructor .row .col dl.cci-balance.mycci dd a.deposit-btn {
+		width: 24%;
+	}
+	
+	.content .row .blocks .constructor .row .col dl.cci-distribution.mycci dd {
+		min-height: 210px;
 	}
 }
 
@@ -983,6 +1217,12 @@ header .hd .row .nav .dropdown .dropdown-menu a.dropdown-item.disabled:hover i.f
 		bottom: 15px;
 		right: 50%;
 		margin-right: -74px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.content .row .blocks .constructor .row .col dl.summary.mycci dd span.total {
+		width: 100%;
 	}
 }
 
