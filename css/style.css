@@ -1953,7 +1953,7 @@ header .hd .row .nav .dropdown .dropdown-menu a:hover.active i.fas {
 		position: fixed;
 		z-index: 3;
 		width: 100%;
-		height: calc(100% + 60px);
+		height: calc(100% + 65px);
 		background: #FFF;
 	}
 	
