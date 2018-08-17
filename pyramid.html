@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CCI</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" >
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+<body>
+
+<!-- Modal -->
+<div class="modal profile-popup fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+		<span class="avatar"><img src="img/nikita.jpg"></span>
+		<h5>John <span class="surname">Wall</span><i class="fas fa-university"></i></h5>
+		<div class="earnings this-week">
+			<label>This week</label>
+			<span class="amount">1,086$<span class="percent plus">50%</span></span>
+		</div>
+		<div class="earnings">
+			<label>Total earnings</label>
+			<span class="amount">1,060,386$<span class="percent minus">-1.5%</span></span>
+		</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="modal-body">
+        chart
+      </div>
+    </div>
+  </div>
+</div>
+
+<header>
+	<div class="container-fluid hd">
+		<div class="row">
+			<div class="col-xl-3 col-sm-2 col-3 logo"><a href="/"></a></div>
+			<div class="col-xl-3 col-sm-5 col-6 current-time">July 23, Friday 2.22pm</div>
+			<div class="col-xl-6 col-sm-5 col-12 nav justify-content-end">
+				<div class="dropdown">
+					<button type="button" class="burger" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar"><img src="img/nikita.jpg" /></span><span class="name">Nikita Kaperzov</span><i class="fas fa-chevron-down"></i><span class="bar"></span>
+					</button>
+					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+						<div class="about">
+							<span class="avatar blank"><i class="fas fa-user"></i></span>
+							<span class="name">Nikita Kaperzov</span>
+							<span class="email">n.aperzov@cci.io</span>
+						</div>
+						<a class="dropdown-item mob" href="overall.html"><i class="fas fa-th-large"></i>Overall</a>
+						<a class="dropdown-item mob" href="mycci.html"><i class="fas fa-id-card"></i>My CCI</a>
+						<a class="dropdown-item mob disabled" href="#"><i class="fas fa-arrow-alt-circle-up"></i>Withdrawals</a>
+						<a class="dropdown-item mob active" href="deposit.html"><i class="fas fa-arrow-alt-circle-down"></i>Deposits</a>
+						<a class="dropdown-item mob disabled" href="#"><i class="fas fa-cube"></i>Transactions History</a>
+						<a class="dropdown-item mob disabled" href="#"><i class="fas fa-user-tie"></i>Audit</a>
+						<a class="dropdown-item mob disabled" href="#"><i class="fas fa-comments"></i>FAQ</a>
+						<a class="dropdown-item mob disabled" href="#"><i class="fas fa-life-ring"></i>Help</a>
+						<a class="dropdown-item disabled" href="#"><i class="fas fa-shield-alt"></i>Settings</a>
+						<a class="dropdown-item" href="#"><i class="fas fa-fingerprint"></i>Logout</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="container-fluid content">
+	<div class="row">
+		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 side-nav">
+			<ul class="nav flex-column">
+				<li class="nav-item">
+					<a class="nav-link" href="overall.html"><i class="fas fa-th-large"></i>Overall</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="mycci.html"><i class="fas fa-id-card"></i>My CCI</a>
+				</li>
+				<li class="nav-item disabled">
+					<a class="nav-link" href="#"><i class="fas fa-arrow-alt-circle-up"></i>Withdrawals</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="deposit.html"><i class="fas fa-arrow-alt-circle-down"></i>Deposits</a>
+				</li>
+				<li class="nav-item disabled">
+					<a class="nav-link" href="#"><i class="fas fa-cube"></i>Transactions History</a>
+				</li>
+				<li class="nav-item disabled">
+					<a class="nav-link" href="#"><i class="fas fa-user-tie"></i>Audit</a>
+				</li>
+				<li class="nav-item disabled">
+					<a class="nav-link" href="#"><i class="fas fa-comments"></i>FAQ</a>
+				</li>
+				<li class="nav-item disabled">
+					<a class="nav-link" href="#"><i class="fas fa-life-ring"></i>Help</a>
+				</li>
+				<li class="nav-item disabled">
+					<a class="nav-link" href="#"><i class="fas fa-shield-alt"></i>Settings</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12 blocks">
+			<div class="container-fluid constructor">
+				<div class="row">
+					<div class="col col-lg-12 col-md-12 col-sm-12 col-12">
+						<div class="success">
+							<span class="icon"><i class="fas fa-check"></i></span>
+							<h1>Congratulations!</h1>
+							<label>You Have Chosen A Long-Term Investment!</label>
+							<p>Here Are Our Long-Term Trading Experts Who Will Manage Your Assets</p>
+							<a href="/" class="close-btn"><i class="fas fa-times"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-lg-2 col-md-3 col-sm-3 col-5">
+						<label class="position"><span>Financial Analysts</span><label>
+					</div>
+					<div class="col col-lg-10 col-md-9 col-sm-9 col-7 users analytics-bullet">
+						<ul>
+							<li class="analyst">
+								<span class="photo"><span class="badge"><i class="fas fa-university"></i></span><img src="img/nikita.jpg" /></span>
+								<span class="dd">
+									<span class="name">John <span class="surname">Wall</span><span class="position">Financial Analyst</span></span>
+								</span>
+								<a href="" data-toggle="modal" data-target="#profileModal" class="profile-btn">Profile</a>
+							</li>
+							<li class="analyst">
+								<span class="photo"><span class="badge"><i class="fas fa-university"></i></span><img src="img/nikita.jpg" /></span>
+								<span class="dd">
+									<span class="name">John <span class="surname">Wall</span><span class="position">Financial Analyst</span></span>
+								</span>
+								<a href="" data-toggle="modal" data-target="#profileModal" class="profile-btn">Profile</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-lg-2 col-md-3 col-sm-3 col-5">
+						<label class="position"><span>Supervisor</span><label>
+					</div>
+					<div class="col col-lg-10 col-md-9 col-sm-9 col-7 users supervisor-bullet">
+						<ul>
+							<li class="supervisor">
+								<span class="photo"><span class="badge"><i class="fas fa-user-tie"></i></span><img src="img/nikita.jpg" /></span>
+								<span class="dd">
+									<span class="name">John <span class="surname">Wall</span><span class="position">Supervisor</span></span>
+								</span>
+								<a href="" data-toggle="modal" data-target="#profileModal" class="profile-btn">Profile</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-lg-2 col-md-3 col-sm-3 col-5">
+						<label class="position"><span>Traders</span><label>
+					</div>
+					<div class="col col-lg-10 col-md-9 col-sm-9 col-7 users trader-bullet">
+						<ul>
+							<li class="trader">
+								<span class="photo"><span class="badge"><i class="fas fa-chart-line"></i></span><img src="img/nikita.jpg" /></span>
+								<span class="dd">
+									<span class="name">John <span class="surname">Wall</span><span class="position">Crypto Trader</span></span>
+								</span>
+								<a href="" data-toggle="modal" data-target="#profileModal" class="profile-btn">Profile</a>
+							</li>
+							<li class="trader">
+								<span class="photo"><span class="badge"><i class="fas fa-chart-line"></i></span><img src="img/nikita.jpg" /></span>
+								<span class="dd">
+									<span class="name">John <span class="surname">Wall</span><span class="position">Crypto Trader</span></span>
+								</span>
+								<a href="" data-toggle="modal" data-target="#profileModal" class="profile-btn">Profile</a>
+							</li>
+							<li class="trader">
+								<span class="photo"><span class="badge"><i class="fas fa-chart-line"></i></span><img src="img/nikita.jpg" /></span>
+								<span class="dd">
+									<span class="name">John <span class="surname">Wall</span><span class="position">Crypto Trader</span></span>
+								</span>
+								<a href="" data-toggle="modal" data-target="#profileModal" class="profile-btn">Profile</a>
+							</li>
+							<li class="trader">
+								<span class="photo"><span class="badge"><i class="fas fa-chart-line"></i></span><img src="img/nikita.jpg" /></span>
+								<span class="dd">
+									<span class="name">John <span class="surname">Wall</span><span class="position">Crypto Trader</span></span>
+								</span>
+								<a href="" data-toggle="modal" data-target="#profileModal" class="profile-btn">Profile</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+		$('#myModal').on('shown.bs.modal', function () {
+		  $('#myInput').trigger('focus')
+		})
+		
+		$('.burger').click(function(){
+            $('.nav').toggleClass('show-nav');
+        });
+	})
+</script>
+
+</body>
+</html>
