@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>gaming.partners</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" >
+</head>
+
+<body>
+
+<div id="wrap">
+	<div id="content">
+		<header>
+			<div class="container-fluid hd">
+				<div class="row">
+					<div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-4 logo"><a href="/"></a></div>
+					<div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 col-12 page-nav">
+						<ul>
+							<!-- Not logged in menu
+							
+							<li><a href="/">Home</a></li>
+							<li><a href="/">Faq</a></li>
+							-->
+							
+							<li class="active"><a href="/">Overview</a></li>
+							<li><a href="/">Statistics</a></li>
+							<li><a href="/">Promo</a></li>
+							<li><a href="/">Payments</a></li>
+						</ul>
+					</div>
+					<div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-8 site-nav">
+						<div class="dropdown lng">
+							<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								EN
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#">EN</a>
+								<a class="dropdown-item" href="#">RU</a>
+							</div>
+						</div>
+						
+						<div class="btn-group logged">
+							<!-- Without profile picture
+							
+							<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="material-icons">person</i>
+							</button>
+							
+							-->
+							<!-- With Profile Picture -->
+							<button type="button" class="btn avatar dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="material-icons">person</i><img src="img/profile.jpg" />
+							</button>
+							<div class="dropdown-menu dropdown-menu-right">
+								<div class="user">John<span class="surname">Stockton</span></div>
+								<button class="dropdown-item" type="button">Sign Out<i class="material-icons">exit_to_app</i></button>
+							</div>
+						</div>
+						
+						<a href="javascript:void(0);" class="burger"><span class="bar"></span></a>
+						
+						<div class="mobile-nav">
+							<ul>
+								<li class="profile">
+									<span class="avatar"><i class="material-icons">person</i><img src="img/profile.jpg" /></span>
+									<!-- Without profile pic <span class="avatar blank"><i class="material-icons">person</i><img src="img/profile.jpg" /></span>-->
+									John<span class="surname">Stockton</span>
+								</li>
+								<li><a href="/" class="active">Overview</a></li>
+								<li>
+									<a href="javascript:void(0);" class="drop-ad-nav">Statistics<i class="material-icons md-36">keyboard_arrow_down</i></a>
+									<ul class="sub-menu">
+										<li><a href="/">Project</a></li>
+										<li><a href="/">Promo</a></li>
+										<li><a href="/">Date</a></li>
+										<li><a href="/" class="active">Country</a></li>
+										<li><a href="/">Players</a></li>
+									</ul>
+								</li>
+								<li><a href="/">Promo</a></li>
+								<li><a href="/">Payments</a></li>
+								<li class="sign-out"><a href="/">Sign Out<i class="material-icons">exit_to_app</i></a></li>
+							</ul>	
+						</div>
+						
+						<!-- Sign In Button
+						
+						<button class="signin-btn">Sign In</button>
+						
+						-->
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="container-fluid content">
+			<div class="row">
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 heading"><h1>Overview</h1></div>
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 sort">
+					<div class="btn-group" role="group" aria-label="Basic example">
+						<button type="button" class="btn active">Day</button>
+						<button type="button" class="btn">Week</button>
+						<button type="button" class="btn">Month</button>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 block">
+					<dl class="lg income">
+						<dt><i class="material-icons">account_balance_wallet</i>Income / Available to withdraw<a href="/" class="btn">Withdraw</a></dt>
+						<dd>
+							<span class="amount"><i class="down"></i>$1 986.99/<span class="sub">$1 489.99</span></span>
+							<span class="compare"><span class="down">-34%</span>Compare with previous day</span>
+						</dd>
+					</dl>
+				</div>
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 block">
+					<dl class="lg deposit">
+						<dt><i class="material-icons">attach_money</i>First Deposit Amount / Quantity</dt>
+						<dd>
+							<span class="amount"><i class="up"></i>$200.50/<span class="sub">3</span></span>
+							<span class="compare"><span class="up">+25%</span>Compare with previous day</span>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 block">
+					<dl>
+						<dt><i class="material-icons">account_circle</i>New Registrations</dt>
+						<dd>
+							<span class="amount"><i class="down"></i>219</span>
+							<span class="compare"><span class="down">-25%</span>Compare with previous day</span>
+						</dd>
+					</dl>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 block">
+					<dl>
+						<dt><i class="material-icons">public</i>Unique Clicks / Views</dt>
+						<dd>
+							<span class="amount"><i class="up"></i>1023/100000</span>
+							<span class="compare"><span class="up">+40%</span>Compare with previous day</span>
+						</dd>
+					</dl>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 block">
+					<dl>
+						<dt><i class="material-icons">arrow_upward</i>Total Deposit</dt>
+						<dd>
+							<span class="amount"><i class="up"></i>$3 985.99</span>
+							<span class="compare"><span class="up">+200%</span>Compare with previous day</span>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<div class="container-fluid ft">
+		<div class="row">
+			<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-3 age">18+</div>
+			<div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6 copyrights">gaming.partners © 2018</div>
+			<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-3 up"><a href="/" class="up-btn"><i class="material-icons">arrow_upward</i></a></div>
+		</div>
+	</div>
+</footer>
+
+<i class="cross"></i>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+		$('#myModal').on('shown.bs.modal', function () {
+		  $('#myInput').trigger('focus')
+		})
+		$('.burger').click(function(){
+            $('.burger').toggleClass('show');
+        });
+		$('.burger').click(function(){
+            $('.mobile-nav').toggleClass('show');
+        });
+		$('.drop-ad-nav').click(function(){
+            $('.sub-menu').toggleClass('show');
+            $('.drop-ad-nav').toggleClass('rotate');
+        });
+	})
+	
+</script>
+
+</body>
+</html>
