@@ -2441,6 +2441,10 @@ body.landing header .hd .row .site-nav button.signin-btn {
 		padding: 40px 15px;
 	}
 		
+	.custom-block.revshare {
+		padding: 70px 0 0 0;
+	}	
+		
 	.custom-block .container-fluid .row .payout .fill {
 		position: relative;
 		z-index: 1;
