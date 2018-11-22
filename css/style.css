@@ -2046,10 +2046,6 @@ body.landing header .hd .row .site-nav button.signin-btn {
 		display: none;
 	}
 	
-	header .hd .row .col-3.page-nav {
-		display: flex;
-	}
-	
 	header .hd .row .site-nav a.burger {
 		position: relative;
 		z-index: 6;
@@ -2069,6 +2065,12 @@ body.landing header .hd .row .site-nav button.signin-btn {
 		background: #212121;
 	}
 	
+	body.landing header .hd .row .site-nav a.burger span.bar,
+	body.landing header .hd .row .site-nav a.burger span.bar:before,
+	body.landing header .hd .row .site-nav a.burger span.bar:after	{
+		background: #FFF;
+	}
+	
 	header .hd .row .site-nav a.burger span.bar	{
 		position: relative;
 		display: block;
@@ -2084,7 +2086,8 @@ body.landing header .hd .row .site-nav button.signin-btn {
 		transition: transform 0.3s, position 0.3s;
 	}
 	
-	header .hd .row .site-nav a.burger.show span.bar	{
+	header .hd .row .site-nav a.burger.show span.bar,
+	body.landing header .hd .row .site-nav a.burger.show span.bar	{
 		background: transparent;
 	}
 	
@@ -2437,16 +2440,7 @@ body.landing header .hd .row .site-nav button.signin-btn {
 	.custom-block {
 		padding: 40px 15px;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+		
 	.custom-block .container-fluid .row .payout .fill {
 		position: relative;
 		z-index: 1;
