@@ -2448,11 +2448,11 @@ body.landing header .hd .row .site-nav button.signin-btn {
 	.custom-block .container-fluid .row .payout .fill {
 		position: relative;
 		z-index: 1;
-		width: 320px;
-		height: 320px;
+		width: 300px;
+		height: 300px;
 		overflow: hidden;
 		border-radius: 50%;
-		margin-bottom: -170px;
+		margin-bottom: -160px;
 	}
 
 	.custom-block .container-fluid .row .payout .fill:before {
@@ -2460,8 +2460,8 @@ body.landing header .hd .row .site-nav button.signin-btn {
 		left: 0;
 		top: 0;
 		z-index: 1;
-		width: 320px;
-		height: 320px;
+		width: 300px;
+		height: 300px;
 		content:'';
 		background: #FFF; 
 		border-radius: 50%;
@@ -2472,8 +2472,8 @@ body.landing header .hd .row .site-nav button.signin-btn {
 		z-index: 4;
 		left: 0;
 		top: 0;
-		width: 320px;
-		height: 320px;
+		width: 300px;
+		height: 300px;
 		content:'';
 		background: transparent;
 		box-shadow: inset 0 10px 0 rgba(0,0,0,0.1);
@@ -2485,9 +2485,9 @@ body.landing header .hd .row .site-nav button.signin-btn {
 		z-index: 3;
 		display: flex;
 		align-items: center;
-		left: 30px;
-		top: 30px;
-		padding: 0 45px 130px 45px;
+		left: 20px;
+		top: 20px;
+		padding: 0 35px 130px 35px;
 		width: 260px;
 		height: 260px;
 		content:'';
@@ -2501,8 +2501,8 @@ body.landing header .hd .row .site-nav button.signin-btn {
 	.custom-block .container-fluid .row .payout .fill span.bg {
 		position: absolute;
 		z-index: 2;
-		width: 340px;
-		height: 340px;
+		width: 300px;
+		height: 300px;
 		content:'';
 		background: #03dac5;
 		animation-name: sixty-percent-mob;
@@ -2513,8 +2513,8 @@ body.landing header .hd .row .site-nav button.signin-btn {
 		-ms-transform: rotate(0deg); /* IE 9 */
 		-webkit-transform: rotate(0deg); /* Safari */
 		transform: rotate(0deg);
-		left: -170px;
-		bottom: -170px;
+		left: -150px;
+		bottom: -150px;
 	}
 
 	@keyframes sixty-percent-mob {
@@ -2522,14 +2522,14 @@ body.landing header .hd .row .site-nav button.signin-btn {
 			-ms-transform: rotate(0deg); /* IE 9 */
 			-webkit-transform: rotate(0deg); /* Safari */
 			transform: rotate(0deg);
-			left: -170px;
-			bottom: -170px;
+			left: -150px;
+			bottom: -150px;
 		}
 		to {
 			-ms-transform: rotate(100deg); /* IE 9 */
 			-webkit-transform: rotate(100deg); /* Safari */
 			transform: rotate(100deg);
-			left: -170px;
+			left: -150px;
 			bottom: 57px;
 		}
 	}
