@@ -228,7 +228,7 @@
 		<div class="row">
 			<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-3 age">18+</div>
 			<div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6 copyrights">gaming.partners © 2018</div>
-			<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-3 up"><a href="/" class="up-btn"><i class="material-icons">arrow_upward</i></a></div>
+			<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-3 up"><a href="#top" class="up-btn"><i class="material-icons">arrow_upward</i></a></div>
 		</div>
 	</div>
 </footer>
@@ -239,10 +239,17 @@
 <script src="js/aos.js"></script>
 
 <script>
-      AOS.init({
-        easing: 'ease-in-out-sine'
-      });
-    </script>
+    AOS.init({
+		easing: 'ease-in-out-sine'
+    });
+</script>
+
+<script>
+	$("a[href='#top']").click(function() {
+	  $("html, body").animate({ scrollTop: 0 }, "slow");
+	  return false;
+	});
+</script>
 
 <script>
 	$(function () {
