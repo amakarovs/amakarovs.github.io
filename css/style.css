@@ -836,6 +836,10 @@ a {
 }
 
 @media screen and (max-width: 576px) {
+	.content {
+		padding: 10px 0;
+	}
+	
 	.content .row .platform .logo {
 		background-size: 140px auto;
 	}
