@@ -735,12 +735,12 @@ a {
 .content .row .grid table {
 	margin-top: 6px;
 	width: 100%;
-	display: block;
 	text-align: left;
 	overflow-y: auto;
 }
 
 .content .row .grid table thead {
+	width: 100%;
 	background: #22252e;
 }
 
@@ -846,6 +846,11 @@ a {
 	
 	.content .row .net-worth .amount i.icon-trx {
 		margin-top: 5px;
+	}
+	
+	.content .row .grid table {
+		display: block;
+		width: 100%;
 	}
 }
 
