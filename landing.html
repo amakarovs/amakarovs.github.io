@@ -1,11 +1,12 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Dividends Tracker</title>
+    <title>AnteScan</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=9" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" >
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i&amp;subset=cyrillic-ext,greek" rel="stylesheet">
 </head>
 
@@ -15,25 +16,28 @@
 	<div class="row">
 		<div class="block xs platform">
 			<label>Platform</label>
-			<span class="logo"></span>
+			<a href="https://www.tronbet.io/?r=antescan" title="Tronbet.io - Best Blockchain Casino" class="logo"></a>
 			<span class="cc">Market Cap: <span class="amount">$44.579.662.2</span></span>
 		</div>
 		<div class="block md holdings">
 			<label>Your Holdings</label>
 			<div class="form">
-				<div class="col">
+				<div class="col error">
 					<span class="title">Ante</span>
 					<input type="text" value="1000" placeholder="1000" />
+					<span class="error-message">Wrong format</span>
 					<i class="icon-ante"></i>
 				</div>
 				<div class="col">
 					<span class="title">Live</span>
 					<input type="text" value="1000" placeholder="1000" />
+					<span class="error-message">Wrong format</span>
 					<i class="icon-live"></i>
 				</div>
 				<div class="col blank">
 					<span class="title">Feature Token Name</span>
 					<input type="text" placeholder="0" />
+					<span class="error-message">Wrong format</span>
 					<i></i>
 				</div>
 				<div class="col save">
@@ -43,6 +47,7 @@
 		</div>
 		<div class="block xs net-worth">
 			<label>Net Worth</label>
+			<span class="info">i<span class="tooltip">Currently included only ANTE holdings</span></span>
 			<span class="amount"><i class="icon-trx"></i>2,520,410</span>
 			<span class="total-usd">$4.579.13</span>
 		</div>
@@ -53,6 +58,7 @@
 		</div>
 		<div class="block xs current-price">
 			<label>Current ANTE Price</label>
+			<span class="info">i<span class="tooltip">Average ANTE price based on data from TronTrade, TRXMarket and Biki exchanges</span></span>
 			<span class="price"><i class="icon-trx"></i>60</span>
 			<span class="total-usd">$0.72</span><span class="percent"><span class="up">+12%</span><span class="down">-1%</span></span>
 		</div>
@@ -68,45 +74,45 @@
 			<div class="form">
 				<div class="col">
 					<span class="title">Your ANTE</span>
-					<input type="text" value="1000" placeholder="1000" />
+					<span class="input">1000</span>
 					<i class="icon-ante"></i>
 				</div>
 				<span class="symbol"><i class="multiply"></i></span>
 				<div class="col">
 					<span class="title">Total ANTE frozen</span>
-					<input type="text" value="68,620,720.93" placeholder="1000" />
+					<span class="input">68,620,720.93</span>
 					<i class="icon-ante"></i>
 				</div>
 				<span class="symbol"><i class="divide"></i></span>
 				<div class="col total-divs">
 					<span class="title">Available Dividends</span>
-					<input type="text" value="20,204,842.46" />
+					<span class="input">20,204,842.46</span>
 					<i class="icon-trx"></i>
 				</div>
 			</div>
 			<div class="form">
 				<div class="col">
 					<span class="title">Your LIVE</span>
-					<input type="text" value="1000" placeholder="1000" />
+					<span class="input">1000</span>
 					<i class="icon-live"></i>
 				</div>
 				<span class="symbol"><i class="multiply"></i></span>
 				<div class="col">
 					<span class="title">Total LIVE frozen</span>
-					<input type="text" value="68,620,720.93" placeholder="1000" />
+					<span class="input">68,620,720.93</span>
 					<i class="icon-live"></i>
 				</div>
 				<span class="symbol"><i class="divide"></i></span>
 				<div class="col total-divs">
 					<span class="title">Available Dividends</span>
-					<input type="text" value="20,204,842.46" />
+					<span class="input">20,204,842.46</span>
 					<i class="icon-trx"></i>
 				</div>
 			</div>
 			<div class="total">
 				<label>You will Receive</label>
 				<span class="amount"><i class="icon-trx"></i>235.12</span>
-				<button class="invest-btn"><span>Invest</span></button>
+				<a href="https://trontrade.io/" target="_blank" class="invest-btn"><span>Invest</span></a>
 			</div>
 		</div>
 		<div class="block md current-divs">
@@ -229,45 +235,21 @@
 				</tr>
 			  </tbody>
 			</table>
-			
-			
-			
-			
-			
-			
-			
-			
-			<!--
-			<div class="table">
-				<div class="thead">
-					<div class="th date">Date</div>
-					<div class="th profit">Profit %</div>
-					<div class="th divs">Available Dividends</div>
-					<div class="th ante">ANTE Holdings</div>
-					<div class="th live">LIVE Holdings</div>
-					<div class="th income">Income</div>
-				</div>
-				<div class="tbody">
-					<div class="tr">
-						<div class="td date">06.02.19</div>
-						<div class="td profit">0.1x</div>
-						<div class="td divs">40,408,842.12</div>
-						<div class="td ante">250,000</div>
-						<div class="td live">0</div>
-						<div class="td income"><i class="icon-trx"></i>235.12</div>
-					</div>
-					<div class="tr">
-						<div class="td date">06.02.19</div>
-						<div class="td profit">0.1x</div>
-						<div class="td divs">40,408,842.12</div>
-						<div class="td ante">250,000</div>
-						<div class="td live">0</div>
-						<div class="td income"><i class="icon-trx"></i>235.12</div>
-					</div>
-				</div>
-			</div>
-			-->
 		</div>
+	</div>
+</div>
+
+<div class="footer">
+	<div class="content">
+		<div class="contact">
+			<label>Contact Us</label>
+			<a href="mailto:info@antescan.live">info@antescan.live</a>
+		</div>
+		<div class="donate">
+			<label>Donate</label>
+			TRX: <span class="address">TDBq8e8dqopFu6kZYupXNAfWmBvfLPtCVX<span class="tooltip"><span class="title">Donate Tron</span><span class="addrs">TDBq8e8dqopFu6kZYupXNAfWmBvfLPtCVX</span><span class="qr"></span></span>
+		</div>
+		<div class="copyrights">© 2019 AnteScan</div>
 	</div>
 </div>
 

@@ -51,6 +51,66 @@ a {
 	font-weight: 700;
 }
 
+.content .row .block span.info {
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	display: block;
+	width: 16px;
+	height: 15px;
+	padding-top: 1px;
+	text-align: center;
+	font-size: 12px;
+	color: #333;
+	font-weight: 700;
+	font-family: Times New Roman;
+	font-style: italic;
+	border-radius: 50%;
+	outline: none;
+	cursor: pointer;
+	background: #a4a5a4;
+}
+
+.content .row .block span.info span.tooltip {
+	position: absolute;
+	bottom: 24px;
+	right: -10px;
+	display: none;
+	width: 160px;
+	padding: 6px 10px;
+	text-align: center;
+	font-size: 13px;
+	line-height: 1.1;
+	font-style: normal;
+	font-weight: normal;
+	cursor: default;
+	color: #333;
+	font-family: 'Roboto', Helvetica, Arial, Tahoma, Verdana;
+	background: #FFF;
+	border-radius: 3px;
+	box-shadow: 0 6px 12px rgba(0,0,0,0.8);
+}
+
+.content .row .block span.info:hover {
+	background: #FFF;
+}
+
+.content .row .block span.info:hover span.tooltip {
+	display: block;
+}
+
+.content .row .block span.info span.tooltip:before {
+	position: absolute;
+	bottom: -5px;
+	right: 13px;
+	width: 0;
+	height: 0;
+	content:'';
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #FFF;
+}
+
 .content .row .xs {
 	width: calc(25% - 40px);
 }
@@ -63,9 +123,10 @@ a {
 	width: calc(75% - 40px);
 }
 
-.content .row .platform .logo {
+.content .row .platform a.logo {
 	width: 100%;
 	height: 48px;
+	outline: none;
 	background: url(../img/tb-logo.svg) no-repeat center;
 	background-size: 180px auto;
 }
@@ -128,19 +189,38 @@ a {
 	text-transform: uppercase;
 }
 
+.content .row .holdings .form .col span.error-message {
+	display: none;
+	padding-top: 4px;
+	width: 100%;
+	line-height: 1.0;
+	color: #f81f1f;
+	font-size: 13px;
+}
+
+.content .row .holdings .form .error span.error-message {
+	display: flex;
+}
+
 .content .row .holdings .form .col input {
 	display: flex;
 	width: 100%;
-	height: 30px;
-	padding-left: 30px;
+	height: 32px;
+	padding: 0 0 0 30px;
 	align-items: center;
 	color: #1d1b1c;
 	border: 0;
+	line-height: 32px;
 	font-size: 16px;
 	border-radius: 2px;
 	background: #FFF;
 	outline: none;
 	box-shadow: inset 0 2px 2px rgba(0,0,0,0.35);
+}
+
+.content .row .holdings .form .error input {
+	color: #333;
+	background: rgba(248,31,31,1.0);
 }
 
 .content .row .holdings .form .blank span.title {
@@ -237,19 +317,15 @@ a {
 	min-height: 220px;
 }
 
-.content .row .current-price {
-	overflow: hidden;
-}
-
 .content .row .current-price:before {
 	position: absolute;
-	right: -170px;
-	bottom: -170px;
+	right: 0;
+	bottom: 0;
 	display: block;
 	z-index: 1;
 	content:'';
-	width: 340px;
-	height: 340px;
+	width: 170px;
+	height: 170px;
 	opacity: 0.25;
 	background: url('../img/icon-ante.svg') no-repeat;
 	background-size: 340px;
@@ -297,7 +373,7 @@ a {
 .content .row .current-price .percent span.up,
 .content .row .current-price .percent span.down {
 	min-width: 44px;
-	padding: 2px 0;
+	padding: 2px 4px;
 	text-align: center;
 	border-radius: 2px;
 }
@@ -456,14 +532,15 @@ a {
 	color: #a4a5a4;
 }
 
-.content .row .calculator .form .col input {
+.content .row .calculator .form .col span.input {
 	display: flex;
 	width: 100%;
-	height: 30px;
-	padding-left: 30px;
+	height: 32px;
+	padding: 0 0 0 30px;
 	align-items: center;
 	color: #1d1b1c;
 	border: 0;
+	line-height: 32px;
 	font-size: 16px;
 	border-radius: 2px;
 	background: #b3b3b3;
@@ -471,7 +548,7 @@ a {
 	box-shadow: inset 0 2px 2px rgba(0,0,0,0.35);
 }
 
-.content .row .calculator .form .total-divs input {
+.content .row .calculator .form .total-divs span.input {
 	font-weight: 700;
 }
 
@@ -489,7 +566,7 @@ a {
 
 .content .row .calculator .total label,
 .content .row .calculator .total span.amount,
-.content .row .calculator .total button.invest-btn {
+.content .row .calculator .total a.invest-btn {
 	position: relative;
 	z-index: 2;
 }
@@ -532,12 +609,14 @@ a {
 	border-radius: 0 0 3px 3px;
 }
 
-.content .row .calculator .total button.invest-btn {
+.content .row .calculator .total a.invest-btn {
 	position: relative;
 	display: flex;
 	margin-top: 5px;
 	width: calc(30% - 20px);
 	height: 50px;
+	align-items: center;
+	text-decoration: none;
 	justify-content: center;
 	color: #292628;
 	font-weight: 700;
@@ -550,12 +629,12 @@ a {
 	cursor: pointer;
 }
 
-.content .row .calculator .total button.invest-btn span {
+.content .row .calculator .total a.invest-btn span {
 	position: relative;
 	z-index: 2;
 }
 
-.content .row .calculator .total button.invest-btn:before {
+.content .row .calculator .total a.invest-btn:before {
 	position: absolute;
 	display: block;
 	left: 0;
@@ -567,12 +646,12 @@ a {
 	background: #19f137;
 }
 
-.content .row .calculator .total button:hover.invest-btn:before {
+.content .row .calculator .total a:hover.invest-btn:before {
 	width: 100%;
 	transition: all 0.5s ease-in-out;
 }
 
-.content .row .calculator .total button.invest-btn:active {
+.content .row .calculator .total a.invest-btn:active {
 	background: #0cc127;
 }
 
@@ -652,11 +731,11 @@ a {
 }
 
 .content .row .current-divs .pool-row .live-pool {
-	border-bottom: 2px solid #eb4d5c;
+	border-bottom: 2px solid #f81f1f;
 }
 
 .content .row .current-divs .pool-row .live-pool span.sub-title {
-	color: #eb4d5c;
+	color: #f81f1f;
 }
 
 .content .row .current-divs .total-pool {
@@ -779,10 +858,129 @@ a {
 	background: #171c29;
 }
 
-@media screen and (max-width: 1180px) {
+.footer {
+	background: #050505;
+}
+
+.footer .content {
+	margin: 0 auto;
+	width: 1160px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 30px 0;
+	font-size: 12px;
+	color: #67696b;
+}
+
+.footer .content .contact,
+.footer .content .copyrights {
+	width: 30%;
+}
+
+.footer .content .copyrights {
+	text-align: right;
+}
+
+.footer .content .donate {
+	width: 40%;
+	text-align: center;
+}
+
+.footer .content .donate span.address {
+	position: relative;
+	cursor: pointer;
+	outline: none;
+}
+
+.footer .content .donate span.address:hover {
+	color: #FFF;
+}
+
+.footer .content .donate span.address span.tooltip {
+	position: absolute;
+	bottom: 24px;
+	right: calc(50% - 160px);
+	display: none;
+	width: 320px;
+	padding: 0 0 30px 0;
+	justify-content: center;
+	line-height: 1.1;
+	cursor: default;
+	color: #333;
+	font-family: 'Roboto', Helvetica, Arial, Tahoma, Verdana;
+	background: #FFF;
+	border-radius: 3px;
+	box-shadow: 0 6px 12px rgba(0,0,0,0.8);
+}
+
+.footer .content .donate span.address:hover span.tooltip {
+	display: block;
+}
+
+.footer .content .donate span.address span.tooltip span.title,
+.footer .content .donate span.address span.tooltip span.addrs,
+.footer .content .donate span.address span.tooltip span.qr {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.footer .content .donate span.address span.tooltip span.title {
+	padding: 15px 0;
+	font-size: 13px;
+	font-weight: 700;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.footer .content .donate span.address span.tooltip span.addrs {
+	padding: 20px 0;
+	font-weight: 700;
+	font-size: 14px;
+	color: #000;
+}
+
+.footer .content .donate span.address span.tooltip span.qr {
+	height: 128px;
+	background: url('../img/trx-address.png') no-repeat center;
+}
+
+.footer .content .donate span.address span.tooltip:before {
+	position: absolute;
+	bottom: -5px;
+	right: 50%;
+	width: 0;
+	height: 0;
+	content:'';
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #FFF;
+}
+
+.footer .content .contact label,
+.footer .content .donate label {
+	display: block;
+	padding-bottom: 4px;
+	color: #FFF;
+}
+
+.footer .content .contact a {
+	color: #18ef36;
+	text-decoration: underline;
+}
+
+.footer .content .contact a:hover {
+	text-decoration: none;
+}
+
+@media screen and (max-width: 1190px) {
 	.content {
 		padding: 30px 5px;
 		width: calc(100% - 10px);
+	}
+	
+	.footer .content {
+		margin: 0 15px;
+		width: calc(100% - 30px);
 	}
 }
 
@@ -822,16 +1020,40 @@ a {
 
 @media screen and (max-width: 768px) {
 	.content .row .platform,
-	.content .row .net-worth,
 	.content .row .current-price,
-	.content .row .graph {
+	.content .row .graph,
+	.content .row .platform {
 		order: 1;
 		width: calc(50% - 40px);
 	}
 	
-	.content .row .holdings {
+	.content .row .platform {
 		width: calc(100% - 40px);
+	}
+	
+	.content .row .holdings {
+		order: 2;
+	}
+	
+	.content .row .net-worth {
 		order: 3;
+	}
+	
+	.content .row .holdings,
+	.content .row .net-worth {
+		width: calc(50% - 40px);
+	}
+	
+	.footer .content .contact,
+	.footer .content .copyrights {
+		order: 2;
+		width: 50%;
+	}
+	
+	.footer .content .donate {
+		order: 1;
+		width: 100%;
+		padding-bottom: 20px;
 	}
 }
 
@@ -862,8 +1084,13 @@ a {
 	.content .row .platform,
 	.content .row .net-worth,
 	.content .row .graph,
-	.content .row .current-price {
+	.content .row .current-price,
+	.content .row .holdings	{
 		width: calc(100% - 40px);
+	}
+	
+	.content .row .holdings {
+		order: 2;
 	}
 	
 	.content .row .calculator .form {
@@ -871,11 +1098,28 @@ a {
 	}
 	
 	.content .row .calculator .form .col {
+		margin: 5px;
 		width: calc(90% - 10px);
+	}
+	
+	.content .row .calculator .form .col span.title {
+		width: calc(40% - 10px);
+		min-height: 32px;
+		padding-right: 10px;
+	}
+	
+	.content .row .calculator .form .col span.input {
+		width: calc(60% - 30px);
+	}
+	
+	.content .row .calculator .form .col i {
+		top: 12px;
+		left: calc(40% + 7px);
 	}
 	
 	.content .row .calculator .form .symbol {
 		width: 10%;
+		padding-top: 20px;
 	}
 	
 	.content .row .calculator .total span.amount {
@@ -883,7 +1127,7 @@ a {
 		padding-top: 5px;
 	}
 	
-	.content .row .calculator .total button.invest-btn {
+	.content .row .calculator .total a.invest-btn {
 		margin-top: 0;
 	}
 	
