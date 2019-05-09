@@ -95,7 +95,8 @@ a {
 	background: #FFF;
 }
 
-.content .row .block span.info:hover span.tooltip {
+.content .row .block span.info:hover span.tooltip,
+.content .row .block span.info:active span.tooltip {
 	display: block;
 }
 
@@ -913,7 +914,8 @@ a {
 	box-shadow: 0 6px 12px rgba(0,0,0,0.8);
 }
 
-.footer .content .donate span.address:hover span.tooltip {
+.footer .content .donate span.address:hover span.tooltip,
+.footer .content .donate span.address:active span.tooltip {
 	display: block;
 }
 
