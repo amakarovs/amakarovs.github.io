@@ -3,19 +3,44 @@ html, body {
 	height: 100%;
 	min-width: 320px;
 	font-size: 14px;
-	background: url('../img/texture-dark.svg') repeat center #0c0e15;
-	background-size: 76px auto;
 }
 
 a {
 	cursor: pointer;
 }
 
+.wrap {
+	background: url('../img/texture-dark.svg') repeat center #0c0e15;
+	background-size: 76px auto;
+}
 
 .content {
 	margin: 0 auto;
 	width: 1180px;
-	padding: 30px 0;
+	position: relative;
+	padding: 30px 0 30px 0;
+}
+
+.content button.theme-btn {
+	position: absolute;
+	top: 10px;
+	right: 18px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	padding: 0;
+	border-radius: 50%;
+	border: none;
+	outline: none;
+	background: #FFF;
+}
+
+.content button.theme-btn i.icon-moon {
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url('../img/icon-moon.svg') no-repeat center;
+	background-size: 24px;
 }
 
 .content .row {
@@ -71,6 +96,10 @@ a {
 	background: #a4a5a4;
 }
 
+.day-mode .content .row .block span.info {
+	background: #e3e5e9;
+}
+
 .content .row .block span.info span.tooltip {
 	position: absolute;
 	bottom: 24px;
@@ -91,8 +120,19 @@ a {
 	box-shadow: 0 6px 12px rgba(0,0,0,0.8);
 }
 
+.day-mode .content .row .block span.info span.tooltip {
+	color: #FFF;
+	background: #000;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
 .content .row .block span.info:hover {
 	background: #FFF;
+}
+
+.day-mode .content .row .block span.info:hover {
+	color: #333;
+	background: #d5d8dd;
 }
 
 .content .row .block span.info:hover span.tooltip,
@@ -110,6 +150,10 @@ a {
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 	border-top: 5px solid #FFF;
+}
+
+.day-mode .content .row .block span.info span.tooltip:before {
+	border-top: 5px solid #000;
 }
 
 .content .row .xs {
@@ -137,9 +181,17 @@ a {
 	color: #a4a5a4;
 }
 
+.day-mode .content .row .platform .cc {
+	color: #aeb6bc;
+}
+
 .content .row .platform .cc .amount {
 	font-weight: 700;
 	color: #1af135;
+}
+
+.day-mode .content .row .platform .cc .amount {
+	color: #1070e0;
 }
 
 .content .row .holdings .form {
@@ -190,6 +242,10 @@ a {
 	text-transform: uppercase;
 }
 
+.day-mode .content .row .holdings .form .col span.title {
+	color: #aeb6bc;
+}
+
 .content .row .holdings .form .col span.error-message {
 	display: none;
 	padding-top: 4px;
@@ -224,6 +280,18 @@ a {
 	background: rgba(248,31,31,1.0);
 }
 
+.day-mode .content .row .holdings .form .col input {
+	color: #1d1b1c;
+	background: #f0f2f4;
+	box-shadow: inset 0 2px 2px rgba(0,0,0,0.05);
+}
+
+.day-mode .content .row .holdings .form .error input {
+	color: #333;
+	background: rgba(248,31,31,0.3);
+	box-shadow: inset 0 2px 2px rgba(248,31,31,0.3);
+}
+
 .content .row .holdings .form .blank span.title {
 	color: #5b595b;
 	text-transform: capitalize;
@@ -236,8 +304,21 @@ a {
 	background: #2d303a;
 }
 
+.day-mode .content .row .holdings .form .blank span.title {
+	color: #aeb6bc;
+}
+
+.day-mode .content .row .holdings .form .blank input {
+	color: #a6abb0;
+	background: #d7dbde;
+}
+
 .content .row .holdings .form .blank i {
 	background: #5b595b;
+}
+
+.day-mode .content .row .holdings .form .blank i {
+	background: #a6abb0;
 }
 
 .content .row .holdings .form .save {
@@ -263,6 +344,11 @@ a {
 	cursor: pointer;
 }
 
+.day-mode .content .row .holdings .form .save button.submit {
+	color: #FFF;
+	background: #1070e0;
+}
+
 .content .row .holdings .form .save button.submit span {
 	position: relative;
 	z-index: 2;
@@ -280,6 +366,10 @@ a {
 	background: #19f137;
 }
 
+.day-mode .content .row .holdings .form .save button.submit:before {
+	background: #137df8;
+}
+
 .content .row .holdings .form .save button:hover.submit:before {
 	width: 100%;
 	transition: all 0.5s ease-in-out;
@@ -287,6 +377,10 @@ a {
 
 .content .row .holdings .form .save button.submit:active {
 	background: #0cc127;
+}
+
+.day-mode .content .row .holdings .form .save button.submit:active {
+	background: #137df8;
 }
 
 .content .row .net-worth .amount {
@@ -308,14 +402,73 @@ a {
 	background-size: 16px auto;
 }
 
+.day-mode .content .row .net-worth .amount i.icon-trx {
+	background: url('../img/icon-trx-dark.svg') no-repeat;
+	background-size: 16px auto;
+}
+
 .content .row .net-worth .total-usd {
 	padding: 12px 10px 6px 10px;
 	font-weight: 700;
 	color: #1af135;
 }
 
+.day-mode .content .row .net-worth .total-usd {
+	color: #137df8;
+}
+
 .content .row .graph {
+	width: calc(75% - 60px);
+	position: relative;
+	padding: 20px;
 	min-height: 220px;
+}
+
+.content .row .graph .popup {
+	position: absolute;
+	display: block;
+	width: 160px;
+	padding: 6px 0;
+	text-align: left;
+	font-size: 13px;
+	line-height: 1.1;
+	font-style: normal;
+	font-weight: normal;
+	cursor: default;
+	color: #333;
+	font-family: 'Roboto', Helvetica, Arial, Tahoma, Verdana;
+	background: #FFF;
+	border-radius: 3px;
+	box-shadow: 0 6px 12px rgba(0,0,0,0.8);
+}
+
+.day-mode .content .row .graph .popup {
+	box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.content .row .graph .popup span.date {
+	display: block;
+	width: calc(100% - 20px);
+	font-size: 15px;
+	font-weight: 700;
+	padding: 0 10px 6px 10px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.day-mode .content .row .graph .popup span.date {
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.content .row .graph .popup span.price,
+.content .row .graph .popup span.volume {
+	display: block;
+	width: calc(100% - 20px);
+	padding: 6px 10px 0 10px;
+}
+
+.content .row .graph .popup span.price span.title,
+.content .row .graph .popup span.volume span.title {
+	font-weight: 700;
 }
 
 .content .row .current-price:before {
@@ -330,6 +483,10 @@ a {
 	opacity: 0.25;
 	background: url('../img/icon-ante.svg') no-repeat;
 	background-size: 340px;
+}
+
+.day-mode .content .row .current-price:before {
+	opacity: 0.05;
 }
 
 .content .row .current-price .price {
@@ -352,6 +509,11 @@ a {
 	background-size: 21px auto;
 }
 
+.day-mode .content .row .current-price .price i.icon-trx {
+	background: url('../img/icon-trx-dark.svg') no-repeat;
+	background-size: 21px auto;
+}
+
 .content .row .current-price .total-usd,
 .content .row .current-price .percent {
 	z-index: 2;
@@ -363,6 +525,10 @@ a {
 .content .row .current-price .total-usd {
 	padding: 2px 10px;
 	color: #1af135;
+}
+
+.day-mode .content .row .current-price .total-usd {
+	color: #137df8;
 }
 
 .content .row .current-price .percent {
@@ -384,6 +550,11 @@ a {
 	background: #1af135;
 }
 
+.day-mode .content .row .current-price .percent span.up {
+	color: #FFF;
+	background: #137df8;
+}
+
 .content .row .current-price .percent span.down {
 	color: #FFF;
 	background: #f81f1f;
@@ -394,6 +565,46 @@ a {
 	flex-wrap: wrap;
 	width: calc(50% - 20px);
 	padding: 0;
+}
+
+.content .row .calculator:before {
+	display: block;
+	z-index: 1;
+	content:'';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 155px;
+	background-image: linear-gradient(#131722, #0f864c);
+	border-radius: 0 0 3px 3px;
+}
+
+.day-mode .content .row .calculator:before {
+	background-image: linear-gradient(#e4e7ea, #FFF);
+}
+
+.content .row .calculator:after {
+	display: block;
+	z-index: 2;
+	content:'';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 155px;
+	opacity: 0.1;
+	background: url('../img/texture-light.svg') repeat center;
+	background-size: 76px auto;
+	border-radius: 0 0 3px 3px;
+}
+
+.content .row .calculator label,
+.content .row .calculator .btn-group,
+.content .row .calculator .form,
+.content .row .calculator .total {
+	position: relative;
+	z-index: 3;
 }
 
 .content .row .calculator label {
@@ -424,6 +635,18 @@ a {
 .content .row .calculator .btn-group button.active {
 	color: #000;
 	background: #FFF;
+}
+
+.day-mode .content .row .calculator .btn-group button {
+	color: #000;
+	background: #f0f2f4;
+	box-shadow: inset 0 2px 2px rgba(0,0,0,0.1);
+}
+
+.day-mode .content .row .calculator .btn-group button.active {
+	color: #FFF;
+	background: #137df8;
+	box-shadow: inset 0 2px 2px rgba(0,0,0,0.1);
 }
 
 .content .row .calculator .btn-group button:first-child {
@@ -469,7 +692,7 @@ a {
 	content:'';
 	width: 2px;
 	height: 17px;
-	background: #b3b3b3;
+	background: #aeb6bc;
 }
 
 .content .row .calculator .form .symbol i.multiply:before,
@@ -533,6 +756,10 @@ a {
 	color: #a4a5a4;
 }
 
+.day-mode .content .row .calculator .form .col span.title {
+	color: #aeb6bc;
+}
+
 .content .row .calculator .form .col span.input {
 	display: flex;
 	width: 100%;
@@ -549,6 +776,12 @@ a {
 	box-shadow: inset 0 2px 2px rgba(0,0,0,0.35);
 }
 
+.day-mode .content .row .calculator .form .col span.input {
+	color: #1d1b1c;
+	background: #f0f2f4;
+	box-shadow: inset 0 2px 2px rgba(0,0,0,0.05);
+}
+
 .content .row .calculator .form .total-divs span.input {
 	font-weight: 700;
 }
@@ -560,9 +793,6 @@ a {
 	position: relative;
 	width: 100%;
 	padding: 0 0 35px 0;
-	overflow: hidden;
-	background-image: linear-gradient(#131722, #0f864c);
-	border-radius: 0 0 3px 3px;
 }
 
 .content .row .calculator .total label,
@@ -597,17 +827,9 @@ a {
 	border-radius: 0;
 }
 
-.content .row .calculator .total:after {
-	display: block;
-	z-index: 1;
-	content:'';
-	position: absolute;
-	width: 100%;
-	height: 155px;
-	opacity: 0.1;
-	background: url('../img/texture-light.svg') repeat center;
-	background-size: 76px auto;
-	border-radius: 0 0 3px 3px;
+.day-mode .content .row .calculator .total span.amount i.icon-trx {
+	background: url('../img/icon-trx-dark.svg') no-repeat center;
+	background-size: 100%;
 }
 
 .content .row .calculator .total a.invest-btn {
@@ -630,6 +852,11 @@ a {
 	cursor: pointer;
 }
 
+.day-mode .content .row .calculator .total a.invest-btn {
+	color: #FFF;
+	background: #1070e0;
+}
+
 .content .row .calculator .total a.invest-btn span {
 	position: relative;
 	z-index: 2;
@@ -647,6 +874,10 @@ a {
 	background: #19f137;
 }
 
+.day-mode .content .row .calculator .total a.invest-btn:before {
+	background: #137df8;
+}
+
 .content .row .calculator .total a:hover.invest-btn:before {
 	width: 100%;
 	transition: all 0.5s ease-in-out;
@@ -654,6 +885,10 @@ a {
 
 .content .row .calculator .total a.invest-btn:active {
 	background: #0cc127;
+}
+
+.day-mode .content .row .calculator .total a.invest-btn:active {
+	background: #137df8;
 }
 
 .content .row .current-divs {
@@ -677,10 +912,18 @@ a {
 	justify-content: flex-end;
 }
 
+.day-mode .content .row .current-divs span.countdown {
+	color: #aeb6bc;
+}
+
 .content .row .current-divs span.countdown span.left {
 	margin-left: 6px;
 	color: #FFF;
 	font-weight: 700;
+}
+
+.day-mode .content .row .current-divs span.countdown span.left {
+	color: #000;
 }
 
 .content .row .current-divs .pool-row {
@@ -719,6 +962,92 @@ a {
 	background-size: 16px auto;
 }
 
+.day-mode .content .row .current-divs .pool-row .pool span.amount i.icon-trx {
+	background: url('../img/icon-trx-dark.svg') no-repeat;
+	background-size: 16px auto;
+}
+
+.content .row .current-divs .pool-row .pool span.amount span.info {
+	position: relative;
+	right: inherit;
+	top: inherit;
+	margin-left: 2px;
+	display: flex;
+	width: 16px;
+	height: 15px;
+	padding-top: 1px;
+	justify-content: center;
+	font-size: 12px;
+	color: #333;
+	font-weight: 700;
+	font-family: Times New Roman;
+	font-style: italic;
+	border-radius: 50%;
+	outline: none;
+	cursor: pointer;
+	background: #a4a5a4;
+}
+
+.day-mode .content .row .current-divs .pool-row .pool span.amount span.info {
+	background: #e3e5e9;
+}
+
+.content .row .current-divs .pool-row .pool span.amount span.info span.tooltip {
+	position: absolute;
+	bottom: 24px;
+	right: -10px;
+	display: none;
+	width: 160px;
+	padding: 6px 10px;
+	text-align: center;
+	font-size: 13px;
+	line-height: 1.1;
+	font-style: normal;
+	font-weight: normal;
+	cursor: default;
+	color: #333;
+	font-family: 'Roboto', Helvetica, Arial, Tahoma, Verdana;
+	background: #FFF;
+	border-radius: 3px;
+	box-shadow: 0 6px 12px rgba(0,0,0,0.8);
+}
+
+.day-mode .content .row .current-divs .pool-row .pool span.amount span.info span.tooltip {
+	color: #FFF;
+	background: #000;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.content .row .current-divs .pool-row .pool span.amount span.info:hover {
+	background: #FFF;
+}
+
+.day-mode .content .row .current-divs .pool-row .pool span.amount span.info:hover {
+	color: #333;
+	background: #d5d8dd;
+}
+
+.content .row .current-divs .pool-row .pool span.amount span.info:hover span.tooltip,
+.content .row .current-divs .pool-row .pool span.amount span.info:active span.tooltip {
+	display: block;
+}
+
+.content .row .current-divs .pool-row .pool span.amount span.info span.tooltip:before {
+	position: absolute;
+	bottom: -5px;
+	right: 13px;
+	width: 0;
+	height: 0;
+	content:'';
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #FFF;
+}
+
+.day-mode .content .row .current-divs .pool-row .pool span.amount span.info span.tooltip:before {
+	border-top: 5px solid #000;
+}
+
 .content .row .current-divs .pool-row .pool span.sub-title {
 	padding-top: 4px;
 }
@@ -727,8 +1056,16 @@ a {
 	border-bottom: 2px solid #18ef36;
 }
 
+.day-mode .content .row .current-divs .pool-row .ante-pool {
+	border-bottom: 2px solid #1070e0;
+}
+
 .content .row .current-divs .pool-row .ante-pool span.sub-title {
 	color: #18ef36;
+}
+
+.day-mode .content .row .current-divs .pool-row .ante-pool span.sub-title {
+	color: #1070e0;
 }
 
 .content .row .current-divs .pool-row .live-pool {
@@ -769,6 +1106,11 @@ a {
 	background-size: 21px auto;
 }
 
+.day-mode .content .row .current-divs .total-pool span.amount i.icon-trx {
+	background: url('../img/icon-trx-dark.svg') no-repeat;
+	background-size: 21px auto;
+}
+
 .content .row .grid {
 	width: calc(100% - 20px);
 	padding: 0;
@@ -804,6 +1146,18 @@ a {
 	background: #FFF;
 }
 
+.day-mode .content .row .grid .btn-group button.active {
+	color: #FFF;
+    background: #137df8;
+    box-shadow: inset 0 2px 2px rgba(0,0,0,0.1);
+}
+
+.day-mode .content .row .grid .btn-group button {
+	color: #000;
+    background: #f0f2f4;
+    box-shadow: inset 0 2px 2px rgba(0,0,0,0.1);
+}
+
 .content .row .grid .btn-group button:first-child {
 	border-radius: 2px 0 0 2px;
 }
@@ -824,6 +1178,10 @@ a {
 	background: #22252e;
 }
 
+.day-mode .content .row .grid table thead {
+	background: #e3e6e8;
+}
+
 .content .row .grid table thead tr th {
 	height: 33px;
 	padding: 17px 0 17px 20px;
@@ -838,8 +1196,16 @@ a {
 	cursor: pointer;
 }
 
+.day-mode .content .row .grid table tbody tr td {
+	border-top: 1px solid #f0f2f4;
+}
+
 .content .row .grid table tbody tr td.income {
 	color: #0ec629;
+}
+
+.day-mode .content .row .grid table tbody tr td.income {
+	color: #1070e0;
 }
 
 .content .row .grid table tbody tr td.income i.icon-trx {
@@ -855,12 +1221,25 @@ a {
 	background-size: 13px auto;
 }
 
+.day-mode .content .row .grid table tbody tr td.income i.icon-trx {
+	background: url('../img/icon-trx-dark.svg') no-repeat;
+	background-size: 13px auto;
+}
+
 .content .row .grid table tbody tr:hover {
 	background: #171c29;
 }
 
+.day-mode .content .row .grid table tbody tr:hover {
+	background: #fafafa;
+}
+
 .footer {
 	background: #050505;
+}
+
+.day-mode .footer {
+	background: #d5d9dc;
 }
 
 .footer .content {
@@ -871,6 +1250,10 @@ a {
 	padding: 30px 0;
 	font-size: 12px;
 	color: #67696b;
+}
+
+.day-mode .footer .content {
+	color: #000;
 }
 
 .footer .content .contact,
@@ -894,11 +1277,17 @@ a {
 }
 
 .footer .content .donate span.address:hover {
-	color: #FFF;
+	color: #18ef36;
+}
+
+.day-mode .footer .content .donate span.address,
+.day-mode .footer .content .donate span.address:hover {
+	color: #1070e0;
 }
 
 .footer .content .donate span.address span.tooltip {
 	position: absolute;
+	z-index: 4;
 	bottom: 24px;
 	right: calc(50% - 160px);
 	display: none;
@@ -912,6 +1301,10 @@ a {
 	background: #FFF;
 	border-radius: 3px;
 	box-shadow: 0 6px 12px rgba(0,0,0,0.8);
+}
+
+.day-mode .footer .content .donate span.address span.tooltip {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 
 .footer .content .donate span.address:hover span.tooltip,
@@ -932,6 +1325,10 @@ a {
 	font-size: 13px;
 	font-weight: 700;
 	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.day-mode .footer .content .donate span.address span.tooltip span.title {
+	border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
 .footer .content .donate span.address span.tooltip span.addrs {
@@ -965,13 +1362,44 @@ a {
 	color: #FFF;
 }
 
+.day-mode .footer .content .contact label,
+.day-mode .footer .content .donate label {
+	color: #000;
+}
+
 .footer .content .contact a {
 	color: #18ef36;
 	text-decoration: underline;
 }
 
+.day-mode .footer .content .contact a {
+	color: #1070e0;
+}
+
 .footer .content .contact a:hover {
 	text-decoration: none;
+}
+
+.day-mode {
+	background: #f0f2f4;
+}
+
+.day-mode .content .row .block {
+	margin: 8px;
+	color: #000;
+	background: #fff;
+	box-shadow: none;
+	border: 1px solid #e9ecef;
+}
+
+.day-mode .content .row .block:hover {
+	background: #FFF;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+}
+
+.day-mode .content .row .platform a.logo {
+	background: url(../img/tb-logo-dark.svg) no-repeat center;
+	background-size: 180px auto;
 }
 
 @media screen and (max-width: 1190px) {
@@ -1007,7 +1435,7 @@ a {
 	}
 	
 	.content .row .graph {
-		width: calc(66.67% - 40px);
+		width: calc(66.67% - 60px);
 	}
 	
 	.content .row .current-price {
@@ -1027,6 +1455,10 @@ a {
 	.content .row .platform {
 		order: 1;
 		width: calc(50% - 40px);
+	}
+	
+	.content .row .graph {
+		width: calc(50% - 60px);
 	}
 	
 	.content .row .platform {
