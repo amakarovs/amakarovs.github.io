@@ -15,6 +15,25 @@
 <div class="wrap day-mode">
 
 <div class="content">
+	<div class="currency-bar">
+		<a href="/" class="btn active">USD</a>
+		<ul>
+			<li><a href="/" class="currency">EUR</a></li>
+			<li><a href="/" class="currency">GBP</a></li>
+			<li><a href="/" class="currency">BTC</a></li>
+		</ul>
+	</div>
+	<div class="lng-bar">
+		<a href="/" class="lng uk"></a>
+		<ul>
+			<li><a href="/" class="lng fr"></a></li>
+			<li><a href="/" class="lng ge"></a></li>
+			<li><a href="/" class="lng pr"></a></li>
+			<li><a href="/" class="lng ru"></a></li>
+			<li><a href="/" class="lng sk"></a></li>
+			<li><a href="/" class="lng sp"></a></li>
+		</ul>
+	</div>
 	<button class="theme-btn"><i class="icon-moon"></i></button>
 	<div class="row">
 		<div class="block xs platform">
@@ -22,10 +41,10 @@
 			<a href="https://www.tronbet.io/?r=antescan" title="Tronbet.io - Best Blockchain Casino" class="logo"></a>
 			<span class="cc">Market Cap: <span class="amount">$44.579.662.2</span></span>
 		</div>
-		<div class="block md holdings">
+		<div class="block md holdings holdings-scroll">
 			<label>Your Holdings</label>
 			<div class="form">
-				<div class="col error">
+				<div class="col">
 					<span class="title">Ante</span>
 					<input type="text" value="1000" placeholder="1000" />
 					<span class="error-message">Wrong format</span>
@@ -63,11 +82,28 @@
 				<span class="volume"><span class="title">Volume:</span> $345,556.88</span>
 			</div>
 		</div>
+		<!-- Old html
 		<div class="block xs current-price">
 			<label>Current ANTE Price</label>
 			<span class="info">i<span class="tooltip">Average ANTE price based on data from TronTrade, TRXMarket and Biki exchanges</span></span>
 			<span class="price"><i class="icon-trx"></i>60</span>
 			<span class="total-usd">$0.72</span><span class="percent"><span class="up">+12%</span><span class="down">-1%</span></span>
+		</div>
+		 -->
+		
+		<div class="combined">
+			<div class="block xs current-price">
+				<label>Current ANTE Price</label>
+				<span class="info">i<span class="tooltip">Average ANTE price based on data from TronTrade, TRXMarket and Biki exchanges</span></span>
+				<span class="price"><i class="icon-trx"></i>60</span>
+				<span class="total-usd">$0.72</span><span class="percent"><span class="up">+12%</span><span class="down">-1%</span></span>
+			</div>
+			<div class="block xs burnt-ante">
+				<label>Burnt ANTE</label>
+				<a href="/" class="log">Burnt log</a>
+				<span class="price">1,083,293.5</span>
+				<span class="total-supply">Total supply:<span class="amount">100.000.000</span></span><span class="percent">Burnt:<span class="amount">1%</span></span>
+			</div>
 		</div>
 	</div>
 	<div class="row">
@@ -118,15 +154,18 @@
 			</div>
 			<div class="total">
 				<label>You will Receive</label>
-				<span class="amount"><i class="icon-trx"></i>235.12</span>
-				<a href="https://trontrade.io/" target="_blank" class="invest-btn"><span>Invest</span></a>
+				<span class="amount"><i class="icon-trx"></i>235.12<span class="fiat-amount">$70,456.99</span><span class="plus-btt"><i class="icon-btt"></i>235.12</span></span>
+				<a href="https://trontrade.io/" target="_blank" class="invest-btn"><span>Buy ANTE</span></a>
 			</div>
 		</div>
 		<div class="block md current-divs">
 			<label>Available Dividends</label><span class="countdown">Next Payout:<span class="left">02:10:45</span></span>
 			<div class="pool-row">
 				<div class="pool ante-pool">
-					<span class="amount"><i class="icon-trx"></i>20,204,842.46<span class="info">i<span class="tooltip">Included 15% from LIVE dividends pool</span></span></span>
+					<span class="amount">
+						<i class="icon-trx"></i>20,204,842.46<span class="info">i<span class="tooltip">Included 15% from LIVE dividends pool</span></span>
+						<span class="btt-divs"><i class="icon-btt"></i>20,204,842.46</span>
+					</span>
 					<span class="sub-title">ANTE Dividends Pool</span>
 				</div>
 				<div class="pool live-pool">
@@ -136,12 +175,44 @@
 			</div>
 			<div class="total-pool">
 				<label>Total Available Dividends</label>
-				<span class="amount"><i class="icon-trx"></i>40,408,842.12</span>
+				<span class="amount"><i class="icon-trx"></i>40,408,842.12<span class="btt-divs"><i class="icon-btt"></i>20,204,842.46</span></span>
 			</div>
 		</div>
 	</div>
 	<div class="row">
-		<div class="block grid">
+		<div class="block xs calculator tronscan-data">
+			<label>Earnings</label>
+			<span class="info">i<span class="tooltip">Included only ANTE token earnings.</span></span>
+			<div class="form">
+				<div class="col">
+					<span class="title">Wallet Address 1</span>
+					<input class="input" placeholder="Wallet Address" />
+					<i class="icon-trx"></i>
+				</div>
+				<div class="col">
+					<span class="title">Wallet Address 2</span>
+					<input class="input" placeholder="Wallet Address" />
+					<i class="icon-trx"></i>
+				</div>
+				<div class="col">
+					<span class="title">Wallet Address 3</span>
+					<input class="input" placeholder="Wallet Address" />
+					<i class="icon-trx"></i>
+				</div>
+				<div class="col save">
+					<button class="submit"><span>Save</span></button>
+				</div>
+			</div>
+			<div class="total">
+				<label>Total Received</label>
+				<span class="amount"><i class="icon-trx"></i>11,983,235.12<span class="plus-btt"><i class="icon-btt"></i>235.12</span></span>
+				<span class="fiat-total">
+					<label>Total in USD</label>
+					<span class="amount">$145,945.99</span>
+				</span>
+			</div>
+		</div>
+		<div class="block lg grid">
 			<label>Dividends History</label>
 			<div class="btn-group">
 				<button class="active">Ante/Live</button>
@@ -155,7 +226,7 @@
 				  <th>Profit %</th>
 				  <th>Available Dividends</th>
 				  <th>ANTE Holdings</th>
-				  <th>LIVE Holdings</th>
+				  <th>Wallet Address</th>
 				  <th>Income</th>
 				</tr>
 			  </thead>
@@ -165,7 +236,15 @@
 				  <td>0.1x</td>
 				  <td>40,408,842.12</td>
 				  <td>250,000</td>
-				  <td>0</td>
+				  <td>TN7VS...xCHgc</td>
+				  <td class="income"><i class="icon-btt"></i>235.12</td>
+				</tr>
+				<tr>
+				  <td>06.02.19</td>
+				  <td>0.1x</td>
+				  <td>40,408,842.12</td>
+				  <td>250,000</td>
+				  <td>TN7VS...xCHgc</td>
 				  <td class="income"><i class="icon-trx"></i>235.12</td>
 				</tr>
 				<tr>
@@ -173,7 +252,7 @@
 				  <td>0.1x</td>
 				  <td>40,408,842.12</td>
 				  <td>250,000</td>
-				  <td>0</td>
+				  <td>TN7VS...xCHgc</td>
 				  <td class="income"><i class="icon-trx"></i>235.12</td>
 				</tr>
 				<tr>
@@ -181,7 +260,7 @@
 				  <td>0.1x</td>
 				  <td>40,408,842.12</td>
 				  <td>250,000</td>
-				  <td>0</td>
+				  <td>TN7VS...xCHgc</td>
 				  <td class="income"><i class="icon-trx"></i>235.12</td>
 				</tr>
 				<tr>
@@ -189,7 +268,7 @@
 				  <td>0.1x</td>
 				  <td>40,408,842.12</td>
 				  <td>250,000</td>
-				  <td>0</td>
+				  <td>TN7VS...xCHgc</td>
 				  <td class="income"><i class="icon-trx"></i>235.12</td>
 				</tr>
 				<tr>
@@ -197,7 +276,7 @@
 				  <td>0.1x</td>
 				  <td>40,408,842.12</td>
 				  <td>250,000</td>
-				  <td>0</td>
+				  <td>TN7VS...xCHgc</td>
 				  <td class="income"><i class="icon-trx"></i>235.12</td>
 				</tr>
 				<tr>
@@ -205,7 +284,7 @@
 				  <td>0.1x</td>
 				  <td>40,408,842.12</td>
 				  <td>250,000</td>
-				  <td>0</td>
+				  <td>TN7VS...xCHgc</td>
 				  <td class="income"><i class="icon-trx"></i>235.12</td>
 				</tr>
 				<tr>
@@ -213,7 +292,7 @@
 				  <td>0.1x</td>
 				  <td>40,408,842.12</td>
 				  <td>250,000</td>
-				  <td>0</td>
+				  <td>TN7VS...xCHgc</td>
 				  <td class="income"><i class="icon-trx"></i>235.12</td>
 				</tr>
 				<tr>
@@ -221,27 +300,25 @@
 				  <td>0.1x</td>
 				  <td>40,408,842.12</td>
 				  <td>250,000</td>
-				  <td>0</td>
+				  <td>TN7VS...xCHgc</td>
 				  <td class="income"><i class="icon-trx"></i>235.12</td>
 				</tr>
-				<tr>
+				<tr class="average">
 				  <td>06.02.19</td>
 				  <td>0.1x</td>
 				  <td>40,408,842.12</td>
 				  <td>250,000</td>
-				  <td>0</td>
-				  <td class="income"><i class="icon-trx"></i>235.12</td>
-				</tr>
-				<tr>
-				  <td>06.02.19</td>
-				  <td>0.1x</td>
-				  <td>40,408,842.12</td>
-				  <td>250,000</td>
-				  <td>0</td>
+				  <td>TN7VS...xCHgc</td>
 				  <td class="income"><i class="icon-trx"></i>235.12</td>
 				</tr>
 			  </tbody>
 			</table>
+			<ul class="pagination">
+				<li class="previous disabled"><a tabindex="0" role="button" aria-disabled="true">previous</a></li>
+				<li class="active"><a role="button" tabindex="0" aria-label="Page 1 is your current page" aria-current="page">1</a></li>
+				<li><a role="button" tabindex="0" aria-label="Page 2">2</a></li><li><a role="button" tabindex="0" aria-label="Page 3">3</a></li>
+				<li class="next"><a tabindex="0" role="button" aria-disabled="false">next</a></li>
+			</ul>
 		</div>
 	</div>
 </div>
@@ -258,6 +335,11 @@
 		</div>
 		<div class="copyrights">© 2019 AnteScan</div>
 	</div>
+</div>
+
+<div class="cookies">
+	We use cookies to give you the best and most relevant experience and optimize our website functionality. By using our website you confirm your acceptance of these cookies.
+	<a href="/" class="continue">Continue</a>
 </div>
 
 </div>
