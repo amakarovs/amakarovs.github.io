@@ -2483,7 +2483,7 @@ a {
 	opacity: 0.2;
 	background: url(../img/icon-ante-mining.svg) no-repeat;
 	background-size: 100%;
-	animation: icon-fly 5s linear infinite;
+	animation: icon-fly 12s linear infinite;
 }
 
 .mining .icon-live-fly1 {
@@ -2527,30 +2527,30 @@ a {
 }
 
 @-webkit-keyframes icon-fly {
-	0% {bottom: 100px; transform: rotate(0deg); opacity: 0.2;}
-	100% {bottom: 500px; transform: rotate(360deg); opacity: 0;}
+	0% {bottom: -40px; transform: rotate(0deg); opacity: 0.2;}
+	100% {bottom: calc(100% + 40px); transform: rotate(360deg); opacity: 0;}
 }
 
 @keyframes icon-fly {
-	0% {bottom: 100px; transform: rotate(0deg); opacity: 0.2;}
-	100% {bottom: 500px; transform: rotate(360deg); opacity: 0;}
+	0% {bottom: -40px; transform: rotate(0deg); opacity: 0.2;}
+	100% {bottom: calc(100% + 40px); transform: rotate(360deg); opacity: 0;}
 }
 
 .mining .icon-live-fly9,
 .mining .icon-live-fly10,
 .mining .icon-live-fly11,
 .mining .icon-live-fly12 {
-	animation: icon-fly-corner 5s linear infinite;
+	animation: icon-fly-corner 12s linear infinite;
 }
 
 @-webkit-keyframes icon-fly-corner {
-	0% {bottom: 0px; transform: rotate(0deg); opacity: 0.2;}
-	100% {bottom: 300px; transform: rotate(360deg); opacity: 0;}
+	0% {bottom: -40px; transform: rotate(0deg); opacity: 0.2;}
+	100% {bottom: calc(100% + 40px); transform: rotate(360deg); opacity: 0;}
 }
 
 @keyframes icon-fly-corner {
-	0% {bottom: 0px; transform: rotate(0deg); opacity: 0.2;}
-	100% {bottom: 300px; transform: rotate(360deg); opacity: 0;}
+	0% {bottom: -40px; transform: rotate(0deg); opacity: 0.2;}
+	100% {bottom: calc(100% + 40px); transform: rotate(360deg); opacity: 0;}
 }
 
 .mining .icon-live-fly9 {
