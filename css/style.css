@@ -879,6 +879,7 @@ a {
 }
 
 .content .row .burnt-ante .total-supply span.amount,
+.content .row .burnt-ante .total-supply span.amount a,
 .content .row .burnt-ante .percent span.amount {
 	display: block;
 	font-weight: 700;
@@ -2302,8 +2303,9 @@ a {
 .mining {
 	position: fixed;
 	display: flex;
-	width: 100%;
+	width: calc(100% - 40px);
 	height: 100%;
+	padding: 0 20px;
 	overflow: hidden;
 	align-items: center;
 	background-image: radial-gradient(circle at bottom center, #01f593, #131722);
@@ -2383,6 +2385,7 @@ a {
 
 .mining .content span.speed span.amount {
 	color: #01f593;
+	font-weight: 600;
 }
 
 .mining .content a.mine {
@@ -2476,8 +2479,8 @@ a {
 	display: block;
 	width: 40px;
 	height: 40px;
-	bottom: 100px;
-	opacity: 0;
+	bottom: -40px;
+	opacity: 0.2;
 	background: url(../img/icon-ante-mining.svg) no-repeat;
 	background-size: 100%;
 	animation: icon-fly 5s linear infinite;
