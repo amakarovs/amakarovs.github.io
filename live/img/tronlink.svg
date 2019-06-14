@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="177.992mm"
+   height="177.992mm"
+   viewBox="0 0 177.99201 177.992"
+   version="1.1"
+   id="svg826"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="tronlink.svg">
+  <defs
+     id="defs820" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.32"
+     inkscape:cx="303.22683"
+     inkscape:cy="304.53122"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata823">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-119.008)">
+    <path
+       style="fill:#6167bb;fill-opacity:1;stroke:none;stroke-width:0.66937321"
+       d="M 29.999682,119.00777 C 13.379704,119.00777 0,132.38749 0,149.00749 V 266.99977 C 0,283.61977 13.379704,297 29.999682,297 H 83.232539 L 28.362059,156.84215 177.992,183.66532 v -11.74088 -22.91695 -29.9992 h -29.95937 c -0.0137,-2e-5 -0.0272,-5.2e-4 -0.0408,-5.2e-4 z m 30.47562,56.42395 76.579718,63.13258 40.93698,-34.52968 v -7.10706 z M 51.881523,184.90659 96.665808,297 H 125.772 l 5.24205,-46.76407 z m 126.110477,36.60913 -23.07505,19.5554 23.07505,-4.11655 z m 0,28.65148 -34.1834,6.18412 L 138.93966,297 h 9.05214 c 16.61998,0 30.0002,-13.38023 30.0002,-30.00023 z"
+       id="rect2340"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
