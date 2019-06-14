@@ -1457,7 +1457,7 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
-	body {
+	.wrap {
 		min-width: 320px;
 		overflow: hidden;
 		overflow-y: auto;
