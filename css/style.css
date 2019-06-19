@@ -2314,11 +2314,46 @@ a {
 .mining a.close-popup {
 	position: absolute;
 	right: 0;
-	top: 0;
+	top: 60px;
+	z-index: 2;
 	display: flex;
 	width: 50px;
 	height: 50px;
 	outline: none;
+}
+
+.mined-info {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	display: table;
+	width: calc(100% - 40px);
+	height: 60px;
+	padding: 0 20px;
+	font-size: 14px;
+}
+
+.mined-info span.col {
+	width: 33.33%;
+	float: left;
+	color: #01f593;
+	padding: 14px 0 0 0;
+}
+
+.mined-info span.col label {
+	display: block;
+	font-weight: 600;
+	color: #FFF;
+}
+
+.mined-info span.col:nth-child(2) {
+	text-align: center;
+}
+
+
+.mined-info span.col:last-child {
+	text-align: right;
 }
 
 .mining a.close-popup:before,
