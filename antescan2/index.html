@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>antescan.live</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+<!-- Modal -->
+<div class="modal fade deposit-popup" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel"><i class="icon-live"></i>LIVE Wallet Balance</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<span class="amount"><i class="icon-trx"></i>0</span>
+				<span class="input">
+					<i class="icon-trx"></i>
+					<input type="text" value="1000" />
+				</span>
+				<div class="btns">
+					<button class="deposit" />Deposit</button><button class="withdraw" />Withdraw</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="wrap">
+
+	<header>
+		<div class="container-fluid top-nav">
+			<div class="row">
+				<div class="col-6 logo">
+					<a href=""></a>
+				</div>
+				<div class="col-6 wallet">
+					<span class="address">TNirp...1y8Vq</span><button class="burger"><i class="bar"></i></button>
+					<ul class="sub-nav">
+						<li><a href="">x</a></li>
+						<li><a href="">x</a></li>
+						<li><a href="">x</a></li>
+						<li><a href="">x</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<section>
+		<div class="container-fluid content">
+			<div class="row">
+				<div class="col-12 net-worth">
+					<label>Net Worth</label>
+					<span class="amount"><i class="icon-trx"></i>2,520,410</span>
+					<span class="total-usd">$0.72</span><span class="percent"><span class="up">+12%</span><span class="down">-1%</span></span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 earnings">
+					<label>Dividend Earnings</label>
+					<span class="amount"><i class="icon-trx"></i>1,554,326.99</span>
+					<span class="amount"><i class="icon-btt"></i>1,554,326.99</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<nav>
+		<div class="container-fluid navigation">
+			<div class="row">
+				<div class="col-12">
+					<a href="" class="add-btn"><i class="icon-plus"></i></a>
+					<ul>
+						<li><a href="/"><i class="icon-home"></i>Home</a></li>
+						<li><a href="/"><i class="icon-divs"></i>Dividends</a></li>
+						<li><a href="/"><i class="icon-goals"></i>Goals</a></li>
+						<li><a href="/"><i class="icon-mining"></i>Mining</a></li>
+						<li><a href="/"><i class="icon-platform"></i>Platform</a></li>
+						<li><a href="/"><i class="icon-news"></i>News</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!--
+	<header>
+		<div class="container-fluid tb-nav">
+			<div class="row">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-6 logo">
+					<a href="tronbet.io" class="tronbet"></a>
+					<div class="dropdown">
+						<a class="btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							English
+						</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="#">English</a>
+							<a class="dropdown-item" href="#">Pусский</a>
+							<a class="dropdown-item" href="#">Deutsch</a>
+							<a class="dropdown-item" href="#">简体中文</a>
+							<a class="dropdown-item" href="#">Français</a>
+							<a class="dropdown-item" href="#">한국어</a>
+							<a class="dropdown-item" href="#">Español</a>
+							<a class="dropdown-item" href="#">Português</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-6 col-lg-6 col-md-7 col-12 main-nav">
+					<button class="burger"><i class="bar"></i></button>
+					<ul class="tb-main-nav">
+						<li><a href="#">Home</a></li>
+						<li>
+							<div class="dropdown">
+								<a class="btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Dapps
+								</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+									<label><i class="icon-ante"></i>Ante</label>
+									<a class="dropdown-item" href="#">Dice</a>
+									<a class="dropdown-item" href="#">Ring</a>
+									<a class="dropdown-item" href="#">Moon</a>
+									<a class="dropdown-item" href="#">Duel</a>
+									<label><i class="icon-live"></i>Live</label>
+									<a class="dropdown-item" href="#">Slots</a>
+									<a class="dropdown-item" href="#">Table Games</a>
+									<a class="dropdown-item" href="#">Live</a>
+									<label><i class="icon-rake"></i>Rake</label>
+									<a class="dropdown-item" href="#">Poker</a>
+								</div>
+							</div>
+						</li>
+						<li><a href="#">Dividends</a></li>
+						<li><a href="#">Exchange</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Whitepaper</a></li>
+					</ul>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-2 col-6 wallets">
+					<div class="dropdown">
+						<a class="btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="icon-tronlink"></i>Tronlink
+						</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="#"><i class="icon-tronlink"></i>Tronlink</a>
+							<a class="dropdown-item" href="#"><i class="icon-guild"></i>GuildWallet</a>
+							<a class="dropdown-item" href="#"><i class="icon-scatter"></i>Scatter</a>
+						</div>
+					</div>
+					<address>TN7VS....xCHgc</address>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<nav>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-2 col-lg-2 col-md-2 col-3 live-logo"><a href=""></a></div>
+				<div class="col-xl-6 col-lg-5 col-md-6 col-9 live-nav">
+					<ul>
+						<li><a href="" class="slots"><span class="title">Slots</span></a></li>
+						<li><a href="" class="table-games"><span class="title">Table games</span></a></li>
+						<li><a href="" class="dealer"><span class="title">Live</span></a></li>
+						<li><a href="" class="dividend"><span class="title">Dividend</span></a></li>
+						<li><a href="" class="faq"><span class="title">FAQ</span></a></li>
+					</ul>
+				</div>
+				<div class="col-xl-4 col-lg-5 col-md-4 col-xs-12 wallet">
+					<div class="balance">
+						<label>TRON Balance</label>
+						<span class="amount"><i class="icon-trx"></i>25,345,015.45</span>
+					</div>
+					<div class="balance">
+						<label>LIVE Token Balance<i class="info" data-toggle="tooltip" data-placement="top" title="Tooltip on top">?</i></label>
+						<span class="amount"><i class="icon-live"></i>225,345,015.45</span>
+					</div>
+					<button class="deposit" data-toggle="modal" data-target="#exampleModal">Deposit</button>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<section>
+		<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="img/cover-ad.jpg">
+					<span class="light"></span>
+					<span class="fade-corners"></span>
+					<div class="carousel-caption">
+						<h5>Get up to<br/>200 free spins<br/>every day</h5>
+						<p>The more you spin, the more you mine!</p>
+						<button class="more-btn">More details</button>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="img/cover-ad.jpg">
+					<span class="light"></span>
+					<span class="fade-corners"></span>
+					<div class="carousel-caption">
+						<h5>Bla bla<br/>next slide<br/>goes here</h5>
+						<p>The more you spin, the more you mine!</p>
+						<button class="more-btn">More details</button>
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev"><i class="icon"></i></a>
+			<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next"><i class="icon"></i></a>
+		</div>
+		<div class="container-fluid content sc">
+			<div class="row">
+				<div class="col-xl-3 col-lg-3 col-md-4 col-12 left-side">
+					<div class="live-chat">
+						<div class="heading">
+							<label>Chat</label><a href="javascript:void(0)" class="close-btn close-chat"></a>
+						</div>
+						<div class="chat-content">
+							<div class="message-body">
+								<span class="avatar"><img src="img/profile-pic1.jpg" /></span>
+								<span class="username">TN7VS....xCHgc<span class="level lv1">lv.1</span></span>
+								<span class="message">IF its actually happening, then yeah it would need to end at some point yeah. But could be tapered down as there is more activity</span>
+							</div>
+							<div class="message-body">
+								<span class="avatar"><img src="img/profile-pic3.jpg" /></span>
+								<span class="username">TN7VS....xCHgc<span class="level lv3">lv.3</span></span>
+								<span class="message">how long since gold?</span>
+							</div>
+							<div class="message-body">
+								<span class="avatar"><img src="img/profile-pic2.jpg" /></span>
+								<span class="username">TN7VS....xCHgc<span class="level lv21">lv.21</span></span>
+								<span class="message">how long since gold?</span>
+							</div>
+						</div>
+						<textarea placeholder="Type your message..."></textarea>
+					</div>
+				</div>
+				<div class="col-xl-9 col-lg-9 col-md-8 col-12 main">
+					<a href="javascript:void(0)" class="desktop-floating-chat-btn"></a>
+					<div class="games top-games">
+						<h1>Tron<span class="tb">b</span>et Favorites</h1>
+						<ul>
+							<li><a href="/" class="game neon"><span class="play">Play</span></a></li>
+							<li><a href="/" class="game bison"><span class="badge new">new</span><span class="play">Play</span></a></li>
+							<li><a href="/" class="game bj-live"><span class="badge hot">hot</span><span class="play">Play</span></a></li>
+							<li><a href="/" class="game legends-of-atlantis"><span class="play">Play</span></a></li>
+							<li><a href="/" class="game bj-vip"><span class="play">Play</span></a></li>
+						</ul>
+					</div>
+					<div class="games">
+						<h2>Slots</h2>
+						<ul>
+							<li><a href="/" class="game neon"><span class="play">Play</span></a></li>
+							<li><a href="/" class="game bison"><span class="play">Play</span></a></li>
+							<li><a href="/" class="game legends-of-atlantis"><span class="play">Play</span></a></li>
+							<li><a href="/" class="game power-of-gods"><span class="play">Play</span></a></li>
+							<li><a href="/" class="game legends-of-atlantis"><span class="play">Play</span></a></li>
+							<li><a href="/" class="game power-of-gods"><span class="play">Play</span></a></li>
+							<li><a href="/" class="game bison"><span class="play">Play</span></a></li>
+							<li><a href="/" class="game neon"><span class="play">Play</span></a></li>
+						</ul>
+						<a href="/" class="show-more"><i class="dots"></i><label><span class="amount">100+</span> slots</label></a>
+					</div>
+					<div class="games">
+						<h3>Live</h3>
+						<ul>
+							<li><a href="/" class="game bj-live"><span class="play">Play</span></a></li>
+							<li><a href="/" class="game baccarat"><span class="play">Play</span></a></li>
+							<li><a href="/" class="game bj-live"><span class="play">Play</span></a></li>
+							<li><a href="/" class="game baccarat"><span class="play">Play</span></a></li>
+							<li><a href="/" class="game baccarat"><span class="play">Play</span></a></li>
+							<li><a href="/" class="game bj-live"><span class="play">Play</span></a></li>
+							<li><a href="/" class="game baccarat"><span class="play">Play</span></a></li>
+							<li><a href="/" class="game bj-live"><span class="play">Play</span></a></li>
+						</ul>
+						<a href="/" class="show-more"><i class="dots"></i><label><span class="amount">50+</span> live dealers</label></a>
+					</div>
+					<div class="games">
+						<h4>Table Games</h4>
+						<ul>
+							<li><a href="/" class="game bj"><span class="play">Play</span></a></li>
+							<li><a href="/" class="game bj-vip"><span class="play">Play</span></a></li>
+							<li><a href="/" class="game bj"><span class="play">Play</span></a></li>
+							<li><a href="/" class="game bj-vip"><span class="play">Play</span></a></li>
+							<li><a href="/" class="game bj-vip"><span class="play">Play</span></a></li>
+							<li><a href="/" class="game bj"><span class="play">Play</span></a></li>
+							<li><a href="/" class="game bj-vip"><span class="play">Play</span></a></li>
+							<li><a href="/" class="game bj"><span class="play">Play</span></a></li>
+						</ul>
+						<a href="/" class="show-more"><i class="dots"></i><label><span class="amount">200+</span> table games</label></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<p>If you reside in a location where lottery, gambling, or betting over the internet is illegal, please do not click on anything related to these activities on this site.  You must be 21 years of age to click on any gambling related items even if it is legal to do so in your location.  Recognising that the laws and regulations involving online gaming are different everywhere, players are advised to check with the laws that exist within their own jurisdiction or region to ascertain the legality of the activities which are covered.</p>
+		<p>The games provided by TRONbet are based on blockchain, fair, and transparency.  When you start playing these games, please take not that online gambling and lottery is an entertainment vehicle and that it carries with it a certain degree of financial risk.  Players should be aware of these risks and govern themselves accordingly.</p>
+	</footer>
+
+	<a href="javascript:void(0)" class="mobile-floating-chat-btn"></a>
+	-->
+	
+</div>
+
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
+	
+	$('.burger').click(function(){
+        $('.burger').toggleClass('expand');
+	});
+</script>
+
+</body>
+</html>
