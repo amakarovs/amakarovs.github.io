@@ -50,7 +50,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.66"
-     inkscape:cx="1330.6681"
+     inkscape:cx="1084.456"
      inkscape:cy="788.57143"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -68,7 +68,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -77,17 +77,27 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-195.892)">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:135.83828735px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.39595699;"
-       x="-1.7124939"
-       y="295.08719"
-       id="text828"><tspan
-         sodipodi:role="line"
-         id="tspan826"
-         x="-1.7124939"
-         y="295.08719"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#ffffff;stroke-width:3.39595699;">ANTE</tspan></text>
+    <g
+       aria-label="ANTE"
+       style="font-style:normal;font-weight:normal;font-size:135.83828735px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.39595699"
+       id="text828">
+      <path
+         d="M 62.823958,269.88282 H 22.364312 l -9.086839,25.20437 H 0.14467019 L 37.022643,198.51466 h 11.142984 l 36.9443,96.57253 H 72.043451 Z M 26.211295,259.40311 H 59.043303 L 42.594135,214.23422 Z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#ffffff;stroke-width:3.39595699"
+         id="path825" />
+      <path
+         d="m 172.33031,295.08719 h -12.80116 l -48.61791,-74.41922 v 74.41922 H 98.110076 v -96.57253 h 12.801164 l 48.75056,74.75085 v -74.75085 h 12.66851 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#ffffff;stroke-width:3.39595699"
+         id="path827" />
+      <path
+         d="m 259.816,208.99437 h -31.04117 v 86.09282 H 216.10632 V 208.99437 H 185.13148 V 198.51466 H 259.816 Z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#ffffff;stroke-width:3.39595699"
+         id="path829" />
+      <path
+         d="m 328.86271,250.44892 h -41.85252 v 34.22488 h 48.6179 v 10.41339 h -61.35274 v -96.57253 h 60.68947 v 10.47971 h -47.95463 v 31.04117 h 41.85252 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#ffffff;stroke-width:3.39595699"
+         id="path831" />
+    </g>
     <g
        aria-label="SCAN"
        style="font-style:normal;font-weight:normal;font-size:135.83828735px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.39595723"
