@@ -1099,7 +1099,7 @@ section.mining .icon-live {
 	position: absolute;
 	z-index: 2;
 	display: block;
-	background: url('../img/icon-ante.svg') no-repeat;
+	background: url('../img/icon-ante.svg') no-repeat red;
 	background-size: 100%;
 	animation: ante-rotate 6s linear infinite;
 	left: calc(50% - 111px);
