@@ -979,7 +979,7 @@ section.mining .content .btn-group .btn:last-child {
 section.mining .content .mined-info {
 	display: table;
 	width: 100%;
-	padding: 10px 0;
+	padding: 0 0 10px 0;
 	font-size: 14px;
 }
 
