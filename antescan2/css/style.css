@@ -707,7 +707,13 @@ section .content .row .holdings .coin-row .coin-holdings button:active.add-btn {
 section.twitter-widget {
 	min-height: 100%;
 	padding: 40px 5px 70px 7px;
-	background: #292f33;
+	background: #0c0e15;
+}
+
+.timeline-Widget {
+    max-width: 576px;
+    margin: 0 auto;
+    background-color: #0c0e15 !important;
 }
 
 .tooltip .tooltip-inner {
