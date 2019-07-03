@@ -1040,12 +1040,12 @@ section.mining .content h1 {
 section.mining .content span.countdown {
 	display: flex;
 	justify-content: center;
-	padding-bottom: 20px;
+	padding-bottom: 15px;
 }
 
 section.mining .content span.countdown span.group {
 	padding: 0 5px;
-	font-size: 42px;
+	font-size: 36px;
 }
 
 section.mining .content span.countdown span.group span.sub {
@@ -1055,7 +1055,7 @@ section.mining .content span.countdown span.group span.sub {
 }
 
 section.mining .content span.speed {
-	padding: 15px 0;
+	padding: 10px 0;
 	font-size: 14px;
 	color: #000;
 }
@@ -1072,8 +1072,8 @@ section.m-live .content span.speed span.amount {
 section.mining .content a.mine {
 	margin: 0 auto;
 	display: flex;
-	width: 160px;
-	height: 40px;
+	width: 40%;
+	height: 36px;
 	font-size: 14px;
 	color: #FFF;
 	justify-content: center;
@@ -1097,12 +1097,12 @@ section.mining .content a.mine:hover {
 
 .mining .icon-live {
 	position: absolute;
-	z-index: 10;
-	left: calc(50% - 289px);
-	bottom: -289px;
+	z-index: 2;
+	left: calc(50% - 111px);
+	bottom: -111px;
 	display: block;
-	width: 578px;
-	height: 578px;
+	width: 222px;
+	height: 222px;
 	background: url(../img/icon-ante.svg) no-repeat;
 	background-size: 100%;
 	animation: ante-rotate 6s linear infinite;
@@ -1122,7 +1122,6 @@ section.m-live .icon-live {
 	0% {transform: rotate(0deg);}
 	100% {transform: rotate(360deg);}
 }
-/*
 
 section.mining .pulse1,
 section.mining .pulse2,
@@ -1156,7 +1155,6 @@ section.mining .pulse3 {
 	from {left: calc(50% - 110px); bottom: -110px; width: 220px; height: 220px; background: rgba(255,255,255,0.2);}
 	to {left: calc(50% - 300px); bottom: -300px; width: 600px; height: 600px; background: rgba(255,255,255,0);}
 }
-
 
 section.mining .icon-live-fly1,
 section.mining .icon-live-fly2,
@@ -1247,9 +1245,6 @@ section.mining .icon-live-fly8 {
 	0% {bottom: -40px; transform: rotate(0deg); opacity: 0.2;}
 	100% {bottom: calc(100% + 40px); transform: rotate(360deg); opacity: 0;}
 }
-
-
-*/
 
 
 
