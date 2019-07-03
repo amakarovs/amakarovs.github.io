@@ -992,7 +992,7 @@ section.mining .content .btn-group .btn:last-child {
 section.mining .content .mined-info {
 	display: table;
 	width: 100%;
-	padding: 20px 0;
+	padding: 10px 0;
 	font-size: 14px;
 }
 
@@ -1003,8 +1003,8 @@ section.mining .content .mined-info span.col {
 	padding: 14px 0 0 0;
 }
 
-section.m-live .content span.col {
-	color: #db2c2c;
+section.m-live .content .mined-info span.col {
+	color: #ff3131;
 }
 
 section.mining .content .mined-info span.col label {
@@ -1031,7 +1031,7 @@ section.mining .content span.speed {
 }
 
 section.mining .content h1 {
-	padding: 20px 0;
+	padding: 5px 0;
 	font-size: 24px;
 }
 
@@ -1053,8 +1053,8 @@ section.mining .content span.countdown span.group span.sub {
 }
 
 section.mining .content span.speed {
-	padding: 20px 0;
-	font-size: 16px;
+	padding: 15px 0;
+	font-size: 14px;
 	color: #000;
 }
 
