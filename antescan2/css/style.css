@@ -705,7 +705,8 @@ section .content .row .holdings .coin-row .coin-holdings button:active.add-btn {
 }
 
 section.twitter-widget {
-	padding: 40px 0 70px 0;
+	min-height: 100%;
+	padding: 40px 5px 70px 7px;
 	background: #292f33;
 }
 
