@@ -723,7 +723,16 @@ section .content .row .holdings .coin-row .coin-holdings button:active.add-btn {
 	border-left-color: #FFF;
 }
 
-.modal .modal-dialog,
+
+.modal .modal-dialog {
+	margin: 0 auto;
+	max-width: 576px;
+	height: 100%;
+	border: none;
+	border-radius: 0;
+	background: #0c0e15;
+}
+
 .modal .modal-dialog .modal-content {
 	margin: 0;
 	width: 100%;
@@ -732,14 +741,11 @@ section .content .row .holdings .coin-row .coin-holdings button:active.add-btn {
 	border-radius: 0;
 }
 
-.modal .modal-dialog .modal-content {
-	background: #0c0e15;
-}
-
 .modal .modal-dialog .modal-content .modal-header {
 	padding: 0;
 	background: #12141f;
 	border: none;
+	border-radius: 0;
 }
 
 .modal .modal-dialog .modal-content .modal-header h5.modal-title {
@@ -787,9 +793,10 @@ section .content .row .holdings .coin-row .coin-holdings button:active.add-btn {
 
 .modal .modal-dialog .modal-content .modal-body {
 	position: relative;
+	width: 100%;
 	padding: 8px 15px 85px 15px;
 	overflow-y: auto;
-	background: red;
+	background: #0c0e15;
 }
 
 .modal .modal-dialog .modal-content .modal-body .form .form-row {
@@ -838,21 +845,31 @@ section .content .row .holdings .coin-row .coin-holdings button:active.add-btn {
 	border-radius: 0 18px 18px 0;
 }
 
-.modal .modal-dialog .modal-content .modal-body .form .form-row span.hide {
+.modal .modal-dialog .modal-content .modal-body .form .form-row span.error-message {
 	display: none;
+	color: #f81f1f;
+	font-size: 12px;
 }
 
-.modal .modal-dialog .modal-content .modal-body .form .form-row input.input,
-.modal .modal-dialog .modal-content .modal-body .form .form-row select.form-control {
+.modal .modal-dialog .modal-content .modal-body .form .error span.error-message {
+	display: block;
+}
+
+.modal .modal-dialog .modal-content .modal-body .form .form-row select.form-control,
+.modal .modal-dialog .modal-content .modal-body .form .form-row input.input {
 	height: 30px;
 	padding: 0;
 	font-size: 14px;
 	color: #FFF;
 	border: none;
 	outline: none;
-	background: orange;
+	background: transparent;
 	box-shadow: none;
 	border-radius: 0;
+}
+
+.modal .modal-dialog .modal-content .modal-body .form .form-row select.form-control {
+	margin-left: -4px;
 }
 
 
@@ -863,8 +880,8 @@ section .content .row .holdings .coin-row .coin-holdings button:active.add-btn {
 
 
 
-.modal .modal-dialog .modal-content .modal-body .bottom-nav {
-	position: fixed;
+.modal .modal-dialog .modal-content .modal-body .submit-nav {
+	position: absolute;
 	left: 0;
 	bottom: 0;
 	width: 100%;
@@ -876,7 +893,7 @@ section .content .row .holdings .coin-row .coin-holdings button:active.add-btn {
 	background: #12141f;
 }
 
-.modal .modal-dialog .modal-content .modal-body .bottom-nav button.submit-btn {
+.modal .modal-dialog .modal-content .modal-body .submit-nav button.submit-btn {
 	width: 60%;
 	height: 36px;
 	text-decoration: none;
@@ -890,7 +907,7 @@ section .content .row .holdings .coin-row .coin-holdings button:active.add-btn {
 	border: none;
 }
 
-.modal .modal-dialog .modal-content .modal-body .bottom-nav button:active.submit-btn {
+.modal .modal-dialog .modal-content .modal-body .submit-nav button:active.submit-btn {
 	background: #0ecf2b;
 }
 
