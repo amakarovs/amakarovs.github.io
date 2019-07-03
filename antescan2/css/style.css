@@ -1100,10 +1100,10 @@ section.mining .icon-live {
 	background: url(../img/icon-ante.svg) no-repeat;
 	background-size: 100%;
 	animation: ante-rotate 6s linear infinite;
-	left: calc(50% - 150px);
-	bottom: -150px;
-	width: 300px;
-	height: 300px;
+	left: calc(50% - 111px);
+	bottom: -111px;
+	width: 222px;
+	height: 222px;
 }
 
 section.m-live .icon-live {
@@ -1129,10 +1129,10 @@ section.mining .pulse3 {
 	background: #FFF;
 	border-radius: 50%;
 	animation: pulse1 6s linear infinite;
-	left: calc(50% - 150px);
-	bottom: -150px;
-	width: 300px;
-	height: 300px;
+	left: calc(50% - 110px);
+	bottom: -110px;
+	width: 220px;
+	height: 220px;
 }
 
 section.mining .pulse2 {
