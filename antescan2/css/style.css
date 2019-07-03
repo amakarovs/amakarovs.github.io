@@ -1122,6 +1122,7 @@ section.m-live .icon-live {
 	0% {transform: rotate(0deg);}
 	100% {transform: rotate(360deg);}
 }
+/*
 
 section.mining .pulse1,
 section.mining .pulse2,
@@ -1155,7 +1156,8 @@ section.mining .pulse3 {
 	from {left: calc(50% - 110px); bottom: -110px; width: 220px; height: 220px; background: rgba(255,255,255,0.2);}
 	to {left: calc(50% - 300px); bottom: -300px; width: 600px; height: 600px; background: rgba(255,255,255,0);}
 }
-	
+
+
 section.mining .icon-live-fly1,
 section.mining .icon-live-fly2,
 section.mining .icon-live-fly3,
@@ -1247,7 +1249,7 @@ section.mining .icon-live-fly8 {
 }
 
 
-
+*/
 
 
 
