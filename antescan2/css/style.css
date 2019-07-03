@@ -149,6 +149,10 @@ nav .navigation .row .col-12 a.add-btn {
 	border-radius: 50%;
 }
 
+nav .navigation .row .col-12 a:active.add-btn {
+	background: #0ecf2b;
+}
+
 nav .navigation .row .col-12 a.add-btn i.icon-plus {
 	display: block;
 	position: absolute;
@@ -719,6 +723,137 @@ section .content .row .holdings .coin-row .coin-holdings button:active.add-btn {
 	border-left-color: #FFF;
 }
 
+.modal .modal-dialog,
+.modal .modal-dialog .modal-content {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	border-radius: 0;
+}
+
+.modal .modal-dialog .modal-content {
+	background: #0c0e15;
+}
+
+.modal .modal-dialog .modal-content .modal-header {
+	padding: 0;
+	background: #12141f;
+	border: none;
+}
+
+.modal .modal-dialog .modal-content .modal-header h5.modal-title {
+	display: flex;
+	width: 100%;
+	height: 40px;
+	padding: 0 0 0 0;
+	align-items: center;
+	font-size: 15px;
+	justify-content: center;
+}
+
+.modal .modal-dialog .modal-content .modal-header button.close {
+	position: absolute;
+	right: 10px;
+	top: 8px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	width: 24px;
+	height: 24px;
+	opacity: 1;
+	outline: none;
+}
+
+.modal .modal-dialog .modal-content .modal-header button.close:before,
+.modal .modal-dialog .modal-content .modal-header button.close:after {
+	position: absolute;
+	top: 3px;
+	left: 10px;
+	display: block;
+	width: 2px;
+	height: 17px;
+	content: '';
+	background: #FFF;
+}
+
+.modal .modal-dialog .modal-content .modal-header button.close:before {
+	transform: rotate(45deg);
+}
+
+.modal .modal-dialog .modal-content .modal-header button.close:after {
+	transform: rotate(-45deg);
+}
+
+.modal .modal-dialog .modal-content .modal-body {
+	position: relative;
+	padding: 8px 15px 85px 15px;
+	overflow-y: auto;
+	background: red;
+}
+
+.modal .modal-dialog .modal-content .modal-body .form .form-row {
+	padding: 7px 0 5px 0;
+	border-bottom: 1px solid #12141f;
+}
+
+.modal .modal-dialog .modal-content .modal-body .form .form-row label,
+.modal .modal-dialog .modal-content .modal-body .form .form-row span.error-message,
+.modal .modal-dialog .modal-content .modal-body .form .form-row input,
+.modal .modal-dialog .modal-content .modal-body .form .form-row select {
+	display: block;
+	width: 100%;
+}
+
+.modal .modal-dialog .modal-content .modal-body .form .form-row label {
+	font-size: 12px;
+	color: #424553;
+	text-transform: uppercase;
+}
+
+.modal .modal-dialog .modal-content .modal-body .form .form-row .btn-group {
+	margin: 0 auto 15px auto;
+	width: 60%;
+	align-items: center;
+}
+
+.modal .modal-dialog .modal-content .modal-body .form .form-row .btn-group .btn {
+	height: 36px;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #a4a5a4;
+	background: #2d303a;
+}
+
+.modal .modal-dialog .modal-content .modal-body .form .form-row .btn-group .active {
+	color: #131722;
+	background: #FFF;
+}
+
+.modal .modal-dialog .modal-content .modal-body .form .form-row .btn-group .btn:first-child {
+	border-radius: 18px 0 0 18px;
+}
+
+.modal .modal-dialog .modal-content .modal-body .form .form-row .btn-group .btn:last-child {
+	border-radius: 0 18px 18px 0;
+}
+
+.modal .modal-dialog .modal-content .modal-body .form .form-row span.hide {
+	display: none;
+}
+
+.modal .modal-dialog .modal-content .modal-body .form .form-row input.input,
+.modal .modal-dialog .modal-content .modal-body .form .form-row select.form-control {
+	height: 30px;
+	padding: 0;
+	font-size: 14px;
+	color: #FFF;
+	border: none;
+	outline: none;
+	background: orange;
+	box-shadow: none;
+	border-radius: 0;
+}
 
 
 
@@ -726,6 +861,38 @@ section .content .row .holdings .coin-row .coin-holdings button:active.add-btn {
 
 
 
+
+
+.modal .modal-dialog .modal-content .modal-body .bottom-nav {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	display: flex;
+	padding: 0;
+	align-items: center;
+	justify-content: center;
+	background: #12141f;
+}
+
+.modal .modal-dialog .modal-content .modal-body .bottom-nav button.submit-btn {
+	width: 60%;
+	height: 36px;
+	text-decoration: none;
+	outline: none;
+	color: #292628;
+	font-size: 15px;
+	font-weight: 600;
+	cursor: pointer;
+	background: #0cc127;
+	border-radius: 18px;
+	border: none;
+}
+
+.modal .modal-dialog .modal-content .modal-body .bottom-nav button:active.submit-btn {
+	background: #0ecf2b;
+}
 
 
 
