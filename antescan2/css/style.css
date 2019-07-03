@@ -1095,17 +1095,17 @@ section.mining .content a.mine:hover {
 
 
 
-section.mining .icon-live {
+.mining .icon-live {
 	position: absolute;
-	z-index: 2;
+	z-index: 10;
+	left: calc(50% - 289px);
+	bottom: -289px;
 	display: block;
-	background: url('../img/icon-ante.svg') no-repeat red;
+	width: 578px;
+	height: 578px;
+	background: url(../img/icon-ante.svg) no-repeat;
 	background-size: 100%;
 	animation: ante-rotate 6s linear infinite;
-	left: calc(50% - 111px);
-	bottom: -111px;
-	width: 222px;
-	height: 222px;
 }
 
 section.m-live .icon-live {
