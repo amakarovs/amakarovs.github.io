@@ -1072,11 +1072,11 @@ section.mining .content a.mine:hover {
 	background: rgba(255,255,255,0.2);
 }
 
-.mining .icon-live {
-	position: absolute;
-	z-index: 10;
+section.mining .icon-live {
+	position: fixed;
+	z-index: 2;
 	left: calc(50% - 111px);
-	bottom: -111px;
+	bottom: 0;
 	display: block;
 	width: 222px;
 	height: 222px;
