@@ -910,22 +910,6 @@ section.twitter-widget {
 	background: #0ecf2b;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 section.mining {
 	position: absolute;
 	left: 0;
@@ -1088,16 +1072,9 @@ section.mining .content a.mine:hover {
 	background: rgba(255,255,255,0.2);
 }
 
-
-
-
-
-
-
-
 .mining .icon-live {
 	position: absolute;
-	z-index: 2;
+	z-index: 10;
 	left: calc(50% - 111px);
 	bottom: -111px;
 	display: block;
