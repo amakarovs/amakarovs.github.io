@@ -911,12 +911,11 @@ section.twitter-widget {
 }
 
 section.mining {
-	position: absolute;
+	position: fixed;
 	left: 0;
 	top: 40px;
 	width: 100%;
 	padding: 0;
-	overflow: hidden;
 	height: calc(100% - 110px);
 	align-items: center;
 	background-image: radial-gradient(circle at bottom center, #12a05b, #131722);
@@ -931,7 +930,9 @@ section.mining .content {
 	z-index: 3;
 	margin: 0 auto;
 	max-width: 576px;
+	height: 100%;
 	padding: 15px 15px 0 15px;
+	overflow: hidden;
 }
 
 section.mining .content .btn-group {
@@ -1072,7 +1073,7 @@ section.mining .content a.mine:hover {
 	background: rgba(255,255,255,0.2);
 }
 
-section.mining .icon-live {
+section.mining .content .icon-live {
 	position: absolute;
 	z-index: 2;
 	left: calc(50% - 111px);
@@ -1085,7 +1086,7 @@ section.mining .icon-live {
 	animation: ante-rotate 6s linear infinite;
 }
 
-section.m-live .icon-live {
+section.m-live .content .icon-live {
 	background: url('../img/icon-live.svg') no-repeat;
 	background-size: 100%;
 }
@@ -1100,9 +1101,9 @@ section.m-live .icon-live {
 	100% {transform: rotate(360deg);}
 }
 
-section.mining .pulse1,
-section.mining .pulse2,
-section.mining .pulse3 {
+section.mining .content .pulse1,
+section.mining .content .pulse2,
+section.mining .content .pulse3 {
 	position: absolute;
 	z-index: 1;
 	display: block;
@@ -1115,11 +1116,11 @@ section.mining .pulse3 {
 	height: 220px;
 }
 
-section.mining .pulse2 {
+section.mining .content .pulse2 {
 	animation-delay: 2s;
 }
 
-section.mining .pulse3 {
+section.mining .content .pulse3 {
 	animation-delay: 4s;
 }
 
@@ -1133,10 +1134,10 @@ section.mining .pulse3 {
 	to {left: calc(50% - 300px); bottom: -300px; width: 600px; height: 600px; background: rgba(255,255,255,0);}
 }
 
-section.mining .icon-live-fly1,
-section.mining .icon-live-fly2,
-section.mining .icon-live-fly3,
-section.mining .icon-live-fly4 {
+section.mining .content .icon-live-fly1,
+section.mining .content .icon-live-fly2,
+section.mining .content .icon-live-fly3,
+section.mining .content .icon-live-fly4 {
 	position: absolute;
 	z-index: 1;
 	display: block;
@@ -1149,30 +1150,30 @@ section.mining .icon-live-fly4 {
 	height: 30px;
 }
 
-section.m-live .icon-live-fly1,
-section.m-live .icon-live-fly2,
-section.m-live .icon-live-fly3,
-section.m-live .icon-live-fly4 {
+section.m-live .content .icon-live-fly1,
+section.m-live .content .icon-live-fly2,
+section.m-live .content .icon-live-fly3,
+section.m-live .content .icon-live-fly4 {
 	background: url('../img/icon-live.svg') no-repeat;
 	background-size: 100%;
 }
 	
-section.mining .icon-live-fly1 {
+section.mining .content .icon-live-fly1 {
 	left: calc(50% - 20px);
 	animation-delay: 0s;
 }
 
-section.mining .icon-live-fly2 {
+section.mining .content .icon-live-fly2 {
 	left: calc(50% - 120px);
 	animation-delay: 4s;
 }
 
-section.mining .icon-live-fly3 {
+section.mining .content .icon-live-fly3 {
 	left: calc(50% - 220px);
 	animation-delay: 1s;
 }
 
-section.mining .icon-live-fly4 {
+section.mining .content .icon-live-fly4 {
 	left: calc(50% + 30px);
 	animation-delay: 1s;
 }
@@ -1186,8 +1187,6 @@ section.mining .icon-live-fly4 {
 	0% {bottom: -40px; transform: rotate(0deg); opacity: 0.2;}
 	100% {bottom: calc(100% + 40px); transform: rotate(360deg); opacity: 0;}
 }
-
-
 
 
 
