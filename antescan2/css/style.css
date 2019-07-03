@@ -916,8 +916,8 @@ section.mining {
 	top: 40px;
 	width: 100%;
 	padding: 0;
-	height: calc(100% - 110px);
 	overflow: hidden;
+	height: calc(100% - 110px);
 	align-items: center;
 	background-image: radial-gradient(circle at bottom center, #12a05b, #131722);
 }
@@ -1073,10 +1073,10 @@ section.mining .content a.mine:hover {
 }
 
 section.mining .icon-live {
-	position: fixed;
+	position: absolute;
 	z-index: 2;
 	left: calc(50% - 111px);
-	bottom: 0;
+	bottom: -111px;
 	display: block;
 	width: 222px;
 	height: 222px;
@@ -1106,7 +1106,7 @@ section.mining .pulse3 {
 	position: absolute;
 	z-index: 1;
 	display: block;
-	background: #FFF;
+	background: rgba(255,255,255,0.2);
 	border-radius: 50%;
 	animation: pulse1 6s linear infinite;
 	left: calc(50% - 110px);
@@ -1136,15 +1136,7 @@ section.mining .pulse3 {
 section.mining .icon-live-fly1,
 section.mining .icon-live-fly2,
 section.mining .icon-live-fly3,
-section.mining .icon-live-fly4,
-section.mining .icon-live-fly5,
-section.mining .icon-live-fly6,
-section.mining .icon-live-fly7,
-section.mining .icon-live-fly8,
-section.mining .icon-live-fly9,
-section.mining .icon-live-fly10,
-section.mining .icon-live-fly11,
-section.mining .icon-live-fly12 {
+section.mining .icon-live-fly4 {
 	position: absolute;
 	z-index: 1;
 	display: block;
@@ -1160,15 +1152,7 @@ section.mining .icon-live-fly12 {
 section.m-live .icon-live-fly1,
 section.m-live .icon-live-fly2,
 section.m-live .icon-live-fly3,
-section.m-live .icon-live-fly4,
-section.m-live .icon-live-fly5,
-section.m-live .icon-live-fly6,
-section.m-live .icon-live-fly7,
-section.m-live .icon-live-fly8,
-section.m-live .icon-live-fly9,
-section.m-live .icon-live-fly10,
-section.m-live .icon-live-fly11,
-section.m-live .icon-live-fly12 {
+section.m-live .icon-live-fly4 {
 	background: url('../img/icon-live.svg') no-repeat;
 	background-size: 100%;
 }
@@ -1188,29 +1172,9 @@ section.mining .icon-live-fly3 {
 	animation-delay: 1s;
 }
 
-section.mining .icon-live-fly7 {
-	left: calc(50% - 320px);
-	animation-delay: 6s;
-}
-
 section.mining .icon-live-fly4 {
 	left: calc(50% + 30px);
 	animation-delay: 1s;
-}
-
-section.mining .icon-live-fly5 {
-	left: calc(50% + 80px);
-	animation-delay: 2s;
-}
-
-section.mining .icon-live-fly6 {
-	left: calc(50% + 180px);
-	animation-delay: 5s;
-}
-
-section.mining .icon-live-fly8 {
-	left: calc(50% + 280px);
-	animation-delay: 7s;
 }
 
 @-webkit-keyframes icon-fly {
