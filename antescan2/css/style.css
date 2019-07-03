@@ -704,6 +704,11 @@ section .content .row .holdings .coin-row .coin-holdings button:active.add-btn {
 	transition: all 0.3s ease-in-out;
 }
 
+section.twitter-widget {
+	padding: 40px 0 70px 0;
+	background: #292f33;
+}
+
 .tooltip .tooltip-inner {
 	width: 160px;
 	padding: 6px 10px;
@@ -867,18 +872,6 @@ section .content .row .holdings .coin-row .coin-holdings button:active.add-btn {
 	box-shadow: none;
 	border-radius: 0;
 }
-
-.modal .modal-dialog .modal-content .modal-body .form .form-row select.form-control {
-	margin-left: -4px;
-}
-
-
-
-
-
-
-
-
 
 .modal .modal-dialog .modal-content .modal-body .submit-nav {
 	position: absolute;
