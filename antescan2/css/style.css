@@ -943,6 +943,8 @@ section.m-live {
 }
 
 section.mining .content {
+	position: relative;
+	z-index: 3;
 	margin: 0 auto;
 	max-width: 576px;
 	padding: 15px 15px 0 15px;
@@ -1095,9 +1097,9 @@ section.mining .content a.mine:hover {
 
 section.mining .icon-live {
 	position: absolute;
-	z-index: 10;
+	z-index: 2;
 	display: block;
-	background: url(../img/icon-ante.svg) no-repeat;
+	background: url('../img/icon-ante.svg') no-repeat;
 	background-size: 100%;
 	animation: ante-rotate 6s linear infinite;
 	left: calc(50% - 111px);
@@ -1107,7 +1109,7 @@ section.mining .icon-live {
 }
 
 section.m-live .icon-live {
-	background: url(../img/icon-live.svg) no-repeat;
+	background: url('../img/icon-live.svg') no-repeat;
 	background-size: 100%;
 }
 
@@ -1125,6 +1127,7 @@ section.mining .pulse1,
 section.mining .pulse2,
 section.mining .pulse3 {
 	position: absolute;
+	z-index: 1;
 	display: block;
 	background: #FFF;
 	border-radius: 50%;
@@ -1170,7 +1173,7 @@ section.mining .icon-live-fly12 {
 	display: block;
 	bottom: -40px;
 	opacity: 0.2;
-	background: url(../img/icon-ante.svg) no-repeat;
+	background: url('../img/icon-ante.svg') no-repeat;
 	background-size: 100%;
 	animation: icon-fly 12s linear infinite;
 	width: 30px;
@@ -1189,7 +1192,7 @@ section.m-live .icon-live-fly9,
 section.m-live .icon-live-fly10,
 section.m-live .icon-live-fly11,
 section.m-live .icon-live-fly12 {
-	background: url(../img/icon-live.svg) no-repeat;
+	background: url('../img/icon-live.svg') no-repeat;
 	background-size: 100%;
 }
 	
