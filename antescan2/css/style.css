@@ -1076,11 +1076,11 @@ section.mining .content a.mine:hover {
 	position: absolute;
 	z-index: 10;
 	left: calc(50% - 111px);
-	bottom: -111px;
+	bottom: 100px;
 	display: block;
 	width: 222px;
 	height: 222px;
-	background: url(../img/icon-ante.svg) no-repeat;
+	background: url('../img/icon-ante.svg') no-repeat;
 	background-size: 100%;
 	animation: ante-rotate 6s linear infinite;
 }
