@@ -6,7 +6,7 @@ html, body {
 	height: 100%;
 	min-width: 320px;
 	font-family: 'Roboto', Helvetica, Arial, Tahoma, Verdana;
-	color: #6e717f;
+	color: #FFF;
 	background: #0c0e15;
 }
 
@@ -213,7 +213,8 @@ nav .navigation .row .col-12 ul li a {
 	color: #6e717f;
 }
 
-nav .navigation .row .col-12 ul li a:hover {
+nav .navigation .row .col-12 ul li a:hover,
+nav .navigation .row .col-12 ul li a.active {
 	color: #FFF;
 	transition: color 0.3s ease-in-out;
 }
@@ -340,6 +341,70 @@ section .content .row .net-worth:before {
     background-size: 60px auto;
 	border-radius: 3;
 	opacity: 0.1;
+}
+
+section .content .row .net-worth span.amount,
+section .content .row .net-worth span.total-usd,
+section .content .row .net-worth span.percent {
+	position: relative;
+	float: left;
+	z-index: 2;
+}
+
+section .content .row .net-worth span.amount {
+	width: 100%;
+	padding: 13px 0 18px 0;
+	text-align: center;
+	font-size: 42px;
+	line-height: 1;
+	font-weight: 700;
+	letter-spacing: -1px;
+}
+
+section .content .row .net-worth span.amount i.icon-trx {
+	display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+	margin: 18px 3px 0 0;
+	width: 16px;
+	height: 17px;
+	background: url('../img/icon-trx.svg') no-repeat;
+	background-size: 16px auto;
+}
+
+section .content .row .net-worth span.total-usd,
+section .content .row .net-worth span.percent {
+	width: 50%;
+	padding: 0 0 4px 0;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+section .content .row .net-worth span.total-usd {
+	color: #1af135;
+}
+
+section .content .row .net-worth span.percent span.up,
+section .content .row .net-worth span.percent span.down {
+	display: block;
+	float: right;
+	height: 21px;
+	min-width: 44px;
+	padding: 0 4px;
+	text-align: center;
+	border-radius: 2px;
+}
+
+section .content .row .net-worth span.percent span.up {
+	color: #292628;
+	background: #1af135;
+}
+
+section .content .row .net-worth span.percent span.down {
+	color: #FFF;
+	background: #f81f1f;
 }
 
 section .content .row .earnings {
