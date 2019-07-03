@@ -1076,7 +1076,7 @@ section.mining .content a.mine:hover {
 	position: absolute;
 	z-index: 10;
 	left: calc(50% - 111px);
-	bottom: 100px;
+	bottom: -111px;
 	display: block;
 	width: 222px;
 	height: 222px;
