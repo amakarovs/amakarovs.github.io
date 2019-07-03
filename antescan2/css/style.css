@@ -683,6 +683,8 @@ section .content .row .holdings .coin-row .coin-holdings button.add-btn {
 	display: block;
 	width: 41px;
 	height: 26px;
+	padding: 0;
+	text-align: center;
 	font-size: 12px;
 	color: #6e717f;
 	outline: none;
