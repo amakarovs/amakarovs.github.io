@@ -24,12 +24,14 @@
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
 			</div>
 			<div class="modal-body">
-				<div class="btn-group" role="group" aria-label="Basic example">
-					<button type="button" class="btn active">buy</button>
-					<button type="button" class="btn">Sell</button>
-					<button type="button" class="btn">Goal</button>
-				</div>
 				<div class="form">
+					<div class="form-row">
+						<div class="btn-group" role="group" aria-label="Basic example">
+							<button type="button" class="btn active">buy</button>
+							<button type="button" class="btn">Sell</button>
+							<button type="button" class="btn">Goal</button>
+						</div>
+					</div>
 					<div class="form-row">
 						<label>Coin</label>
 						<select class="form-control" id="exampleFormControlSelect1">
@@ -85,75 +87,46 @@
 	<section>
 		<div class="container-fluid content">
 			<div class="row">
-				<div class="col-12 net-worth">
-					<label>Net Worth</label>
-					<span class="info" data-toggle="tooltip" data-placement="left" title="Currently included only ANTE holdings">i</span>
-					<span class="amount"><i class="icon-trx"></i>2,520,410</span>
+				<div class="col-12 platform">
+					<label>Platform</label>
+					<a href="https://www.tronbet.io/?r=antescan" title="Tronbet.io - Best Blockchain Casino" class="logo"></a>
+					<span class="cc">Market Cap: <span class="amount">$44.579.662.2</span></span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 current-price">
+					<label>Current ANTE Price</label>
+					<span class="info">i<span class="tooltip">Average ANTE price based on data from TronTrade, TRXMarket and Biki exchanges</span></span>
+					<span class="price"><i class="icon-trx"></i>60</span>
 					<span class="total-usd">$0.72</span><span class="percent"><span class="up">+12%</span><span class="down">-1%</span></span>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-12 earnings">
-					<label>Dividend Earnings</label>
-					<span class="amount"><i class="icon-trx"></i>1,554,326.99</span>
-					<span class="amount"><i class="icon-btt"></i>1,554,326.99</span>
+				<div class="col-12 ">
+					x
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-12 holdings">
-					<div class="heading">
-						<label class="coin">Coin</label>
-						<label class="price">Price</label>
-						<label class="hold">Holdings</label>
-					</div>
-					<div class="coin-row">
-						<a href="transactions.html" class="transactions"></a>
-						<div class="coin">
-							<i class="icon-ante"></i>Ante
-						</div>
-						<div class="coin-price">
-							<span class="price"><i class="icon-trx"></i>22.35</span>
-							<span class="percent up">12%</span>
-							<!--<span class="percent down">12%</span>-->
-						</div>
-						<div class="coin-holdings">
-							<span class="price"><i class="icon-trx"></i>12,322,435.35</span>
-							<span class="amount">450,000.00</span>
-							<button class="add-btn" data-toggle="modal" data-target="#exampleModal">Add</button>
-						</div>
-					</div>
-					<div class="coin-row only-price">
-						<a href="transactions.html" class="transactions"></a>
-						<div class="coin">
-							<i class="icon-live"></i>Live
-						</div>
-						<div class="coin-price">
-							<span class="price"><i class="icon-trx"></i>22.35</span>
-							<span class="percent up">12%</span>
-							<!--<span class="percent down">12%</span>-->
-						</div>
-						<div class="coin-holdings">
-							<span class="price"><i class="icon-trx"></i>12,322,435.35</span>
-							<span class="amount">450,000.00</span>
-							<button class="add-btn" data-toggle="modal" data-target="#exampleModal">Add</button>
-						</div>
-					</div>
+				<div class="col-12 burnt-ante">
+					<label>Burnt ANTE</label>
+					<a href="/" class="log">Burnt log</a>
+					<span class="price">1,083,293.5</span>
+					<span class="total-supply">Total supply:<span class="amount"><a href="/mining">100.000.000</a></span></span><span class="percent">Burnt:<span class="amount">1%</span></span>
 				</div>
 			</div>
 		</div>
-	</section>
-
+	</section>	
+		
 	<nav>
 		<div class="container-fluid navigation">
 			<div class="row">
 				<div class="col-12">
-					<a href="javascript:void(0)" class="add-btn" data-toggle="modal" data-target="#exampleModal"><i class="icon-plus"></i></a>
 					<ul>
-						<li><a href="index.html" class="active"><i class="icon-home"></i>Home</a></li>
+						<li><a href="index.html"><i class="icon-home"></i>Home</a></li>
 						<li><a href="divs.html"><i class="icon-divs"></i><span class="notification"><span class="amount">23</span></span>Dividends</a></li>
 						<li><a href="goals.html"><i class="icon-goals"></i>Goals</a></li>
 						<li><a href="mining.html"><i class="icon-mining"></i>Mining</a></li>
-						<li><a href="platform.html"><i class="icon-platform"></i>Platform</a></li>
+						<li><a href="platform.html" class="active"><i class="icon-platform"></i>Platform</a></li>
 						<li><a href="news.html"><i class="icon-news"></i>News</a></li>
 					</ul>
 				</div>
