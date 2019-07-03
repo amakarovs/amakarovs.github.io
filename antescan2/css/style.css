@@ -7,6 +7,7 @@ html, body {
 	min-width: 320px;
 	font-family: 'Roboto', Helvetica, Arial, Tahoma, Verdana;
 	color: #FFF;
+	font-size: 14px;
 	background: #0c0e15;
 }
 
@@ -113,13 +114,6 @@ header .top-nav .row .wallet button.burger.expand i.bar:after {
 	transform: rotate(-45deg);
 	transition: all 0.3s ease-in-out;
 }
-
-
-
-
-
-
-
 
 header .top-nav .row .wallet ul.sub-nav {
 	display: none;
@@ -368,6 +362,28 @@ section .content .row .net-worth:before {
 	opacity: 0.1;
 }
 
+section .content .row .net-worth span.info {
+	position: absolute;
+    z-index: 4;
+    top: 15px;
+    right: 10px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    padding-top: 2px;
+    text-align: center;
+    font-size: 12px;
+	line-height: 1;
+    color: #333;
+    font-weight: 700;
+    font-family: Times New Roman;
+    font-style: italic;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    background: #FFF;
+}
+
 section .content .row .net-worth span.amount,
 section .content .row .net-worth span.total-usd,
 section .content .row .net-worth span.percent {
@@ -501,7 +517,205 @@ section .content .row .earnings span.amount i.icon-btt {
 	background-size: 16px auto;
 }
 
+section .content .row .holdings {
+	padding: 5px 0 0 0;
+}
 
+section .content .row .holdings .heading {
+	display: table;
+	width: 100%;
+	padding: 6px 0;
+	border-bottom: 1px solid #12141f;
+}
+
+section .content .row .holdings .heading label {
+	float: left;
+	text-transform: uppercase;
+	color: #424553;
+	font-size: 12px;
+}
+
+section .content .row .holdings .heading label.coin,
+section .content .row .holdings .coin-row .coin {
+	width: 25%;
+}
+
+section .content .row .holdings .heading label.price,
+section .content .row .holdings .coin-row .coin-price {
+	width: 25%;
+}
+
+section .content .row .holdings .heading label.hold,
+section .content .row .holdings .coin-row .coin-holdings {
+	width: 50%;
+}
+
+section .content .row .holdings .coin-row {
+	display: table;
+	width: 100%;
+	border-bottom: 1px solid #12141f;
+}
+
+section .content .row .holdings .coin-row .coin,
+section .content .row .holdings .coin-row .coin-price,
+section .content .row .holdings .coin-row .coin-holdings {
+	display: block;
+	float: left;
+}
+
+section .content .row .holdings .coin-row .coin {
+	position: relative;
+	padding: 14px 0 14px 30px;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+section .content .row .holdings .coin-row .coin i {
+	position: absolute;
+	left: 0;
+	top: 16px;
+	display: block;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+}
+
+section .content .row .holdings .coin-row .coin i.icon-ante {
+	background: url('../img/icon-ante.svg') no-repeat center;
+	background-size: 100%;
+}
+
+section .content .row .holdings .coin-row .coin i.icon-live {
+	background: url('../img/icon-live.svg') no-repeat center;
+	background-size: 100%;
+}
+
+section .content .row .holdings .coin-row .coin-price,
+section .content .row .holdings .coin-row .coin-holdings {
+	position: relative;
+	padding: 10px 0 0 0;
+}
+
+section .content .row .holdings .coin-row .coin-price .price,
+section .content .row .holdings .coin-row .coin-holdings .price {
+	position: relative;
+	display: block;
+	padding: 0 0 0 15px;
+	line-height: 1;
+}
+
+section .content .row .holdings .coin-row .coin-price .price i.icon-trx,
+section .content .row .holdings .coin-row .coin-holdings .price i.icon-trx {
+	position: absolute;
+	left: 0;
+	top: 1px;
+	display: block;
+	width: 9px;
+	height: 10px;
+	background: url('../img/icon-trx.svg') no-repeat;
+	background-size: auto 10px;
+}
+
+section .content .row .holdings .coin-row .coin-price .percent {
+	position: relative;
+	display: block;
+	padding: 0 0 0 15px;
+	font-size: 12px;
+}
+
+section .content .row .holdings .only-price .coin-price .price,
+section .content .row .holdings .only-price .coin-price .percent,
+section .content .row .holdings .only-price .coin-holdings .price {
+	display: none;
+}
+
+section .content .row .holdings .coin-row .coin-holdings .amount {
+	position: relative;
+	display: block;
+	padding: 0 0 0 15px;
+	font-size: 12px;
+	color: #6e717f;
+}
+
+section .content .row .holdings .only-price .coin-holdings .amount {
+	padding-top: 6px;
+}
+
+section .content .row .holdings .coin-row .coin-price .percent.up {
+	color: #1af135;
+}
+
+section .content .row .holdings .coin-row .coin-price .percent.up:before,
+section .content .row .holdings .coin-row .coin-price .percent.down:before {
+	position: absolute;
+	left: 2px;
+	top: 7px;
+	width: 0;
+	height: 0;
+	content:'';
+}
+
+section .content .row .holdings .coin-row .coin-price .percent.up:before {
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	border-bottom: 3px solid #1af135;
+}
+
+section .content .row .holdings .coin-row .coin-price .percent.down:before {
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	border-top: 3px solid #f81f1f;
+}
+
+section .content .row .holdings .coin-row .coin-price .percent.down {
+	color: #f81f1f;
+}
+
+section .content .row .holdings .coin-row .coin-holdings {
+	position: relative;
+}
+
+section .content .row .holdings .coin-row .coin-holdings button.add-btn {
+	position: absolute;
+	top: 11px;
+	right: 0;
+	display: block;
+	width: 41px;
+	height: 26px;
+	font-size: 12px;
+	color: #6e717f;
+	outline: none;
+	cursor: pointer;
+	background: transparent;
+	border: 1px solid #393c48;
+	border-radius: 3px;
+}
+
+section .content .row .holdings .coin-row .coin-holdings button:active.add-btn {
+	color: #6e717f;
+	background: #393c48;
+	transition: all 0.3s ease-in-out;
+}
+
+.tooltip .tooltip-inner {
+	width: 160px;
+	padding: 6px 10px;
+	text-align: center;
+	font-size: 13px;
+	line-height: 1.1;
+	font-style: normal;
+	font-weight: normal;
+	cursor: default;
+	color: #333;
+	font-family: 'Roboto', Helvetica, Arial, Tahoma, Verdana;
+	background: #FFF;
+	border-radius: 3px;
+}
+
+.tooltip .arrow:before {
+	border-left-color: #FFF;
+}
 
 
 
