@@ -104,57 +104,114 @@
 	<section>
 		<div class="container-fluid content">
 			<div class="row">
-				<div class="col-12 net-worth">
-					<label>Net Worth</label>
-					<span class="info" data-toggle="tooltip" data-placement="left" title="Currently included only ANTE holdings">i</span>
-					<span class="amount"><i class="icon-trx"></i>2,520,410</span>
-					<span class="total-usd">$0.72</span><span class="percent"><span class="up">+12%</span><span class="down">-1%</span></span>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12 earnings">
-					<label>Dividend Earnings</label>
-					<span class="amount"><i class="icon-trx"></i>1,554,326.99</span>
-					<span class="amount"><i class="icon-btt"></i>1,554,326.99</span>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12 holdings">
+				<div class="col-12 trans-history">
+					<div class="add">
+						<button class="submit-btn" data-toggle="modal" data-target="#exampleModal">Add Transaction</button>
+					</div>
 					<div class="heading">
 						<label class="coin">Coin</label>
+						<label class="dd">Date</label>
 						<label class="price">Price</label>
-						<label class="hold">Holdings</label>
+						<label class="hold">Amount</label>
 					</div>
 					<div class="coin-row">
-						<a href="transactions.html" class="transactions"></a>
 						<div class="coin">
-							<i class="icon-ante"></i>Ante
+							<i class="icon-ante"></i>
+						</div>
+						<div class="date">
+							12.12.2020
 						</div>
 						<div class="coin-price">
-							<span class="price"><i class="icon-trx"></i>22.35</span>
-							<span class="percent up">12%</span>
-							<!--<span class="percent down">12%</span>-->
+							<i class="icon-trx"></i>22.35
 						</div>
 						<div class="coin-holdings">
-							<span class="price"><i class="icon-trx"></i>12,322,435.35</span>
-							<span class="amount">450,000.00</span>
-							<button class="add-btn" data-toggle="modal" data-target="#exampleModal">Add</button>
+							450,000.00
+						</div>
+						<div class="action">
+							<a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal" class="edit-btn">Edit</a>
+							<a href="/" class="remove-btn"><i class="icon-remove"></i></a>
 						</div>
 					</div>
-					<div class="coin-row only-price">
-						<a href="live-transactions.html" class="transactions"></a>
+					<div class="coin-row">
 						<div class="coin">
-							<i class="icon-live"></i>Live
+							<i class="icon-ante"></i>
+						</div>
+						<div class="date">
+							12.12.2020
 						</div>
 						<div class="coin-price">
-							<span class="price"><i class="icon-trx"></i>22.35</span>
-							<span class="percent up">12%</span>
-							<!--<span class="percent down">12%</span>-->
+							<i class="icon-trx"></i>22.35
 						</div>
 						<div class="coin-holdings">
-							<span class="price"><i class="icon-trx"></i>12,322,435.35</span>
-							<span class="amount">450,000.00</span>
-							<button class="add-btn" data-toggle="modal" data-target="#exampleModal">Add</button>
+							450,000.00
+						</div>
+						<div class="action">
+							<a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal" class="edit-btn">Edit</a>
+							<a href="/" class="remove-btn"><i class="icon-remove"></i></a>
+						</div>
+					</div>
+					<div class="coin-row">
+						<div class="coin">
+							<i class="icon-ante"></i>
+						</div>
+						<div class="date">
+							12.12.2020
+						</div>
+						<div class="coin-price">
+							<i class="icon-trx"></i>22.35
+						</div>
+						<div class="coin-holdings">
+							450,000.00
+						</div>
+						<div class="action">
+							<a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal" class="edit-btn">Edit</a>
+							<a href="/" class="remove-btn"><i class="icon-remove"></i></a>
+						</div>
+					</div>
+					<div class="coin-row">
+						<div class="coin">
+							<i class="icon-ante"></i>
+						</div>
+						<div class="date">
+							12.12.2020
+						</div>
+						<div class="coin-price">
+							<i class="icon-trx"></i>22.35
+						</div>
+						<div class="coin-holdings">
+							450,000.00
+						</div>
+						<div class="action">
+							<a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal" class="edit-btn">Edit</a>
+							<a href="/" class="remove-btn"><i class="icon-remove"></i></a>
+						</div>
+					</div>
+					<div class="coin-row">
+						<div class="coin">
+							<i class="icon-ante"></i>
+						</div>
+						<div class="date">
+							12.12.2020
+						</div>
+						<div class="coin-price">
+							<i class="icon-trx"></i>22.35
+						</div>
+						<div class="coin-holdings">
+							450,000.00
+						</div>
+						<div class="action">
+							<a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal" class="edit-btn">Edit</a>
+							<a href="/" class="remove-btn"><i class="icon-remove"></i></a>
+						</div>
+					</div>
+					<div class="add">					
+						<div class="btn-group pages">
+							<button class="active">1</button>
+							<button>2</button>
+							<button>3</button>
+							<button>4</button>
+							<button>5</button>
+							<button>6</button>
 						</div>
 					</div>
 				</div>
@@ -166,9 +223,8 @@
 		<div class="container-fluid navigation">
 			<div class="row">
 				<div class="col-12">
-					<a href="javascript:void(0)" class="add-btn" data-toggle="modal" data-target="#exampleModal"><i class="icon-plus"></i></a>
 					<ul>
-						<li><a href="index.html" class="active"><i class="icon-home"></i>Home</a></li>
+						<li><a href="index.html"><i class="icon-home"></i>Home</a></li>
 						<li><a href="divs.html"><i class="icon-divs"></i><span class="notification"><span class="amount">23</span></span>Dividends</a></li>
 						<li><a href="goals.html"><i class="icon-goals"></i>Goals</a></li>
 						<li><a href="mining.html"><i class="icon-mining"></i>Mining</a></li>
