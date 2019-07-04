@@ -845,7 +845,8 @@ section.twitter-widget {
 	align-items: center;
 }
 
-.modal .modal-dialog .modal-content .modal-body .btn-group .btn {
+.modal .modal-dialog .modal-content .modal-body .btn-group .btn,
+section .sub-nav .btn-group .btn {
 	height: 36px;
 	padding-top: 7px;
 	font-size: 14px;
@@ -857,13 +858,16 @@ section.twitter-widget {
 	border-bottom: 1px solid #12141f;
 }
 
-.modal .modal-dialog .modal-content .modal-body .btn-group .active {
+.modal .modal-dialog .modal-content .modal-body .btn-group .active,
+section .sub-nav .btn-group .active {
 	color: #FFF;
 	border-bottom: 1px solid #FFF;
 }
 
 .modal .modal-dialog .modal-content .modal-body .btn-group .btn:first-child,
-.modal .modal-dialog .modal-content .modal-body .btn-group .btn:last-child {
+.modal .modal-dialog .modal-content .modal-body .btn-group .btn:last-child,
+section .sub-nav .btn-group .btn:first-child,
+section .sub-nav .btn-group .btn:last-child {
 	border-radius: 0;
 }
 
@@ -1199,14 +1203,24 @@ section.mining .content .icon-live-fly4 {
 }
 
 
-section .content .row .platform {
+
+
+
+
+
+section .content .row .platform,
+section .content .row .current-price,
+section .content .row .burnt-ante {
+	display: table;
 	padding: 15px;
 	color: #FFF;
 	background: #131722;
 	border-radius: 3px;
 }
 
-section .content .row .platform label {
+section .content .row .platform label,
+section .content .row .current-price label,
+section .content .row .burnt-ante label {
 	display: block;
 	width: 100%;
 	padding: 0 0 6px 0;
@@ -1232,6 +1246,182 @@ section .content .row .platform .cc .amount {
 	font-weight: 700;
 	color: #1af135;
 }
+
+
+
+
+
+
+
+
+section .content .row .current-price:before {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: block;
+	z-index: 1;
+	content:'';
+	width: 130px;
+	height: 130px;
+	opacity: 0.25;
+	background: url('../img/icon-ante.svg') no-repeat;
+	background-size: 260px;
+}
+
+section .content .row .current-price .price {
+	display: flex;
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	height: 90px;
+	font-size: 60px;
+	font-weight: 700;
+	letter-spacing: -2px;
+	align-items: center;
+	justify-content: center;
+}
+
+section .content .row .current-price .price i.icon-trx {
+	margin: 20px 7px 0 0;
+	width: 21px;
+	height: 23px;
+	background: url('../img/icon-trx.svg') no-repeat;
+	background-size: 21px auto;
+}
+
+section .content .row .current-price .total-usd,
+section .content .row .current-price .percent {
+	position: relative;
+	float: left;
+	z-index: 2;
+	width: 50%;
+	height: 22px;
+	font-weight: 700;
+}
+
+section .content .row .current-price .total-usd {
+	padding: 2px 0;
+	color: #1af135;
+}
+
+section .content .row .current-price .percent {
+	display: flex;
+	padding: 0;
+	justify-content: flex-end;
+}
+
+section .content .row .current-price .percent span.up,
+section .content .row .current-price .percent span.down {
+	min-width: 44px;
+	padding: 2px 4px;
+	text-align: center;
+	border-radius: 2px;
+}
+
+section .content .row .current-price .percent span.up {
+	color: #292628;
+	background: #1af135;
+}
+
+section .content .row .current-price .percent span.down {
+	color: #FFF;
+	background: #f81f1f;
+}
+
+
+
+
+
+section .content .row .burnt-ante {
+	background-image: linear-gradient(#131722, #cb2026);
+}
+
+section .content .row .burnt-ante:before {
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	bottom: 0;
+	content:'';
+	display: block;
+	width: 100%;
+	height: 50px;
+	background: url('../img/fire.svg') repeat-x center bottom;
+	background-size: auto 50px;
+	border-radius: 0 0 3px 3px;
+}
+
+section .content .row .burnt-ante .price,
+section .content .row .burnt-ante .total-supply,
+section .content .row .burnt-ante .percent,
+section .content .row .burnt-ante a.log {
+	position: relative;
+	z-index: 3;
+}
+
+section .content .row .burnt-ante a.log {
+	position: absolute;
+	top: 14px;
+	right: 20px;
+	display: block;
+	min-width: 44px;
+	text-align: center;
+	color: #FFF;
+	text-decoration: none;
+	border-bottom: 1px dotted #FFF;
+}
+
+section .content .row .burnt-ante .total-supply {
+	float: left;
+	width: 60%;
+	padding: 2px 0 0 0;
+	color: #ff5858;
+}
+
+section .content .row .burnt-ante .total-supply span.amount,
+section .content .row .burnt-ante .total-supply span.amount a,
+section .content .row .burnt-ante .percent span.amount {
+	display: block;
+	font-weight: 700;
+	font-size: 16px;
+	color: #FFF;
+}
+
+section .content .row .burnt-ante .percent {
+	float: left;
+	width: 40%;
+	padding: 2px 0 0 0;
+	text-align: right;
+	color: #ff5858;
+}
+	
+section .content .row .burnt-ante .price {
+	display: flex;
+	width: 100%;
+	height: 90px;
+	font-size: 36px;
+	font-weight: 700;
+	letter-spacing: -2px;
+	align-items: center;
+	justify-content: center;
+}
+
+section .sub-nav {
+	margin: -15px 0 15px -15px;
+	display: block;
+	width: calc(100% + 30px);
+	background: red;
+}
+
+section .sub-nav .btn-group {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 576px;
+}
+
+
+
+
+
 
 
 
