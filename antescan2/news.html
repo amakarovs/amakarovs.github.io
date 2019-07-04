@@ -69,16 +69,35 @@
 		<div class="container-fluid top-nav">
 			<div class="row">
 				<div class="col-6 logo">
-					<a href=""></a>
+					<a href="http://antescan.live"></a>
 				</div>
 				<div class="col-6 wallet">
 					<span class="address">TNirp...1y8Vq</span><button class="burger"><i class="bar"></i></button>
-					<ul class="sub-nav">
-						<li><a href="">x</a></li>
-						<li><a href="">x</a></li>
-						<li><a href="">x</a></li>
-						<li><a href="">x</a></li>
-					</ul>
+					<div class="floating-nav">
+						<div class="set-currency">
+							<label>Set Fiat Currency</label>
+							<select class="form-control" id="exampleFormControlSelect1">
+								<option>USD</option>
+								<option>EUR</option>
+								<option>GBP</option>
+								<option>BTC</option>
+								<option>RUB</option>
+								<option>CAD</option>
+								<option>CNY</option>
+								<option>INR</option>
+							</select>
+						</div>
+						<div class="social">
+							<label>Social</label>
+							<a href="https://twitter.com/antescan1" target="_blank"><i class="icon-twitter"></i></a>
+							<a href="https://t.me/joinchat/GFfpXxO-9aTC4hcPTe1Eug" target="_blank"><i class="icon-telegram"></i></a>
+						</div>
+						<div class="donate">
+							<label>Donate</label>
+							<span class="trx">TRX Address</span>
+							<address>TDBq8e8dqopFu6kZYupXNAfWmBvfLPtCVX</address>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -116,6 +135,7 @@
 	
 	$('.burger').click(function(){
         $('.burger').toggleClass('expand');
+        $('.floating-nav').toggleClass('show-nav');
 	});
 </script>
 
