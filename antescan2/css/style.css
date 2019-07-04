@@ -134,15 +134,18 @@ header .top-nav .row .wallet .floating-nav {
 header .top-nav .row .wallet .floating-nav.show-nav {
 	animation: float-nav 0.7s ease-in-out;
 	right: 0;
+	opacity: 1;
 }
 
 @-webkit-keyframes float-nav {
-	0% {right: -100%;}
+	0% {right: -100%; opacity: 0;}
+	75% {opacity: 1;}
 	100% {right: 0;}
 }
 
 @keyframes float-nav {
-	0% {right: -100%;}
+	0% {right: -100%; opacity: 0;}
+	75% {opacity: 1;}
 	100% {right: 0;}
 }
 
