@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>antescan.live</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+<div class="wrap">
+
+	<header>
+		<div class="container-fluid top-nav">
+			<div class="row">
+				<div class="col-6 logo">
+					<a href=""></a>
+				</div>
+				<div class="col-6 wallet">
+					<span class="address">TNirp...1y8Vq</span><button class="burger"><i class="bar"></i></button>
+					<ul class="sub-nav">
+						<li><a href="">x</a></li>
+						<li><a href="">x</a></li>
+						<li><a href="">x</a></li>
+						<li><a href="">x</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<section>
+		<div class="sub-nav">
+			<div class="btn-group tb-sub-nav" role="group" aria-label="Basic example">
+				<a href="platform.html" class="btn">Overall</a>
+				<a href="chart.html" class="btn active">Chart</a>
+				<a href="dau.html" class="btn">DAU & Volume</a>
+			</div>
+		</div>
+		<div class="container-fluid content">	
+			<div class="row">
+				<div class="col-12 chart">
+					<div class="btn-group date-range">
+						<button class="active">24h</button>
+						<button>7D</button>
+						<button>14D</button>
+						<button>30D</button>
+						<button>90D</button>
+						<button>MAX</button>
+					</div>
+					insert price chart here
+				</div>
+			</div>
+		</div>
+	</section>	
+		
+	<nav>
+		<div class="container-fluid navigation">
+			<div class="row">
+				<div class="col-12">
+					<ul>
+						<li><a href="index.html"><i class="icon-home"></i>Home</a></li>
+						<li><a href="divs.html"><i class="icon-divs"></i><span class="notification"><span class="amount">23</span></span>Dividends</a></li>
+						<li><a href="goals.html"><i class="icon-goals"></i>Goals</a></li>
+						<li><a href="mining.html"><i class="icon-mining"></i>Mining</a></li>
+						<li><a href="platform.html" class="active"><i class="icon-platform"></i>Platform</a></li>
+						<li><a href="news.html"><i class="icon-news"></i>News</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+</div>
+
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
+	
+	$('.burger').click(function(){
+        $('.burger').toggleClass('expand');
+	});
+</script>
+
+</body>
+</html>

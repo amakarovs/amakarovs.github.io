@@ -858,6 +858,10 @@ section .sub-nav .btn-group .btn {
 	border-bottom: 1px solid #12141f;
 }
 
+section .sub-nav .tb-sub-nav .btn {
+	width: 33.33%;
+}
+
 .modal .modal-dialog .modal-content .modal-body .btn-group .active,
 section .sub-nav .btn-group .active {
 	color: #FFF;
@@ -1204,12 +1208,17 @@ section.mining .content .icon-live-fly4 {
 
 section .content .row .platform,
 section .content .row .current-price,
-section .content .row .burnt-ante {
+section .content .row .burnt-ante,
+section .content .row .chart {
 	display: table;
 	padding: 15px;
 	color: #FFF;
 	background: #131722;
 	border-radius: 3px;
+}
+
+section .content .row .chart {
+	height: 380px;
 }
 
 section .content .row .platform label,
@@ -1392,13 +1401,11 @@ section .sub-nav {
 	margin: -15px 0 15px -15px;
 	display: block;
 	width: calc(100% + 30px);
-	background: red;
 }
 
 section .sub-nav .btn-group {
 	margin: 0 auto;
 	width: 100%;
-	max-width: 576px;
 }
 
 .modal .modal-dialog .modal-content .burnt-log {
@@ -1435,6 +1442,34 @@ section .sub-nav .btn-group {
 }
 
 
+
+
+
+
+section .content .row .chart .date-range {
+	display: block;
+	margin-bottom: 15px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+section .content .row .chart .date-range button {
+	height: 25px;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #a4a5a4;
+	background: #2d303a;
+	outline: none;
+	cursor: pointer;
+	border: none;
+	box-shadow: inset 0 2px 2px rgba(0,0,0,0.2);
+}
+
+section .content .row .chart .date-range button.active {
+	color: #000;
+	background: #FFF;
+}
 
 
 
