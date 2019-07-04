@@ -849,8 +849,7 @@ section.twitter-widget {
 section .sub-nav .btn-group .btn {
 	height: 36px;
 	padding-top: 7px;
-	font-size: 14px;
-	text-transform: uppercase;
+	font-size: 12px;
 	color: #a4a5a4;
 	outline: none;
 	box-shadow: none;
@@ -961,8 +960,7 @@ section.mining .content .btn-group {
 section.mining .content .btn-group .btn {
 	height: 36px;
 	padding-top: 7px;
-	font-size: 14px;
-	text-transform: uppercase;
+	font-size: 12px;
 	color: #a4a5a4;
 	outline: none;
 	box-shadow: none;
