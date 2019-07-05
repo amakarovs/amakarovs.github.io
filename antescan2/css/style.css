@@ -1506,7 +1506,8 @@ section .content .row .platform,
 section .content .row .current-price,
 section .content .row .burnt-ante,
 section .content .row .chart,
-section .content .row .calculator {
+section .content .row .calculator,
+section .content .row .current-divs {
 	display: table;
 	padding: 15px;
 	color: #FFF;
@@ -1521,7 +1522,8 @@ section .content .row .chart {
 section .content .row .platform label,
 section .content .row .current-price label,
 section .content .row .burnt-ante label,
-section .content .row .calculator label {
+section .content .row .calculator label,
+section .content .row .current-divs label {
 	display: block;
 	width: 100%;
 	padding: 0 0 6px 0;
@@ -1791,46 +1793,14 @@ section .content .row .trans-history .add .pages button.active {
 
 
 
-
-
-/*
-
-section .content .row .calculator:before {
-	display: block;
-	z-index: 1;
-	content:'';
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 155px;
-	background-image: linear-gradient(#131722, #0f864c);
-	border-radius: 0 0 3px 3px;
-}
-
-section .content .row .calculator:after {
-	display: block;
-	z-index: 2;
-	content:'';
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 155px;
-	opacity: 0.1;
-	background: url('../img/texture-light.svg') repeat center;
-	background-size: 76px auto;
-	border-radius: 0 0 3px 3px;
-}
-
-*/
-
 section .content .row .calculator {
 	padding: 0;
 }
 
 section .content .row .calculator label,
+section .content .row .current-divs label,
 section .content .row .calculator .btn-group,
+section .content .row .current-divs .btn-group,
 section .content .row .calculator .form,
 section .content .row .calculator .total {
 	position: relative;
@@ -1838,19 +1808,22 @@ section .content .row .calculator .total {
 	float: left;
 }
 
-section .content .row .calculator label {
-	width: 60%;
-	padding: 17px 0 0 15px;
+section .content .row .calculator label,
+section .content .row .current-divs label {
+	width: 50%;
+	padding: 17px 0 2px 15px;
 }
 
-section .content .row .calculator .btn-group {
+section .content .row .calculator .btn-group,
+section .content .row .current-divs .btn-group {
 	display: flex;
 	padding: 15px 15px 0 0;
 	justify-content: flex-end;
-	width: 40%;
+	width: 50%;
 }
 
-section .content .row .calculator .btn-group button {
+section .content .row .calculator .btn-group button,
+section .content .row .current-divs .btn-group button {
 	height: 25px;
 	padding: 0 5px;
 	font-size: 12px;
@@ -1863,26 +1836,21 @@ section .content .row .calculator .btn-group button {
 	box-shadow: inset 0 2px 2px rgba(0,0,0,0.2);
 }
 
-section .content .row .calculator .btn-group button.active {
+section .content .row .calculator .btn-group button.active,
+section .content .row .current-divs .btn-group button.active {
 	color: #000;
 	background: #FFF;
 }
 
-section .content .row .calculator .btn-group button:first-child {
+section .content .row .calculator .btn-group button:first-child,
+section .content .row .current-divs .btn-group button:first-child {
 	border-radius: 2px 0 0 2px;
 }
 
-section .content .row .calculator .btn-group button:last-child {
+section .content .row .calculator .btn-group button:last-child,
+section .content .row .current-divs .btn-group button:last-child {
 	border-radius: 0 2px 2px 0;
 }
-
-
-
-
-
-
-
-
 
 section .content .row .calculator .form {
 	display: table;
@@ -2119,6 +2087,180 @@ section .content .row .calculator .total a.invest-btn {
 section .content .row .calculator .total a:active.invest-btn {
 	background: #0ecf2b;
 }
+
+
+section .content .row .current-divs {
+	padding: 0;
+}
+
+section .content .row .current-divs span.countdown {
+	width: 100%;
+	float: left;
+	padding: 5px 15px 15px 15px;
+	color: #a4a5a4;
+}
+
+section .content .row .current-divs span.countdown span.left {
+	margin-left: 6px;
+	color: #FFF;
+	font-weight: 700;
+}
+
+section .content .row .current-divs .pool-row {
+	width: 100%;
+	float: left;
+}
+
+section .content .row .current-divs .pool-row .pool {
+	display: block;
+	width: 100%;
+	height: 90px;
+	padding: 15px 0 0 0;
+	text-align: center;
+}
+
+section .content .row .current-divs .pool-row .pool span.amount,
+section .content .row .current-divs .pool-row .pool span.sub-title {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+section .content .row .current-divs .pool-row .pool span.amount {
+	height: 40px;
+	line-height: 1;
+	font-weight: 700;
+	font-size: 24px;
+}
+
+section .content .row .current-divs .pool-row .pool span.amount span.btt-divs {
+	display: block;
+	width: 100%;
+	padding-top: 2px;
+	font-size: 15px;
+	font-weight: normal;
+}
+
+section .content .row .current-divs .pool-row .pool span.amount span.btt-divs i.icon-btt {
+	margin: 0 4px 0 0;
+	width: 14px;
+	height: 14px;
+	background: url('../img/btt-logo-light.svg') no-repeat;
+	background-size: 14px;
+}
+
+section .content .row .current-divs .pool-row .pool span.amount i.icon-trx,
+section .content .row .current-divs .pool-row .pool span.amount span.info,
+section .content .row .current-divs .pool-row .pool span.amount span.btt-divs i.icon-btt,
+section .content .row .current-divs .total-pool span.amount i.icon-trx {
+	display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+}
+
+section .content .row .current-divs .pool-row .pool span.amount i.icon-trx {
+	margin: 4px 6px 0 0;
+	width: 16px;
+	height: 17px;
+	background: url('../img/icon-trx.svg') no-repeat;
+	background-size: 16px auto;
+}
+
+section .content .row .current-divs .pool-row .pool span.amount span.info {
+	margin: -4px 0 0 4px;
+	width: 16px;
+    height: 16px;
+    padding-top: 2px;
+    text-align: center;
+    font-size: 12px;
+	line-height: 1;
+    color: #333;
+    font-weight: 700;
+    font-family: Times New Roman;
+    font-style: italic;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    background: #FFF;
+}
+
+section .content .row .current-divs .pool-row .pool span.sub-title {
+	padding-top: 4px;
+}
+
+section .content .row .current-divs .pool-row .ante-pool {
+	border-bottom: 2px solid #18ef36;
+}
+
+section .content .row .current-divs .pool-row .ante-pool span.sub-title {
+	color: #18ef36;
+}
+
+section .content .row .current-divs .pool-row .live-pool {
+	border-bottom: 2px solid #f81f1f;
+}
+
+section .content .row .current-divs .pool-row .live-pool span.sub-title {
+	color: #f81f1f;
+}
+
+section .content .row .current-divs .total-pool {
+	display: block;
+	float: left;
+	width: 100%;
+	height: 155px;
+}
+
+section .content .row .current-divs .total-pool label {
+	width: 100%;
+}
+
+section .content .row .current-divs .total-pool span.amount {
+	display: block;
+	width: 100%;
+	font-weight: 700;
+	font-size: 48px;
+	text-align: center;
+	letter-spacing: -2px;
+}
+
+section .content .row .current-divs .total-pool span.amount i.icon-trx {
+	margin: 31px 6px 0 0;
+	width: 21px;
+	height: 23px;
+	background: url('../img/icon-trx.svg') no-repeat;
+	background-size: 21px auto;
+}
+
+section .content .row .current-divs .total-pool span.amount span.btt-divs {
+	display: block;
+	width: 100%;
+	margin-top: 2px 0 0 0;
+	text-align: center;
+	letter-spacing: 0;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+section .content .row .current-divs .total-pool span.amount span.btt-divs i.icon-btt {
+	margin: 1px 4px 0 0;
+	display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+	width: 18px;
+	height: 18px;
+	background: url('../img/btt-logo-light.svg') no-repeat;
+	background-size: 18px;
+}
+
+
+
+
+
 
 
 

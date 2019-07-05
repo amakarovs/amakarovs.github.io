@@ -58,62 +58,37 @@
 	<section>
 		<div class="sub-nav">
 			<div class="btn-group tb-sub-nav" role="group" aria-label="Basic example">
-				<a href="divs.html" class="btn active">Calculator</a>
-				<a href="current-divs.html" class="btn">Pool</a>
+				<a href="divs.html" class="btn">Calculator</a>
+				<a href="current-divs.html" class="btn active">Pool</a>
 				<a href="history.html" class="btn">History</a>
 			</div>
 		</div>
 		<div class="container-fluid content">	
 			<div class="row">
-				<div class="col-12 calculator">
-					<label>Dividends Calculator</label>
+				<div class="col-12 current-divs">
+					<label>Available Dividends</label>
 					<div class="btn-group">
 						<button class="active">Ante/Live</button>
 						<button>Ante</button>
 						<button>Live</button>
 					</div>
-					<div class="form">
-						<div class="col">
-							<span class="title">Your ANTE</span>
-							<input type="text" value="1000" class="input" />
-							<i class="icon-ante"></i>
+					<span class="countdown">Next Payout:<span class="left">02:10:45</span></span>
+					<div class="pool-row">
+						<div class="pool ante-pool">
+							<span class="amount">
+								<i class="icon-trx"></i>20,204,842.46<span class="info" data-toggle="tooltip" data-placement="left" title="Included 15% from LIVE dividends pool">i</span>
+								<span class="btt-divs"><i class="icon-btt"></i>20,204,842.46</span>
+							</span>
+							<span class="sub-title">ANTE Dividends Pool</span>
 						</div>
-						<span class="symbol"><i class="multiply"></i></span>
-						<div class="col">
-							<span class="title">Total ANTE frozen</span>
-							<span class="input">68,620,720.93</span>
-							<i class="icon-ante"></i>
-						</div>
-						<span class="symbol"><i class="divide"></i></span>
-						<div class="col total-divs">
-							<span class="title">Available Dividends</span>
-							<span class="input">20,204,842.46</span>
-							<i class="icon-trx"></i>
+						<div class="pool live-pool">
+							<span class="amount"><i class="icon-trx"></i>20,204,842.46</span>
+							<span class="sub-title">LIVE Dividends Pool</span>
 						</div>
 					</div>
-					<div class="form">
-						<div class="col">
-							<span class="title">Your LIVE</span>
-							<input type="text" value="1000" class="input" />
-							<i class="icon-live"></i>
-						</div>
-						<span class="symbol"><i class="multiply"></i></span>
-						<div class="col">
-							<span class="title">Total LIVE frozen</span>
-							<span class="input">68,620,720.93</span>
-							<i class="icon-live"></i>
-						</div>
-						<span class="symbol"><i class="divide"></i></span>
-						<div class="col total-divs">
-							<span class="title">Available Dividends</span>
-							<span class="input">20,204,842.46</span>
-							<i class="icon-trx"></i>
-						</div>
-					</div>
-					<div class="total">
-						<label>You will Receive</label>
-						<span class="amount"><i class="icon-trx"></i>10,235.12<span class="fiat-amount">$70,456.99</span><span class="plus-btt"><i class="icon-btt"></i>235.12</span></span>
-						<a href="https://trontrade.io/" target="_blank" class="invest-btn">Buy ANTE</a>
+					<div class="total-pool">
+						<label>Total Available Dividends</label>
+						<span class="amount"><i class="icon-trx"></i>40,408,842.12<span class="btt-divs"><i class="icon-btt"></i>20,204,842.46</span></span>
 					</div>
 				</div>
 			</div>
