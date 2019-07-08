@@ -887,6 +887,41 @@ section .content .row .trans-history .coin-row .coin {
 	width: 10%;
 }
 
+section .content .row .trans-history .coin-row .status {
+	width: 15%;
+}
+
+section .content .row .trans-history .coin-row .status i.icon-check {
+	display: block;
+	position: relative;
+	float: right;
+	width: 16px;
+	height: 16px;
+}
+
+section .content .row .trans-history .coin-row .status i.icon-check:before,
+section .content .row .trans-history .coin-row .status i.icon-check:after {
+	display: block;
+	position: absolute;
+	width: 2px;
+	content: '';
+	background: #1af135;
+}
+
+section .content .row .trans-history .coin-row .status i.icon-check:before {
+	left: 2px;
+	top: 7px;
+	height: 8px;
+	transform: rotate(-45deg);
+}
+
+section .content .row .trans-history .coin-row .status i.icon-check:after {
+	top: 2px;
+	left: 9px;
+	height: 14px;
+	transform: rotate(45deg);
+}
+
 section .content .row .trans-history .heading label.price,
 section .content .row .trans-history .coin-row .coin-price,
 section .content .row .trans-history .coin-row .action {
@@ -904,7 +939,8 @@ section .content .row .trans-history .coin-row .coin,
 section .content .row .trans-history .coin-row .coin-price,
 section .content .row .trans-history .coin-row .coin-holdings,
 section .content .row .trans-history .coin-row .date,
-section .content .row .trans-history .coin-row .action {
+section .content .row .trans-history .coin-row .action,
+section .content .row .trans-history .coin-row .status {
 	display: block;
 	position: relative;
 	float: left;
@@ -2256,6 +2292,296 @@ section .content .row .current-divs .total-pool span.amount span.btt-divs i.icon
 	background: url('../img/btt-logo-light.svg') no-repeat;
 	background-size: 18px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section .content .row .active-goal {
+	display: table;
+	padding: 15px;
+	background-image: -webkit-gradient(linear,center top,center bottom,from(#131722),to(#1e2235));
+    background-image: -webkit-linear-gradient(#131722,#1e2235);
+    background-image: linear-gradient(#131722,#1e2235);
+	border-radius: 3px;
+}
+
+section .content .row .active-goal label,
+section .content .row .active-goal .btn-group,
+section .content .row .active-goal .col {
+	float: left;
+	width: 50%;
+}
+
+section .content .row .active-goal label {
+	padding: 2px 0 2px 0;
+	font-weight: 700;
+}
+
+section .content .row .active-goal .btn-group {
+	display: flex;
+	padding: 0;
+	justify-content: flex-end;
+}
+
+section .content .row .active-goal .btn-group button {
+	height: 25px;
+	padding: 0 5px;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #a4a5a4;
+	background: #2d303a;
+	outline: none;
+	cursor: pointer;
+	border: none;
+	box-shadow: inset 0 2px 2px rgba(0,0,0,0.2);
+}
+
+section .content .row .active-goal .btn-group button.active {
+	color: #000;
+	background: #FFF;
+}
+
+section .content .row .active-goal .btn-group button:first-child {
+	border-radius: 2px 0 0 2px;
+}
+
+section .content .row .active-goal .btn-group button:last-child {
+	border-radius: 0 2px 2px 0;
+}
+
+section .content .row .active-goal .col {
+	padding: 15px 0 0 0;
+	font-size: 14px;
+}
+
+section .content .row .active-goal .target-col {
+	text-align: right;
+}
+
+section .content .row .active-goal .col span {
+	display: block;
+	position: relative;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+section .content .row .active-goal .col span.sub-title {
+	color: #4e505e;
+	font-weight: normal;
+	padding-bottom: 5px;
+}
+
+section .content .row .active-goal .col span.dd {
+	padding-bottom: 14px;
+}
+
+section .content .row .active-goal .col span.dd span.usd {
+	font-weight: normal;
+	font-size: 13px;
+	padding-top: 4px;
+	color: #0cc127;
+}
+
+section .content .row .active-goal .col span.dd i {
+	display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+}
+
+section .content .row .active-goal .col span.dd i.icon-trx {
+	margin: 0 4px 0 0;
+	width: 13px;
+	height: 14px;
+	background: url('../img/icon-trx.svg') no-repeat;
+	background-size: auto 14px;
+}
+
+section .content .row .active-goal .col span.dd i.icon-ante,
+section .content .row .active-goal .col span.dd i.icon-live {
+	margin: -1px 4px 0 0;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+}
+
+section .content .row .active-goal .col span.dd i.icon-ante {
+	background: url('../img/icon-ante.svg') no-repeat center;
+	background-size: 100%;
+}
+
+section .content .row .active-goal .col span.dd i.icon-live {
+	background: url('../img/icon-live.svg') no-repeat center;
+	background-size: 100%;
+}
+
+section .content .row .active-goal .percent {
+	position: relative;
+	width: 100%;
+	height: 230px;
+	float: left;
+}
+
+section .content .row .active-goal .percent span.amount {
+	position: absolute;
+	left: calc(50% - 24px);
+	top: 17px;
+	display: block;
+	width: 80px;
+	font-size: 30px;
+	text-align: center;
+	font-weight: 700;
+	letter-spacing: -1px;
+	transform: rotate(20deg);
+}
+
+section .content .row .active-goal .percent span.duration {
+	display: block;
+	width: 100%;
+	padding-top: 184px;
+	line-height: 1;
+	font-weight: 600;
+	font-size: 18px;
+	text-align: center;
+	color: #5c5e6c;
+}
+
+section .content .row .active-goal .percent span.duration span.hit {
+	display: block;
+	font-size: 12px;
+	color: #5c5e6c;
+	font-weight: normal;
+}
+
+section .content .row .active-goal .progress-bar {
+	display: block;
+	float: left;
+	width: 100%;
+	height: 16px;
+	overflow: hidden;
+	background: #12141f;
+	box-shadow: inset 0 4px 7px rgba(0,0,0,0.5);
+	border-radius: 8px;
+}
+
+section .content .row .active-goal .progress-bar span.completed {
+	display: block;
+	position: relative;
+	height: 16px;
+	overflow: hidden;
+	box-shadow: inset 0 4px 7px rgba(0,0,0,0.5);
+	border-radius: 8px;
+}
+
+section .content .row .active-goal .progress-bar span.completed:before {
+	display: block;
+	position: absolute;
+	left: -100%;
+	width: 200%;
+	height: 16px;
+	background: url('../img/progress-bar.svg') repeat-x;
+	background-size: 30px 30px;
+	content: '';
+	opacity: 0.15;
+	border-radius: 8px;
+	animation: progress-bar-animation 10s linear infinite;
+}
+
+@-webkit-keyframes progress-bar-animation {
+	0% {left: -100%;}
+	100% {left: 0;}
+}
+
+@keyframes progress-bar-animation {
+	0% {left: -100%;}
+	100% {left: 0;}
+}
+
+section .content .row .active-goal .current-ante {
+	display: block;
+	float: left;
+	width: 100%;
+	padding: 0;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+section .content .row .active-goal .current-ante span.amount {
+	display: block;
+	padding-top: 15px;
+	font-size: 48px;
+	letter-spacing: -1px;
+	line-height: 1;
+	font-weight: 700;
+}
+
+section .content .row .active-goal .current-ante a.edit-btn {
+	display: block;
+	margin: 0 auto;
+	width: 60%;
+    height: 36px;
+	padding-top: 6px;
+    text-decoration: none;
+	text-transform: capitalize;
+    outline: none;
+    color: #6e717f;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 18px;
+    border: 1px solid #393c48;
+}
+
+section .content .row .ante-goal .progress-bar span.completed {
+	background: #0cc127;
+}
+
+section .content .row .ante-goal .percent {
+	background: url('../img/target-ante.svg') no-repeat center bottom;
+	background-size: 295px auto;
+}
+
+section .content .row .live-goal .progress-bar span.completed {
+	background: #f81f1f;
+}
+
+section .content .row .live-goal .percent {
+	background: url('../img/target-live.svg') no-repeat center bottom;
+	background-size: 295px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
