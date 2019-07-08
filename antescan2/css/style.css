@@ -2537,7 +2537,7 @@ section .content .row .active-goal .current-ante span.amount {
 section .content .row .active-goal .current-ante a.edit-btn {
 	display: block;
 	margin: 0 auto;
-	width: 60%;
+	width: calc(60% + 20px);
     height: 36px;
 	padding-top: 6px;
     text-decoration: none;
