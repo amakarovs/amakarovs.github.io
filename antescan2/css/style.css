@@ -47,10 +47,10 @@ header .top-nav .row .logo {
 
 header .top-nav .row .logo a {
 	display: block;
-	width: 98px;
+	width: 90px;
 	height: 13px;
-	background: url('../img/antescan-logo.svg') no-repeat;
-	background-size: 98px 13px;
+	background: url('../img/winkscan-logo.svg') no-repeat;
+	background-size: auto 13px;
 }
 
 header .top-nav .row .wallet {
@@ -313,7 +313,27 @@ nav .navigation .row .col-12 ul {
 }
 
 nav .navigation .row .col-12 ul li {
+	position: relative;
 	width: 16.66%;
+}
+
+nav .navigation .row .col-12 ul li.soon {
+	opacity: 0.5;
+}
+
+nav .navigation .row .col-12 ul li.soon:after {
+	position: absolute;
+	display: block;
+	z-index: 4;
+	left: calc(50% - 22px);
+	top: calc(50% - 9px);
+	width: 44px;
+	height: 17px;
+	content:'SOON';
+	font-size: 12px;
+	text-align: center;
+	background: #6e717f;
+	border-radius: 2px;
 }
 
 nav .navigation .row .col-12 ul li a {
@@ -830,14 +850,6 @@ section .content .row .holdings .coin-row .coin-holdings button:active.add-btn {
 	transition: all 0.3s ease-in-out;
 }
 
-
-
-
-
-
-
-
-
 section .content .row .trans-history {
 	padding: 0;
 }
@@ -869,6 +881,16 @@ section .content .row .trans-history .coin-row .coin i {
 	width: 18px;
 	height: 18px;
 	border-radius: 50%;
+}
+
+section .content .row .trans-history .coin-row .coin i.icon-win {
+	background: url('../img/wink-light.svg') no-repeat center #333;
+	background-size: 12px;
+}
+
+section .content .row .trans-history .coin-row .coin i.icon-rake {
+	background: url('../img/icon-rake.svg') no-repeat center;
+	background-size: 100%;
 }
 
 section .content .row .trans-history .coin-row .coin i.icon-ante {
@@ -1316,13 +1338,12 @@ section.m-live .content .btn-group .btn:first-child {
 	border-bottom: 1px solid #12141f;
 }
 
-section.m-live .content .btn-group .btn:last-child {
+section.m-live .content .btn-group .btn:nth-child(2) {
 	color: #FFF;
 	border-bottom: 1px solid #ff3131;
 }
 
-section.mining .content .btn-group .btn:first-child,
-section.mining .content .btn-group .btn:last-child {
+section.mining .content .btn-group .btn {
 	border-radius: 0;
 }
 
@@ -1812,23 +1833,6 @@ section .content .row .trans-history .add .pages button.active {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 section .content .row .calculator {
 	padding: 0;
 }
@@ -1846,21 +1850,26 @@ section .content .row .calculator .total {
 
 section .content .row .calculator label,
 section .content .row .current-divs label {
-	width: 50%;
+	width: 100%;
 	padding: 17px 0 2px 15px;
+}
+
+section .content .row .current-divs label {
+	width: 50%;
 }
 
 section .content .row .calculator .btn-group,
 section .content .row .current-divs .btn-group {
 	display: flex;
-	padding: 15px 15px 0 0;
-	justify-content: flex-end;
-	width: 50%;
+	padding: 5px 15px 0 15px;
+	justify-content: flex-start;
+	width: 100%;
 }
 
 section .content .row .calculator .btn-group button,
 section .content .row .current-divs .btn-group button {
 	height: 25px;
+	width: calc(100% / 5);
 	padding: 0 5px;
 	font-size: 12px;
 	text-transform: uppercase;
@@ -1891,7 +1900,7 @@ section .content .row .current-divs .btn-group button:last-child {
 section .content .row .calculator .form {
 	display: table;
 	width: 100%;
-	padding: 0 15px;
+	padding: 0 15px 10px 15px;
 }
 
 section .content .row .calculator .form .symbol {
@@ -1955,6 +1964,11 @@ section .content .row .calculator .form .col i {
 	border-radius: 50%;
 }
 
+section .content .row .calculator .form .col i.icon-win {
+	background: url('../img/wink-light.svg') no-repeat center #333;
+	background-size: 12px;
+}
+
 section .content .row .calculator .form .col i.icon-ante {
 	background: url('../img/icon-ante.svg') no-repeat center;
 	background-size: 100%;
@@ -1962,6 +1976,11 @@ section .content .row .calculator .form .col i.icon-ante {
 
 section .content .row .calculator .form .col i.icon-live {
 	background: url('../img/icon-live.svg') no-repeat center;
+	background-size: 100%;
+}
+
+section .content .row .calculator .form .col i.icon-rake {
+	background: url('../img/icon-rake.svg') no-repeat center;
 	background-size: 100%;
 }
 
@@ -2130,9 +2149,10 @@ section .content .row .current-divs {
 }
 
 section .content .row .current-divs span.countdown {
-	width: 100%;
+	width: 50%;
 	float: left;
-	padding: 5px 15px 15px 15px;
+	padding: 17px 15px 0 0;
+	text-align: right;
 	color: #a4a5a4;
 }
 
@@ -2226,11 +2246,19 @@ section .content .row .current-divs .pool-row .pool span.sub-title {
 	padding-top: 4px;
 }
 
-section .content .row .current-divs .pool-row .ante-pool {
+section .content .row .current-divs .pool-row .win-pool {
+	border-bottom: 2px solid #fbc509;
+}
+
+section .content .row .current-divs .pool-row .win-pool span.sub-title {
+	color: #fbc509;
+}
+
+section .content .row .current-divs .pool-row .dice-pool {
 	border-bottom: 2px solid #18ef36;
 }
 
-section .content .row .current-divs .pool-row .ante-pool span.sub-title {
+section .content .row .current-divs .pool-row .dice-pool span.sub-title {
 	color: #18ef36;
 }
 
@@ -2240,6 +2268,14 @@ section .content .row .current-divs .pool-row .live-pool {
 
 section .content .row .current-divs .pool-row .live-pool span.sub-title {
 	color: #f81f1f;
+}
+
+section .content .row .current-divs .pool-row .rake-pool {
+	border-bottom: 2px solid #0099ff;
+}
+
+section .content .row .current-divs .pool-row .rake-pool span.sub-title {
+	color: #0099ff;
 }
 
 section .content .row .current-divs .total-pool {
@@ -2292,27 +2328,6 @@ section .content .row .current-divs .total-pool span.amount span.btt-divs i.icon
 	background: url('../img/btt-logo-light.svg') no-repeat;
 	background-size: 18px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 section .content .row .active-goal {
 	display: table;
@@ -2416,7 +2431,9 @@ section .content .row .active-goal .col span.dd i.icon-trx {
 	background-size: auto 14px;
 }
 
-section .content .row .active-goal .col span.dd i.icon-ante,
+section .content .row .active-goal .col span.dd i.icon-win,
+section .content .row .active-goal .col span.dd i.icon-rake,
+section .content .row .active-goal .col span.dd i.icon-dice,
 section .content .row .active-goal .col span.dd i.icon-live {
 	margin: -1px 4px 0 0;
 	width: 16px;
@@ -2424,7 +2441,17 @@ section .content .row .active-goal .col span.dd i.icon-live {
 	border-radius: 50%;
 }
 
-section .content .row .active-goal .col span.dd i.icon-ante {
+section .content .row .active-goal .col span.dd i.icon-win {
+	background: url('../img/wink-light.svg') no-repeat center #333;
+	background-size: 12px;
+}
+
+section .content .row .active-goal .col span.dd i.icon-rake {
+	background: url('../img/icon-rake.svg') no-repeat center;
+	background-size: 100%;
+}
+
+section .content .row .active-goal .col span.dd i.icon-dice {
 	background: url('../img/icon-ante.svg') no-repeat center;
 	background-size: 100%;
 }
@@ -2568,24 +2595,3 @@ section .content .row .live-goal .percent {
 	background: url('../img/target-live.svg') no-repeat center bottom;
 	background-size: 295px auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
