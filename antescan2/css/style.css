@@ -47,11 +47,81 @@ header .top-nav .row .logo {
 
 header .top-nav .row .logo a {
 	display: block;
-	width: 90px;
+	position: relative;
+	z-index: 3;
+	width: 89px;
 	height: 13px;
-	background: url('../img/winkscan-logo.svg') no-repeat;
+	overflow: hidden;
+	background: url('../img/winkscan-animated-logo.svg') no-repeat;
 	background-size: auto 13px;
 }
+
+header .top-nav .row .logo a:before {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: -2px;
+	width: 50px;
+	height: 1px;
+	content:'';
+	background: #FFF;
+	box-shadow: 0 1px 3px #12141f;
+	animation: scan-line 4s ease-in-out infinite;
+}
+
+@-webkit-keyframes scan-line {
+	0% {top: 0;}
+	20% {top: 13px;}
+	100% {top: 13px;}
+}
+
+@keyframes scan-line {
+	0% {top: 0;}
+	20% {top: 13px;}
+	100% {top: 13px;}
+}
+
+header .top-nav .row .logo span.scan,
+header .top-nav .row .logo span.scan:before {
+	display: block;
+	position: absolute;
+	display: block;
+	width: 46px;
+	height: 13px;
+}
+
+header .top-nav .row .logo span.scan {
+	top: 13px;
+	left: 41px;
+	z-index: 2;
+	overflow: hidden;
+	background: #FFF;
+}
+
+header .top-nav .row .logo span.scan:before {
+	z-index: 2;
+	content:'';
+	background-image: -webkit-gradient(linear,center top,center bottom,from(#fcb408),to(#facf0f));
+    background-image: -webkit-linear-gradient(#fcb408,#facf0f);
+    background-image: linear-gradient(#fcb408,#facf0f);
+	top: 0;
+	left: 0;
+	animation: scan-color 4s ease-in-out infinite;
+}
+
+@-webkit-keyframes scan-color {
+	0% {top: -13px;}
+	20% {top: 0;}
+	100% {top: 0;}
+}
+
+@keyframes scan-color {
+	0% {top: -13px;}
+	20% {top: 0;}
+	100% {top: 0;}
+}
+
+
 
 header .top-nav .row .wallet {
 	display: flex;
