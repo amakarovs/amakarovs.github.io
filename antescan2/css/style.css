@@ -2399,7 +2399,8 @@ section .content .row .current-divs .total-pool span.amount span.btt-divs i.icon
 	background-size: 18px;
 }
 
-section .content .row .active-goal {
+section .content .row .active-goal,
+section .content .row .session {
 	display: table;
 	padding: 15px;
 	background-image: -webkit-gradient(linear,center top,center bottom,from(#131722),to(#1e2235));
@@ -2410,23 +2411,29 @@ section .content .row .active-goal {
 
 section .content .row .active-goal label,
 section .content .row .active-goal .btn-group,
-section .content .row .active-goal .col {
+section .content .row .active-goal .col,
+section .content .row .session label,
+section .content .row .session .btn-group,
+section .content .row .session .col {
 	float: left;
 	width: 50%;
 }
 
-section .content .row .active-goal label {
+section .content .row .active-goal label,
+section .content .row .session label {
 	padding: 2px 0 2px 0;
 	font-weight: 700;
 }
 
-section .content .row .active-goal .btn-group {
+section .content .row .active-goal .btn-group,
+section .content .row .session .btn-group {
 	display: flex;
 	padding: 0;
 	justify-content: flex-end;
 }
 
-section .content .row .active-goal .btn-group button {
+section .content .row .active-goal .btn-group button,
+section .content .row .session .btn-group button {
 	height: 25px;
 	padding: 0 5px;
 	font-size: 12px;
@@ -2439,53 +2446,63 @@ section .content .row .active-goal .btn-group button {
 	box-shadow: inset 0 2px 2px rgba(0,0,0,0.2);
 }
 
-section .content .row .active-goal .btn-group button.active {
+section .content .row .active-goal .btn-group button.active,
+section .content .row .session .btn-group button.active {
 	color: #000;
 	background: #FFF;
 }
 
-section .content .row .active-goal .btn-group button:first-child {
+section .content .row .active-goal .btn-group button:first-child,
+section .content .row .session .btn-group button:first-child {
 	border-radius: 2px 0 0 2px;
 }
 
-section .content .row .active-goal .btn-group button:last-child {
+section .content .row .active-goal .btn-group button:last-child,
+section .content .row .session .btn-group button:last-child {
 	border-radius: 0 2px 2px 0;
 }
 
-section .content .row .active-goal .col {
+section .content .row .active-goal .col,
+section .content .row .session .col {
 	padding: 15px 0 0 0;
 	font-size: 14px;
 }
 
-section .content .row .active-goal .target-col {
+section .content .row .active-goal .target-col,
+section .content .row .session .target-col {
 	text-align: right;
 }
 
-section .content .row .active-goal .col span {
+section .content .row .active-goal .col span,
+section .content .row .session .col span {
 	display: block;
 	position: relative;
 	font-weight: 700;
 	line-height: 1.2;
 }
 
-section .content .row .active-goal .col span.sub-title {
+section .content .row .active-goal .col span.sub-title,
+section .content .row .session .col span.sub-title {
 	color: #4e505e;
 	font-weight: normal;
 	padding-bottom: 5px;
 }
 
-section .content .row .active-goal .col span.dd {
+section .content .row .active-goal .col span.dd,
+section .content .row .session .col span.dd {
 	padding-bottom: 14px;
 }
 
-section .content .row .active-goal .col span.dd span.usd {
+section .content .row .active-goal .col span.dd span.usd,
+section .content .row .session .col span.dd span.usd {
 	font-weight: normal;
 	font-size: 13px;
 	padding-top: 4px;
 	color: #0cc127;
 }
 
-section .content .row .active-goal .col span.dd i {
+section .content .row .active-goal .col span.dd i,
+section .content .row .session .col span.dd i {
 	display: -moz-inline-stack;
     display: inline-block;
     vertical-align: top;
@@ -2493,7 +2510,8 @@ section .content .row .active-goal .col span.dd i {
     *display: inline;
 }
 
-section .content .row .active-goal .col span.dd i.icon-trx {
+section .content .row .active-goal .col span.dd i.icon-trx,
+section .content .row .session .col span.dd i.icon-trx {
 	margin: 0 4px 0 0;
 	width: 13px;
 	height: 14px;
@@ -2504,41 +2522,51 @@ section .content .row .active-goal .col span.dd i.icon-trx {
 section .content .row .active-goal .col span.dd i.icon-win,
 section .content .row .active-goal .col span.dd i.icon-rake,
 section .content .row .active-goal .col span.dd i.icon-dice,
-section .content .row .active-goal .col span.dd i.icon-live {
+section .content .row .active-goal .col span.dd i.icon-live,
+section .content .row .session .col span.dd i.icon-win,
+section .content .row .session .col span.dd i.icon-rake,
+section .content .row .session .col span.dd i.icon-dice,
+section .content .row .session .col span.dd i.icon-live {
 	margin: -1px 4px 0 0;
 	width: 16px;
 	height: 16px;
 	border-radius: 50%;
 }
 
-section .content .row .active-goal .col span.dd i.icon-win {
+section .content .row .active-goal .col span.dd i.icon-win,
+section .content .row .session .col span.dd i.icon-win {
 	background: url('../img/wink-light.svg') no-repeat center #333;
 	background-size: 12px;
 }
 
-section .content .row .active-goal .col span.dd i.icon-rake {
+section .content .row .active-goal .col span.dd i.icon-rake,
+section .content .row .session .col span.dd i.icon-rake {
 	background: url('../img/icon-rake.svg') no-repeat center;
 	background-size: 100%;
 }
 
-section .content .row .active-goal .col span.dd i.icon-dice {
+section .content .row .active-goal .col span.dd i.icon-dice,
+section .content .row .session .col span.dd i.icon-dice {
 	background: url('../img/icon-ante.svg') no-repeat center;
 	background-size: 100%;
 }
 
-section .content .row .active-goal .col span.dd i.icon-live {
+section .content .row .active-goal .col span.dd i.icon-live,
+section .content .row .session .col span.dd i.icon-live {
 	background: url('../img/icon-live.svg') no-repeat center;
 	background-size: 100%;
 }
 
-section .content .row .active-goal .percent {
+section .content .row .active-goal .percent,
+section .content .row .session .percent {
 	position: relative;
 	width: 100%;
 	height: 230px;
 	float: left;
 }
 
-section .content .row .active-goal .percent span.amount {
+section .content .row .active-goal .percent span.amount,
+section .content .row .session .percent span.amount {
 	position: absolute;
 	left: calc(50% - 24px);
 	top: 17px;
@@ -2551,7 +2579,8 @@ section .content .row .active-goal .percent span.amount {
 	transform: rotate(20deg);
 }
 
-section .content .row .active-goal .percent span.duration {
+section .content .row .active-goal .percent span.duration,
+section .content .row .session .percent span.duration {
 	display: block;
 	width: 100%;
 	padding-top: 184px;
@@ -2562,6 +2591,7 @@ section .content .row .active-goal .percent span.duration {
 	color: #5c5e6c;
 }
 
+section .content .row .session .percent span.duration span.hit,
 section .content .row .active-goal .percent span.duration span.hit {
 	display: block;
 	font-size: 12px;
@@ -2613,7 +2643,8 @@ section .content .row .active-goal .progress-bar span.completed:before {
 	100% {left: 0;}
 }
 
-section .content .row .active-goal .current-ante {
+section .content .row .active-goal .current-ante,
+section .content .row .session .current-ante {
 	display: block;
 	float: left;
 	width: 100%;
@@ -2622,7 +2653,8 @@ section .content .row .active-goal .current-ante {
 	text-align: center;
 }
 
-section .content .row .active-goal .current-ante span.amount {
+section .content .row .active-goal .current-ante span.amount,
+section .content .row .session .current-ante span.amount {
 	display: block;
 	padding-top: 15px;
 	font-size: 48px;
@@ -2631,7 +2663,8 @@ section .content .row .active-goal .current-ante span.amount {
 	font-weight: 700;
 }
 
-section .content .row .active-goal .current-ante a.edit-btn {
+section .content .row .active-goal .current-ante a.edit-btn,
+section .content .row .session .current-ante a.edit-btn {
 	display: block;
 	margin: 0 auto;
 	width: calc(60% + 20px);
@@ -2648,16 +2681,19 @@ section .content .row .active-goal .current-ante a.edit-btn {
     border: 1px solid #393c48;
 }
 
-section .content .row .ante-goal .progress-bar span.completed {
+section .content .row .ante-goal .progress-bar span.completed,
+section .content .row .session .progress-bar span.completed {
 	background: #0cc127;
 }
 
-section .content .row .ante-goal .percent {
+section .content .row .ante-goal .percent,
+section .content .row .session .percent {
 	background: url('../img/target-ante.svg') no-repeat center bottom;
 	background-size: 295px auto;
 }
 
-section .content .row .live-goal .progress-bar span.completed {
+section .content .row .live-goal .progress-bar span.completed,
+section .content .row .session .progress-bar span.completed {
 	background: #f81f1f;
 }
 
@@ -2665,6 +2701,74 @@ section .content .row .live-goal .percent {
 	background: url('../img/target-live.svg') no-repeat center bottom;
 	background-size: 295px auto;
 }
+
+section .content .row .session .percent {
+	position: relative;
+	width: 100%;
+	height: 140px;
+	float: left;
+}
+
+section .content .row .session.ante-goal .percent {
+	background: url('../img/mining-dice.svg') no-repeat center bottom;
+	background-size: 260px auto;
+}
+
+section .content .row .session.live-goal .percent {
+	background: url('../img/mining-dice.svg') no-repeat center bottom;
+	background-size: 260px auto;
+}
+
+
+section .content .row .session .current-ante {
+	color: #4e505e;
+	text-transform: capitalize;
+}
+
+section .content .row .session .current-ante span.amount {
+	color: #FFF;
+}
+
+section .content .row .session .current-ante span.amount i.icon-trx,
+section .content .row .session .current-ante span.amount span.up,
+section .content .row .session .current-ante span.amount span.down {
+	display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+}
+
+section .content .row .session .current-ante span.amount i.icon-trx {
+	margin: 21px 4px 0 0;
+	width: 19px;
+	height: 20px;
+	background: url('../img/icon-trx.svg') no-repeat;
+	background-size: auto 20px;
+}
+
+section .content .row .session .current-ante span.amount span.up,
+section .content .row .session .current-ante span.amount span.down {
+	margin: 6px 0 0 6px;
+	height: 21px;
+	min-width: 44px;
+	padding: 4px 2px;
+	font-size: 14px;
+	text-align: center;
+	border-radius: 2px;
+}
+
+section .content .row .session .current-ante span.amount span.up {
+	color: #292628;
+	background: #1af135;
+}
+
+section .content .row .session .current-ante span.amount span.down {
+	color: #FFF;
+	background: #f81f1f;
+}
+
+
 
 .please-login {
 	position: fixed;
