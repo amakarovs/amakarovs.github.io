@@ -8,7 +8,7 @@ html, body {
 	font-family: 'Roboto', Helvetica, Arial, Tahoma, Verdana;
 	color: #FFF;
 	font-size: 14px;
-	background: #0c0e15;
+	background: #040507;
 }
 
 a {
@@ -17,13 +17,18 @@ a {
 }
 
 .wrap {
-	overflow: hidden;
+	margin: 0 auto;
+	overflow-y: auto;
+	max-width: 576px;
+	height: 100%;
+	padding: 40px 0 70px 0;
+	background: #0c0e15;
 }
 
 header, nav {
 	position: fixed;
-	width: 100%;
-	left: 0;
+	width: 576px;
+	margin: 0 auto;
 	display: block;
 	background: #12141f;
 }
@@ -36,9 +41,7 @@ header {
 }
 
 header .top-nav {
-	margin: 0 auto;
-	max-width: 576px;
-	min-width: 320px;
+	width: 100%;
 }
 
 header .top-nav .row .logo {
@@ -120,8 +123,6 @@ header .top-nav .row .logo span.scan:before {
 	20% {top: 0;}
 	100% {top: 0;}
 }
-
-
 
 header .top-nav .row .wallet {
 	display: flex;
@@ -525,18 +526,12 @@ nav .navigation .row .col-12 ul li a:hover i.icon-news {
 	background-size: 24px;
 }
 
-section {
-	padding: 55px 15px 85px 15px;
-}
-
 section .content {
 	margin: 0 auto;
-	max-width: 576px;
-	min-width: 320px;
 }
 
 section .content .row {
-	padding-bottom: 15px;
+	padding: 15px 15px 0 15px;
 }
 
 section .content .row .net-worth,
@@ -801,8 +796,8 @@ section .content .row .holdings .coin-row .coin i {
 	border-radius: 50%;
 }
 
-section .content .row .holdings .coin-row .coin i.icon-ante {
-	background: url('../img/icon-ante.svg') no-repeat center;
+section .content .row .holdings .coin-row .coin i.icon-dice {
+	background: url('../img/icon-dice.svg') no-repeat center;
 	background-size: 100%;
 }
 
@@ -950,7 +945,9 @@ section .content .row .trans-history .table-responsive .table tbody tr td {
 }
 
 section .content .row .trans-history .table-responsive .table tbody tr td i,
-section .content .row .trans-history .table-responsive .table tbody tr td a.remove-btn {
+section .content .row .trans-history .table-responsive .table tbody tr td a.remove-btn,
+section .content .row .trans-history .table-responsive .table tbody tr td i.icon-check,
+section .content .row .trans-history .table-responsive .table tbody tr td a.edit-btn {
 	display: -moz-inline-stack;
     display: inline-block;
     vertical-align: top;
@@ -985,7 +982,7 @@ section .content .row .trans-history .table-responsive .table tbody tr td i.icon
 }
 
 section .content .row .trans-history .table-responsive .table tbody tr td i.icon-dice {
-	background: url('../img/icon-ante.svg') no-repeat center;
+	background: url('../img/icon-dice.svg') no-repeat center;
 	background-size: 100%;
 }
 
@@ -1027,6 +1024,53 @@ section .content .row .trans-history .table-responsive .table tbody tr td a.remo
 section .content .row .trans-history .table-responsive .table tbody tr td a.remove-btn i.icon-remove:after {
 	transform: rotate(-45deg);
 }
+
+section .content .row .trans-history .table-responsive .table tbody tr td i.icon-check {
+	position: relative;
+	width: 16px;
+	height: 16px;
+}
+
+section .content .row .trans-history .table-responsive .table tbody tr td i.icon-check:before,
+section .content .row .trans-history .table-responsive .table tbody tr td i.icon-check:after {
+	display: block;
+	position: absolute;
+	width: 2px;
+	content: '';
+	background: #1af135;
+}
+
+section .content .row .trans-history .table-responsive .table tbody tr td i.icon-check:before {
+	left: 2px;
+	top: 7px;
+	height: 8px;
+	transform: rotate(-45deg);
+}
+
+section .content .row .trans-history .table-responsive .table tbody tr td i.icon-check:after {
+	top: 2px;
+	left: 9px;
+	height: 14px;
+	transform: rotate(45deg);
+}
+
+section .content .row .trans-history .table-responsive .table tbody tr td a.edit-btn {
+	margin-right: 8px;
+	width: 36px;
+	height: 20px;
+	padding: 1px 0 0 0;
+	text-align: center;
+	font-size: 12px;
+	color: #FFF;
+	text-decoration: none;
+	background: rgba(110,113,127,1);
+	outline: none;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+
+
 
 section .content .row .trans-history .add {
 	padding: 0 0 15px 0;
@@ -1109,9 +1153,9 @@ section .content .row .trans-history .coin-row .mined i.icon-rake {
 	background-size: 100%;
 }
 
-section .content .row .trans-history .coin-row .coin i.icon-ante,
-section .content .row .trans-history .coin-row .mined i.icon-ante {
-	background: url('../img/icon-ante.svg') no-repeat center;
+section .content .row .trans-history .coin-row .coin i.icon-dice,
+section .content .row .trans-history .coin-row .mined i.icon-dice {
+	background: url('../img/icon-dice.svg') no-repeat center;
 	background-size: 100%;
 }
 
@@ -1302,7 +1346,7 @@ section.twitter-widget {
 	margin: 0 auto;
 	max-width: 576px;
 	min-height: 100%;
-	padding: 40px 5px 70px 5px;
+	padding: 0 5px;
 	background: #292f33;
 }
 
@@ -1516,12 +1560,9 @@ section .sub-nav .btn-group .btn:last-child {
 }
 
 section.mining {
-	position: fixed;
-	left: 0;
-	top: 40px;
+	position: relative;
 	width: 100%;
-	padding: 0;
-	height: calc(100% - 110px);
+	height: 100%;
 	align-items: center;
 	background-image: radial-gradient(circle at bottom center, #12a05b, #131722);
 }
@@ -1535,49 +1576,46 @@ section.mining .content {
 	z-index: 3;
 	margin: 0 auto;
 	max-width: 576px;
-	height: 100%;
 	padding: 0;
+	height: calc(100% - 35px);
 	overflow: hidden;
 }
 
 section.mining .content .btn-group {
 	margin: 0 auto;
 	display: flex;
-	width: 100%;
-	align-items: center;
-	background: #12141f;
+	padding: 15px 15px 0 15px;
+	justify-content: center;
 }
 
-section.mining .content .btn-group .btn {
-	height: 36px;
-	padding-top: 7px;
+section.mining .content .btn-group button {
+	height: 25px;
+	padding: 0 10px;
 	font-size: 12px;
 	text-transform: uppercase;
-	color: #6e717f;
+	color: #a4a5a4;
+	background: rgba(0,0,0,0.3);
 	outline: none;
-	box-shadow: none;
-	background: rgba(18,20,31,0.9);
-	border-bottom: 1px solid #12141f;
+	cursor: pointer;
+	border: none;
+	box-shadow: inset 0 2px 2px rgba(0,0,0,0.2);
 }
 
-section.mining .content .btn-group .btn:first-child {
-	color: #FFF;
-	border-bottom: 1px solid #0cc127;
+section.mining .content .btn-group button.active {
+	color: #000;
+	background: #FFF;
 }
 
-section.m-live .content .btn-group .btn:first-child {
-	color: #6e717f;
-	border-bottom: 1px solid #12141f;
+section.mining .content .btn-group button:first-child {
+	border-radius: 2px 0 0 2px;
 }
 
-section.m-live .content .btn-group .btn:nth-child(2) {
-	color: #FFF;
-	border-bottom: 1px solid #ff3131;
+section.mining .content .btn-group button:last-child {
+	border-radius: 0 2px 2px 0;
 }
 
-section.mining .content .btn-group .btn {
-	border-radius: 0;
-}
+
+
 
 section.mining .content .mined-info {
 	display: table;
@@ -1684,9 +1722,9 @@ section.mining .content .icon-live {
 	display: block;
 	width: 222px;
 	height: 222px;
-	background: url('../img/icon-ante.svg') no-repeat;
+	background: url('../img/icon-dice.svg') no-repeat;
 	background-size: 100%;
-	animation: ante-rotate 6s linear infinite;
+	animation: dice-rotate 6s linear infinite;
 }
 
 section.m-live .content .icon-live {
@@ -1694,12 +1732,12 @@ section.m-live .content .icon-live {
 	background-size: 100%;
 }
 
-@-webkit-keyframes ante-rotate {
+@-webkit-keyframes dice-rotate {
 	0% {transform: rotate(0deg);}
 	100% {transform: rotate(360deg);}
 }
 
-@keyframes ante-rotate {
+@keyframes dice-rotate {
 	0% {transform: rotate(0deg);}
 	100% {transform: rotate(360deg);}
 }
@@ -1746,7 +1784,7 @@ section.mining .content .icon-live-fly4 {
 	display: block;
 	bottom: -40px;
 	opacity: 0.2;
-	background: url('../img/icon-ante.svg') no-repeat;
+	background: url('../img/icon-dice.svg') no-repeat;
 	background-size: 100%;
 	animation: icon-fly 12s linear infinite;
 	width: 30px;
@@ -1793,7 +1831,7 @@ section.mining .content .icon-live-fly4 {
 
 section .content .row .platform,
 section .content .row .current-price,
-section .content .row .burnt-ante,
+section .content .row .burnt-dice,
 section .content .row .chart,
 section .content .row .calculator,
 section .content .row .current-divs {
@@ -1810,7 +1848,7 @@ section .content .row .chart {
 
 section .content .row .platform label,
 section .content .row .current-price label,
-section .content .row .burnt-ante label,
+section .content .row .burnt-dice label,
 section .content .row .calculator label,
 section .content .row .current-divs label {
 	display: block;
@@ -1849,7 +1887,7 @@ section .content .row .current-price:before {
 	width: 130px;
 	height: 130px;
 	opacity: 0.25;
-	background: url('../img/icon-ante.svg') no-repeat;
+	background: url('../img/icon-dice.svg') no-repeat;
 	background-size: 260px;
 }
 
@@ -1913,11 +1951,11 @@ section .content .row .current-price .percent span.down {
 	background: #f81f1f;
 }
 
-section .content .row .burnt-ante {
+section .content .row .burnt-dice {
 	background-image: linear-gradient(#131722, #cb2026);
 }
 
-section .content .row .burnt-ante:before {
+section .content .row .burnt-dice:before {
 	position: absolute;
 	z-index: 2;
 	left: 0;
@@ -1931,15 +1969,15 @@ section .content .row .burnt-ante:before {
 	border-radius: 0 0 3px 3px;
 }
 
-section .content .row .burnt-ante .price,
-section .content .row .burnt-ante .total-supply,
-section .content .row .burnt-ante .percent,
-section .content .row .burnt-ante a.log {
+section .content .row .burnt-dice .price,
+section .content .row .burnt-dice .total-supply,
+section .content .row .burnt-dice .percent,
+section .content .row .burnt-dice a.log {
 	position: relative;
 	z-index: 3;
 }
 
-section .content .row .burnt-ante a.log {
+section .content .row .burnt-dice a.log {
 	position: absolute;
 	top: 14px;
 	right: 15px;
@@ -1951,23 +1989,23 @@ section .content .row .burnt-ante a.log {
 	border-bottom: 1px dotted #FFF;
 }
 
-section .content .row .burnt-ante .total-supply {
+section .content .row .burnt-dice .total-supply {
 	float: left;
 	width: 60%;
 	padding: 2px 0 0 0;
 	color: #ff5858;
 }
 
-section .content .row .burnt-ante .total-supply span.amount,
-section .content .row .burnt-ante .total-supply span.amount a,
-section .content .row .burnt-ante .percent span.amount {
+section .content .row .burnt-dice .total-supply span.amount,
+section .content .row .burnt-dice .total-supply span.amount a,
+section .content .row .burnt-dice .percent span.amount {
 	display: block;
 	font-weight: 700;
 	font-size: 16px;
 	color: #FFF;
 }
 
-section .content .row .burnt-ante .percent {
+section .content .row .burnt-dice .percent {
 	float: left;
 	width: 40%;
 	padding: 2px 0 0 0;
@@ -1975,7 +2013,7 @@ section .content .row .burnt-ante .percent {
 	color: #ff5858;
 }
 	
-section .content .row .burnt-ante .price {
+section .content .row .burnt-dice .price {
 	display: flex;
 	width: 100%;
 	height: 90px;
@@ -1987,9 +2025,9 @@ section .content .row .burnt-ante .price {
 }
 
 section .sub-nav {
-	margin: -15px 0 15px -15px;
+	margin: 0 auto;
 	display: block;
-	width: calc(100% + 30px);
+	width: 100%;
 }
 
 section .sub-nav .btn-group {
@@ -2102,7 +2140,7 @@ section .content .row .calculator .btn-group button,
 section .content .row .current-divs .btn-group button {
 	height: 25px;
 	width: calc(100% / 5);
-	padding: 0 5px;
+	padding: 0 10px;
 	font-size: 12px;
 	text-transform: uppercase;
 	color: #a4a5a4;
@@ -2201,8 +2239,8 @@ section .content .row .calculator .form .col i.icon-win {
 	background-size: 12px;
 }
 
-section .content .row .calculator .form .col i.icon-ante {
-	background: url('../img/icon-ante.svg') no-repeat center;
+section .content .row .calculator .form .col i.icon-dice {
+	background: url('../img/icon-dice.svg') no-repeat center;
 	background-size: 100%;
 }
 
@@ -2597,7 +2635,7 @@ section .content .row .session .btn-group {
 section .content .row .active-goal .btn-group button,
 section .content .row .session .btn-group button {
 	height: 25px;
-	padding: 0 5px;
+	padding: 0 10px;
 	font-size: 12px;
 	text-transform: uppercase;
 	color: #a4a5a4;
@@ -2709,7 +2747,7 @@ section .content .row .session .col span.dd i.icon-rake {
 
 section .content .row .active-goal .col span.dd i.icon-dice,
 section .content .row .session .col span.dd i.icon-dice {
-	background: url('../img/icon-ante.svg') no-repeat center;
+	background: url('../img/icon-dice.svg') no-repeat center;
 	background-size: 100%;
 }
 
@@ -2761,7 +2799,8 @@ section .content .row .active-goal .percent span.duration span.hit {
 	font-weight: normal;
 }
 
-section .content .row .active-goal .progress-bar {
+section .content .row .active-goal .progress-bar,
+section .content .row .session .progress-bar {
 	display: block;
 	float: left;
 	width: 100%;
@@ -2772,7 +2811,8 @@ section .content .row .active-goal .progress-bar {
 	border-radius: 8px;
 }
 
-section .content .row .active-goal .progress-bar span.completed {
+section .content .row .active-goal .progress-bar span.completed,
+section .content .row .session .progress-bar span.completed {
 	display: block;
 	position: relative;
 	height: 16px;
@@ -2781,7 +2821,8 @@ section .content .row .active-goal .progress-bar span.completed {
 	border-radius: 8px;
 }
 
-section .content .row .active-goal .progress-bar span.completed:before {
+section .content .row .active-goal .progress-bar span.completed:before,
+section .content .row .session .progress-bar span.completed:before {
 	display: block;
 	position: absolute;
 	left: -100%;
@@ -2805,8 +2846,8 @@ section .content .row .active-goal .progress-bar span.completed:before {
 	100% {left: 0;}
 }
 
-section .content .row .active-goal .current-ante,
-section .content .row .session .current-ante {
+section .content .row .active-goal .current-dice,
+section .content .row .session .current-dice {
 	display: block;
 	float: left;
 	width: 100%;
@@ -2815,8 +2856,8 @@ section .content .row .session .current-ante {
 	text-align: center;
 }
 
-section .content .row .active-goal .current-ante span.amount,
-section .content .row .session .current-ante span.amount {
+section .content .row .active-goal .current-dice span.amount,
+section .content .row .session .current-dice span.amount {
 	display: block;
 	padding-top: 15px;
 	font-size: 48px;
@@ -2825,8 +2866,8 @@ section .content .row .session .current-ante span.amount {
 	font-weight: 700;
 }
 
-section .content .row .active-goal .current-ante a.edit-btn,
-section .content .row .session .current-ante a.edit-btn {
+section .content .row .active-goal .current-dice a.edit-btn,
+section .content .row .session .current-dice a.edit-btn {
 	display: block;
 	margin: 0 auto;
 	width: calc(60% + 20px);
@@ -2843,19 +2884,18 @@ section .content .row .session .current-ante a.edit-btn {
     border: 1px solid #393c48;
 }
 
-section .content .row .ante-goal .progress-bar span.completed,
+section .content .row .dice-goal .progress-bar span.completed,
 section .content .row .session .progress-bar span.completed {
 	background: #0cc127;
 }
 
-section .content .row .ante-goal .percent,
+section .content .row .dice-goal .percent,
 section .content .row .session .percent {
-	background: url('../img/target-ante.svg') no-repeat center bottom;
+	background: url('../img/target-dice.svg') no-repeat center bottom;
 	background-size: 295px auto;
 }
 
-section .content .row .live-goal .progress-bar span.completed,
-section .content .row .session .progress-bar span.completed {
+section .content .row .live-goal .progress-bar span.completed {
 	background: #f81f1f;
 }
 
@@ -2868,10 +2908,13 @@ section .content .row .session .percent {
 	position: relative;
 	width: 100%;
 	height: 140px;
+	padding-top: 114px;
+	color: #5c5e6c;
 	float: left;
+	text-align: center;
 }
 
-section .content .row .session.ante-goal .percent {
+section .content .row .session.dice-goal .percent {
 	background: url('../img/mining-dice.svg') no-repeat center bottom;
 	background-size: 260px auto;
 }
@@ -2882,18 +2925,22 @@ section .content .row .session.live-goal .percent {
 }
 
 
-section .content .row .session .current-ante {
+section .content .row .session .current-dice {
 	color: #4e505e;
 	text-transform: capitalize;
 }
 
-section .content .row .session .current-ante span.amount {
+section .content .row .session .current-dice span.amount {
 	color: #FFF;
 }
 
-section .content .row .session .current-ante span.amount i.icon-trx,
-section .content .row .session .current-ante span.amount span.up,
-section .content .row .session .current-ante span.amount span.down {
+section .content .row .session .mined-at-stage span.amount {
+	font-size: 30px;
+}
+
+section .content .row .session .current-dice span.amount i.icon-trx,
+section .content .row .session .current-dice span.amount span.up,
+section .content .row .session .current-dice span.amount span.down {
 	display: -moz-inline-stack;
     display: inline-block;
     vertical-align: top;
@@ -2901,7 +2948,7 @@ section .content .row .session .current-ante span.amount span.down {
     *display: inline;
 }
 
-section .content .row .session .current-ante span.amount i.icon-trx {
+section .content .row .session .current-dice span.amount i.icon-trx {
 	margin: 21px 4px 0 0;
 	width: 19px;
 	height: 20px;
@@ -2909,8 +2956,8 @@ section .content .row .session .current-ante span.amount i.icon-trx {
 	background-size: auto 20px;
 }
 
-section .content .row .session .current-ante span.amount span.up,
-section .content .row .session .current-ante span.amount span.down {
+section .content .row .session .current-dice span.amount span.up,
+section .content .row .session .current-dice span.amount span.down {
 	margin: 6px 0 0 6px;
 	height: 21px;
 	min-width: 44px;
@@ -2920,17 +2967,15 @@ section .content .row .session .current-ante span.amount span.down {
 	border-radius: 2px;
 }
 
-section .content .row .session .current-ante span.amount span.up {
+section .content .row .session .current-dice span.amount span.up {
 	color: #292628;
 	background: #1af135;
 }
 
-section .content .row .session .current-ante span.amount span.down {
+section .content .row .session .current-dice span.amount span.down {
 	color: #FFF;
 	background: #f81f1f;
 }
-
-
 
 .please-login {
 	position: fixed;
@@ -2959,4 +3004,10 @@ section .content .row .session .current-ante span.amount span.down {
 	width: 100%;
 	padding-top: 5px;
 	font-size: 13px;
+}
+
+@media screen and (max-width: 576px) {
+	header, nav {
+		width: 100%;
+	}
 }

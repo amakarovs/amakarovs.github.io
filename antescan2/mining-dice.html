@@ -35,7 +35,7 @@
 					<div class="form-row">
 						<label>Coin</label>
 						<select class="form-control" id="exampleFormControlSelect1">
-							<option>DICE</option>
+							<option>dice</option>
 							<option>LIVE</option>
 						</select>
 						<span class="error-message">Error message</span>
@@ -104,11 +104,18 @@
 	</header>
 	
 	<section class="mining">
+		<div class="sub-nav">
+			<div class="btn-group tb-sub-nav" role="group" aria-label="Basic example">
+				<a href="mining.html" class="btn">Rate</a>
+				<a href="sessions.html" class="btn">Sessions</a>
+				<a href="mining-dice.html" class="btn active">Tokens</a>
+			</div>
+		</div>
 		<div class="content">
-			<div class="btn-group" role="group" aria-label="Basic example">
-				<a href="mining.html" class="btn">Dice</a>
-				<a href="mining-live.html" class="btn">Live</a>
-				<a href="" class="btn">Rake</a>
+			<div class="btn-group">
+				<button class="active">dice</button>
+				<button>Live</button>
+				<button data-toggle="tooltip" data-placement="left" title="" data-original-title="Coming Soon">Rake</button>
 			</div>
 			<div class="mined-info">
 				<span class="col"><label>Total Supply</label>100,000,000.00</span>
@@ -137,8 +144,8 @@
 					<span class="sub">seconds</span>
 				</span>
 			</span>
-			<a href="https://www.tronbet.io/?r=antescan" class="mine">Mine Dice</a>
-			<span class="speed">Average Mining Speed: <span class="amount">1000 DICE/day</span></span>
+			<a href="https://www.tronbet.io/?r=dicescan" class="mine">Mine Dice</a>
+			<span class="speed">Average Mining Speed: <span class="amount">1000 Dice/day</span></span>
 			<span class="icon-live"></span>
 			<span class="pulse1"></span>
 			<span class="pulse2"></span>
@@ -156,7 +163,7 @@
 				<div class="col-12">
 					<ul>
 						<li><a href="index.html"><i class="icon-home"></i>Home</a></li>
-						<li><a href="divs.html"><i class="icon-divs"></i><span class="notification"><span class="amount">23</span></span>Dividends</a></li>
+						<li><a href="divs.html"><i class="icon-divs"></i><span class="notification"><span class="amount">23</span></span>Drops</a></li>
 						<li><a href="goals.html"><i class="icon-goals"></i>Goals</a></li>
 						<li><a href="mining.html" class="active"><i class="icon-mining"></i>Mining</a></li>
 						<li><a href="platform.html"><i class="icon-platform"></i>Platform</a></li>
