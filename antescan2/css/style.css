@@ -1098,7 +1098,7 @@ section.twitter-widget {
 	max-width: 576px;
 	min-height: 100%;
 	padding: 0 5px;
-	background: #292f33;
+	overflow-y: auto;
 }
 
 .tooltip .tooltip-inner {
