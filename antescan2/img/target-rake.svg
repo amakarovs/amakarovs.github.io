@@ -16,18 +16,18 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="target-dice.svg">
+   sodipodi:docname="target-rake.svg">
   <defs
      id="defs2">
     <linearGradient
        inkscape:collect="always"
        id="linearGradient824">
       <stop
-         style="stop-color:#0cc127;stop-opacity:1;"
+         style="stop-color:#0073f0;stop-opacity:1"
          offset="0"
          id="stop820" />
       <stop
-         style="stop-color:#0aa020;stop-opacity:1"
+         style="stop-color:#007aff;stop-opacity:1"
          offset="1"
          id="stop822" />
     </linearGradient>
@@ -57,9 +57,9 @@
        inkscape:collect="always"
        xlink:href="#linearGradient824"
        id="linearGradient826"
-       x1="243.27574"
+       x1="125.19319"
        y1="84.686638"
-       x2="124.82967"
+       x2="243.4022"
        y2="84.686638"
        gradientUnits="userSpaceOnUse" />
   </defs>
@@ -71,7 +71,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.54"
-     inkscape:cx="335.20703"
+     inkscape:cx="34.281104"
      inkscape:cy="781.04154"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"

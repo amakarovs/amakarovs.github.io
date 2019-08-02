@@ -303,7 +303,7 @@ header .top-nav .row .wallet .floating-nav .donate address {
 	text-align: center;
 	font-size: 12px;
 	padding: 12px 0 0 0;
-	color: #1af135;
+	color: #fcb408;
 	background: rgba(66,69,83,0.2);
 	border-radius: 3px;
 }
@@ -2646,13 +2646,47 @@ section .content .row .session .percent {
 	background-size: 295px auto;
 }
 
-section .content .row .live-goal .progress-bar span.completed {
-	background: #f81f1f;
+section .content .row .win-goal .percent {
+	background: url('../img/target-win.svg') no-repeat center bottom;
+	background-size: 295px auto;
+}
+
+section .content .row .win-goal .percent span.amount {
+	color: #333;
+}
+
+section .content .row .win-goal .progress-bar span.completed {
+	background: #fcb408;
+}
+
+section .content .row .win-goal .col span.dd span.usd {
+	color: #fcb408;
 }
 
 section .content .row .live-goal .percent {
 	background: url('../img/target-live.svg') no-repeat center bottom;
 	background-size: 295px auto;
+}
+
+section .content .row .live-goal .progress-bar span.completed {
+	background: #f81f1f;
+}
+
+section .content .row .live-goal .col span.dd span.usd {
+	color: #f81f1f;
+}
+
+section .content .row .rake-goal .percent {
+	background: url('../img/target-rake.svg') no-repeat center bottom;
+	background-size: 295px auto;
+}
+
+section .content .row .rake-goal .progress-bar span.completed {
+	background: #007aff;
+}
+
+section .content .row .rake-goal .col span.dd span.usd {
+	color: #007aff;
 }
 
 section .content .row .session .percent {
@@ -2672,6 +2706,11 @@ section .content .row .session.dice-goal .percent {
 
 section .content .row .session.live-goal .percent {
 	background: url('../img/mining-live.svg') no-repeat center bottom;
+	background-size: 260px auto;
+}
+
+section .content .row .session.rake-goal .percent {
+	background: url('../img/mining-rake.svg') no-repeat center bottom;
 	background-size: 260px auto;
 }
 

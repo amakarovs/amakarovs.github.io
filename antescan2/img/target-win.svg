@@ -16,20 +16,20 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="target-dice.svg">
+   sodipodi:docname="target-win.svg">
   <defs
      id="defs2">
     <linearGradient
        inkscape:collect="always"
-       id="linearGradient824">
+       id="linearGradient832">
       <stop
-         style="stop-color:#0cc127;stop-opacity:1;"
+         style="stop-color:#fcb408;stop-opacity:1"
          offset="0"
-         id="stop820" />
+         id="stop828" />
       <stop
-         style="stop-color:#0aa020;stop-opacity:1"
+         style="stop-color:#facf0f;stop-opacity:1"
          offset="1"
-         id="stop822" />
+         id="stop830" />
     </linearGradient>
     <linearGradient
        inkscape:collect="always"
@@ -55,11 +55,11 @@
        gradientUnits="userSpaceOnUse" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient824"
-       id="linearGradient826"
-       x1="243.27574"
+       xlink:href="#linearGradient832"
+       id="linearGradient834"
+       x1="125.19319"
        y1="84.686638"
-       x2="124.82967"
+       x2="243.4022"
        y2="84.686638"
        gradientUnits="userSpaceOnUse" />
   </defs>
@@ -107,7 +107,7 @@
        y="26.005224"
        transform="rotate(16.742242)" />
     <path
-       style="fill:url(#linearGradient826);fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:url(#linearGradient834);fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 224.62531,131.84873 243.4022,69.543623 215.87699,52.046983 c 0,0 -9.17507,-5.761087 -11.09543,0.853496 -1.92036,6.614583 -4.48085,6.187834 -10.02856,0.64012 -5.54771,-5.547715 -12.37567,-19.630376 -31.79267,-15.149526 -19.41701,4.480843 -17.49664,7.468074 -17.49664,7.468074 l -20.2705,59.531253 c 0,0 17.49664,-14.082663 32.21942,-12.589048 14.72278,1.493615 27.5252,24.537968 27.5252,24.537968 0,0 5.97446,-15.78965 15.3629,-7.2547 9.38845,8.53494 24.3246,21.76411 24.3246,21.76411 z"
        id="path847-8"
        inkscape:connector-curvature="0" />

@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>winkscan.live</title>
+    <title>dicescan.live</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=9" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -106,50 +106,53 @@
 	<section>
 		<div class="sub-nav">
 			<div class="btn-group tb-sub-nav" role="group" aria-label="Basic example">
-				<a href="mining.html" class="btn active">Rate</a>
-				<a href="sessions.html" class="btn">Sessions</a>
-				<a href="mining-dice.html" class="btn">Tokens</a>
+				<a href="goals.html" class="btn active">Active</a>
+				<a href="completed-goals.html" class="btn">Completed</a>
 			</div>
 		</div>
 		<div class="container-fluid content">
 			<div class="row">
-				<div class="col-12 session rake-goal">
-					<label>Mining Rate</label>
+				<div class="col-12 active-goal rake-goal">
+					<label>Goal</label>
 					<div class="btn-group">
-						<button class="active">dice</button>
+						<button>Win</button>
+						<button>dice</button>
 						<button>Live</button>
-						<button data-toggle="tooltip" data-placement="left" title="" data-original-title="Coming Soon">Rake</button>
+						<button class="active">Rake</button>
 					</div>
 					<div class="col">
-						<span class="sub-title">Total Mined</span>
-						<span class="dd"><i class="icon-dice"></i>500</span>
+						<span class="sub-title">Frozen RAKE</span>
+						<span class="dd"><i class="icon-rake"></i>500</span>
 					</div>
 					<div class="col target-col">
-						<span class="sub-title">Total Spent</span>
-						<span class="dd"><i class="icon-trx"></i>2,000.00</span>
+						<span class="sub-title">RAKE Goal</span>
+						<span class="dd"><i class="icon-rake"></i>750</span>
+					</div>
+					<div class="percent">
+						<span class="amount">75%</span>
+						<span class="duration">235 days<span class="hit">to go...</span></span>
+					</div>
+					<div class="progress-bar"><span class="completed" style="width: 75%;"></span></div>
+					<div class="current-dice">
+						<span class="amount">122,335.44</span>Current RAKE
+					</div>
+					<div class="col">
+						<span class="sub-title">Average Monthly Profit</span>
+						<span class="dd"><i class="icon-trx"></i>10,000.00<span class="usd">$10.00</span></span>
+					</div>
+					<div class="col target-col">
+						<span class="sub-title">Projected Monthly Profit</span>
+						<span class="dd"><i class="icon-trx"></i>12,000.00<span class="usd">$12.00</span></span>
 					</div>
 					<div class="current-dice">
-						<span class="amount"><i class="icon-trx"></i>3.7<span class="up" data-toggle="tooltip" data-placement="left" title="" data-original-title="Relative to average token mining price across platform">+15%</span></span>Your Average Mining Rate
-					</div>
-					<div class="percent">Current Stage: 3-1</div>
-					<div class="progress-bar"><span class="completed" style="width: 75%;"></span></div>
-					<div class="current-dice mined-at-stage">
-						<span class="amount">5,000,000/4254327</span>Play 280 TRX to mine 1 dice
-					</div>
-					<div class="col">
-						<span class="sub-title">Your Average<br/>Mining Rate</span>
-						<span class="dd"><i class="icon-trx"></i>3.7</span>
-					</div>
-					<div class="col target-col">
-						<span class="sub-title">Users Average<br/>Mining Rate</span>
-						<span class="dd"><i class="icon-trx"></i>3.5</span>
+						<a href="/" class="edit-btn">Edit Goal</a>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-12 trans-history">
 					<div class="add">
-						<button class="submit-btn" data-toggle="modal" data-target="#addGoal">Add Mining Session</button>
+						<button class="submit-btn" data-toggle="modal" data-target="#addGoal">Add Goal</button>
 					</div>
 				</div>
 			</div>
@@ -163,8 +166,8 @@
 					<ul>
 						<li><a href="index.html"><i class="icon-home"></i>Home</a></li>
 						<li><a href="divs.html"><i class="icon-divs"></i><span class="notification"><span class="amount">23</span></span>Drops</a></li>
-						<li><a href="goals.html"><i class="icon-goals"></i>Goals</a></li>
-						<li><a href="mining.html" class="active"><i class="icon-mining"></i>Mining</a></li>
+						<li><a href="goals.html" class="active"><i class="icon-goals"></i>Goals</a></li>
+						<li><a href="mining.html"><i class="icon-mining"></i>Mining</a></li>
 						<li><a href="platform.html"><i class="icon-platform"></i>Platform</a></li>
 						<li><a href="news.html"><i class="icon-news"></i>News</a></li>
 					</ul>
