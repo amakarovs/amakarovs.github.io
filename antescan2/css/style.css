@@ -1197,6 +1197,77 @@ section.twitter-widget {
 	background: #0c0e15;
 }
 
+.modal .modal-dialog .modal-content .modal-body .projected-profit {
+	padding: 25px 0;
+	text-align: center;
+}
+
+.modal .modal-dialog .modal-content .modal-body .projected-profit span.sub-title {
+	display: block;
+	color: #4e505e;
+	font-size: 15px;
+	padding-bottom: 5px;
+}
+
+.modal .modal-dialog .modal-content .modal-body .projected-profit span.dd {
+	display: block;
+	color: #FFF;
+	font-weight: 700;
+	line-height: 1;
+	font-size: 34px;
+}
+
+.modal .modal-dialog .modal-content .modal-body .projected-profit span.dd i.icon-trx {
+	display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+	margin: 11px 4px 0 0;
+	width: 16px;
+	height: 17px;
+	background: url('../img/icon-trx.svg') no-repeat center;
+	background-size: 100%;
+	border-radius: 0;
+}
+
+.modal .modal-dialog .modal-content .modal-body .projected-profit span.dd span.usd {
+	display: block;
+	padding-top: 5px;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.modal .modal-dialog .modal-content .modal-body .win-profit span.dd span.usd {
+	color: #fcb408;
+}
+
+.modal .modal-dialog .modal-content .modal-body .dice-profit span.dd span.usd {
+	color: #fcb408;
+}
+
+.modal .modal-dialog .modal-content .modal-body .live-profit span.dd span.usd {
+	color: #fcb408;
+}
+
+.modal .modal-dialog .modal-content .modal-body .rake-profit span.dd span.usd {
+	color: #fcb408;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .modal .modal-dialog .modal-content .modal-body .form {
 	display: block;
 	width: 100%;
@@ -1211,6 +1282,7 @@ section.twitter-widget {
 .modal .modal-dialog .modal-content .modal-body .form .form-row label,
 .modal .modal-dialog .modal-content .modal-body .form .form-row span.error-message,
 .modal .modal-dialog .modal-content .modal-body .form .form-row input,
+.modal .modal-dialog .modal-content .modal-body .form .form-row span.txt,
 .modal .modal-dialog .modal-content .modal-body .form .form-row select {
 	display: block;
 	width: 100%;
@@ -1268,6 +1340,7 @@ section .sub-nav .btn-group .btn:last-child {
 }
 
 .modal .modal-dialog .modal-content .modal-body .form .form-row select.form-control,
+.modal .modal-dialog .modal-content .modal-body .form .form-row span.txt,
 .modal .modal-dialog .modal-content .modal-body .form .form-row input.input {
 	height: 30px;
 	padding: 0;
@@ -1277,6 +1350,25 @@ section .sub-nav .btn-group .btn:last-child {
 	outline: none;
 	background: transparent;
 	box-shadow: none;
+	border-radius: 0;
+}
+
+.modal .modal-dialog .modal-content .modal-body .form .form-row span.txt {
+	padding: 5px 0 0 0;
+	font-weight: 700;
+}
+
+.modal .modal-dialog .modal-content .modal-body .form .form-row span.txt i.icon-trx {
+	display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+	margin: 2px 6px 0 0;
+	width: 13px;
+	height: 14px;
+	background: url('../img/icon-trx.svg') no-repeat center;
+	background-size: 13px auto;
 	border-radius: 0;
 }
 
@@ -1365,9 +1457,6 @@ section.mining .content .btn-group button:first-child {
 section.mining .content .btn-group button:last-child {
 	border-radius: 0 2px 2px 0;
 }
-
-
-
 
 section.mining .content .mined-info {
 	display: table;

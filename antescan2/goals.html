@@ -16,7 +16,7 @@
 <body>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="addGoal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
@@ -24,40 +24,41 @@
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
 			</div>
 			<div class="modal-body">
+				<div class="btn-group" role="group" aria-label="Basic example">
+					<button type="button" class="btn">Buy</button>
+					<button type="button" class="btn">Sell</button>
+					<button type="button" class="btn active">Goal</button>
+					<button type="button" class="btn">Session</button>
+				</div>
 				<div class="form">
-					<div class="form-row">
-						<div class="btn-group" role="group" aria-label="Basic example">
-							<button type="button" class="btn active">buy</button>
-							<button type="button" class="btn">Sell</button>
-							<button type="button" class="btn">Goal</button>
-						</div>
-					</div>
 					<div class="form-row">
 						<label>Coin</label>
 						<select class="form-control" id="exampleFormControlSelect1">
-							<option>dice</option>
-							<option>LIVE</option>
+							<option>Win</option>
+							<option>Dice</option>
+							<option>Live</option>
+							<option>Rake</option>
 						</select>
 						<span class="error-message">Error message</span>
 					</div>
 					<div class="form-row">
-						<label>Price</label>
-						<i class="icon-trx"></i>
-						<input type="text" class="input" value="22.35" />
-						<span class="error-message">Error message</span>
-					</div>
-					<div class="form-row error">
-						<label>Quantity</label>
-						<input type="text" class="input" value="100" />
+						<label>Target</label>
+						<input type="text" class="input" value="1200" />
 						<span class="error-message">Error message</span>
 					</div>
 					<div class="form-row">
-						<label>Date</label>
-						<input type="date" class="input" value="2018-07-22">
+						<label>Projected Monthly Profit</label>
+						<span class="txt"><i class="icon-trx"></i>123,312,000.00</span>
 						<span class="error-message">Error message</span>
 					</div>
 				</div>
-				<div class="submit-nav"><button class="submit-btn">Save Buy Transaction</button></div>
+				<!--
+				<div class="projected-profit win-profit">
+					<span class="sub-title">Projected Monthly Profit</span>
+					<span class="dd"><i class="icon-trx"></i>123,312,000.00<span class="usd">$12.00</span></span>
+				</div>
+				-->
+				<div class="submit-nav"><button class="submit-btn">Add Goal</button></div>
 			</div>
 		</div>
 	</div>
