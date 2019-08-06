@@ -972,8 +972,9 @@ section .content .row .trans-history .table-responsive .table tbody tr td i.icon
 }
 
 section .content .row .trans-history .table-responsive .table tbody tr td i.icon-win {
-	background: url('../img/wink-light.svg') no-repeat center #333;
-	background-size: 12px;
+	background: url('../img/wink-coin-light.svg') no-repeat center;
+	background-size: auto 14px;
+	border-radius: 0;
 }
 
 section .content .row .trans-history .table-responsive .table tbody tr td i.icon-rake {
@@ -1986,8 +1987,9 @@ section .content .row .calculator .form .col i {
 }
 
 section .content .row .calculator .form .col i.icon-win {
-	background: url('../img/wink-light.svg') no-repeat center #333;
-	background-size: 12px;
+	background: url('../img/wink-coin-light.svg') no-repeat center;
+	background-size: auto 18px;
+	border-radius: 0;
 }
 
 section .content .row .calculator .form .col i.icon-dice {
@@ -2486,8 +2488,9 @@ section .content .row .session .col span.dd i.icon-live {
 
 section .content .row .active-goal .col span.dd i.icon-win,
 section .content .row .session .col span.dd i.icon-win {
-	background: url('../img/wink-light.svg') no-repeat center #333;
-	background-size: 12px;
+	background: url('../img/wink-coin-light.svg') no-repeat center;
+	background-size: auto 16px;
+	border-radius: 0;
 }
 
 section .content .row .active-goal .col span.dd i.icon-rake,
@@ -2775,25 +2778,131 @@ section .content .row .session .current-dice span.amount span.down {
 	display: block;
 	width: 100%;
 	height: 100%;
-	padding-top: 200px;
+	text-align: center;
+	padding-top: 160px;
 	text-align: center;
 	background: rgba(0,0,0,0.7);
 }
 
-.please-login label {
-	padding: 4px 15px;
-	font-size: 16px;
-	font-weight: 700;
+.please-login .wallet {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	width: 160px;
+	height: 160px;
+	padding: 20px 0 0 0;
+	overflow: hidden;
+	text-align: center;
 	color: #333;
-	border-radius: 3px;
-	background: #fbc509;
+	border-radius: 50%;
+	background-image: -webkit-gradient(linear,center top,center bottom,from(#fcb408),to(#facf0f));
+    background-image: -webkit-linear-gradient(#fcb408,#facf0f);
+    background-image: linear-gradient(#fcb408,#facf0f);
 }
 
-.please-login span.supported {
+.please-login .wallet i.icon-wallet {
 	display: block;
-	width: 100%;
-	padding-top: 5px;
+	margin: 0 auto;
+	width: 90px;
+	height: 90px;
+	background: url('../img/wallet.svg') no-repeat center;
+	background-size: 90px auto;
+}
+
+.please-login .wallet label {
+	display: block;
+	padding-bottom: 5px;
 	font-size: 13px;
+	font-weight: 700;
+	line-height: 1;
+	color: #333;
+}
+
+.please-login .preloader {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	width: 130px;
+	height: 35px;
+	box-shadow: 0 10px 20px rgba(6,7,11,1)
+}
+
+.please-login .preloader span.winkscan-logo {
+	display: block;
+	position: relative;
+	z-index: 3;
+	width: 127px;
+	height: 35px;
+	overflow: hidden;
+	background: url('../img/winkscan-animated-loading-logo.svg') no-repeat -108px top;
+	background-size: auto 35px;
+}
+
+.please-login .preloader span.winkscan-logo:before {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 3px;
+	width: 128px;
+	height: 2px;
+	content:'';
+	background: #FFF;
+	box-shadow: 0 3px 10px #12141f;
+	animation: scan-loading 4s ease-in-out infinite;
+}
+
+@-webkit-keyframes scan-loading {
+	0% {top: 0;}
+	20% {top: 35px;}
+	100% {top: 35px;}
+}
+
+@keyframes scan-loading {
+	0% {top: 0;}
+	20% {top: 35px;}
+	100% {top: 35px;}
+}
+
+.please-login .preloader span.scan,
+.please-login .preloader span.scan:before {
+	display: block;
+	position: absolute;
+	left: 1px;
+	top: 0;
+	display: block;
+	width: 125px;
+	height: 35px;
+}
+
+.please-login .preloader span.scan {
+	top: 0;
+	left: 1px;
+	z-index: 2;
+	overflow: hidden;
+	background: #FFF;
+}
+
+.please-login .preloader span.scan:before {
+	z-index: 2;
+	content:'';
+	background-image: -webkit-gradient(linear,center top,center bottom,from(#fcb408),to(#facf0f));
+    background-image: -webkit-linear-gradient(#fcb408,#facf0f);
+    background-image: linear-gradient(#fcb408,#facf0f);
+	top: 0;
+	left: 0;
+	animation: scan-loading-color 4s ease-in-out infinite;
+}
+
+@-webkit-keyframes scan-loading-color {
+	0% {top: -35px;}
+	20% {top: 0;}
+	100% {top: 0;}
+}
+
+@keyframes scan-loading-color {
+	0% {top: -35px;}
+	20% {top: 0;}
+	100% {top: 0;}
 }
 
 @media screen and (max-width: 576px) {
