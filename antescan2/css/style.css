@@ -16,6 +16,10 @@ a {
 	color: #FFF;
 }
 
+#root {
+	height: 100%;
+}
+
 .wrap {
 	margin: 0 auto;
 	overflow-y: auto;
@@ -300,12 +304,26 @@ header .top-nav .row .wallet .floating-nav .donate address {
 	display: block;
 	width: 100%;
 	height: 42px;
+	cursor: pointer;
 	text-align: center;
 	font-size: 12px;
 	padding: 12px 0 0 0;
 	color: #fcb408;
 	background: rgba(66,69,83,0.2);
 	border-radius: 3px;
+}
+
+header .top-nav .row .wallet .floating-nav .donate address i.icon-copy {
+	display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+	margin: 0 4px 0 0;
+	width: 16px;
+	height: 16px;
+	background: url('../img/copy.svg') no-repeat center;
+	background-size: auto 16px;
 }
 
 nav {
@@ -1254,20 +1272,6 @@ section.twitter-widget {
 	color: #fcb408;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .modal .modal-dialog .modal-content .modal-body .form {
 	display: block;
 	width: 100%;
@@ -1294,13 +1298,29 @@ section.twitter-widget {
 	text-transform: uppercase;
 }
 
-.modal .modal-dialog .modal-content .modal-body .btn-group {
+.modal .modal-dialog .modal-content .modal-body .btn-group,
+section .sub-nav .tb-sub-nav {
 	width: 100%;
-	align-items: center;
+}
+
+.modal .modal-dialog .modal-content .modal-body .two-nav .btn,
+section .sub-nav .two-nav .btn {
+	width: 50%;
+}
+
+.modal .modal-dialog .modal-content .modal-body .three-nav .btn,
+section .sub-nav .three-nav .btn {
+	width: 33.33%;
+}
+
+.modal .modal-dialog .modal-content .modal-body .four-nav .btn,
+section .sub-nav .four-nav .btn {
+	width: 25%;
 }
 
 .modal .modal-dialog .modal-content .modal-body .btn-group .btn,
 section .sub-nav .btn-group .btn {
+	display: table-cell;
 	height: 36px;
 	padding-top: 7px;
 	font-size: 12px;
@@ -1310,10 +1330,6 @@ section .sub-nav .btn-group .btn {
 	box-shadow: none;
 	background: #12141f;
 	border-bottom: 1px solid #12141f;
-}
-
-section .sub-nav .tb-sub-nav .btn {
-	width: 33.33%;
 }
 
 .modal .modal-dialog .modal-content .modal-body .btn-group .active,
