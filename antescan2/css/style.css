@@ -1571,7 +1571,7 @@ section.mining .content {
 	margin: 0 auto;
 	max-width: 576px;
 	padding: 0;
-	height: 100%;
+	height: calc(100% - 35px);
 }
 
 section.mining .content .btn-group {
@@ -1744,7 +1744,7 @@ section.m-rake .content .icon-live {
 	background: url('../img/icon-rake.svg') no-repeat;
 	background-size: 100%;
 }
-
+/*
 section.mining .content .pulse1,
 section.mining .content .pulse2,
 section.mining .content .pulse3 {
@@ -1777,7 +1777,7 @@ section.mining .content .pulse3 {
 	from {left: calc(50% - 110px); bottom: -110px; width: 220px; height: 220px; background: rgba(255,255,255,0.2);}
 	to {left: calc(50% - 300px); bottom: -300px; width: 600px; height: 600px; background: rgba(255,255,255,0);}
 }
-
+*/
 section.mining .content .icon-live-fly1,
 section.mining .content .icon-live-fly2,
 section.mining .content .icon-live-fly3,
