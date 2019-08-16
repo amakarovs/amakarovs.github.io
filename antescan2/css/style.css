@@ -1730,8 +1730,7 @@ section.mining .content .wrap-icon .icon-live {
 	display: block;
 	width: 222px;
 	height: 222px;
-	/*background: url('../img/icon-dice.svg') no-repeat;*/
-	background: red;
+	background: url('../img/icon-dice.svg') no-repeat red;
 	background-size: 100%;
 	animation: xxx-rotate 10s linear infinite;
 }
