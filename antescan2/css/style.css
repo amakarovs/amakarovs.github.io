@@ -1732,15 +1732,15 @@ section.mining .content .wrap-icon .icon-live {
 	height: 222px;
 	background: url('../img/icon-dice.svg') no-repeat;
 	background-size: 100%;
-	animation: dice-rotate 4s linear infinite;
+	animation: xxx-rotate 10s linear infinite;
 }
 
-@-webkit-keyframes dice-rotate {
+@-webkit-keyframes xxx-rotate {
 	0% {transform: rotate(0deg);}
 	100% {transform: rotate(360deg);}
 }
 
-@keyframes dice-rotate {
+@keyframes xxx-rotate {
 	0% {transform: rotate(0deg);}
 	100% {transform: rotate(360deg);}
 }
