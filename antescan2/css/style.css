@@ -1715,16 +1715,14 @@ section.mining .content a.mine:hover {
 section.mining .content .icon-live {
 	position: absolute;
 	z-index: 2;
-	/*left: calc(50% - 111px);
-	bottom: -111px;*/
-	left: 0;
-	bottom: 0;
+	left: calc(50% - 111px);
+	top: calc(100% - 111px);
 	display: block;
 	width: 222px;
 	height: 222px;
 	background: url('../img/icon-dice.svg') no-repeat;
 	background-size: 100%;
-	animation: dice-rotate 4s linear infinite;
+	animation: dice-rotate 6s linear infinite;
 }
 
 @-webkit-keyframes dice-rotate {
