@@ -1552,7 +1552,6 @@ section.mining {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
 	align-items: center;
 	background-image: radial-gradient(circle at bottom center, #12a05b, #131722);
 }
@@ -1571,7 +1570,8 @@ section.mining .content {
 	margin: 0 auto;
 	max-width: 576px;
 	padding: 0;
-	height: calc(100% - 35px);
+	height: 100%;
+	overflow:hidden;
 }
 
 section.mining .content .btn-group {
