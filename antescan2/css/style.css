@@ -1730,7 +1730,8 @@ section.mining .content .wrap-icon .icon-live {
 	display: block;
 	width: 222px;
 	height: 222px;
-	background: url('../img/icon-dice.svg') no-repeat;
+	/*background: url('../img/icon-dice.svg') no-repeat;*/
+	background: red;
 	background-size: 100%;
 	animation: xxx-rotate 10s linear infinite;
 }
@@ -1746,13 +1747,11 @@ section.mining .content .wrap-icon .icon-live {
 }
 
 section.m-live .content .wrap-icon .icon-live {
-	background: url('../img/icon-live.svg') no-repeat;
-	background-size: 100%;
+	background: red;
 }
 
 section.m-rake .content .wrap-icon .icon-live {
-	background: url('../img/icon-rake.svg') no-repeat;
-	background-size: 100%;
+	background: red;
 }
 
 section.mining .content .pulse1,
