@@ -1571,7 +1571,7 @@ section.mining .content {
 	margin: 0 auto;
 	max-width: 576px;
 	padding: 0;
-	height: calc(100% - 35px);
+	height: 100%;
 }
 
 section.mining .content .btn-group {
@@ -1716,7 +1716,7 @@ section.mining .content .icon-live {
 	position: absolute;
 	z-index: 2;
 	left: calc(50% - 111px);
-	top: calc(100% - 150px);
+	top: calc(100% - 111px);
 	display: block;
 	width: 222px;
 	height: 222px;
