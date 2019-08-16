@@ -1716,7 +1716,7 @@ section.mining .content .icon-live {
 	position: absolute;
 	z-index: 2;
 	left: calc(50% - 111px);
-	top: calc(100% - 202px);
+	top: calc(100% - 150px);
 	display: block;
 	width: 222px;
 	height: 222px;
