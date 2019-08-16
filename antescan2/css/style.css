@@ -1565,7 +1565,7 @@ section.m-rake {
 }
 
 section.mining .content {
-	position: relative;
+	position: fixed;
 	z-index: 3;
 	margin: 0 auto;
 	max-width: 576px;
