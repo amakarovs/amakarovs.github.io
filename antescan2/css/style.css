@@ -1719,7 +1719,8 @@ section.mining .content .wrap-icon {
 	bottom: 0;
 	display: block;
 	width: 100%;
-	height: 111px;
+	height: 222px;
+	background: red;
 }
 
 section.mining .content .wrap-icon .icon-live {
