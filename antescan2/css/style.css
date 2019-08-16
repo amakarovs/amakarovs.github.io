@@ -1712,7 +1712,7 @@ section.mining .content a.mine:hover {
 	background: rgba(255,255,255,0.2);
 }
 
-section.mining .content .icon-live {
+section.mining .content .wrap-icon {
 	position: absolute;
 	z-index: 2;
 	left: 0;
@@ -1720,14 +1720,13 @@ section.mining .content .icon-live {
 	display: block;
 	width: 100%;
 	height: 111px;
-	background: red;
+	overflow: hidden;
 }
-/*
-section.mining .content .icon-live {
+
+section.mining .content .wrap-icon .icon-live {
 	position: absolute;
-	z-index: 2;
 	left: calc(50% - 111px);
-	top: calc(100% - 111px);
+	top: 0;
 	display: block;
 	width: 222px;
 	height: 222px;
@@ -1746,12 +1745,12 @@ section.mining .content .icon-live {
 	100% {transform: rotate(360deg);}
 }
 
-section.m-live .content .icon-live {
+section.m-live .content .wrap-icon .icon-live {
 	background: url('../img/icon-live.svg') no-repeat;
 	background-size: 100%;
 }
 
-section.m-rake .content .icon-live {
+section.m-rake .content .wrap-icon .icon-live {
 	background: url('../img/icon-rake.svg') no-repeat;
 	background-size: 100%;
 }
@@ -1850,7 +1849,7 @@ section.mining .content .icon-live-fly4 {
 	0% {bottom: -40px; transform: rotate(0deg); opacity: 0.2;}
 	100% {bottom: calc(100% + 40px); transform: rotate(360deg); opacity: 0;}
 }
-*/
+
 section .content .row .platform,
 section .content .row .current-price,
 section .content .row .burnt-dice,
