@@ -1777,7 +1777,7 @@ section.mining .content .pulse3 {
 	from {left: calc(50% - 110px); bottom: -110px; width: 220px; height: 220px; background: rgba(255,255,255,0.2);}
 	to {left: calc(50% - 300px); bottom: -300px; width: 600px; height: 600px; background: rgba(255,255,255,0);}
 }
-*/
+
 section.mining .content .icon-live-fly1,
 section.mining .content .icon-live-fly2,
 section.mining .content .icon-live-fly3,
@@ -1839,7 +1839,7 @@ section.mining .content .icon-live-fly4 {
 	0% {bottom: -40px; transform: rotate(0deg); opacity: 0.2;}
 	100% {bottom: calc(100% + 40px); transform: rotate(360deg); opacity: 0;}
 }
-
+*/
 section .content .row .platform,
 section .content .row .current-price,
 section .content .row .burnt-dice,
