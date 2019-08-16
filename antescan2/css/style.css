@@ -1713,23 +1713,14 @@ section.mining .content a.mine:hover {
 	background: rgba(255,255,255,0.2);
 }
 
-section.mining .content .wrap-icon {
+section.mining .content .icon-live {
 	position: absolute;
-	z-index: 2;
-	left: 0;
-	bottom: 0;
+	z-index: 3;
+	left: calc(50% - 111px);
+	bottom: -111px;
 	display: block;
-	width: 100%;
-	height: 180px;
-}
-
-section.mining .content .wrap-icon .icon-live {
-	position: absolute;
-	left: calc(50% - 90px);
-	top: 0;
-	display: block;
-	width: 180px;
-	height: 180px;
+	width: 222px;
+	height: 222px;
 	transform: rotate(0deg);
 	background: url('../img/icon-dice.svg') no-repeat;
 	background-size: 100%;
@@ -1748,12 +1739,12 @@ section.mining .content .wrap-icon .icon-live {
 	100% {transform: rotate(360deg);}
 }
 
-section.m-live .content .wrap-icon .icon-live {
+section.m-live .content .icon-live {
 	background: url('../img/icon-live.svg') no-repeat;
 	background-size: 100%;
 }
 
-section.m-rake .content .wrap-icon .icon-live {
+section.m-rake .content .icon-live {
 	background: url('../img/icon-rake.svg') no-repeat;
 	background-size: 100%;
 }
