@@ -16,7 +16,7 @@
 <body>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="addSession" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
@@ -24,40 +24,33 @@
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
 			</div>
 			<div class="modal-body">
+				<div class="btn-group" role="group" aria-label="Basic example">
+					<button type="button" class="btn">Buy</button>
+					<button type="button" class="btn">Sell</button>
+					<button type="button" class="btn">Goal</button>
+					<button type="button" class="btn active">Session</button>
+				</div>
 				<div class="form">
-					<div class="form-row">
-						<div class="btn-group" role="group" aria-label="Basic example">
-							<button type="button" class="btn active">buy</button>
-							<button type="button" class="btn">Sell</button>
-							<button type="button" class="btn">Goal</button>
-						</div>
-					</div>
-					<div class="form-row">
-						<label>Coin</label>
-						<select class="form-control" id="exampleFormControlSelect1">
-							<option>dice</option>
-							<option>LIVE</option>
-						</select>
-						<span class="error-message">Error message</span>
-					</div>
-					<div class="form-row">
-						<label>Price</label>
+					<div class="form-row icons">
+						<label>Mining Start Amount</label>
 						<i class="icon-trx"></i>
-						<input type="text" class="input" value="22.35" />
+						<input type="text" class="input" value="1000" />
 						<span class="error-message">Error message</span>
 					</div>
-					<div class="form-row error">
-						<label>Quantity</label>
+					<div class="form-row icons">
+						<label>Mining End Amount</label>
+						<i class="icon-trx"></i>
+						<input type="text" class="input" value="1000" />
+						<span class="error-message">Error message</span>
+					</div>
+					<div class="form-row icons">
+						<label>Mined Tokens</label>
+						<i class="icon-dice"></i>
 						<input type="text" class="input" value="100" />
 						<span class="error-message">Error message</span>
 					</div>
-					<div class="form-row">
-						<label>Date</label>
-						<input type="date" class="input" value="2018-07-22">
-						<span class="error-message">Error message</span>
-					</div>
 				</div>
-				<div class="submit-nav"><button class="submit-btn">Save Buy Transaction</button></div>
+				<div class="submit-nav"><button class="submit-btn">Add Goal</button></div>
 			</div>
 		</div>
 	</div>
@@ -113,12 +106,12 @@
 		</div>
 		<div class="container-fluid content">
 			<div class="row">
-				<div class="col-12 session rake-goal">
+				<div class="col-12 session dice-goal">
 					<label>Mining Rate</label>
 					<div class="btn-group">
-						<button class="active">dice</button>
+						<button class="active">Dice</button>
 						<button>Live</button>
-						<button data-toggle="tooltip" data-placement="left" title="" data-original-title="Coming Soon">Rake</button>
+						<button>Rake</button>
 					</div>
 					<div class="col">
 						<span class="sub-title">Total Mined</span>
@@ -134,7 +127,7 @@
 					<div class="percent">Current Stage: 3-1</div>
 					<div class="progress-bar"><span class="completed" style="width: 75%;"></span></div>
 					<div class="current-dice mined-at-stage">
-						<span class="amount">5,000,000/4254327</span>Play 280 TRX to mine 1 dice
+						<span class="amount">5,000,000/4,254,327</span>Play 280 TRX to mine 1 dice
 					</div>
 					<div class="col">
 						<span class="sub-title">Your Average<br/>Mining Rate</span>
@@ -148,8 +141,40 @@
 			</div>
 			<div class="row">
 				<div class="col-12 trans-history">
+					<div class="table-responsive total-profit">
+						<table class="table">
+						  <thead>
+							<tr>
+							  <th scope="col">Period</th>
+							  <th scope="col">Mined</th>
+							  <th scope="col">Spent</th>
+							  <th scope="col">Per Coin</th>
+							  <th scope="col">Profit/Loss</th>
+							</tr>
+						  </thead>
+						  <tbody>
+							<tr>
+							  <td>Last 7 Days</td>
+							  <td><i class="icon-dice"></i>999,000</td>
+							  <td><i class="icon-trx"></i>1,300,000.00</td>
+							  <td><i class="icon-trx"></i>3.7</td>
+							  <td class="profit"><i class="icon-trx"></i>200</td>
+							</tr>
+							<tr>
+							  <td>Last 30 Days</td>
+							  <td><i class="icon-dice"></i>999,000</td>
+							  <td><i class="icon-trx"></i>1,300,000.00</td>
+							  <td><i class="icon-trx"></i>3.7</td>
+							  <td class="loss"><i class="icon-trx"></i>200</td>
+							</tr>
+							<tr>
+							  <td colspan="5">No History</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
 					<div class="add">
-						<button class="submit-btn" data-toggle="modal" data-target="#addGoal">Add Mining Session</button>
+						<button class="submit-btn" data-toggle="modal" data-target="#addSession">Add Mining Session</button>
 					</div>
 				</div>
 			</div>

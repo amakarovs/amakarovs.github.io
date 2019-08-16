@@ -938,7 +938,7 @@ section .content .row .trans-history {
 }
 
 section .content .row .trans-history .table-responsive .table {
-	margin-bottom: 0;
+	margin-bottom: 20px;
 }
 
 section .content .row .trans-history .table-responsive .table {
@@ -962,6 +962,10 @@ section .content .row .trans-history .table-responsive .table tbody tr td {
 	border-top: 1px solid #12141f;
 }
 
+section .content .row .trans-history .total-profit .table tbody tr td {
+	font-weight: 700;
+}
+
 section .content .row .trans-history .table-responsive .table tbody tr td i,
 section .content .row .trans-history .table-responsive .table tbody tr td a.remove-btn,
 section .content .row .trans-history .table-responsive .table tbody tr td i.icon-check,
@@ -971,6 +975,14 @@ section .content .row .trans-history .table-responsive .table tbody tr td a.edit
     vertical-align: top;
     zoom: 1;
     *display: inline;
+}
+
+section .content .row .trans-history .table-responsive .table tbody tr td.profit {
+	color: #1af135;
+}
+
+section .content .row .trans-history .table-responsive .table tbody tr td.loss {
+	color: #f81f1f;
 }
 
 section .content .row .trans-history .table-responsive .table tbody tr td i {
@@ -1332,6 +1344,7 @@ section.twitter-widget {
 }
 
 .modal .modal-dialog .modal-content .modal-body .form .form-row {
+	position: relative;
 	padding: 7px 0 5px 0;
 	border-bottom: 1px solid #12141f;
 }
@@ -1423,6 +1436,44 @@ section .sub-nav .btn-group .btn:last-child {
 	border-radius: 0;
 }
 
+.modal .modal-dialog .modal-content .modal-body .form .icons input.input {
+	padding-left: 20px;
+}
+
+.modal .modal-dialog .modal-content .modal-body .form .icons i {
+	position: absolute;
+	left: 0;
+	top: 32px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+}
+
+.modal .modal-dialog .modal-content .modal-body .form .icons i.icon-trx {
+	left: 2px;
+	top: 33px;
+	width: 13px;
+	height: 14px;
+	background: url('../img/icon-trx.svg') no-repeat;
+	background-size: 13px auto;
+	border-radius: 0;
+}
+
+.modal .modal-dialog .modal-content .modal-body .form .icons i.icon-rake {
+	background: url('../img/icon-rake.svg') no-repeat center;
+	background-size: 100%;
+}
+
+.modal .modal-dialog .modal-content .modal-body .form .icons i.icon-dice {
+	background: url('../img/icon-dice.svg') no-repeat center;
+	background-size: 100%;
+}
+
+.modal .modal-dialog .modal-content .modal-body .form .icons i.icon-live {
+	background: url('../img/icon-live.svg') no-repeat center;
+	background-size: 100%;
+}
+
 .modal .modal-dialog .modal-content .modal-body .form .form-row span.txt {
 	padding: 5px 0 0 0;
 	font-weight: 700;
@@ -1442,7 +1493,7 @@ section .sub-nav .btn-group .btn:last-child {
 	border-radius: 0;
 }
 
-.modal .modal-dialog .modal-content .modal-body .form .form-row .percent {
+.modal .modal-dialog .modal-content .modal-body .form .form-row .percent-range {
 	display: flex;
 	margin-left: -10px;
 	width: calc(100% + 10px);
@@ -1450,7 +1501,7 @@ section .sub-nav .btn-group .btn:last-child {
 	padding: 5px 0;
 }
 
-.modal .modal-dialog .modal-content .modal-body .form .form-row .percent span {
+.modal .modal-dialog .modal-content .modal-body .form .form-row .percent-range span {
 	margin-left: 10px;
 	width: 25%;
 	height: 36px;
@@ -1505,6 +1556,10 @@ section.mining {
 
 section.m-live {
 	background-image: radial-gradient(circle at bottom center, #db2c2c, #131722);
+}
+
+section.m-rake {
+	background-image: radial-gradient(circle at bottom center, #0450a3, #131722);
 }
 
 section.mining .content {
@@ -1568,6 +1623,10 @@ section.m-live .content .mined-info span.col {
 	color: #ff3131;
 }
 
+section.m-rake .content .mined-info span.col {
+	color: #007aff;
+}
+
 section.mining .content .mined-info span.col label {
 	display: block;
 	font-weight: 600;
@@ -1616,7 +1675,7 @@ section.mining .content span.countdown span.group span.sub {
 section.mining .content span.speed {
 	padding: 10px 0;
 	font-size: 14px;
-	color: #000;
+	color: rgba(255,255,255,0.5);
 }
 
 section.mining .content span.speed span.amount {
@@ -1626,6 +1685,10 @@ section.mining .content span.speed span.amount {
 
 section.m-live .content span.speed span.amount {
 	color: #ff3131;
+}
+
+section.m-rake .content span.speed span.amount {
+	color: #007aff;
 }
 
 section.mining .content a.mine {
@@ -1662,6 +1725,11 @@ section.mining .content .icon-live {
 
 section.m-live .content .icon-live {
 	background: url('../img/icon-live.svg') no-repeat;
+	background-size: 100%;
+}
+
+section.m-rake .content .icon-live {
+	background: url('../img/icon-rake.svg') no-repeat;
 	background-size: 100%;
 }
 
@@ -1729,6 +1797,14 @@ section.m-live .content .icon-live-fly2,
 section.m-live .content .icon-live-fly3,
 section.m-live .content .icon-live-fly4 {
 	background: url('../img/icon-live.svg') no-repeat;
+	background-size: 100%;
+}
+
+section.m-rake .content .icon-live-fly1,
+section.m-rake .content .icon-live-fly2,
+section.m-rake .content .icon-live-fly3,
+section.m-rake .content .icon-live-fly4 {
+	background: url('../img/icon-rake.svg') no-repeat;
 	background-size: 100%;
 }
 	
@@ -2012,7 +2088,6 @@ section .content .row .trans-history .add .pages {
 
 section .content .row .trans-history .add .pages {
 	margin-bottom: 0;
-	margin-top: 15px;
 }
 
 section .content .row .chart .date-range button,
