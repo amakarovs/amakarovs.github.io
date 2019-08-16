@@ -958,7 +958,9 @@ section .content .row .trans-history .table-responsive .table thead tr th {
 }
 
 section .content .row .trans-history .table-responsive .table tbody tr td {
+	padding-right: 10px;
 	color: #6e717f;
+	white-space: nowrap;
 	border-top: 1px solid #12141f;
 }
 
