@@ -1715,23 +1715,16 @@ section.mining .content a.mine:hover {
 section.mining .content .icon-live {
 	position: absolute;
 	z-index: 2;
-	left: calc(50% - 111px);
-	bottom: -111px;
+	/*left: calc(50% - 111px);
+	bottom: -111px;*/
+	left: 0;
+	bottom: 0;
 	display: block;
 	width: 222px;
 	height: 222px;
 	background: url('../img/icon-dice.svg') no-repeat;
 	background-size: 100%;
-}
-
-section.m-live .content .icon-live {
-	background: url('../img/icon-live.svg') no-repeat;
-	background-size: 100%;
-}
-
-section.m-rake .content .icon-live {
-	background: url('../img/icon-rake.svg') no-repeat;
-	background-size: 100%;
+	animation: dice-rotate 4s linear infinite;
 }
 
 @-webkit-keyframes dice-rotate {
@@ -1742,6 +1735,16 @@ section.m-rake .content .icon-live {
 @keyframes dice-rotate {
 	0% {transform: rotate(0deg);}
 	100% {transform: rotate(360deg);}
+}
+
+section.m-live .content .icon-live {
+	background: url('../img/icon-live.svg') no-repeat;
+	background-size: 100%;
+}
+
+section.m-rake .content .icon-live {
+	background: url('../img/icon-rake.svg') no-repeat;
+	background-size: 100%;
 }
 
 section.mining .content .pulse1,
