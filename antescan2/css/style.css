@@ -1722,7 +1722,6 @@ section.mining .content .icon-live {
 	height: 222px;
 	background: url('../img/icon-dice.svg') no-repeat;
 	background-size: 100%;
-	animation: dice-rotate 6s linear infinite;
 }
 
 section.m-live .content .icon-live {
