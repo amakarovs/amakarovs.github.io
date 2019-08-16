@@ -1570,7 +1570,7 @@ section.mining .content {
 	margin: 0 auto;
 	max-width: 576px;
 	padding: 0;
-	height: calc(100% - 36px);
+	height: calc(100% - 146px);
 	overflow: hidden;
 	background: green;
 }
