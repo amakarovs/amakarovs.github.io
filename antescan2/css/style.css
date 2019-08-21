@@ -228,6 +228,7 @@ header .top-nav .row .wallet .floating-nav.show-nav {
 
 header .top-nav .row .wallet .floating-nav .set-currency,
 header .top-nav .row .wallet .floating-nav .social,
+header .top-nav .row .wallet .floating-nav .cards,
 header .top-nav .row .wallet .floating-nav .donate {
 	display: table;
 	width: 100%;
@@ -237,6 +238,7 @@ header .top-nav .row .wallet .floating-nav .donate {
 
 header .top-nav .row .wallet .floating-nav .set-currency label,
 header .top-nav .row .wallet .floating-nav .social label,
+header .top-nav .row .wallet .floating-nav .cards label,
 header .top-nav .row .wallet .floating-nav .donate label,
 header .top-nav .row .wallet .floating-nav .set-currency select {
 	display: block;
@@ -245,6 +247,7 @@ header .top-nav .row .wallet .floating-nav .set-currency select {
 
 header .top-nav .row .wallet .floating-nav .set-currency label,
 header .top-nav .row .wallet .floating-nav .social label,
+header .top-nav .row .wallet .floating-nav .cards label,
 header .top-nav .row .wallet .floating-nav .donate label {
 	padding-bottom: 5px;
 	font-size: 12px;
@@ -267,7 +270,7 @@ header .top-nav .row .wallet .floating-nav .set-currency select.form-control {
 header .top-nav .row .wallet .floating-nav .social a {
 	display: flex;
 	float: left;
-	margin: 0 15px 0 0;
+	margin: 10px 15px 0 0;
 	width: 100px;
 	height: 100px;
 	align-items: center;
@@ -324,6 +327,62 @@ header .top-nav .row .wallet .floating-nav .donate address i.icon-copy {
 	height: 16px;
 	background: url('../img/copy.svg') no-repeat center;
 	background-size: auto 16px;
+}
+
+header .top-nav .row .wallet .floating-nav .cards a {
+	display: flex;
+	position: relative;
+	float: left;
+	margin: 10px 15px 0 0;
+	width: 100px;
+	height: 65px;
+	align-items: center;
+	outline: none;
+	justify-content: center;
+	border-radius: 3px;
+}
+
+header .top-nav .row .wallet .floating-nav .cards a.cc-coinbase {
+	background-image: -webkit-gradient(linear,center top,center bottom,from(#4172f3),to(#0f4df1));
+    background-image: -webkit-linear-gradient(#4172f3,#0f4df1);
+    background-image: linear-gradient(#4172f3,#0f4df1);
+}
+
+header .top-nav .row .wallet .floating-nav .cards a.cc-spend {
+	background: #416da9;
+}
+
+header .top-nav .row .wallet .floating-nav .cards a.cc-wirex {
+	background: #d3ffd0;
+}
+
+header .top-nav .row .wallet .floating-nav .cards a.cc-coinbase:before,
+header .top-nav .row .wallet .floating-nav .cards a.cc-spend:before,
+header .top-nav .row .wallet .floating-nav .cards a.cc-wirex:before {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 60px;
+	content:'';
+}
+
+header .top-nav .row .wallet .floating-nav .cards a.cc-coinbase:before {
+	background: url(../img/cc-coinbase.svg) no-repeat center;
+	background-size: 74px auto;
+}
+
+header .top-nav .row .wallet .floating-nav .cards a.cc-spend:before {
+	height: 65px;
+	background: url(../img/cc-spend.svg) no-repeat center;
+	background-size: 74px auto;
+}
+
+header .top-nav .row .wallet .floating-nav .cards a.cc-wirex:before {
+	height: 65px;
+	background: url(../img/cc-wirex.svg) no-repeat center;
+	background-size: 74px auto;
 }
 
 nav {
@@ -683,8 +742,8 @@ section .content .row .earnings:before {
 	content:'';
 	width: 100%;
 	height: 100%;
-	background: url('../img/icon-trx.svg') no-repeat right -34px;
-    background-size: 240px auto;
+	background: url('../img/icon-trx.svg') no-repeat right -48px;
+    background-size: 320px auto;
 	border-radius: 3;
 	opacity: 0.05;
 }
@@ -735,6 +794,44 @@ section .content .row .earnings span.amount i.icon-btt {
 	background: url('../img/btt-logo-light.svg') no-repeat;
 	background-size: 16px auto;
 }
+
+section .content .row .earnings .period {
+	margin-top: 5px;
+	display: block;
+	float: left;
+	width: 100%;
+	padding-top: 5px;
+	border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+section .content .row .earnings .period label {
+	font-size: 13px;
+}
+
+section .content .row .earnings .period span.amount {
+	font-size: 13px;
+	color: #5c5e6c;
+}
+
+section .content .row .earnings .period span.amount i.icon-trx {
+	top: 7px;
+	left: 3px;
+	width: 12px;
+	height: 13px;
+	opacity: 0.6;
+	background-size: 12px auto;
+}
+
+section .content .row .earnings .period span.amount i.icon-btt {
+	top: 7px;
+	left: 3px;
+	width: 12px;
+	height: 12px;
+	opacity: 0.6;
+	background-size: 12px auto;
+}
+
+
 
 section .content .row .holdings {
 	padding: 5px 0 0 0;
