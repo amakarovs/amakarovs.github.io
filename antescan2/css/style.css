@@ -365,7 +365,15 @@ header .top-nav .row .wallet .floating-nav .cards a.cc-wirex:before {
 	left: 0;
 	width: 100px;
 	height: 60px;
-	content:'';
+	content:'VISA';
+	padding: 3px 0 0 5px;
+	font-weight: 700;
+	color: rgba(255,255,255,0.8);
+	font-size: 8px;
+}
+
+header .top-nav .row .wallet .floating-nav .cards a.cc-wirex:before {
+	color: rgba(0,0,0,0.8);
 }
 
 header .top-nav .row .wallet .floating-nav .cards a.cc-coinbase:before {
@@ -810,7 +818,6 @@ section .content .row .earnings .period label {
 
 section .content .row .earnings .period span.amount {
 	font-size: 13px;
-	color: #5c5e6c;
 }
 
 section .content .row .earnings .period span.amount i.icon-trx {
@@ -831,10 +838,8 @@ section .content .row .earnings .period span.amount i.icon-btt {
 	background-size: 12px auto;
 }
 
-
-
 section .content .row .holdings {
-	padding: 5px 0 0 0;
+	padding: 5px 0 35px 0;
 }
 
 section .content .row .holdings .heading {
