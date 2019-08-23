@@ -16,48 +16,17 @@
 <body>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal xs-popup fade" id="RemoveSession" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel"><i class="icon-live"></i>Add Transaction</h5>
+				<h5 class="modal-title" id="exampleModalLabel"><i class="icon-live"></i>Remove Session</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
 			</div>
 			<div class="modal-body">
-				<div class="form">
-					<div class="form-row">
-						<div class="btn-group" role="group" aria-label="Basic example">
-							<button type="button" class="btn active">buy</button>
-							<button type="button" class="btn">Sell</button>
-							<button type="button" class="btn">Goal</button>
-						</div>
-					</div>
-					<div class="form-row">
-						<label>Coin</label>
-						<select class="form-control" id="exampleFormControlSelect1">
-							<option>dice</option>
-							<option>LIVE</option>
-						</select>
-						<span class="error-message">Error message</span>
-					</div>
-					<div class="form-row">
-						<label>Price</label>
-						<i class="icon-trx"></i>
-						<input type="text" class="input" value="22.35" />
-						<span class="error-message">Error message</span>
-					</div>
-					<div class="form-row error">
-						<label>Quantity</label>
-						<input type="text" class="input" value="100" />
-						<span class="error-message">Error message</span>
-					</div>
-					<div class="form-row">
-						<label>Date</label>
-						<input type="date" class="input" value="2018-07-22">
-						<span class="error-message">Error message</span>
-					</div>
-				</div>
-				<div class="submit-nav"><button class="submit-btn">Save Buy Transaction</button></div>
+				<label>Are you sure you want to remove mining session?</label>
+				<button class="cancel-btn">Cancel</button>
+				<button class="remove-btn">Remove</button>
 			</div>
 		</div>
 	</div>
@@ -138,7 +107,7 @@
 							  <td><i class="icon-trx"></i>1,300,000.00</td>
 							  <td><i class="icon-trx"></i>3.7</td>
 							  <td class="profit"><i class="icon-trx"></i>200</td>
-							  <td><a href="/" class="remove-btn"><i class="icon-remove"></i></a></td>
+							  <td><a href="javascript:void(0)" data-toggle="modal" data-target="#RemoveSession" class="remove-btn"><i class="icon-remove"></i></a></td>
 							</tr>
 							<tr>
 							  <td>12.12.2020</td>
@@ -146,7 +115,7 @@
 							  <td><i class="icon-trx"></i>1,300,000.00</td>
 							  <td><i class="icon-trx"></i>100.1</td>
 							  <td class="profit"><i class="icon-trx"></i>100.1</td>
-							  <td><a href="/" class="remove-btn"><i class="icon-remove"></i></a></td>
+							  <td><a href="javascript:void(0)" data-toggle="modal" data-target="#RemoveSession" class="remove-btn"><i class="icon-remove"></i></a></td>
 							</tr>
 							<tr>
 							  <td>12.12.2020</td>
@@ -154,56 +123,56 @@
 							  <td><i class="icon-trx"></i>1,300,000.00</td>
 							  <td><i class="icon-trx"></i>1000.7</td>
 							  <td class="loss"><i class="icon-trx"></i>1000.7</td>
-							  <td><a href="/" class="remove-btn"><i class="icon-remove"></i></a></td>
+							  <td><a href="javascript:void(0)" data-toggle="modal" data-target="#RemoveSession" class="remove-btn"><i class="icon-remove"></i></a></td>
 							</tr>
 							<tr>
 							  <td>12.12.2020</td>
 							  <td><i class="icon-dice"></i>999,000</td>
 							  <td><i class="icon-trx"></i>1,300,000.00</td>
 							  <td><i class="icon-trx"></i>3.7</td>
-							  <td><a href="/" class="remove-btn"><i class="icon-remove"></i></a></td>
+							  <td><a href="javascript:void(0)" data-toggle="modal" data-target="#RemoveSession" class="remove-btn"><i class="icon-remove"></i></a></td>
 							</tr>
 							<tr>
 							  <td>12.12.2020</td>
 							  <td><i class="icon-live"></i>999,000</td>
 							  <td><i class="icon-trx"></i>1,300,000.00</td>
 							  <td><i class="icon-trx"></i>100.1</td>
-							  <td><a href="/" class="remove-btn"><i class="icon-remove"></i></a></td>
+							  <td><a href="javascript:void(0)" data-toggle="modal" data-target="#RemoveSession" class="remove-btn"><i class="icon-remove"></i></a></td>
 							</tr>
 							<tr>
 							  <td>12.12.2020</td>
 							  <td><i class="icon-rake"></i>999,000</td>
 							  <td><i class="icon-trx"></i>1,300,000.00</td>
 							  <td><i class="icon-trx"></i>1000.7</td>
-							  <td><a href="/" class="remove-btn"><i class="icon-remove"></i></a></td>
+							  <td><a href="javascript:void(0)" data-toggle="modal" data-target="#RemoveSession" class="remove-btn"><i class="icon-remove"></i></a></td>
 							</tr>
 							<tr>
 							  <td>12.12.2020</td>
 							  <td><i class="icon-dice"></i>999,000</td>
 							  <td><i class="icon-trx"></i>1,300,000.00</td>
 							  <td><i class="icon-trx"></i>3.7</td>
-							  <td><a href="/" class="remove-btn"><i class="icon-remove"></i></a></td>
+							  <td><a href="javascript:void(0)" data-toggle="modal" data-target="#RemoveSession" class="remove-btn"><i class="icon-remove"></i></a></td>
 							</tr>
 							<tr>
 							  <td>12.12.2020</td>
 							  <td><i class="icon-live"></i>999,000</td>
 							  <td><i class="icon-trx"></i>1,300,000.00</td>
 							  <td><i class="icon-trx"></i>100.1</td>
-							  <td><a href="/" class="remove-btn"><i class="icon-remove"></i></a></td>
+							  <td><a href="javascript:void(0)" data-toggle="modal" data-target="#RemoveSession" class="remove-btn"><i class="icon-remove"></i></a></td>
 							</tr>
 							<tr>
 							  <td>12.12.2020</td>
 							  <td><i class="icon-rake"></i>999,000</td>
 							  <td><i class="icon-trx"></i>1,300,000.00</td>
 							  <td><i class="icon-trx"></i>1000.7</td>
-							  <td><a href="/" class="remove-btn"><i class="icon-remove"></i></a></td>
+							  <td><a href="javascript:void(0)" data-toggle="modal" data-target="#RemoveSession" class="remove-btn"><i class="icon-remove"></i></a></td>
 							</tr>
 							<tr>
 							  <td>12.12.2020</td>
 							  <td><i class="icon-rake"></i>999,000</td>
 							  <td><i class="icon-trx"></i>1,300,000.00</td>
 							  <td><i class="icon-trx"></i>1000.7</td>
-							  <td><a href="/" class="remove-btn"><i class="icon-remove"></i></a></td>
+							  <td><a href="javascript:void(0)" data-toggle="modal" data-target="#RemoveSession" class="remove-btn"><i class="icon-remove"></i></a></td>
 							</tr>
 						  </tbody>
 						</table>

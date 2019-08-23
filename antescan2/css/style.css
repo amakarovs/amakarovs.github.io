@@ -1255,7 +1255,6 @@ section.twitter-widget {
 	border-left-color: #FFF;
 }
 
-
 .modal .modal-dialog {
 	margin: 0 auto;
 	max-width: 576px;
@@ -3268,6 +3267,58 @@ section .content .row .session .current-dice span.amount span.down {
 	top: 0;
 	left: 0;
 	animation: scan-loading-color 4s ease-in-out infinite;
+}
+
+.xs-popup .modal-dialog {
+	margin-top: calc(50% - 100px);
+	max-width: 320px;
+	height: 200px;
+	background: #0c0e15;
+}
+
+.xs-popup .modal-dialog .modal-content {
+	background: transparent;
+}
+
+.xs-popup .modal-dialog .modal-content .modal-body {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+	text-align: center;
+}
+
+.xs-popup .modal-dialog .modal-content .modal-body label {
+	display: block;
+	width: 100%;
+	padding: 5px 0 20px 0;
+	font-size: 15px;
+	color: #6e717f;
+	line-height: 1.2;
+}
+
+.xs-popup .modal-dialog .modal-content .modal-body button {
+    margin: 0 10px;
+	width: calc(50% - 20px);
+    height: 36px;
+    text-decoration: none;
+    outline: none;
+    color: #292628;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    background: #0cc127;
+    border-radius: 18px;
+    border: none;
+}
+
+.xs-popup .modal-dialog .modal-content .modal-body button.cancel-btn {
+    color: #FFF;
+    background: #6e717f;
+}
+
+.xs-popup .modal-dialog .modal-content .modal-body button.remove-btn {
+    color: #FFF;
+    background: #f81f1f;
 }
 
 @-webkit-keyframes scan-loading-color {
