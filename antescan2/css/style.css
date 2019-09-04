@@ -639,6 +639,21 @@ section .content .row .net-worth {
     background-image: linear-gradient(#131722,#0f864c);
 }
 
+section .content .row .net-worth:before {
+	display: block;
+    z-index: 1;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.05;
+    background: url(../img/texture-light.svg) repeat center;
+    background-size: 60px auto;
+    border-radius: 3px;
+}
+
 section .content .row .net-worth span.info {
 	display: -moz-inline-stack;
     display: inline-block;
@@ -2345,6 +2360,7 @@ section .content .row .calculator {
 section .content .row .calculator label,
 section .content .row .current-divs label,
 section .content .row .calculator span.timer,
+section .content .row .current-divs span.timer,
 section .content .row .calculator .btn-group,
 section .content .row .current-divs .btn-group,
 section .content .row .calculator .form,
@@ -2550,7 +2566,7 @@ section .content .row .calculator .total:before {
 	bottom: 0;
 	width: 100%;
 	height: 100%;
-	opacity: 0.1;
+	opacity: 0.05;
 	background: url('../img/texture-light.svg') repeat center;
 	background-size: 60px auto;
 	border-radius: 0 0 3px 3px;
@@ -2573,7 +2589,8 @@ section .content .row .calculator .total label {
 }
 
 section .content .row .calculator .total span.timer,
-section .content .row .calculator span.timer {
+section .content .row .calculator span.timer,
+section .content .row .current-divs span.timer {
 	width: 40%;
 	padding: 0 0 10px 0;
 	font-weight: 700;
@@ -2581,12 +2598,14 @@ section .content .row .calculator span.timer {
 	color: #FFF;
 }
 
-section .content .row .calculator span.timer {
+section .content .row .calculator span.timer,
+section .content .row .current-divs span.timer {
 	padding: 17px 15px 10px 0;
 }
 
 section .content .row .calculator .total span.timer i.icon-clock,
-section .content .row .calculator span.timer i.icon-clock {
+section .content .row .calculator span.timer i.icon-clock,
+section .content .row .current-divs span.timer i.icon-clock {
 	display: -moz-inline-stack;
     display: inline-block;
     vertical-align: top;
@@ -2603,7 +2622,7 @@ section .content .row .calculator .total span.amount {
 	position: relative;
 	width: 100%;
 	padding: 10px 0 15px 0;
-	font-size: 50px;
+	font-size: 48px;
 	font-weight: 700;
 	line-height: 1;
 	text-align: center;
@@ -2634,7 +2653,7 @@ section .content .row .calculator .total span.amount span.fiat-amount {
 }
 
 section .content .row .calculator .total span.amount i.icon-trx {
-	margin: 20px 0 0 0;
+	margin: 20px 4px 0 0;
 	width: 21px;
 	height: 23px;
 	background: url('../img/icon-trx.svg') no-repeat center;
@@ -2725,6 +2744,22 @@ section .content .row .calculator .formula .overflow a.btn {
     border-radius: 18px;
 }
 
+section .content .row .calculator .formula.hide {
+	height: auto;
+	overflow: visible;
+}
+
+section .content .row .calculator .formula.hide .overflow {
+	position: relative;
+	left: inherit;
+	bottom: inherit;
+	display: block;
+	float: left;
+	height: auto;
+	padding: 15px 0 20px 0;
+	background-image: none;
+}
+
 section .content .row .current-divs {
 	padding: 0;
 }
@@ -2779,7 +2814,7 @@ section .content .row .current-divs .pool-row .pool span.amount span.btt-divs {
 }
 
 section .content .row .current-divs .pool-row .pool span.amount span.btt-divs i.icon-btt {
-	margin: 0 4px 0 0;
+	margin: -1px 4px 0 0;
 	width: 14px;
 	height: 14px;
 	background: url('../img/btt-logo-light.svg') no-repeat;
@@ -2798,7 +2833,7 @@ section .content .row .current-divs .total-pool span.amount i.icon-trx {
 }
 
 section .content .row .current-divs .pool-row .pool span.amount i.icon-trx {
-	margin: 4px 6px 0 0;
+	margin: 4px 4px 0 0;
 	width: 16px;
 	height: 17px;
 	background: url('../img/icon-trx.svg') no-repeat;
@@ -2827,43 +2862,88 @@ section .content .row .current-divs .pool-row .pool span.sub-title {
 	padding-top: 4px;
 }
 
-section .content .row .current-divs .pool-row .win-pool {
-	border-bottom: 2px solid #fbc509;
+section .content .row .current-divs .pool-row .pool {
+	position: relative;
+}
+
+section .content .row .current-divs .pool-row .win-pool:before,
+section .content .row .current-divs .pool-row .dice-pool:before,
+section .content .row .current-divs .pool-row .live-pool:before,
+section .content .row .current-divs .pool-row .rake-pool:before {
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    content: "";
+}
+
+section .content .row .current-divs .pool-row .win-pool:before {
+	background-image: -webkit-gradient(linear,left top,right top,from(#ff5f3a),to(#ff9503));
+    background-image: -webkit-linear-gradient(left,#ff5f3a,#ff9503);
+    background-image: linear-gradient(90deg,#ff5f3a,#ff9503);
 }
 
 section .content .row .current-divs .pool-row .win-pool span.sub-title {
 	color: #fbc509;
 }
 
-section .content .row .current-divs .pool-row .dice-pool {
-	border-bottom: 2px solid #18ef36;
+section .content .row .current-divs .pool-row .dice-pool:before {
+	background-image: -webkit-gradient(linear,right top,left top,from(#0cd31a),to(#98ef89));
+    background-image: -webkit-linear-gradient(right,#0cd31a,#98ef89);
+    background-image: linear-gradient(270deg,#0cd31a,#98ef89);
 }
 
 section .content .row .current-divs .pool-row .dice-pool span.sub-title {
-	color: #18ef36;
+	color: #0cd31a;
 }
 
-section .content .row .current-divs .pool-row .live-pool {
-	border-bottom: 2px solid #f81f1f;
+section .content .row .current-divs .pool-row .live-pool:before {
+	background-image: -webkit-gradient(linear,left top,right top,from(#ff2b67),to(#ff5f3a));
+    background-image: -webkit-linear-gradient(left,#ff2b67,#ff5f3a);
+    background-image: linear-gradient(90deg,#ff2b67,#ff5f3a);
 }
 
 section .content .row .current-divs .pool-row .live-pool span.sub-title {
-	color: #f81f1f;
+	color: #ff5f3a;
 }
 
-section .content .row .current-divs .pool-row .rake-pool {
-	border-bottom: 2px solid #0099ff;
+section .content .row .current-divs .pool-row .rake-pool:before {
+	background-image: -webkit-gradient(linear,right top,left top,from(#1d63f0),to(#1ad5fd));
+    background-image: -webkit-linear-gradient(right,#1d63f0,#1ad5fd);
+    background-image: linear-gradient(270deg,#1d63f0,#1ad5fd);
 }
 
 section .content .row .current-divs .pool-row .rake-pool span.sub-title {
-	color: #0099ff;
+	color: #1ad5fd;
+}
+
+section .content .row .current-divs .pool-row.all-pools .pool {
+	width: 50%;
+	float: left;
+}
+
+section .content .row .current-divs .pool-row.all-pools .pool span.amount {
+	white-space: nowrap;
+	font-size: 20px;
+}
+
+section .content .row .current-divs .pool-row.all-pools .pool span.amount .icon-trx {
+	margin-top: 1px;
 }
 
 section .content .row .current-divs .total-pool {
-	display: block;
+	position: relative;
 	float: left;
-	width: 100%;
-	height: 155px;
+    width: 100%;
+	height: 106px;
+    padding: 25px 0 0 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: -2px;
 }
 
 section .content .row .current-divs .total-pool label {
@@ -2880,7 +2960,7 @@ section .content .row .current-divs .total-pool span.amount {
 }
 
 section .content .row .current-divs .total-pool span.amount i.icon-trx {
-	margin: 31px 6px 0 0;
+	margin: 20px 4px 0 0;
 	width: 21px;
 	height: 23px;
 	background: url('../img/icon-trx.svg') no-repeat;
@@ -2890,7 +2970,6 @@ section .content .row .current-divs .total-pool span.amount i.icon-trx {
 section .content .row .current-divs .total-pool span.amount span.btt-divs {
 	display: block;
 	width: 100%;
-	margin-top: 2px 0 0 0;
 	text-align: center;
 	letter-spacing: 0;
 	font-size: 18px;
@@ -2898,7 +2977,7 @@ section .content .row .current-divs .total-pool span.amount span.btt-divs {
 }
 
 section .content .row .current-divs .total-pool span.amount span.btt-divs i.icon-btt {
-	margin: 1px 4px 0 0;
+	margin: -1px 4px 0 0;
 	display: -moz-inline-stack;
     display: inline-block;
     vertical-align: top;
@@ -2908,6 +2987,13 @@ section .content .row .current-divs .total-pool span.amount span.btt-divs i.icon
 	height: 18px;
 	background: url('../img/btt-logo-light.svg') no-repeat;
 	background-size: 18px;
+}
+
+section .content .row .current-divs .drops-graph {
+	display: block;
+	float: left;
+	width: 100%;
+	height: 160px;
 }
 
 section .content .row .active-goal,

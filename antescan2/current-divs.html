@@ -60,22 +60,29 @@
 			<div class="btn-group tb-sub-nav" role="group" aria-label="Basic example">
 				<a href="divs.html" class="btn">Calculator</a>
 				<a href="current-divs.html" class="btn active">Pool</a>
+				<a href="current-divs.html" class="btn">Frozen</a>
 				<a href="history.html" class="btn">History</a>
 			</div>
 		</div>
 		<div class="container-fluid content">	
 			<div class="row">
 				<div class="col-12 current-divs">
-					<label>Available Drops</label>
-					<span class="countdown">Next Payout:<span class="left">02:10:45</span></span>
+					<label>Available Drops</label><span class="timer"><i class="icon-clock"></i>12:34:45</span>
 					<div class="btn-group">
 						<button class="active">All</button>
 						<button>Win</button>
-						<button>Dice</button>
+						<button>dice</button>
 						<button>Live</button>
 						<button>Rake</button>
 					</div>
-					<div class="pool-row">
+					<div class="total-pool">
+						<span class="amount"><i class="icon-trx"></i>40,408,842.12<span class="btt-divs"><i class="icon-btt"></i>20,204,842.46</span></span>
+					</div>
+					<div class="drops-graph">
+						grafik 24h
+					</div>
+					<!-- Show Only When ALL POOLS selected
+					<div class="pool-row all-pools">
 						<div class="pool win-pool">
 							<span class="amount">
 								<i class="icon-trx"></i>20,204,842.46
@@ -99,10 +106,7 @@
 							<span class="sub-title">RAKE Drops Pool</span>
 						</div>
 					</div>
-					<div class="total-pool">
-						<label>Total Available Drops</label>
-						<span class="amount"><i class="icon-trx"></i>40,408,842.12<span class="btt-divs"><i class="icon-btt"></i>20,204,842.46</span></span>
-					</div>
+					-->
 				</div>
 			</div>
 		</div>
