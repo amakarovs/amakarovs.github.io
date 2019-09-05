@@ -978,6 +978,44 @@ section .content .row .earnings .period .history a.btn {
     border-radius: 3px;
 }
 
+section .content .row .earnings .loading-history {
+	display: block;
+	float: left;
+	width: 100%;
+	height: 105px;
+	text-align: center;
+}
+
+section .content .row .earnings .loading-history i.icon-win {
+	margin: 0 auto;
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url('../img/wink-coin-light.svg') no-repeat center #0c0e15;
+	background-size: 14px auto;
+	border-radius: 50%;
+	animation: rotate-win 3s ease-in-out infinite;
+}
+
+@-webkit-keyframes rotate-win {
+	0% {transform:rotate(0deg);}
+	100% {transform:rotate(360deg);}
+}
+
+section .content .row .earnings .loading-history span.title {
+	display: block;
+	padding: 5px 0 0 0;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+section .content .row .earnings .loading-history span.up-to {
+	display: block;
+	padding: 0 0 0 0;
+	font-size: 13px;
+	color: #5c5e6c;
+}
+
 section .content .row .holdings {
 	padding: 5px 0 35px 0;
 }
@@ -1056,6 +1094,12 @@ section .content .row .holdings .coin-row .coin i {
 	border-radius: 50%;
 }
 
+section .content .row .holdings .coin-row .coin i.icon-win {
+	background: url('../img/wink-coin-light.svg') no-repeat center;
+	background-size: auto 16px;
+	border-radius: 0;
+}
+
 section .content .row .holdings .coin-row .coin i.icon-dice {
 	background: url('../img/icon-dice.svg') no-repeat center;
 	background-size: 100%;
@@ -1063,6 +1107,11 @@ section .content .row .holdings .coin-row .coin i.icon-dice {
 
 section .content .row .holdings .coin-row .coin i.icon-live {
 	background: url('../img/icon-live.svg') no-repeat center;
+	background-size: 100%;
+}
+
+section .content .row .holdings .coin-row .coin i.icon-rake {
+	background: url('../img/icon-rake.svg') no-repeat center;
 	background-size: 100%;
 }
 
