@@ -957,6 +957,8 @@ section .content .row .earnings .period .col span.amount i.icon-btt {
 }
 
 section .content .row .earnings .period .history {
+	position: relative;
+	z-index: 2;
 	float: left;
 	width: 20%;
 	padding: 43px 0 0 0;
@@ -981,6 +983,8 @@ section .content .row .earnings .period .history a.btn {
 section .content .row .earnings .loading-history {
 	display: block;
 	float: left;
+	position: relative;
+	z-index: 2;
 	width: 100%;
 	height: 105px;
 	text-align: center;
@@ -1000,6 +1004,16 @@ section .content .row .earnings .loading-history i.icon-win {
 @-webkit-keyframes rotate-win {
 	0% {transform:rotate(0deg);}
 	100% {transform:rotate(360deg);}
+}
+
+section .content .row .earnings .loading-history i.icon-trx {
+	margin: 0 auto;
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url('../img/icon-trx.svg') no-repeat center #0c0e15;
+	background-size: auto 20px;
+	border-radius: 50%;
 }
 
 section .content .row .earnings .loading-history span.title {
