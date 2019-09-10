@@ -1239,7 +1239,16 @@ section .content .row .holdings .coin-row .coin-holdings button:active.add-btn {
 }
 
 section .content .row .trans-history {
-	padding: 0;
+	padding: 15px;
+	background: #131722;
+    border-radius: 3px;
+}
+
+section .content .row .trans-history label {
+	display: block;
+	width: 100%;
+	padding: 2px 0 15px 0;
+	font-weight: 700;
 }
 
 section .content .row .trans-history .table-responsive .table {
@@ -1282,6 +1291,10 @@ section .content .row .trans-history .table-responsive .table tbody tr td a.edit
 
 section .content .row .trans-history .table-responsive .table tbody tr td.profit {
 	color: #1af135;
+}
+
+section .content .row .trans-history .table-responsive .table tbody tr td.received-trx {
+	color: #FFF;
 }
 
 section .content .row .trans-history .table-responsive .table tbody tr td.loss {
@@ -1401,6 +1414,21 @@ section .content .row .trans-history .table-responsive .table tbody tr td a.edit
 	outline: none;
 	cursor: pointer;
 	border-radius: 3px;
+}
+
+section .content .row .trans-history .table-responsive .table tbody tr td.hash a {
+	display: block;
+	width: 40px;
+	overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+	color: #fcb408;
+	text-decoration: underline;
+}
+
+section .content .row .trans-history .table-responsive .table tbody tr.daily-average td {
+	font-weight: 700;
+	color: #FFF;
 }
 
 section .content .row .trans-history .add {
@@ -2440,15 +2468,21 @@ section .content .row .current-divs label {
 }
 
 section .content .row .calculator .btn-group,
-section .content .row .current-divs .btn-group {
+section .content .row .current-divs .btn-group,
+section .content .row .trans-history .coin-filter {
 	display: flex;
 	padding: 5px 15px 0 15px;
 	justify-content: flex-start;
 	width: 100%;
 }
 
+section .content .row .trans-history .coin-filter {
+	padding: 0 0 15px 0;
+}
+
 section .content .row .calculator .btn-group button,
-section .content .row .current-divs .btn-group button {
+section .content .row .current-divs .btn-group button,
+section .content .row .trans-history .coin-filter button {
 	height: 25px;
 	width: calc(100% / 5);
 	padding: 0 10px;
@@ -2463,18 +2497,21 @@ section .content .row .current-divs .btn-group button {
 }
 
 section .content .row .calculator .btn-group button.active,
-section .content .row .current-divs .btn-group button.active {
+section .content .row .current-divs .btn-group button.active,
+section .content .row .trans-history .coin-filter button.active {
 	color: #000;
 	background: #FFF;
 }
 
 section .content .row .calculator .btn-group button:first-child,
-section .content .row .current-divs .btn-group button:first-child {
+section .content .row .current-divs .btn-group button:first-child,
+section .content .row .trans-history .coin-filter button:first-child {
 	border-radius: 2px 0 0 2px;
 }
 
 section .content .row .calculator .btn-group button:last-child,
-section .content .row .current-divs .btn-group button:last-child {
+section .content .row .current-divs .btn-group button:last-child,
+section .content .row .trans-history .coin-filter button:last-child {
 	border-radius: 0 2px 2px 0;
 }
 
@@ -2769,6 +2806,19 @@ section .content .row .calculator .formula {
 	overflow: hidden;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 section .content .row .calculator .formula label {
 	padding: 15px 15px 0 15px;
 }
@@ -2790,38 +2840,79 @@ section .content .row .calculator .formula .overflow {
 	background-image: linear-gradient(rgba(0,0,0,0), #131722);
 }
 
-section .content .row .calculator .formula .overflow a.btn {
+section .content .row .calculator .formula .overflow button.sf-btn {
 	margin: 0 auto;
 	display: block;
 	width: 60%;
     height: 36px;
-    padding-top: 7px;
     text-decoration: none;
     outline: none;
-    color: #FFF;
+	color: #FFF;
     font-size: 15px;
     font-weight: 600;
     cursor: pointer;
     text-align: center;
     background: #6e717f;
     border-radius: 18px;
+	border: none;
 }
 
-section .content .row .calculator .formula.hide {
-	height: auto;
-	overflow: visible;
+
+
+
+
+
+
+/*
+
+
+section .content .row .calculator .show-all {
+	height: 963px;
+	animation: show-all 1s ease-in-out;
 }
 
-section .content .row .calculator .formula.hide .overflow {
-	position: relative;
-	left: inherit;
-	bottom: inherit;
-	display: block;
-	float: left;
-	height: auto;
+@-webkit-keyframes show-all {
+	0% {height: 173px;}
+	100% {height: 963px;}
+}
+
+section .content .row .calculator .hide-all {
+	height: 173px;
+	animation: hide-all 1s ease-in-out;
+}
+
+@-webkit-keyframes hide-all {
+	0% {height: 963px;}
+	100% {height: 173px;}
+}
+
+section .content .row .calculator .show-one {
+	height: 321px;
+	animation: show-one 1s ease-in-out;
+}
+
+@-webkit-keyframes show-one {
+	0% {height: 173px;}
+	100% {height: 321px;}
+}
+
+section .content .row .calculator .formula.show-all .overflow,
+section .content .row .calculator .formula.show-one .overflow {
+	height: 70px;
 	padding: 15px 0 20px 0;
-	background-image: none;
+	background: red;
 }
+
+*/
+
+
+
+
+
+
+
+
+
 
 section .content .row .current-divs {
 	padding: 0;

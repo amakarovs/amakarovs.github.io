@@ -15,6 +15,23 @@
 
 <body>
 
+<!-- Modal -->
+<div class="modal xs-popup fade" id="RemoveSession" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel"><i class="icon-live"></i>Remove Session</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<label>Are you sure you want to remove mining session?</label>
+				<button class="cancel-btn">Cancel</button>
+				<button class="remove-btn">Remove</button>
+			</div>
+		</div>
+	</div>
+</div>
+
 <div class="wrap">
 
 	<header>
@@ -58,112 +75,95 @@
 	<section>
 		<div class="sub-nav">
 			<div class="btn-group tb-sub-nav" role="group" aria-label="Basic example">
-				<a href="divs.html" class="btn active">Calculator</a>
+				<a href="divs.html" class="btn">Calculator</a>
 				<a href="current-divs.html" class="btn">Pool</a>
 				<a href="current-divs.html" class="btn">Frozen</a>
-				<a href="history.html" class="btn">History</a>
+				<a href="history.html" class="btn active">History</a>
 			</div>
 		</div>
-		<div class="container-fluid content">	
+		<div class="container-fluid content">
 			<div class="row">
-				<div class="col-12 calculator">
-					<label>Projected Earnings</label><span class="timer"><i class="icon-clock"></i>12:34:45</span>
-					<div class="btn-group">
+				<div class="col-12 trans-history">
+					<label>WINk Drops History</label>
+					<div class="btn-group coin-filter">
 						<button class="active">All</button>
 						<button>Win</button>
 						<button>dice</button>
 						<button>Live</button>
 						<button>Rake</button>
 					</div>
-					<div class="total">
-						<span class="amount"><i class="icon-trx"></i>1,110,235.12<span class="plus-btt"><i class="icon-btt"></i>235.12</span></span>
-						<a href="https://trontrade.io/" target="_blank" class="invest-btn">Buy dice</a>
+					<div class="table-responsive">
+						<table class="table">
+						  <thead>
+							<tr>
+							  <th scope="col">Date</th>
+							  <th scope="col">Holdings</th>
+							  <th scope="col">Drops Pool</th>
+							  <th scope="col">Income</th>
+							  <th scope="col">USD</th>
+							  <th scope="col">Hash</th>
+							</tr>
+						  </thead>
+						  <tbody>
+							<tr>
+							  <td colspan="6">No History Found</td>
+							</tr>
+							<tr>
+							  <td>14.08.2019 07:00</td>
+							  <td><i class="icon-win"></i>12,234,567.00</td>
+							  <td><i class="icon-trx"></i>2,604,874.96</td>							  
+							  <td class="received-trx"><i class="icon-trx"></i>200</td>
+							  <td>$200</td>
+							  <td class="hash"><a href="" target="_blank">58ac6fe18ce24a3fd70914c0a853817ea33832f44d46510a8e908efbc176d244</a></td>
+							</tr>
+							<tr>
+							  <td>14.08.2019 07:00</td>
+							  <td><i class="icon-dice"></i>12,234,567.00</td>
+							  <td><i class="icon-trx"></i>2,604,874.96</td>							  
+							  <td class="received-trx"><i class="icon-trx"></i>200</td>
+							  <td>$200</td>
+							  <td class="hash"><a href="" target="_blank">58ac6fe18ce24a3fd70914c0a853817ea33832f44d46510a8e908efbc176d244</a></td>
+							</tr>
+							<tr>
+							  <td>14.08.2019 07:00</td>
+							  <td><i class="icon-live"></i>12,234,567.00</td>
+							  <td><i class="icon-trx"></i>2,604,874.96</td>							  
+							  <td class="received-trx"><i class="icon-trx"></i>200</td>
+							  <td>$200</td>
+							  <td class="hash"><a href="" target="_blank">58ac6fe18ce24a3fd70914c0a853817ea33832f44d46510a8e908efbc176d244</a></td>
+							</tr>
+							<tr>
+							  <td>14.08.2019 07:00</td>
+							  <td><i class="icon-rake"></i>12,234,567.00</td>
+							  <td><i class="icon-trx"></i>2,604,874.96</td>							  
+							  <td class="received-trx"><i class="icon-trx"></i>200</td>
+							  <td>$200</td>
+							  <td class="hash"><a href="" target="_blank">58ac6fe18ce24a3fd70914c0a853817ea33832f44d46510a8e908efbc176d244</a></td>
+							</tr>
+							<tr class="daily-average">
+							  <td colspan="2">Daily Average</td>
+							  <td><i class="icon-trx"></i>2,604,874.96</td>							  
+							  <td class="received-trx"><i class="icon-trx"></i>200</td>
+							  <td colspan="2">$200</td>
+							</tr>
+						  </tbody>
+						</table>
 					</div>
-					<div class="formula">
-						<label>Formula</label>
-						<div class="form">
-							<div class="col">
-								<span class="title">Enter Your WIN</span>
-								<input type="text" value="1000" class="input" />
-								<i class="icon-win"></i>
-							</div>
-							<span class="symbol"><i class="multiply"></i></span>
-							<div class="col">
-								<span class="title">Total WIN frozen</span>
-								<span class="input">688,123,620,720.93</span>
-								<i class="icon-win"></i>
-							</div>
-							<span class="symbol"><i class="divide"></i></span>
-							<div class="col total-divs">
-								<span class="title">Available Drops</span>
-								<span class="input">20,204,842.46</span>
-								<i class="icon-trx"></i>
-							</div>
+					<div class="add">
+						<div class="btn-group pages">
+							<button class="active">1</button>
+							<button>2</button>
+							<button>3</button>
+							<button>4</button>
+							<button>5</button>
+							<button>6</button>
 						</div>
-						<div class="form">
-							<div class="col">
-								<span class="title">Enter Your Dice</span>
-								<input type="text" value="1000" class="input" />
-								<i class="icon-dice"></i>
-							</div>
-							<span class="symbol"><i class="multiply"></i></span>
-							<div class="col">
-								<span class="title">Total dice frozen</span>
-								<span class="input">68,620,720.93</span>
-								<i class="icon-dice"></i>
-							</div>
-							<span class="symbol"><i class="divide"></i></span>
-							<div class="col total-divs">
-								<span class="title">Available Drops</span>
-								<span class="input">20,204,842.46</span>
-								<i class="icon-trx"></i>
-							</div>
-						</div>
-						<div class="form">
-							<div class="col">
-								<span class="title">Enter Your LIVE</span>
-								<input type="text" value="1000" class="input" />
-								<i class="icon-live"></i>
-							</div>
-							<span class="symbol"><i class="multiply"></i></span>
-							<div class="col">
-								<span class="title">Total LIVE frozen</span>
-								<span class="input">68,620,720.93</span>
-								<i class="icon-live"></i>
-							</div>
-							<span class="symbol"><i class="divide"></i></span>
-							<div class="col total-divs">
-								<span class="title">Available Drops</span>
-								<span class="input">20,204,842.46</span>
-								<i class="icon-trx"></i>
-							</div>
-						</div>
-						<div class="form">
-							<div class="col">
-								<span class="title">Enter Your RAKE</span>
-								<input type="text" value="1000" class="input" />
-								<i class="icon-rake"></i>
-							</div>
-							<span class="symbol"><i class="multiply"></i></span>
-							<div class="col">
-								<span class="title">Total RAKE frozen</span>
-								<span class="input">68,620,720.93</span>
-								<i class="icon-rake"></i>
-							</div>
-							<span class="symbol"><i class="divide"></i></span>
-							<div class="col total-divs">
-								<span class="title">Available Drops</span>
-								<span class="input">20,204,842.46</span>
-								<i class="icon-trx"></i>
-							</div>
-						</div>
-						<div class="overflow"><a href="" class="btn">Hide Formula</a></div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>	
-		
+	</section>
+
 	<nav>
 		<div class="container-fluid navigation">
 			<div class="row">
