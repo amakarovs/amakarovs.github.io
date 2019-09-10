@@ -1323,6 +1323,11 @@ section .content .row .trans-history .table-responsive .table tbody tr td i.icon
 	border-radius: 0;
 }
 
+section .content .row .trans-history .table-responsive .table tbody tr td i.icon-btt {
+	background: url('../img/btt-logo-light.svg') no-repeat left center;
+	background-size: 13px;
+}
+
 section .content .row .trans-history .table-responsive .table tbody tr td i.icon-rake {
 	background: url('../img/icon-rake.svg') no-repeat center;
 	background-size: 100%;
@@ -2857,63 +2862,6 @@ section .content .row .calculator .formula .overflow button.sf-btn {
 	border: none;
 }
 
-
-
-
-
-
-
-/*
-
-
-section .content .row .calculator .show-all {
-	height: 963px;
-	animation: show-all 1s ease-in-out;
-}
-
-@-webkit-keyframes show-all {
-	0% {height: 173px;}
-	100% {height: 963px;}
-}
-
-section .content .row .calculator .hide-all {
-	height: 173px;
-	animation: hide-all 1s ease-in-out;
-}
-
-@-webkit-keyframes hide-all {
-	0% {height: 963px;}
-	100% {height: 173px;}
-}
-
-section .content .row .calculator .show-one {
-	height: 321px;
-	animation: show-one 1s ease-in-out;
-}
-
-@-webkit-keyframes show-one {
-	0% {height: 173px;}
-	100% {height: 321px;}
-}
-
-section .content .row .calculator .formula.show-all .overflow,
-section .content .row .calculator .formula.show-one .overflow {
-	height: 70px;
-	padding: 15px 0 20px 0;
-	background: red;
-}
-
-*/
-
-
-
-
-
-
-
-
-
-
 section .content .row .current-divs {
 	padding: 0;
 }
@@ -3113,6 +3061,14 @@ section .content .row .current-divs .total-pool span.amount {
 	letter-spacing: -2px;
 }
 
+section .content .row .current-divs .frozen-pool {
+	padding-top: 31px;
+}
+
+section .content .row .current-divs .frozen-pool span.amount {
+	font-size: 42px;
+}
+
 section .content .row .current-divs .total-pool span.amount i.icon-trx {
 	margin: 20px 4px 0 0;
 	width: 21px;
@@ -3120,6 +3076,49 @@ section .content .row .current-divs .total-pool span.amount i.icon-trx {
 	background: url('../img/icon-trx.svg') no-repeat;
 	background-size: 21px auto;
 }
+
+section .content .row .current-divs .total-pool span.amount i.icon-win,
+section .content .row .current-divs .total-pool span.amount i.icon-btt,
+section .content .row .current-divs .total-pool span.amount i.icon-dice,
+section .content .row .current-divs .total-pool span.amount i.icon-live,
+section .content .row .current-divs .total-pool span.amount i.icon-rake {
+	margin: 15px 4px 0 0;
+	display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+	width: 20px;
+	height: 20px;
+}
+
+section .content .row .current-divs .total-pool span.amount i.icon-win {
+	background: url('../img/wink-coin-light.svg') no-repeat center;
+	background-size: auto 20px;
+	border-radius: 0;
+}
+
+section .content .row .current-divs .total-pool span.amount i.icon-btt {
+	background: url('../img/btt-logo-light.svg') no-repeat left center;
+	background-size: 100%;
+}
+
+section .content .row .current-divs .total-pool span.amount i.icon-rake {
+	background: url('../img/icon-rake.svg') no-repeat center;
+	background-size: 100%;
+}
+
+section .content .row .current-divs .total-pool span.amount i.icon-dice {
+	background: url('../img/icon-dice.svg') no-repeat center;
+	background-size: 100%;
+}
+
+section .content .row .current-divs .total-pool span.amount i.icon-live {
+	background: url('../img/icon-live.svg') no-repeat center;
+	background-size: 100%;
+}
+
+
 
 section .content .row .current-divs .total-pool span.amount span.btt-divs {
 	display: block;
