@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>antescan.live</title>
+    <title>dicescan.live</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=9" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,46 +16,17 @@
 <body>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal xs-popup fade" id="RemoveSession" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel"><i class="icon-live"></i>Add Transaction</h5>
+				<h5 class="modal-title" id="exampleModalLabel"><i class="icon-live"></i>Remove Session</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
 			</div>
 			<div class="modal-body">
-				<div class="btn-group" role="group" aria-label="Basic example">
-					<button type="button" class="btn active">Buy</button>
-					<button type="button" class="btn">Sell</button>
-					<button type="button" class="btn">Goal</button>
-				</div>
-				<div class="form">
-					<div class="form-row">
-						<label>Coin</label>
-						<select class="form-control" id="exampleFormControlSelect1">
-							<option>ANTE</option>
-							<option>LIVE</option>
-						</select>
-						<span class="error-message">Error message</span>
-					</div>
-					<div class="form-row">
-						<label>Price</label>
-						<i class="icon-trx"></i>
-						<input type="text" class="input" value="22.35" />
-						<span class="error-message">Error message</span>
-					</div>
-					<div class="form-row error">
-						<label>Quantity</label>
-						<input type="text" class="input" value="100" />
-						<span class="error-message">Error message</span>
-					</div>
-					<div class="form-row">
-						<label>Date</label>
-						<input type="date" class="input" value="2018-07-22">
-						<span class="error-message">Error message</span>
-					</div>
-				</div>
-				<div class="submit-nav"><button class="submit-btn">Save Buy Transaction</button></div>
+				<label>Are you sure you want to remove mining session?</label>
+				<button class="cancel-btn">Cancel</button>
+				<button class="remove-btn">Remove</button>
 			</div>
 		</div>
 	</div>
@@ -105,64 +76,92 @@
 		<div class="container-fluid content">
 			<div class="row">
 				<div class="col-12 trans-history">
-					<div class="add">
-						<button class="submit-btn" data-toggle="modal" data-target="#exampleModal">Add Transaction</button>
-					</div>
 					<div class="table-responsive">
 						<table class="table">
 						  <thead>
 							<tr>
-							  <th scope="col">Coin</th>
 							  <th scope="col">Date</th>
-							  <th scope="col">Cost</th>
+							  <th scope="col">Order</th>
 							  <th scope="col">Amount</th>
+							  <th scope="col">Cost</th>
+							  <th scope="col">Profit/<br/>Loss</th>
+							  <th scope="col">Percent<br/>Change</th>
+							  <th scope="col">Action</th>
 							</tr>
 						  </thead>
 						  <tbody>
 							<tr>
-							  <td><i class="icon-win"></i></td>
-							  <td>12.12.2020</td> 
-							  <td><i class="icon-trx"></i>1,300,000.00</td>
-							  <td>100,000,00</td>
+							  <td colspan="6">No Sessions Found</td>
+							</tr>
+							<tr>
+							  <td>12.12.2020</td>
+							  <td>Buy</td>
+							  <td><i class="icon-win"></i>999k</td>
+							  <td><i class="icon-trx-circle"></i>1,3m</td>							  
+							  <td class="profit">$200</td>
+							  <td class="profit">12%</td>
 							  <td>
 								<a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal" class="edit-btn">Edit</a>
 								<a href="/" class="remove-btn"><i class="icon-remove"></i></a>
 								</td>
 							</tr>
 							<tr>
-							  <td><i class="icon-dice"></i></td>
-							  <td>12.12.2020</td> 
-							  <td><i class="icon-trx"></i>1,300,000.00</td>
-							  <td>100,000,00</td>
+							  <td>12.12.2020</td>
+							  <td>Sell</td>
+							  <td><i class="icon-win"></i>999k</td>
+							  <td><i class="icon-btc"></i>1m</td>							  
+							  <td class="loss">$100</td>
+							  <td class="loss">-12%</td>
 							  <td>
 								<a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal" class="edit-btn">Edit</a>
 								<a href="/" class="remove-btn"><i class="icon-remove"></i></a>
 								</td>
 							</tr>
 							<tr>
-							  <td><i class="icon-live"></i></td>
-							  <td>12.12.2020</td> 
-							  <td><i class="icon-trx"></i>1,300,000.00</td>
-							  <td>100,000,00</td>
+							  <td>12.12.2020</td>
+							  <td>Sell</td>
+							  <td><i class="icon-win"></i>999k</td>
+							  <td><i class="icon-bnb"></i>1m</td>							  
+							  <td class="loss">$100</td>
+							  <td class="loss">-12%</td>
 							  <td>
 								<a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal" class="edit-btn">Edit</a>
 								<a href="/" class="remove-btn"><i class="icon-remove"></i></a>
 								</td>
 							</tr>
 							<tr>
-							  <td><i class="icon-rake"></i></td>
-							  <td>12.12.2020</td> 
-							  <td><i class="icon-trx"></i>1,300,000.00</td>
-							  <td>100,000,00</td>
+							  <td>12.12.2020</td>
+							  <td>Sell</td>
+							  <td><i class="icon-win"></i>999k</td>
+							  <td><i class="icon-usdt"></i>1m</td>							  
+							  <td class="loss">$100</td>
+							  <td class="loss">-12%</td>
 							  <td>
 								<a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal" class="edit-btn">Edit</a>
 								<a href="/" class="remove-btn"><i class="icon-remove"></i></a>
 								</td>
 							</tr>
-						</tbody>
+							<tr>
+							  <td>12.12.2020</td>
+							  <td>Sell</td>
+							  <td><i class="icon-win"></i>999k</td>
+							  <td><i class="icon-usdc"></i>1m</td>							  
+							  <td class="loss">$100</td>
+							  <td class="loss">-12%</td>
+							  <td>
+								<a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal" class="edit-btn">Edit</a>
+								<a href="/" class="remove-btn"><i class="icon-remove"></i></a>
+								</td>
+							</tr>
+							<tr class="daily-average">
+							  <td colspan="4">Trading Profit/Loss</td>					  
+							  <td class="profit">$200</td>
+							  <td class="profit">10%</td>
+							</tr>
+						  </tbody>
 						</table>
 					</div>
-					<div class="add">					
+					<div class="add">
 						<div class="btn-group pages">
 							<button class="active">1</button>
 							<button>2</button>
@@ -185,7 +184,7 @@
 						<li><a href="index.html"><i class="icon-home"></i>Home</a></li>
 						<li><a href="divs.html"><i class="icon-divs"></i><span class="notification"><span class="amount">23</span></span>Drops</a></li>
 						<li><a href="goals.html"><i class="icon-goals"></i>Goals</a></li>
-						<li><a href="mining.html"><i class="icon-mining"></i>Mining</a></li>
+						<li><a href="mining.html" class="active"><i class="icon-mining"></i>Mining</a></li>
 						<li><a href="platform.html"><i class="icon-platform"></i>Platform</a></li>
 						<li><a href="news.html"><i class="icon-news"></i>News</a></li>
 					</ul>

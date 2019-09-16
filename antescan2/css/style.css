@@ -1239,16 +1239,44 @@ section .content .row .holdings .coin-row .coin-holdings button:active.add-btn {
 }
 
 section .content .row .trans-history {
-	padding: 15px;
-	background: #131722;
-    border-radius: 3px;
+	padding: 0;
 }
 
 section .content .row .trans-history label {
 	display: block;
+	position: relative;
 	width: 100%;
 	padding: 2px 0 15px 0;
 	font-weight: 700;
+}
+
+section .content .row .trans-history label a.export {
+	display: block;
+	top: 0;
+	right: 0;
+	position: absolute;
+	height: 25px;
+	padding: 2px 10px 0 26px;
+	font-weight: 700;
+	color: #292628;
+	text-decoration: none;
+	outline: none;
+	background: url('../img/icon-xls.svg') no-repeat 10px 6px #0cc127;
+	background-size: auto 12px;
+	border-radius: 12px;
+}
+
+section .content .row .trans-history .heading-wrap {
+	padding: 15px 15px 0 15px;
+	background: #131722;
+    border-radius: 3px 3px 0 0;
+}
+
+section .content .row .trans-history .table-responsive {
+	padding: 0 15px;
+	background: #131722;
+    border-radius: 3px;
+	margin-bottom: 15px;
 }
 
 section .content .row .trans-history .table-responsive .table {
@@ -1298,7 +1326,7 @@ section .content .row .trans-history .table-responsive .table tbody tr td.receiv
 }
 
 section .content .row .trans-history .table-responsive .table tbody tr td.loss {
-	color: #c62323;
+	color: #ed1835;
 }
 
 section .content .row .trans-history .table-responsive .table tbody tr td i {
@@ -1317,6 +1345,33 @@ section .content .row .trans-history .table-responsive .table tbody tr td i.icon
 	border-radius: 0;
 }
 
+section .content .row .trans-history .table-responsive .table tbody tr td i.icon-trx-circle {
+	width: 16px;
+	height: 16px;
+	background: url('../img/icon-trx.svg') no-repeat center #ed1835;
+	background-size: 12px auto;
+}
+
+section .content .row .trans-history .table-responsive .table tbody tr td i.icon-btc {
+	background: url('../img/icon-btc.svg') no-repeat center;
+	background-size: 16px;
+}
+
+section .content .row .trans-history .table-responsive .table tbody tr td i.icon-bnb {
+	background: url('../img/icon-bnb.svg') no-repeat center;
+	background-size: 16px;
+}
+
+section .content .row .trans-history .table-responsive .table tbody tr td i.icon-usdt {
+	background: url('../img/icon-usdt.svg') no-repeat center;
+	background-size: 18px;
+}
+
+section .content .row .trans-history .table-responsive .table tbody tr td i.icon-usdc {
+	background: url('../img/icon-usdc.svg') no-repeat;
+	background-size: 16px;
+}
+
 section .content .row .trans-history .table-responsive .table tbody tr td i.icon-win {
 	background: url('../img/wink-coin-light.svg') no-repeat center;
 	background-size: auto 14px;
@@ -1324,6 +1379,7 @@ section .content .row .trans-history .table-responsive .table tbody tr td i.icon
 }
 
 section .content .row .trans-history .table-responsive .table tbody tr td i.icon-btt {
+	margin-right: 1px;
 	background: url('../img/btt-logo-light.svg') no-repeat left center;
 	background-size: 13px;
 }
@@ -1434,6 +1490,14 @@ section .content .row .trans-history .table-responsive .table tbody tr td.hash a
 section .content .row .trans-history .table-responsive .table tbody tr.daily-average td {
 	font-weight: 700;
 	color: #FFF;
+}
+
+section .content .row .trans-history .table-responsive .table tbody tr.daily-average td.profit {
+	color: #1af135;
+}
+
+section .content .row .trans-history .table-responsive .table tbody tr.daily-average td.loss {
+	color: #ed1835;
 }
 
 section .content .row .trans-history .add {
@@ -2489,7 +2553,7 @@ section .content .row .calculator .btn-group button,
 section .content .row .current-divs .btn-group button,
 section .content .row .trans-history .coin-filter button {
 	height: 25px;
-	width: calc(100% / 5);
+	width: 100%;
 	padding: 0 10px;
 	font-size: 12px;
 	text-transform: uppercase;
@@ -2811,19 +2875,6 @@ section .content .row .calculator .formula {
 	overflow: hidden;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 section .content .row .calculator .formula label {
 	padding: 15px 15px 0 15px;
 }
@@ -3118,8 +3169,6 @@ section .content .row .current-divs .total-pool span.amount i.icon-live {
 	background-size: 100%;
 }
 
-
-
 section .content .row .current-divs .total-pool span.amount span.btt-divs {
 	display: block;
 	width: 100%;
@@ -3145,8 +3194,9 @@ section .content .row .current-divs .total-pool span.amount span.btt-divs i.icon
 section .content .row .current-divs .drops-graph {
 	display: block;
 	float: left;
-	width: 100%;
-	height: 160px;
+	margin-left: -5px;
+	width: calc(100% + 10px);
+	height: 240px;
 }
 
 section .content .row .active-goal,
@@ -3765,6 +3815,48 @@ section .content .row .session .current-dice span.amount span.down {
 	0% {top: -35px;}
 	20% {top: 0;}
 	100% {top: 0;}
+}
+
+.popup {
+	display: block;
+	width: 160px;
+	padding: 6px 0;
+	text-align: left;
+	font-size: 13px;
+	line-height: 1.1;
+	font-style: normal;
+	font-weight: normal;
+	cursor: default;
+	color: #333;
+	font-family: 'Roboto', Helvetica, Arial, Tahoma, Verdana;
+	background: #FFF;
+	border-radius: 3px;
+	box-shadow: 0 6px 12px rgba(0,0,0,0.8);
+}
+
+.popup {
+	box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.popup span.date {
+	display: block;
+	width: calc(100% - 20px);
+	font-size: 15px;
+	font-weight: 700;
+	padding: 0 10px 6px 10px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.popup span.price,
+.popup span.volume {
+	display: block;
+	width: calc(100% - 20px);
+	padding: 6px 10px 0 10px;
+}
+
+.popup span.price span.title,
+.popup span.volume span.title {
+	font-weight: 700;
 }
 
 @media screen and (max-width: 576px) {
