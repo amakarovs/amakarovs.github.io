@@ -2914,11 +2914,13 @@ section .content .row .calculator .formula label a.reset-btn span.title {
 	text-align: right;
 }
 
+section .content .row .calculator .formula label a.reset-btn:active,
 section .content .row .calculator .formula label a.reset-btn:hover {
 	width: 70px;
 	transition: 0.9s width;
 }
 
+section .content .row .calculator .formula label a.reset-btn:active span.title,
 section .content .row .calculator .formula label a.reset-btn:hover span.title {
 	width: 45px;
 	opacity: 1;
