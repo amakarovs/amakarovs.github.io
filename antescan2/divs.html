@@ -17,6 +17,21 @@
 
 <div class="wrap">
 
+<!-- Modal -->
+<div class="modal widget fade" id="TronWatchMarket" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Instant Buy</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<iframe src="https://widget.tronwatch.market/?tokenID=TLa2f6VPqDgRE67v1736s7bJ8Ray5wYjU7&ref=TDBq8e8dqopFu6kZYupXNAfWmBvfLPtCVX&showFiat=true" frameborder="0" height="100%" scrolling="no" width="100%"></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+
 	<header>
 		<div class="container-fluid top-nav">
 			<div class="row">
@@ -67,7 +82,7 @@
 		<div class="container-fluid content">	
 			<div class="row">
 				<div class="col-12 calculator">
-					<label>Projected Earnings</label><span class="timer"><i class="icon-clock"></i>12:34:45</span>
+					<label>Projected Earnings<span class="sub">Updates every 30 sec</span></label><span class="timer"><i class="icon-clock" data-toggle="tooltip" data-placement="left" title="Time left before next payout"></i>12:34:45</span>
 					<div class="btn-group">
 						<button class="active">All</button>
 						<button>Win</button>
@@ -77,7 +92,7 @@
 					</div>
 					<div class="total">
 						<span class="amount"><i class="icon-trx"></i>1,110,235.12<span class="plus-btt"><i class="icon-btt"></i>235.12</span></span>
-						<a href="https://trontrade.io/" target="_blank" class="invest-btn">Buy dice</a>
+						<a href="" data-toggle="modal" data-target="#TronWatchMarket" class="invest-btn">Buy WIN</a>
 					</div>
 					<div class="formula">
 						<label>Formula<a href="" class="reset-btn"><span class="title">Reset</span><i class="icon-refresh"></i></a></label>

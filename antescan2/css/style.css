@@ -557,14 +557,14 @@ nav .navigation .row .col-12 ul li a:hover i.icon-home {
 }
 
 nav .navigation .row .col-12 ul li a i.icon-divs {
-	background: url('../img/icon-wallet.svg') no-repeat center;
-	background-size: 24px;
+	background: url('../img/icon-drops.svg') no-repeat center;
+	background-size: auto 24px;
 }
 
 nav .navigation .row .col-12 ul li a.active i.icon-divs,
 nav .navigation .row .col-12 ul li a:hover i.icon-divs {
-	background: url('../img/icon-wallet-white.svg') no-repeat center;
-	background-size: 24px;
+	background: url('../img/icon-drops-white.svg') no-repeat center;
+	background-size: auto 24px;
 }
 
 nav .navigation .row .col-12 ul li a i.icon-goals {
@@ -1006,12 +1006,12 @@ section .content .row .earnings .loading-history i.icon-win {
 	100% {transform:rotate(360deg);}
 }
 
-section .content .row .earnings .loading-history i.icon-trx {
+section .content .row .earnings .loading-history i.icon-drops {
 	margin: 0 auto;
 	display: block;
 	width: 40px;
 	height: 40px;
-	background: url('../img/icon-trx.svg') no-repeat center #0c0e15;
+	background: url('../img/icon-drops-white.svg') no-repeat center #0c0e15;
 	background-size: auto 20px;
 	border-radius: 50%;
 }
@@ -2536,6 +2536,14 @@ section .content .row .current-divs label {
 	padding: 17px 0 10px 15px;
 }
 
+section .content .row .calculator label span.sub,
+section .content .row .current-divs label span.sub {
+	padding-left: 6px;
+	font-weight: normal;
+	color: #6e717f;
+	font-size: 13px;
+}
+
 section .content .row .calculator .btn-group,
 section .content .row .current-divs .btn-group,
 section .content .row .trans-history .coin-filter {
@@ -2592,7 +2600,7 @@ section .content .row .calculator .form {
 
 section .content .row .calculator .form .symbol {
 	float: left;
-	margin-left: 15px;
+	margin-left: 10px;
 	position: relative;
 	justify-content: center;
 	width: 13px;
@@ -2790,7 +2798,8 @@ section .content .row .current-divs span.timer i.icon-clock {
 section .content .row .calculator .total span.amount {
 	position: relative;
 	width: 100%;
-	padding: 10px 0 15px 0;
+	height: 91px;
+	padding: 10px 0 0 0;
 	font-size: 48px;
 	font-weight: 700;
 	line-height: 1;
@@ -2883,48 +2892,40 @@ section .content .row .calculator .formula label {
 
 section .content .row .calculator .formula label a.reset-btn {
 	position: absolute;
-	right: 10px;
+	right: 15px;
 	top: 13px;
 	display: flex;
 	justify-content: flex-end;
-	width: 25px;
+	width: 80px;
 	height: 25px;
 	padding: 0;
 	text-align: right;
 	outline: none;
 	text-decoration: none;
-	color: #333;
+	color: #6e717f;
 	overflow: hidden;
 	border-radius: 12px;
-	background: #FFF;
 }
 
 section .content .row .calculator .formula label a.reset-btn i.icon-refresh {
 	width: 25px;
 	height: 25px;
-	background: url('../img/icon-refresh.svg') no-repeat center;
+	background: url('../img/icon-refresh.svg') no-repeat center #FFF;
 	background-size: 14px;
+	border-radius: 12px;
+	transform: rotate(0deg);
+}
+
+section .content .row .calculator .formula label a.reset-btn:hover i.icon-refresh,
+section .content .row .calculator .formula label a.reset-btn:active i.icon-refresh {
+	transform: rotate(-360deg);
+	transition: 0.9s transform;
 }
 
 section .content .row .calculator .formula label a.reset-btn span.title {
-	width: 0;
-	opacity: 0;
-	padding-top: 2px;
-	overflow: hidden;
+	width: 55px;
+	padding: 2px 8px 0 0;
 	text-align: right;
-}
-
-section .content .row .calculator .formula label a.reset-btn:active,
-section .content .row .calculator .formula label a.reset-btn:hover {
-	width: 70px;
-	transition: 0.9s width;
-}
-
-section .content .row .calculator .formula label a.reset-btn:active span.title,
-section .content .row .calculator .formula label a.reset-btn:hover span.title {
-	width: 45px;
-	opacity: 1;
-	transition: 0.9s width, 0.9s opacity;
 }
 
 section .content .row .calculator .formula .form {
@@ -3850,6 +3851,19 @@ section .content .row .session .current-dice span.amount span.down {
 .xs-popup .modal-dialog .modal-content .modal-body button.remove-btn {
     color: #FFF;
     background: #f81f1f;
+}
+
+.widget .modal-dialog {
+	max-width: 320px;
+	height: 490px;
+	background: #0c0e15;
+}
+
+.widget .modal-dialog .modal-content .modal-body {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	text-align: center;
 }
 
 @-webkit-keyframes scan-loading-color {
