@@ -654,7 +654,8 @@ section .content .row .net-worth:before {
     border-radius: 3px;
 }
 
-section .content .row .net-worth span.info {
+section .content .row .net-worth span.info,
+section .content .row .calculator .total span.amount span.info {
 	display: -moz-inline-stack;
     display: inline-block;
     vertical-align: top;
