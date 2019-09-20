@@ -1501,11 +1501,160 @@ section .content .row .trans-history .table-responsive .table tbody tr.daily-ave
 	color: #ed1835;
 }
 
+section .content .row .trans-history .table-responsive .table tbody tr td span.up,
+section .content .row .trans-history .table-responsive .table tbody tr td span.down {
+	display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+	margin-left: 6px;
+	padding: 1px 3px 0 3px;
+	font-size: 11px;
+	font-weight: 700;
+	text-align: center;
+	border-radius: 2px;
+}
+
+section .content .row .trans-history .table-responsive .table tbody tr td span.up {
+	color: #292628;
+	background: #1af135;
+}
+
+section .content .row .trans-history .table-responsive .table tbody tr td span.down {
+	color: #FFF;
+	background: #f81f1f;
+}
+
 section .content .row .trans-history .add {
 	padding: 0 0 15px 0;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
+
+section .content .row .trans-history .add label,
+section .content .row .trans-history .add span.amount {
+	width: 100%;
+	text-align: center;
+}
+
+section .content .row .trans-history .add label {
+	padding: 0 0 0 0;
+	font-size: 24px;
+	line-height: 1;
+}
+
+section .content .row .trans-history .add label span.down {
+	color: #f81f1f;
+}
+
+section .content .row .trans-history .add label span.up {
+	color: #1af135;
+}
+
+section .content .row .trans-history .add span.amount {
+	padding: 15px 0 15px 0;
+	font-size: 14px;
+	color: #6e717f;
+	line-height: 1.2;
+}
+
+section .content .row .trans-history .add span.amount span.coins {
+	color: #FFF;
+	font-weight: 700;
+}
+
+
+
+
+
+
+
+section .content .row .trans-history .add span.amount i {
+	display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+	margin: -1px 2px 0 4px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+}
+
+section .content .row .trans-history .add span.amount i.icon-trx {
+	margin-top: 1px;
+	width: 13px;
+	height: 14px;
+	background: url('../img/icon-trx.svg') no-repeat;
+	background-size: 13px auto;
+	border-radius: 0;
+}
+
+section .content .row .trans-history .add span.amount i.icon-trx-circle {
+	width: 16px;
+	height: 16px;
+	background: url('../img/icon-trx.svg') no-repeat center #ed1835;
+	background-size: 12px auto;
+}
+
+section .content .row .trans-history .add span.amount i.icon-btc {
+	background: url('../img/icon-btc.svg') no-repeat center;
+	background-size: 16px;
+}
+
+section .content .row .trans-history .add span.amount i.icon-bnb {
+	background: url('../img/icon-bnb.svg') no-repeat center;
+	background-size: 16px;
+}
+
+section .content .row .trans-history .add span.amount i.icon-usdt {
+	background: url('../img/icon-usdt.svg') no-repeat center;
+	background-size: 18px;
+}
+
+section .content .row .trans-history .add span.amount i.icon-usdc {
+	background: url('../img/icon-usdc.svg') no-repeat;
+	background-size: 16px;
+}
+
+section .content .row .trans-history .add span.amount i.icon-win {
+	background: url('../img/wink-coin-light.svg') no-repeat center;
+	background-size: auto 14px;
+	border-radius: 0;
+}
+
+section .content .row .trans-history .add span.amount i.icon-btt {
+	margin-right: 1px;
+	background: url('../img/btt-logo-light.svg') no-repeat left center;
+	background-size: 13px;
+}
+
+section .content .row .trans-history .add span.amount td i.icon-rake {
+	background: url('../img/icon-rake.svg') no-repeat center;
+	background-size: 100%;
+}
+
+section .content .row .trans-history .add span.amount i.icon-dice {
+	background: url('../img/icon-dice.svg') no-repeat center;
+	background-size: 100%;
+}
+
+section .content .row .trans-history .add span.amount i.icon-live {
+	background: url('../img/icon-live.svg') no-repeat center;
+	background-size: 100%;
+}
+
+
+
+
+
+
+
+
+
+
 
 section .content .row .trans-history button.submit-btn {
 	width: 60%;
