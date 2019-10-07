@@ -424,8 +424,8 @@ a {
 	width: 100%;
 	height: 48px;
 	outline: none;
-	background: url(../img/tb-logo.svg) no-repeat center;
-	background-size: 180px auto;
+	background: url(../img/wink-light.svg) no-repeat center;
+	background-size: auto 48px;
 }
 
 .content .row .platform .cc {
@@ -439,7 +439,7 @@ a {
 
 .content .row .platform .cc .amount {
 	font-weight: 700;
-	color: #1af135;
+	color: #fbc509;
 }
 
 .day-mode .content .row .platform .cc .amount {
@@ -459,7 +459,7 @@ a {
 	position: relative;
 	flex-wrap: wrap;
 	align-self: flex-start;
-	width: calc(29% - 10px);
+	width: calc(22% - 10px);
 	padding: 6px 0 0 0;
 }
 
@@ -473,6 +473,11 @@ a {
 	border-radius: 50%;
 }
 
+.content .row .holdings .form .col i.icon-win {
+	background: url('../img/wink-light.svg') no-repeat center #333;
+	background-size: 12px;
+}
+
 .content .row .holdings .form .col i.icon-ante {
 	background: url('../img/icon-ante.svg') no-repeat center;
 	background-size: 100%;
@@ -480,6 +485,11 @@ a {
 
 .content .row .holdings .form .col i.icon-live {
 	background: url('../img/icon-live.svg') no-repeat center;
+	background-size: 100%;
+}
+
+.content .row .holdings .form .col i.icon-rake {
+	background: url('../img/icon-rake.svg') no-repeat center;
 	background-size: 100%;
 }
 
@@ -574,7 +584,7 @@ a {
 }
 
 .content .row .holdings .form .save {
-	width: calc(13% - 10px);
+	width: calc(12% - 10px);
 	padding-top: 36px;
 }
 
@@ -674,7 +684,7 @@ a {
 .content .row .net-worth .total-usd {
 	padding: 12px 10px 6px 10px;
 	font-weight: 700;
-	color: #1af135;
+	color: #fbc509;
 }
 
 .day-mode .content .row .net-worth .total-usd {
@@ -752,11 +762,11 @@ a {
 	display: block;
 	z-index: 1;
 	content:'';
-	width: 130px;
+	width: 200px;
 	height: 130px;
-	opacity: 0.25;
-	background: url('../img/icon-ante.svg') no-repeat;
-	background-size: 260px;
+	opacity: 0.15;
+	background: url(../img/wink-light.svg) no-repeat left 25px;
+	background-size: 300px auto;
 }
 
 .day-mode .content .row .current-price:before {
@@ -798,7 +808,7 @@ a {
 
 .content .row .current-price .total-usd {
 	padding: 2px 10px;
-	color: #1af135;
+	color: #fbc509;
 }
 
 .day-mode .content .row .current-price .total-usd {
@@ -821,7 +831,7 @@ a {
 
 .content .row .current-price .percent span.up {
 	color: #292628;
-	background: #1af135;
+	background: #fbc509;
 }
 
 .day-mode .content .row .current-price .percent span.up {
@@ -1124,6 +1134,11 @@ a {
 	border-radius: 50%;
 }
 
+.content .row .calculator .form .col i.icon-win {
+	background: url('../img/wink-light.svg') no-repeat center #333;
+	background-size: 12px;
+}
+
 .content .row .calculator .form .col i.icon-ante {
 	background: url('../img/icon-ante.svg') no-repeat center;
 	background-size: 100%;
@@ -1131,6 +1146,11 @@ a {
 
 .content .row .calculator .form .col i.icon-live {
 	background: url('../img/icon-live.svg') no-repeat center;
+	background-size: 100%;
+}
+
+.content .row .calculator .form .col i.icon-rake {
+	background: url('../img/icon-rake.svg') no-repeat center;
 	background-size: 100%;
 }
 
@@ -1161,12 +1181,13 @@ a {
 	display: flex;
 	width: 100%;
 	height: 32px;
-	padding: 0 0 0 30px;
+	padding: 2px 0 0 30px;
 	align-items: center;
 	color: #1d1b1c;
 	border: 0;
 	line-height: 32px;
-	font-size: 16px;
+	overflow: hidden;
+	font-size: 14px;
 	border-radius: 2px;
 	background: #b3b3b3;
 	outline: none;
@@ -1200,8 +1221,38 @@ a {
 }
 
 .content .row .calculator .total label {
+	width: calc(50% - 20px);
+	flex-wrap: wrap;
+	padding: 0 0 6px 20px;
+}
+
+.content .row .calculator .total label span.timeframe {
+	display: block;
 	width: 100%;
-	margin-bottom: 18px;
+	color: #a4a5a4;
+	font-weight: normal;
+}
+
+.content .row .calculator span.countdown {
+	display: flex;
+	width: calc(50% - 20px);
+	padding: 0 20px 6px 0;
+	color: #a4a5a4;
+	justify-content: flex-end;
+}
+
+.day-mode .content .row .calculator span.countdown {
+	color: #aeb6bc;
+}
+
+.content .row .calculator span.countdown span.left {
+	margin-left: 6px;
+	color: #FFF;
+	font-weight: 700;
+}
+
+.day-mode .content .row .calculator span.countdown span.left {
+	color: #000;
 }
 
 .content .row .calculator .total span.amount {
@@ -1379,14 +1430,15 @@ a {
 .content .row .current-divs .pool-row {
 	display: flex;
 	width: 100%;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 }
 
 .content .row .current-divs .pool-row .pool {
+	position: relative;
 	display: flex;
 	width: 100%;
 	flex-wrap: wrap;
-	padding: 55px 0 43px 0;
+	padding: 10px 0;
 	justify-content: center;
 }
 
@@ -1402,7 +1454,7 @@ a {
 	height: 40px;
 	line-height: 1;
 	font-weight: 700;
-	font-size: 24px;
+	font-size: 18px;
 	justify-content: center;
 }
 
@@ -1433,7 +1485,7 @@ a {
 }
 
 .content .row .current-divs .pool-row .pool span.amount i.icon-trx {
-	margin: 4px 6px 0 0;
+	margin: 0 6px 0 0;
 	display: flex;
 	width: 16px;
 	height: 17px;
@@ -1532,19 +1584,27 @@ a {
 }
 
 .content .row .current-divs .pool-row .ante-pool {
-	border-bottom: 2px solid #18ef36;
+	border-bottom: 2px solid #fbc509;
 }
 
 .day-mode .content .row .current-divs .pool-row .ante-pool {
-	border-bottom: 2px solid #1070e0;
+	border-bottom: 2px solid #fbc509;
 }
 
 .content .row .current-divs .pool-row .ante-pool span.sub-title {
-	color: #18ef36;
+	color: #fbc509;
 }
 
 .day-mode .content .row .current-divs .pool-row .ante-pool span.sub-title {
 	color: #1070e0;
+}
+
+.content .row .current-divs .pool-row .dice-pool {
+	border-bottom: 2px solid #18ef36;
+}
+
+.content .row .current-divs .pool-row .dice-pool span.sub-title {
+	color: #18ef36;
 }
 
 .content .row .current-divs .pool-row .live-pool {
@@ -1554,6 +1614,75 @@ a {
 .content .row .current-divs .pool-row .live-pool span.sub-title {
 	color: #f81f1f;
 }
+
+.content .row .current-divs .pool-row .rake-pool {
+	border-bottom: 2px solid #0099ff;
+}
+
+.content .row .current-divs .pool-row .rake-pool span.sub-title {
+	color: #0099ff;
+}
+
+/* New Color Theme for drops */
+
+.content .row .current-divs .pool-row .pool:before {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: block;
+	width: 100%;
+	height: 1px;
+	content:'';
+	background: red;
+}
+
+.content .row .current-divs .pool-row .pool,
+.day-mode .content .row .current-divs .pool-row .pool {
+	border: none;
+}
+
+.content .row .current-divs .pool-row .ante-pool:before,
+.day-mode .content .row .current-divs .pool-row .ante-pool:before {
+	background-image: linear-gradient(to right, #ff5f3a, #ff9503);
+}
+
+.content .row .current-divs .pool-row .dice-pool:before,
+.day-mode .content .row .current-divs .pool-row .dice-pool:before {
+	background-image: linear-gradient(to left, #0cd31a, #98ef89);
+}
+
+.content .row .current-divs .pool-row .live-pool:before,
+.day-mode .content .row .current-divs .pool-row .live-pool:before {
+	background-image: linear-gradient(to right, #ff2b67, #ff5f3a);
+}
+
+.content .row .current-divs .pool-row .rake-pool:before,
+.day-mode .content .row .current-divs .pool-row .rake-pool:before {
+	background-image: linear-gradient(to left, #1d63f0, #1ad5fd);
+}
+
+.content .row .current-divs .total-pool {
+	background-image: linear-gradient(#131722, #1f2637);
+	border-radius: 0 0 3px 3px;
+}
+
+.content .row .current-divs .pool-row .ante-pool span.sub-title {
+	color: #fbc509;
+}
+
+.content .row .current-divs .pool-row .dice-pool span.sub-title {
+	color: #0cd31a;
+}
+
+.content .row .current-divs .pool-row .live-pool span.sub-title {
+	color: #ff5f3a;
+}
+
+.content .row .current-divs .pool-row .rake-pool span.sub-title {
+	color: #1ad5fd;
+}
+
+/* New Color Theme for drops END */
 
 .content .row .current-divs .total-pool {
 	display: flex;
@@ -2191,6 +2320,15 @@ a {
 	background: #fafafa;
 }
 
+.modal .widget {
+	display: block;
+	width: 700px;
+	color: #FFF;
+	background: #131722;
+	border-radius: 3px;
+	box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
 .content .row .tronscan-data {
 	display: block;
 	width: calc(25% - 20px);
@@ -2237,7 +2375,7 @@ a {
 
 .content .row .tronscan-data .total span.fiat-total {
 	display: block;
-	padding-bottom: 10px;
+	padding: 10px 0;
 	margin-top: 10px;
 	font-weight: 700;
 	border-top: 1px dotted rgba(255,255,255,0.3);
@@ -2311,6 +2449,10 @@ a {
 	background-image: radial-gradient(circle at bottom center, #01f593, #131722);
 }
 
+.m-live {
+	background-image: radial-gradient(circle at bottom center, #db2c2c, #131722);
+}
+
 .mining a.close-popup {
 	position: absolute;
 	right: 0;
@@ -2328,7 +2470,7 @@ a {
 	top: 0;
 	z-index: 10;
 	display: table;
-	width: 100%;
+	width: calc(100% - 40px);
 	height: 60px;
 	padding: 0 20px;
 	font-size: 14px;
@@ -2339,6 +2481,10 @@ a {
 	float: left;
 	color: #01f593;
 	padding: 14px 0 0 0;
+}
+
+.m-live span.col {
+	color: #db2c2c;
 }
 
 .mined-info span.col label {
@@ -2423,6 +2569,10 @@ a {
 	font-weight: 600;
 }
 
+.m-live .content span.speed span.amount {
+	color: #ff3131;
+}
+
 .mining .content a.mine {
 	margin: 0 auto;
 	display: flex;
@@ -2450,9 +2600,14 @@ a {
 	display: block;
 	width: 578px;
 	height: 578px;
-	background: url(../img/icon-ante-mining.svg) no-repeat;
+	background: url(../img/icon-ante-mining.svg) no-repeat red;
 	background-size: 100%;
 	animation: ante-rotate 6s linear infinite;
+}
+
+.m-live .icon-live {
+	background: url(../img/icon-live.svg) no-repeat;
+	background-size: 100%;
 }
 
 @-webkit-keyframes ante-rotate {
@@ -2519,6 +2674,22 @@ a {
 	background: url(../img/icon-ante-mining.svg) no-repeat;
 	background-size: 100%;
 	animation: icon-fly 12s linear infinite;
+}
+
+.m-live .icon-live-fly1,
+.m-live .icon-live-fly2,
+.m-live .icon-live-fly3,
+.m-live .icon-live-fly4,
+.m-live .icon-live-fly5,
+.m-live .icon-live-fly6,
+.m-live .icon-live-fly7,
+.m-live .icon-live-fly8,
+.m-live .icon-live-fly9,
+.m-live .icon-live-fly10,
+.m-live .icon-live-fly11,
+.m-live .icon-live-fly12 {
+	background: url(../img/icon-live.svg) no-repeat;
+	background-size: 100%;
 }
 
 .mining .icon-live-fly1 {
@@ -2636,7 +2807,7 @@ a {
 	}
 	
 	.content .row .holdings .form .col {
-		width: calc(35% - 10px);
+		width: calc(50% - 10px);
 	}
 	
 	.content .row .holdings .form .blank {
@@ -2644,7 +2815,7 @@ a {
 	}
 
 	.content .row .holdings .form .save {
-		width: calc(30% - 10px);
+		width: calc(100% - 10px);
 		padding-top: 36px;
 	}
 	
@@ -2760,6 +2931,10 @@ a {
 }
 
 @media screen and (max-width: 576px) {
+	.mined-info {
+		width: 100%;
+	}
+	
 	.content {
 		padding: 30px 0 10px 0;
 	}
@@ -2815,9 +2990,21 @@ a {
 	  100% {top: -10px;}
 	}
 	
+	.content .row .holdings .form .col {
+		width: calc(25% - 10px);
+	}
+	
+	.content .row .holdings .form .save {
+		width: calc(100% - 10px);
+	}
+	
 	.content .row .holdings-scroll label,
 	.content .row .holdings-scroll .form .col span.title {
 		display: none;
+	}
+	
+	.content .row .holdings-scroll .form .col input {
+		font-size: 14px;
 	}
 	
 	.content .row .holdings-scroll .form {

@@ -3032,6 +3032,11 @@ section .content .row .calculator .formula {
 	width: 100%;
 	height: 173px;
 	overflow: hidden;
+	transition: height 1s ease-in-out;
+}
+
+section .content .row .calculator .slide-formula {
+	transition: height 1s ease-in-out;
 }
 
 section .content .row .calculator .formula label {
