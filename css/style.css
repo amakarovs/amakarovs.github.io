@@ -3028,6 +3028,21 @@ a {
 	.wink-banner .text .content .url {
 		font-size: 28px;
 	}
+
+	.wink-banner,
+	.wink-banner a.link,
+	.wink-banner .logo,
+	.wink-banner .logo span.wnkscan,
+	.wink-banner .text,
+	.wink-banner .text:before,
+	.wink-banner .text .content,
+	.wink-banner .text .content .drops,
+	.wink-banner .text .content .dilution,
+	.wink-banner .text .content .calc,
+	.wink-banner .text .content .freeze,
+	.wink-banner .text .content .url {
+		height: 60px;
+	}
 }
 
 @media screen and (max-width: 470px) {
