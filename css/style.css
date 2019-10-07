@@ -2841,11 +2841,67 @@ a {
 
 .wink-banner .text .content {
 	display: block;
+	position: relative;
 	width: 100%;
 	height: 92px;
 	padding: 0;
 	overflow: hidden;
 }
+
+.wink-banner .text .content:before,
+.wink-banner .text .content:after {
+	display: block;
+	position: absolute;
+	height: 92px;
+	content:"";
+	transform: skew(-20deg, 0deg);
+	
+}
+
+.wink-banner .text .content:before {
+	width: 6px;
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	-webkit-animation-name: line1;
+	animation-name: line1;
+	background: rgba(255,255,255,0.3);
+}
+
+@-webkit-keyframes line1 {
+  0% {left: -40px;}
+  100% {left: 100%;}
+}
+
+@keyframes line1 {
+  0% {left: -40px;}
+  100% {left: 100%;}
+}
+
+.wink-banner .text .content:after {
+	width: 30px;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	-webkit-animation-name: line2;
+	animation-name: line2;
+	animation-delay: 2s;
+	background: rgba(255,255,255,0.1);
+}
+
+@-webkit-keyframes line2 {
+  0% {right: -60px;}
+  100% {right: 100%;}
+}
+
+@keyframes line2 {
+  0% {right: -60px;}
+  100% {right: 100%;}
+}
+
+
+
+
 
 .wink-banner .text .content .drops,
 .wink-banner .text .content .dilution,
