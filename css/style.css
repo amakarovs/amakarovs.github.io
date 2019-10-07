@@ -2779,6 +2779,277 @@ a {
 	animation-delay: 4s;
 }
 
+.wink-banner {
+	position: fixed;
+	z-index: 10;
+	bottom: 0;
+	display: table;
+	width: 100%;
+	height: 92px;
+	background: #0c0e15;
+	box-shadow: -6px 0 18px rgba(0,0,0,0.45);
+}
+
+.wink-banner a.link {
+	position: absolute;
+	z-index: 11;
+	bottom: 0;
+	display: block;
+	width: 100%;
+	height: 92px;
+}
+
+.wink-banner .logo {
+	position: relative;
+	z-index: 2;
+	width: 38%;
+	float: left;
+	height: 92px;
+	background: #0c0e15;
+}
+
+.wink-banner .logo span.wnkscan {
+	display: block;
+	float: right;
+	width: 100%;
+	height: 92px;
+	background: url('../img/winkscan-logo.svg') no-repeat right center;
+	background-size: auto 32px;
+}
+
+.wink-banner .text {
+	position: relative;
+	z-index: 1;
+	width: 62%;
+	float: left;
+	height: 92px;
+	padding: 0;
+	background-image: linear-gradient(#fbc409, #fcb909);
+}
+
+.wink-banner .text:before {
+	position: absolute;
+	left: -17px;
+	top: 0;
+	z-index: 2;
+	width: 40px;
+	height: 92px;
+	content:'';
+	transform: skew(-20deg, 0deg);
+	background: #0c0e15;
+}
+
+.wink-banner .text .content {
+	display: block;
+	width: 100%;
+	height: 92px;
+	padding: 0;
+	overflow: hidden;
+}
+
+.wink-banner .text .content .drops,
+.wink-banner .text .content .dilution,
+.wink-banner .text .content .calc,
+.wink-banner .text .content .freeze,
+.wink-banner .text .content .url {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	left: -100%;
+	width: calc(100% - 50px);
+	padding-left: 50px;
+	text-align: left;
+	justify-content: flex-start;
+	height: 92px;
+	font-size: 44px;
+	font-weight: 700;
+	letter-spacing: -1px;
+	color: #0c0e15;
+	-webkit-animation-duration: 20s;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+}
+
+.wink-banner .text .content .drops {
+	-webkit-animation-name: drops;
+	animation-name: drops;
+}
+
+@-webkit-keyframes drops {
+  0% {left: -100%;}
+  2% {left: 0;}
+  15% {left: 0; opacity: 1;}
+  19% {left: 0;}
+  20% {left: -100%; opacity: 0;}
+}
+
+@keyframes drops {
+  0% {left: -100%;}
+  2% {left: 0;}
+  15% {left: 0; opacity: 1;}
+  19% {left: 0;}
+  20% {left: -100%; opacity: 0;}
+}
+
+.wink-banner .text .content .dilution {
+	-webkit-animation-name: dilution;
+	animation-name: dilution;
+}
+
+@-webkit-keyframes dilution {
+  0% {left: -100%;}
+  18% {left: -100%;}
+  20% {left: 0;}
+  35% {left: 0; opacity: 1;}
+  39% {left: 0;}
+  40% {left: -100%; opacity: 0;}
+}
+
+@keyframes dilution {
+  0% {left: -100%;}
+  18% {left: -100%;}
+  20% {left: 0;}
+  35% {left: 0; opacity: 1;}
+  39% {left: 0;}
+  40% {left: -100%; opacity: 0;}
+}
+
+.wink-banner .text .content .calc {
+	-webkit-animation-name: calc;
+	animation-name: calc;
+}
+
+@-webkit-keyframes calc {
+  0% {left: -100%;}
+  38% {left: -100%;}
+  40% {left: 0;}
+  55% {left: 0; opacity: 1;}
+  59% {left: 0;}
+  60% {left: -100%; opacity: 0;}
+}
+
+@keyframes calc {
+  0% {left: -100%;}
+  38% {left: -100%;}
+  40% {left: 0;}
+  55% {left: 0; opacity: 1;}
+  59% {left: 0;}
+  60% {left: -100%; opacity: 0;}
+}
+
+.wink-banner .text .content .freeze {
+	-webkit-animation-name: freeze;
+	animation-name: freeze;
+}
+
+@-webkit-keyframes freeze {
+  0% {left: -100%;}
+  58% {left: -100%;}
+  60% {left: 0;}
+  75% {left: 0; opacity: 1;}
+  79% {left: 0;}
+  80% {left: -100%; opacity: 0;}
+}
+
+@keyframes freeze {
+  0% {left: -100%;}
+  58% {left: -100%;}
+  60% {left: 0;}
+  75% {left: 0; opacity: 1;}
+  79% {left: 0;}
+  80% {left: -100%; opacity: 0;}
+}
+
+.wink-banner .text .content .url {
+	-webkit-animation-name: url;
+	animation-name: url;
+	text-decoration: underline;
+}
+
+@-webkit-keyframes url {
+  0% {left: -100%;}
+  78% {left: -100%;}
+  80% {left: 0;}
+  95% {left: 0; opacity: 1;}
+  99% {left: 0;}
+  100% {left: -100%; opacity: 0;}
+}
+
+@keyframes url {
+  0% {left: -100%;}
+  78% {left: -100%;}
+  80% {left: 0;}
+  95% {left: 0; opacity: 1;}
+  99% {left: 0;}
+  100% {left: -100%; opacity: 0;}
+}
+
+@media screen and (max-width: 1160px) {
+	.wink-banner .logo {
+		width: 30%;
+	}
+
+	.wink-banner .text {
+		width: 70%;
+	}
+	
+	.wink-banner .text .content .drops,
+	.wink-banner .text .content .dilution,
+	.wink-banner .text .content .calc,
+	.wink-banner .text .content .freeze,
+	.wink-banner .text .content .url {
+		width: calc(100% - 17px);
+		padding-left: 17px;
+		text-align: center;
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 820px) {
+	.wink-banner .logo span.wnkscan {
+		background: url('../img/winkscan-logo.svg') no-repeat center;
+		background-size: 80% auto;
+	}
+	
+	.wink-banner .text .content .drops,
+	.wink-banner .text .content .dilution,
+	.wink-banner .text .content .calc,
+	.wink-banner .text .content .freeze,
+	.wink-banner .text .content .url {
+		font-size: 36px;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.wink-banner .text .content .drops,
+	.wink-banner .text .content .dilution,
+	.wink-banner .text .content .calc,
+	.wink-banner .text .content .freeze,
+	.wink-banner .text .content .url {
+		font-size: 28px;
+	}
+}
+
+@media screen and (max-width: 470px) {
+	.wink-banner .text .content .drops,
+	.wink-banner .text .content .dilution,
+	.wink-banner .text .content .calc,
+	.wink-banner .text .content .freeze,
+	.wink-banner .text .content .url {
+		font-size: 24px;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.wink-banner .text .content .drops,
+	.wink-banner .text .content .dilution,
+	.wink-banner .text .content .calc,
+	.wink-banner .text .content .freeze,
+	.wink-banner .text .content .url {
+		font-size: 18px;
+	}
+}
+
 @media screen and (max-width: 1190px) {
 	.content {
 		padding: 30px 5px;
