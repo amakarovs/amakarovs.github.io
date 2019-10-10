@@ -711,6 +711,19 @@ section .content .row .net-worth span.amount i.icon-trx {
 	background-size: 16px auto;
 }
 
+section .content .row .net-worth span.amount i.icon-alert {
+	display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+	margin: 0 0 0 6px;
+	width: 18px;
+	height: 16px;
+	background: url('../img/icon-alert.svg') no-repeat no-repeat;
+	background-size: auto 16px;
+}
+
 section .content .row .net-worth span.total-usd,
 section .content .row .net-worth span.percent {
 	width: 50%;
@@ -1631,7 +1644,7 @@ section .content .row .trans-history .add span.amount i.icon-btt {
 	background-size: 13px;
 }
 
-section .content .row .trans-history .add span.amount td i.icon-rake {
+section .content .row .trans-history .add span.amount i.icon-rake {
 	background: url('../img/icon-rake.svg') no-repeat center;
 	background-size: 100%;
 }
@@ -1645,16 +1658,6 @@ section .content .row .trans-history .add span.amount i.icon-live {
 	background: url('../img/icon-live.svg') no-repeat center;
 	background-size: 100%;
 }
-
-
-
-
-
-
-
-
-
-
 
 section .content .row .trans-history button.submit-btn {
 	width: 60%;
