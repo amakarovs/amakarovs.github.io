@@ -4010,10 +4010,10 @@ section .content .row .wink .wrow .section .data a.costa-rica-logo {
 }
 
 section .content .row .wink .wrow .section .data a.curacao-logo {
-	width: 165px;
+	width: 100%;
 	height: 54px;
-	background: url('../img/curacao.png') no-repeat;
-	background-size: 165px 54px;
+	background: url('../img/curacao.png') no-repeat center;
+	background-size: 140px auto;
 }
 
 section .content .row .wink .wrow .section .sub-data {
