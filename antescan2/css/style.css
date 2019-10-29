@@ -470,7 +470,7 @@ nav .navigation .row .col-12 ul {
 
 nav .navigation .row .col-12 ul li {
 	position: relative;
-	width: 16.66%;
+	width: 20%;
 }
 
 nav .navigation .row .col-12 ul li.soon {
@@ -556,13 +556,13 @@ nav .navigation .row .col-12 ul li a:hover i.icon-home {
 	background-size: 24px;
 }
 
-nav .navigation .row .col-12 ul li a i.icon-divs {
+nav .navigation .row .col-12 ul li a i.icon-drops {
 	background: url('../img/icon-drops.svg') no-repeat center;
 	background-size: auto 24px;
 }
 
-nav .navigation .row .col-12 ul li a.active i.icon-divs,
-nav .navigation .row .col-12 ul li a:hover i.icon-divs {
+nav .navigation .row .col-12 ul li a.active i.icon-drops,
+nav .navigation .row .col-12 ul li a:hover i.icon-drops {
 	background: url('../img/icon-drops-white.svg') no-repeat center;
 	background-size: auto 24px;
 }
@@ -631,27 +631,28 @@ section .content .row .net-worth {
 	display: table;
 	padding: 0;
 	border-radius: 3px;
+	min-height: 162px;
 }
 
 section .content .row .net-worth {
-	background-image: -webkit-gradient(linear,center top,center bottom,from(#131722),to(#0f864c));
-    background-image: -webkit-linear-gradient(#131722,#0f864c);
-    background-image: linear-gradient(#131722,#0f864c);
+	background-image: -webkit-gradient(linear,center top,center bottom,from(#fcb408),to(#facf0f));
+    background-image: -webkit-linear-gradient(#fcb408,#facf0f);
+    background-image: linear-gradient(#fcb408,#facf0f);
 }
 
 section .content .row .net-worth:before {
+	position: absolute;
+	left: 0;
+	top: 0;
 	display: block;
-    z-index: 1;
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.05;
-    background: url(../img/texture-light.svg) repeat center;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	content:'';
+	opacity: .15;
+    background: url('../img/texture-light.svg') repeat 50%;
     background-size: 60px auto;
-    border-radius: 3px;
+    border-radius: 0 0 3px 3px;
 }
 
 section .content .row .net-worth span.info,
@@ -730,11 +731,11 @@ section .content .row .net-worth span.percent {
 	padding: 10px 15px;
 	font-weight: 600;
 	font-size: 14px;
-	background: rgba(19,23,34,0.5);
+	background: #fcae08;
 }
 
 section .content .row .net-worth span.total-usd {
-	color: #1af135;
+	color: #fff225;
 }
 
 section .content .row .net-worth span.percent span.up,
@@ -750,7 +751,7 @@ section .content .row .net-worth span.percent span.down {
 
 section .content .row .net-worth span.percent span.up {
 	color: #292628;
-	background: #1af135;
+	background: #fff225;
 }
 
 section .content .row .net-worth span.percent span.down {
@@ -783,7 +784,7 @@ section .content .row .net-worth .btn-group button {
 	font-size: 12px;
 	text-transform: uppercase;
 	color: #a4a5a4;
-	background: rgba(0,0,0,.3);
+	background: #292628;
 	outline: none;
 	cursor: pointer;
 	border: none;
@@ -803,7 +804,6 @@ section .content .row .net-worth .btn-group button:last-child {
 	border-radius: 0 2px 2px 0;
 }
 
-
 section .content .row .net-worth .col {
 	width: 50%;
 	padding: 5px 15px 10px 15px;
@@ -818,7 +818,7 @@ section .content .row .net-worth .frozen {
 section .content .row .net-worth .col label {
 	width: 100%;
 	padding: 0;
-	color: rgba(255,255,255,0.6);
+	color: #292628;
 	font-weight: normal;
 }
 
@@ -893,6 +893,25 @@ section .content .row .earnings label {
 
 section .content .row .earnings label {
 	color: #5c5e6c;
+}
+
+section .content .row .earnings label .in-usdt {
+	float: right;
+	color: #0cc127;
+}
+
+section .content .row .earnings label .in-usdt i.icon-usdt {
+	display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+	margin: 2px 4px 0 0;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: url('../img/icon-usdt.svg') no-repeat center;
+	background-size: 18px;
 }
 
 section .content .row .earnings span.amount {
@@ -1320,6 +1339,11 @@ section .content .row .trans-history .table-responsive .table tbody tr td {
 	border-top: 1px solid #12141f;
 }
 
+section .content .row .trans-history .table-responsive .table tbody tr td a {
+	color: #6e717f;
+	text-decoration: underline;
+}
+
 section .content .row .trans-history .table-responsive .table tbody tr td i,
 section .content .row .trans-history .table-responsive .table tbody tr td a.remove-btn,
 section .content .row .trans-history .table-responsive .table tbody tr td i.icon-check,
@@ -1577,12 +1601,6 @@ section .content .row .trans-history .add span.amount span.coins {
 	color: #FFF;
 	font-weight: 700;
 }
-
-
-
-
-
-
 
 section .content .row .trans-history .add span.amount i {
 	display: -moz-inline-stack;
@@ -2149,6 +2167,11 @@ section.mining .content .btn-group button.active {
 	background: #FFF;
 }
 
+section .content .btn-group button.disabled {
+	cursor: default;
+	opacity: 0.4;
+}
+
 section.mining .content .btn-group button:first-child {
 	border-radius: 2px 0 0 2px;
 }
@@ -2618,8 +2641,22 @@ section .sub-nav .btn-group {
 
 .modal .modal-dialog .modal-content .burnt-log .table-responsive table tbody tr td {
 	border-top: 1px solid #22252e;
-	font-size: 14px;
+	font-size: 13px;
 	color: #6e717f;
+}
+
+.modal .modal-dialog .modal-content .burnt-log .table-responsive table tbody tr td .icon-win {
+	margin: 2px 4px 0 0;
+	display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+    width: 16px;
+    height: 16px;
+	background: url('../img/wink-coin-light.svg') no-repeat;
+    background-size: auto 14px;
+    border-radius: 0;
 }
 
 .modal .modal-dialog .modal-content .burnt-log .table-responsive table tbody tr td a {
@@ -2628,7 +2665,7 @@ section .sub-nav .btn-group {
 	overflow: hidden;
     white-space: nowrap; 
     text-overflow: ellipsis;
-	color: #0ec629;
+	color: #fcb408;
 	text-decoration: underline;
 }
 
@@ -2779,6 +2816,20 @@ section .content .row .calculator .btn-group button:last-child,
 section .content .row .current-divs .btn-group button:last-child,
 section .content .row .trans-history .coin-filter button:last-child {
 	border-radius: 0 2px 2px 0;
+}
+
+section .content .row .current-divs.charts label {
+	width: 20%;
+}
+
+section .content .row .current-divs.charts .btn-group {
+	padding-top: 15px;
+	padding-bottom: 8px;
+	width: 80%;
+}
+
+section .content .row .current-divs.charts .btn-group button {
+	white-space: nowrap;
 }
 
 section .content .row .calculator .form {
@@ -3872,6 +3923,147 @@ section .content .row .session .current-dice span.amount span.down {
 	color: #FFF;
 	background: #f81f1f;
 }
+
+section .content .row .wink {
+	padding: 0;
+	background-image: -webkit-gradient(linear,center top,center bottom,from(#131722),to(#1e2235));
+    background-image: -webkit-linear-gradient(#131722,#1e2235);
+    background-image: linear-gradient(#131722,#1e2235);
+	border-radius: 3px;
+}
+
+section .content .row .wink .wrow {
+	display: table;
+	width: 100%;
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+section .content .row .wink .wrow:last-child {
+	border-bottom: none;
+}
+
+section .content .row .wink .wrow .section {
+	display: table;
+	width: 50%;
+	float: left;
+	height: 140px;
+	padding: 15px;
+	border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+section .content .row .wink .wrow .section:last-child {
+	border-right: none;
+}
+
+section .content .row .wink .wrow .section label {
+	display: block;
+	float: left;
+	width: 100%;
+	height: 22px;
+	padding-top: 2px;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+section .content .row .wink .wrow .section .data {
+	display: flex;
+	float: left;
+	width: 100%;
+	height: 66px;
+	justify-content: center;
+	align-items: center;
+	font-size: 36px;
+	letter-spacing: -2px;
+	font-weight: 700;
+}
+
+section .content .row .wink .wrow .section .data i.icon-trx {
+	display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+	margin: 10px 4px 0 0;
+	width: 13px;
+	height: 14px;
+	background: url('../img/icon-trx.svg') no-repeat;
+	background-size: auto 14px;
+}
+
+section .content .row .wink .wrow .section .data a {
+	color: #fbc509;
+	text-decoration: underline;
+}
+
+section .content .row .wink .wrow .section .data a.wink-logo {
+	width: 80px;
+	height: 54px;
+	background: url('../img/wink-light.svg') center no-repeat;
+	background-size: 80px auto;
+}
+
+section .content .row .wink .wrow .section .data a.costa-rica-logo {
+	width: 42px;
+	height: 54px;
+	background: url('../img/costa-rica.png') no-repeat;
+	background-size: 42px 54px;
+}
+
+section .content .row .wink .wrow .section .data a.curacao-logo {
+	width: 165px;
+	height: 54px;
+	background: url('../img/curacao.png') no-repeat;
+	background-size: 165px 54px;
+}
+
+section .content .row .wink .wrow .section .sub-data {
+	display: block;
+	float: left;
+	width: 100%;
+	height: 22px;
+	font-size: 14px;
+	color: #5c5e6c;
+}
+
+section .content .row .wink .wrow .section .sub-data.half {
+	width: 50%;
+	white-space: nowrap;
+}
+
+section .content .row .wink .wrow .section .sub-data span.amount {
+	color: #FFF;
+	font-weight: 700;
+}
+
+section .content .row .wink .wrow .section .sub-data a {
+	color: #5c5e6c;
+	text-decoration: underline;
+}
+
+section .content .row .wink .wrow .section .sub-data span.up,
+section .content .row .wink .wrow .section .sub-data span.down {
+	display: block;
+	float: right;
+	height: 22px;
+	min-width: 44px;
+	padding: 0 4px;
+	font-weight: 700;
+	text-align: center;
+	border-radius: 2px;
+}
+
+section .content .row .wink .wrow .section .sub-data span.up {
+	color: #292628;
+	background: #fff225;
+}
+
+section .content .row .wink .wrow .section .sub-data span.down {
+	color: #FFF;
+	background: #f81f1f;
+}
+
+
+
 
 .please-login {
 	position: fixed;

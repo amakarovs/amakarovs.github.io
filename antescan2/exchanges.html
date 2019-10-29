@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>dicescan.live</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+<!-- Modal -->
+<div class="modal xs-popup fade" id="RemoveSession" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel"><i class="icon-live"></i>Remove Session</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<label>Are you sure you want to remove mining session?</label>
+				<button class="cancel-btn">Cancel</button>
+				<button class="remove-btn">Remove</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="wrap">
+
+	<header>
+		<div class="container-fluid top-nav">
+			<div class="row">
+				<div class="col-6 logo">
+					<a href="http://winkscan.live"></a><span class="scan"></span>
+				</div>
+				<div class="col-6 wallet">
+					<span class="address">TNirp...1y8Vq</span><button class="burger"><i class="bar"></i></button>
+					<div class="floating-nav">
+						<div class="set-currency">
+							<label>Set Fiat Currency</label>
+							<select class="form-control" id="exampleFormControlSelect1">
+								<option>USD</option>
+								<option>EUR</option>
+								<option>GBP</option>
+								<option>BTC</option>
+								<option>RUB</option>
+								<option>CAD</option>
+								<option>CNY</option>
+								<option>INR</option>
+							</select>
+						</div>
+						<div class="social">
+							<label>Social</label>
+							<a href="https://twitter.com/WNkscan" target="_blank"><i class="icon-twitter"></i></a>
+							<a href="https://t.me/WINkscan" target="_blank"><i class="icon-telegram"></i></a>
+						</div>
+						<div class="donate">
+							<label>Donate</label>
+							<span class="trx">TRX Address</span>
+							<address>TDBq8e8dqopFu6kZYupXNAfWmBvfLPtCVX</address>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<section>
+		<div class="sub-nav">
+			<div class="btn-group tb-sub-nav" role="group" aria-label="Basic example">
+				<a href="platform.html" class="btn">Overall</a>
+				<a href="charts.html" class="btn">Charts</a>
+				<a href="exchanges.html" class="btn active">Markets</a>
+			</div>
+		</div>
+		<div class="container-fluid content">
+			<div class="row">
+				<div class="col-12 trans-history">
+					<div class="heading-wrap">
+						<label>Markets</label>
+						<div class="btn-group coin-filter">
+							<button class="active">All</button>
+							<button>USDT</button>
+							<button>USDC</button>
+							<button>BTC</button>
+							<button>BNB</button>
+							<button>TRX</button>
+						</div>
+					</div>
+					<div class="table-responsive">
+						<table class="table">
+						  <thead>
+							<tr>
+							  <th scope="col">Exchange</th>
+							  <th scope="col">Pair</th>
+							</tr>
+						  </thead>
+						  <tbody>
+							<tr>
+							  <td><a href="https://www.binance.com">Binance</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-usdt"></i>USDT</td>
+							</tr>
+							<tr>
+							  <td><a href="https://dragonex.io/">DragonEX</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-usdt"></i>USDT</td>
+							</tr>
+							<tr>
+							  <td><a href="https://www.bithumb.pro/">Bithumb Global</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-usdt"></i>USDT</td>
+							</tr>			
+							<tr>
+							  <td><a href="https://big.one/">BigONE</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-usdt"></i>USDT</td>
+							</tr>
+							<tr>
+							  <td><a href="https://www.digifinex.com/">DigiFinex</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-usdt"></i>USDT</td>
+							</tr>
+							<tr>
+							  <td><a href="https://www.kucoin.com/">KuCoin</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-usdt"></i>USDT</td>
+							</tr>
+							<tr>
+							  <td><a href="https://www.cointiger.com/">CoinTiger</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-usdt"></i>USDT</td>
+							</tr>
+							<tr>
+							  <td><a href="https://hitbtc.com/">HitBTC</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-usdt"></i>USDT</td>
+							</tr>
+							<tr>
+							  <td><a href="https://tradesatoshi.com/">Trade Satoshi</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-usdt"></i>USDT</td>
+							</tr>
+							<tr>
+							  <td><a href="https://www.gate.io">Gate.io</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-usdt"></i>USDT</td>
+							</tr>
+							<tr>
+							  <td><a href="https://www.mxc.ceo">MXC</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-usdt"></i>USDT</td>
+							</tr>
+							<tr>
+							  <td><a href="https://www.finexbox.com">FINEXBOX</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-usdt"></i>USDT</td>
+							</tr>
+							<tr>
+							  <td><a href="https://www.idax.pro">IDAX</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-usdt"></i>USDT</td>
+							</tr>
+							<tr>
+							  <td><a href="https://www.bw.com">BW</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-usdt"></i>USDT</td>
+							</tr>
+							<tr>
+							  <td><a href="https://ggbtc.vip">Global Gravitation</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-usdt"></i>USDT</td>
+							</tr>
+							<tr>
+							  <td><a href="https://trx.market/">TRX Market</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-usdt"></i>USDT</td>
+							</tr>
+							
+							
+							<tr>
+							  <td><a href="https://www.binance.com">Binance</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-usdc"></i>USDC</td>
+							</tr>
+							
+							
+							<tr>
+							  <td><a href="https://big.one/">BigONE</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-btc"></i>BTC</td>
+							</tr>
+							<tr>
+							  <td><a href="https://www.kucoin.com/">KuCoin</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-btc"></i>BTC</td>
+							</tr>
+							
+							
+							<tr>
+							  <td><a href="https://www.binance.com">Binance</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-bnb"></i>BNB</td>
+							</tr>
+							
+							
+							<tr>
+							  <td><a href="https://www.binance.com">Binance</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-trx-circle"></i>TRX</td>
+							</tr>
+							<tr>
+							  <td><a href="https://big.one/">BigONE</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-trx-circle"></i>TRX</td>
+							</tr>
+							<tr>
+							  <td><a href="https://www.kucoin.com/">KuCoin</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-trx-circle"></i>TRX</td>
+							</tr>
+							<tr>
+							  <td><a href="https://www.cointiger.com/">CoinTiger</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-trx-circle"></i>TRX</td>
+							</tr>
+							<tr>
+							  <td><a href="https://www.mxc.ceo">MXC</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-trx-circle"></i>TRX</td>
+							</tr>
+							<tr>
+							  <td><a href="https://www.finexbox.com">FINEXBOX</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-trx-circle"></i>TRX</td>
+							</tr>
+							<tr>
+							  <td><a href="https://www.idax.pro">IDAX</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-trx-circle"></i>TRX</td>
+							</tr>
+							<tr>
+							  <td><a href="https://ggbtc.vip">Global Gravitation</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-trx-circle"></i>TRX</td>
+							</tr>
+							<tr>
+							  <td><a href="https://trx.market/">TRX Market</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-trx-circle"></i>TRX</td>
+							</tr>
+							<tr>
+							  <td><a href="https://www.trontrade.io/">TronTrade</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-trx-circle"></i>TRX</td>
+							</tr>
+							<tr>
+							  <td><a href="https://www.tronwatch.market/">TronWatch</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-trx-circle"></i>TRX</td>
+							</tr>
+							<tr>
+							  <td><a href="https://zethyr.exchange/#/market">Zethyr</a></td>
+							  <td><i class="icon-win"></i>WIN / <i class="icon-trx-circle"></i>TRX</td>
+							</tr>
+							
+							
+							<tr>
+							  <td><a href="https://www.bitz.top">Bit Z</a></td>
+							  <td><i class="icon-win"></i>WIN / DKTT</td>
+							</tr>
+						  </tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<nav>
+		<div class="container-fluid navigation">
+			<div class="row">
+				<div class="col-12">
+					<ul>
+						<li><a href="index.html"><i class="icon-home"></i>Home</a></li>
+						<li><a href="divs.html" class="active"><i class="icon-drops"></i><span class="notification"><span class="amount">23</span></span>Drops</a></li>
+						<li><a href="goals.html"><i class="icon-goals"></i>Goals</a></li>
+						<li><a href="mining.html"><i class="icon-mining"></i>Mining</a></li>
+						<li><a href="platform.html"><i class="icon-platform"></i>Platform</a></li>
+						<li><a href="news.html"><i class="icon-news"></i>News</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+</div>
+
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
+	
+	$('.burger').click(function(){
+        $('.burger').toggleClass('expand');
+        $('.floating-nav').toggleClass('show-nav');
+	});
+</script>
+
+</body>
+</html>
