@@ -333,9 +333,9 @@ header .top-nav .row .wallet .floating-nav .cards a {
 	display: flex;
 	position: relative;
 	float: left;
-	margin: 10px 15px 0 0;
-	width: 100px;
-	height: 65px;
+	margin: 10px 0 0 0;
+	width: 80px;
+	height: 52px;
 	align-items: center;
 	outline: none;
 	justify-content: center;
@@ -346,16 +346,24 @@ header .top-nav .row .wallet .floating-nav .cards a.cc-coinbase {
 	background-image: -webkit-gradient(linear,center top,center bottom,from(#4172f3),to(#0f4df1));
     background-image: -webkit-linear-gradient(#4172f3,#0f4df1);
     background-image: linear-gradient(#4172f3,#0f4df1);
+	margin-right: 8px;
 }
 
 header .top-nav .row .wallet .floating-nav .cards a.cc-spend {
 	background: #416da9;
+	margin-right: 8px;
+}
+
+header .top-nav .row .wallet .floating-nav .cards a.cc-mco {
+	background: #017cb3;
+	margin-right: 8px;
 }
 
 header .top-nav .row .wallet .floating-nav .cards a.cc-wirex {
 	background: #d3ffd0;
 }
 
+header .top-nav .row .wallet .floating-nav .cards a.cc-mco:before,
 header .top-nav .row .wallet .floating-nav .cards a.cc-coinbase:before,
 header .top-nav .row .wallet .floating-nav .cards a.cc-spend:before,
 header .top-nav .row .wallet .floating-nav .cards a.cc-wirex:before {
@@ -363,8 +371,8 @@ header .top-nav .row .wallet .floating-nav .cards a.cc-wirex:before {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100px;
-	height: 60px;
+	width: 80px;
+	height: 52px;
 	content:'VISA';
 	padding: 3px 0 0 5px;
 	font-weight: 700;
@@ -376,21 +384,26 @@ header .top-nav .row .wallet .floating-nav .cards a.cc-wirex:before {
 	color: rgba(0,0,0,0.8);
 }
 
+header .top-nav .row .wallet .floating-nav .cards a.cc-mco:before {
+	background: url(../img/cc-mco.svg) no-repeat center;
+	background-size: auto 30px;
+}
+
 header .top-nav .row .wallet .floating-nav .cards a.cc-coinbase:before {
 	background: url(../img/cc-coinbase.svg) no-repeat center;
-	background-size: 74px auto;
+	background-size: 60px auto;
 }
 
 header .top-nav .row .wallet .floating-nav .cards a.cc-spend:before {
 	height: 65px;
 	background: url(../img/cc-spend.svg) no-repeat center;
-	background-size: 74px auto;
+	background-size: 60px auto;
 }
 
 header .top-nav .row .wallet .floating-nav .cards a.cc-wirex:before {
 	height: 65px;
 	background: url(../img/cc-wirex.svg) no-repeat center;
-	background-size: 74px auto;
+	background-size: 60px auto;
 }
 
 nav {
@@ -959,6 +972,16 @@ section .content .row .earnings span.amount i.icon-btt {
 	background-size: 16px auto;
 }
 
+section .content .row .earnings span.amount i.icon-usdtw {
+	position: absolute;
+	left: 0;
+	top: 7px;
+	width: 16px;
+	height: 16px;
+	background: url('../img/icon-usdt-light.svg') no-repeat center;
+	background-size: 16px auto;
+}
+
 section .content .row .earnings .period {
 	margin-top: 5px;
 	display: table;
@@ -1001,6 +1024,15 @@ section .content .row .earnings .period .col span.amount i.icon-btt {
 	height: 12px;
 	opacity: 0.6;
 	background-size: 12px auto;
+}
+
+section .content .row .earnings .period .col span.amount i.icon-usdtw {
+	top: 7px;
+	left: 2px;
+	width: 14px;
+	height: 12px;
+	opacity: 0.6;
+	background-size: 14px auto;
 }
 
 section .content .row .earnings .period .history {
@@ -1093,7 +1125,7 @@ section .content .row .earnings .cc {
 section .content .row .earnings .cc label {
 	display: flex;
 	float: left;
-	width: calc(100% - 204px);
+	width: calc(100% - 272px);
 	height: 56px;
 	padding: 0 0 0 0;
 	align-items: center;
@@ -1120,6 +1152,10 @@ section .content .row .earnings .cc a.cc-coinbase {
     background-image: linear-gradient(#4172f3,#0f4df1);
 }
 
+section .content .row .earnings .cc a.cc-mco {
+	background: #017cb3;
+}
+
 section .content .row .earnings .cc a.cc-spend {
 	background: #416da9;
 }
@@ -1128,6 +1164,7 @@ section .content .row .earnings .cc a.cc-wirex {
 	background: #d3ffd0;
 }
 
+section .content .row .earnings .cc a.cc-mco:before,
 section .content .row .earnings .cc a.cc-coinbase:before,
 section .content .row .earnings .cc a.cc-spend:before,
 section .content .row .earnings .cc a.cc-wirex:before {
@@ -1145,6 +1182,11 @@ section .content .row .earnings .cc a.cc-wirex:before {
 
 section .content .row .earnings .cc a.cc-wirex:before {
 	color: rgba(0,0,0,0.8);
+}
+
+section .content .row .earnings .cc a.cc-mco:before {
+	background: url(../img/cc-mco.svg) no-repeat center;
+	background-size: auto 20px;
 }
 
 section .content .row .earnings .cc a.cc-coinbase:before {
@@ -1504,6 +1546,14 @@ section .content .row .trans-history .table-responsive .table tbody tr td i.icon
 section .content .row .trans-history .table-responsive .table tbody tr td i.icon-usdt {
 	background: url('../img/icon-usdt.svg') no-repeat center;
 	background-size: 18px;
+}
+
+section .content .row .trans-history .table-responsive .table tbody tr td i.icon-usdtw {
+	width: 13px;
+	height: 14px;
+	background: url('../img/icon-usdt-light.svg') no-repeat center 2px;
+	background-size: 13px auto;
+	border-radius: 0;
 }
 
 section .content .row .trans-history .table-responsive .table tbody tr td i.icon-usdc {
@@ -3150,7 +3200,8 @@ section .content .row .calculator .total span.amount {
 
 section .content .row .calculator .total span.amount span.fiat-amount,
 section .content .row .calculator .total span.amount i.icon-trx,
-section .content .row .calculator .total span.amount span.plus-btt i.icon-btt {
+section .content .row .calculator .total span.amount span.plus-btt i.icon-btt,
+section .content .row .calculator .total span.amount span.plus-btt i.icon-usdtw {
 	display: -moz-inline-stack;
     display: inline-block;
     vertical-align: top;
@@ -3189,11 +3240,23 @@ section .content .row .calculator .total span.amount span.plus-btt {
 	letter-spacing: -1px;
 }
 
+section .content .row .calculator .total span.amount span.plus-btt span.sub-amount {
+	padding: 0 6px 0 8px;
+}
+
 section .content .row .calculator .total span.amount span.plus-btt i.icon-btt {
-	margin: -1px 8px 0 0;
+	margin: -1px 0 0 6px;
 	width: 18px;
 	height: 18px;
 	background: url('../img/btt-logo-light.svg') no-repeat;
+	background-size: 18px;
+}
+
+section .content .row .calculator .total span.amount span.plus-btt i.icon-usdtw {
+	margin: -1px 0 0 6px;
+	width: 18px;
+	height: 18px;
+	background: url('../img/icon-usdt-light.svg') no-repeat left 2px;
 	background-size: 18px;
 }
 
@@ -3362,16 +3425,29 @@ section .content .row .current-divs .pool-row .pool span.amount span.btt-divs {
 }
 
 section .content .row .current-divs .pool-row .pool span.amount span.btt-divs i.icon-btt {
-	margin: -1px 4px 0 0;
+	margin: -1px 0 0 0;
 	width: 14px;
 	height: 14px;
 	background: url('../img/btt-logo-light.svg') no-repeat;
 	background-size: 14px;
 }
 
+section .content .row .current-divs .pool-row .pool span.amount span.btt-divs span.sub-amount {
+	padding: 0 6px 0 4px;
+}
+
+section .content .row .current-divs .pool-row .pool span.amount span.btt-divs i.icon-usdtw {
+	margin: -1px 0 0 0;
+	width: 14px;
+	height: 14px;
+	background: url('../img/icon-usdt-light.svg') no-repeat left 1px;
+	background-size: 14px;
+}
+
 section .content .row .current-divs .pool-row .pool span.amount i.icon-trx,
 section .content .row .current-divs .pool-row .pool span.amount span.info,
 section .content .row .current-divs .pool-row .pool span.amount span.btt-divs i.icon-btt,
+section .content .row .current-divs .pool-row .pool span.amount span.btt-divs i.icon-usdtw,
 section .content .row .current-divs .total-pool span.amount i.icon-trx {
 	display: -moz-inline-stack;
     display: inline-block;
@@ -3573,16 +3649,32 @@ section .content .row .current-divs .total-pool span.amount span.btt-divs {
 	font-weight: normal;
 }
 
-section .content .row .current-divs .total-pool span.amount span.btt-divs i.icon-btt {
-	margin: -1px 4px 0 0;
+section .content .row .current-divs .total-pool span.amount span.btt-divs span.sub-amount {
+	padding: 0 6px 0 8px;
+}
+
+section .content .row .current-divs .total-pool span.amount span.btt-divs i.icon-btt,
+section .content .row .current-divs .total-pool span.amount span.btt-divs i.icon-usdtw {
 	display: -moz-inline-stack;
     display: inline-block;
     vertical-align: top;
     zoom: 1;
     *display: inline;
+}
+
+section .content .row .current-divs .total-pool span.amount span.btt-divs i.icon-btt {
+	margin: -1px 0 0 6px;
 	width: 18px;
 	height: 18px;
 	background: url('../img/btt-logo-light.svg') no-repeat;
+	background-size: 18px;
+}
+
+section .content .row .current-divs .total-pool span.amount span.btt-divs i.icon-usdtw {
+	margin: -1px 0 0 6px;
+	width: 18px;
+	height: 18px;
+	background: url('../img/icon-usdt-light.svg') no-repeat left 2px;
 	background-size: 18px;
 }
 
