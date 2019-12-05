@@ -1332,6 +1332,23 @@ a {
 	background-size: 18px;
 }
 
+.content .row .calculator .total span.amount span.plus-btt span.usdt {
+	padding: 0 0 0 16px;
+}
+
+.content .row .calculator .total span.amount span.plus-btt span.usdt i.icon-usdt {
+	margin: 0 8px 0 0;
+	display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+	width: 18px;
+	height: 18px;
+	background: url('../img/icon-usdt-light.svg') no-repeat center 1px;
+	background-size: 18px;
+}
+
 .content .row .calculator .total a.invest-btn {
 	position: relative;
 	display: flex;
@@ -1481,6 +1498,23 @@ a {
 
 .day-mode .content .row .current-divs .pool-row .pool span.amount span.btt-divs i.icon-btt {
 	background: url('../img/btt-logo-dark.svg') no-repeat;
+	background-size: 14px;
+}
+
+.content .row .current-divs .pool-row .pool span.amount span.btt-divs span.usdt {
+	padding: 0 0 0 8px;
+}
+
+.content .row .current-divs .pool-row .pool span.amount span.btt-divs span.usdt i.icon-usdt {
+	margin: 0 4px 0 0;
+	display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+	width: 14px;
+	height: 14px;
+	background: url('../img/icon-usdt-light.svg') no-repeat center top;
 	background-size: 14px;
 }
 
@@ -1751,6 +1785,23 @@ a {
 	background-size: 18px;
 }
 
+.content .row .current-divs .total-pool span.amount span.btt-divs span.usdt {
+	padding: 0 0 0 8px;
+}
+
+.content .row .current-divs .total-pool span.amount span.btt-divs span.usdt i.icon-usdt {
+	margin: 1px 4px 0 0;
+	display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+	width: 18px;
+	height: 18px;
+	background: url('../img/icon-usdt-light.svg') no-repeat center 2px;
+	background-size: 18px;
+}
+
 .content .row .grid {
 	width: calc(75% - 20px);
 	padding: 0;
@@ -1893,6 +1944,19 @@ a {
 
 .day-mode .content .row .grid table tbody tr td.income i.icon-btt {
 	background: url('../img/btt-logo-dark.svg') no-repeat;
+	background-size: 14px;
+}
+
+.content .row .grid table tbody tr td.income i.icon-usdt {
+	margin: 1px 7px 0 0;
+	display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+	width: 14px;
+	height: 14px;
+	background: url('../img/icon-usdt-light.svg') no-repeat;
 	background-size: 14px;
 }
 
@@ -2399,6 +2463,10 @@ a {
 	font-size: 30px;
 	font-weight: normal;
 	width: 100%;
+}
+
+.content .row .tronscan-data .total span.amount span.plus-btt span.usdt i.icon-usdt {
+	margin-top: 8px;
 }
 
 .content .row .tronscan-data .total span.amount span.plus-btt i.icon-btt {
