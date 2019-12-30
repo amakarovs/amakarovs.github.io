@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Chakra+Petch:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap');
+
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {	margin: 0;	padding: 0;	border: 0;	outline: 0;	font-size: 100%;	vertical-align: baseline; font-family: 'Chakra Petch', sans-serif;}
+html, body {
+	height: 100%;
+    min-height: 100%;
+	min-width: 320px;
+	font-size: 14px;
+	color: #bec5cd;
+	text-transform: uppercase;
+	background: #0f141c;
+	font-family: 'Chakra Petch', sans-serif;
+}
+
+a {
+	cursor: pointer;
+}
+
+
+.content {
+	margin: 0 auto;
+	width: 1180px;
+	z-index: 1;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 15px 0;
+}
+
+.content h1 {
+	display: block;
+	margin: 30px 0;
+	width: 100%;
+	font-size: 48px;
+	text-align: center;
+	color: #FFF;
+}
+
+.content .top-stat {
+	margin: 15px;
+	width: calc(50% - 54px);
+	padding: 12px;
+	background: #171e26;
+}
+
+.content .top-stat span.amount {
+	display: block;
+	width: calc(100% - 32px);
+	padding: 15px;
+	border: 1px solid #8b043d;
+}
+
+.content .trx span.amount {
+	background: url('../img/icon-diamond_filled-red2.png') no-repeat right top #0f141c;
+}
+
+.content .box span.amount {
+	background: url('../img/icon-box-total.png') no-repeat right top #0f141c;
+}
+
+.content .top-stat span.amount label,
+.content .top-stat span.amount span {
+	display: block;
+}
+
+.content .top-stat span.amount label {
+	padding: 0;
+	color: #f81a44;
+}
+
+.content .top-stat span.amount span.day {
+	padding-top: 15px;
+	color: #636e7e;
+	font-size: 48px;
+	line-height: 1;
+}
+
+.content .top-stat span.amount span.yesterday {
+	font-size: 36px;
+}
+
+.content .top-stat span.amount span.difference {
+	padding-top: 0px;
+	color: #f81a44;
+	font-size: 24px;
+	line-height: 1;
+	text-align: right;
+}
+
+.content .top-stat span.amount span.day span.title {
+	padding: 0 0 0 0;
+	color: #636e7e;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.content .top-stat span.amount span.today span.title,
+.content .top-stat span.amount span.today {
+	color: #FFF;
+	font-weight: 600;
+}
+
+.content a.btn-play {
+	margin: 25px auto;
+	display: block;
+	float: left;
+	width: 260px;
+	height: 31px;
+	padding-top: 15px;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 600;
+	color: #FFF;
+	text-decoration: none;
+	background: #f81a44;
+}
+
+.content .grid {
+	margin: 15px;
+	width: calc(100% - 54px);
+	padding: 14px;
+	background: #171e26;
+}
+
+.content .grid table {
+	width: 100%;
+	text-align: left;
+}
+
+.content .grid table thead {
+	color: #FFF;
+}
+
+.content .grid table thead tr th {
+	padding: 0 0 10px 15px;
+	border-bottom: 1px solid #8b043d;
+}
+
+.content .grid table tbody tr td {
+	padding: 10px 0 10px 15px;
+}
+
+.content .grid table tbody tr:nth-child(even) {
+	background: #0f141c;
+}
+
+@media screen and (max-width: 1180px) {
+	.content {
+		width: calc(100% - 30px);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.content .top-stat {
+		width: calc(100% - 54px);
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.content h1 {
+		margin: 10px 0;
+		font-size: 36px;
+	}
+	
+	.content .top-stat span.amount span.day {
+		font-size: 36px;
+	}
+
+	.content .top-stat span.amount span.difference {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.content {
+		width: 100%;
+	}
+}

@@ -1125,7 +1125,7 @@ section .content .row .earnings .cc {
 section .content .row .earnings .cc label {
 	display: flex;
 	float: left;
-	width: calc(100% - 272px);
+	width: calc(100% - 204px);
 	height: 56px;
 	padding: 0 0 0 0;
 	align-items: center;
