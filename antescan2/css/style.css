@@ -4526,3 +4526,241 @@ section .content .row .wink .wrow .section .sub-data span.down {
 		width: 100%;
 	}
 }
+
+/* Subscription */
+
+section .content .row .subscription {
+	position: relative;
+	padding: 0 0 20px 0;
+}
+
+section .content .row .subscription dl dt {
+	padding: 0 0 12px 0;
+	font-size: 14px;
+}
+
+section .content .row .subscription dl dt span.lifetime {
+	color: #fcb408;
+}
+
+section .content .row .subscription dl dt span.info {
+	display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+	margin: 0 0 0 4px;
+	width: 16px;
+    height: 16px;
+    padding-top: 2px;
+    text-align: center;
+    font-size: 12px;
+	line-height: 1;
+    color: #333;
+    font-weight: 700;
+    font-family: Times New Roman;
+    font-style: italic;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    background: #FFF;
+}
+
+section .content .row .subscription dl dd {
+	position: relative;
+	padding: 0 155px 15px 0;
+	font-size: 12px;
+	line-height: 1.2;
+	color: #5c5e6c;
+}
+
+section .content .row .subscription dl dd a.buy-token {
+	position: absolute;
+	right: 0;
+	top: 1px;
+	display: block;
+	width: 140px;
+	height: 26px;
+	padding: 6px 0 0 0;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 700;
+	color: #0c0e15;
+	text-decoration: none;
+	outline: none;
+	background: #FFF;
+	border-radius: 13px;
+}
+
+section .content .row .subscription dl dd a:active.buy-token,
+section .content .row .subscription dl dd a:hover.buy-token {
+	color: #FFF;
+	background: #068485;
+}
+
+section .content .row .subscription .types {
+	display: block;
+	margin-left: -1px;
+	width: calc(100% + 2px);
+	height: 148px;
+	overflow: hidden;
+	transition: 1s height ease-in-out;
+}
+
+section .content .row .subscription .expand-types {
+	height: 245px;
+	transition: 1s height ease-in-out;
+}
+
+section .content .row .subscription .show-more {
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+	display: block;
+	text-align: center;
+	width: 100%;
+	height: 40px;
+	padding-top: 16px;
+	background-image: -webkit-gradient(linear,center top,center bottom,from(rgba(0,0,0,0)),to(#0c0e15));
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0),#0c0e15);
+    background-image: linear-gradient(rgba(0,0,0,0),#0c0e15);
+}
+
+section .content .row .subscription .show-more span.expand-btn {
+	margin: 0 auto;
+	display: block;
+	width: 80px;
+	height: 24px;
+	padding: 3px 0 0 0;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 700;
+	color: #FFF;
+	cursor: pointer;
+	background: #6e717f;
+	border-radius: 12px;
+}
+
+section .content .row .subscription .types .sub-type {
+	margin: 0 1px;
+	width: calc(25% - 2px);
+	float: left;
+	padding-bottom: 10px;
+	text-align: center;
+	border-radius: 3px;
+	background: #12141f;
+}
+
+section .content .row .subscription .types .sub-type:nth-child(2),
+section .content .row .subscription .types .sub-type:nth-child(4) {
+	background: #1a1e2e;
+}
+
+section .content .row .subscription .types .sub-type label {
+	position: relative;
+	height: 52px;
+	padding-top: 28px;
+	font-size: 14px;
+	color: #FFF;
+	text-transform: uppercase;
+}
+
+section .content .row .subscription .types .sub-type label i.star {
+	position: absolute;
+	top: 9px;
+	left: calc(50% - 8px);
+	display: block;
+}
+
+section .content .row .subscription .types .sub-type label i.star,
+section .content .row .subscription .types .sub-type label i.star:before,
+section .content .row .subscription .types .sub-type label i.star:after {
+	width: 16px;
+	height: 16px;
+	background: url('../img/icon-star.svg') no-repeat;
+	background-size: 16px;
+}
+
+section .content .row .subscription .types .sub-type label i.star:before,
+section .content .row .subscription .types .sub-type label i.star:after {
+	position: absolute;
+	display: block;
+	content: '';
+}
+
+section .content .row .subscription .types .sub-type label i.star:before {
+	right: 18px;
+	top: 2px;
+	-ms-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+
+section .content .row .subscription .types .sub-type label i.star:after {
+	left: 18px;
+	top: 2px;
+	-ms-transform: rotate(10deg);
+	transform: rotate(10deg);
+}
+
+section .content .row .subscription .types .sub-type.basic label i.star,
+section .content .row .subscription .types .sub-type.basic label i.star:before,
+section .content .row .subscription .types .sub-type.basic label i.star:after {
+	display: none;
+}
+
+section .content .row .subscription .types .sub-type.light label i.star:before,
+section .content .row .subscription .types .sub-type.light label i.star:after {
+	display: none;
+}
+
+section .content .row .subscription .types .sub-type.medium label i.star {
+	background: transparent;
+}
+
+section .content .row .subscription .types .sub-type.medium label i.star:before {
+	top: 1px;
+	right: 9px;
+}
+
+section .content .row .subscription .types .sub-type.medium label i.star:after {
+	top: 1px;
+	left: 9px;
+}
+
+section .content .row .subscription .types .cost {
+	height: 26px;
+	font-size: 17px;
+	color: #292628;
+	font-weight: 700;
+	text-transform: uppercase;
+	background-image: -webkit-gradient(linear,center top,center bottom,from(#fcb408),to(#facf0f));
+    background-image: -webkit-linear-gradient(#fcb408,#facf0f);
+    background-image: linear-gradient(#fcb408,#facf0f);
+}
+
+section .content .row .subscription .types .cost span.token {
+	padding-left: 2px;
+	font-size: 10px;
+}
+
+
+section .content .row .subscription .types ul {
+	margin: 0;
+	padding: 5px 0 8px 0;
+	list-style-type: none;
+}
+
+section .content .row .subscription .types ul li {
+	padding: 1px 0 2px 0;
+	line-height: 1;
+	color: #FFF;
+	font-size: 13px;
+}
+
+section .content .row .subscription .types ul li.disabled {
+	color: #5c5e6c;
+	text-decoration: line-through;
+}
+
+
+

@@ -182,6 +182,93 @@
 				</div>
 			</div>
 			<div class="row">
+				<div class="col-12 subscription">
+					<dl>
+						<dt><span class="lifetime">Lifetime</span> Subscription<span class="info" data-toggle="modal" data-target="#TokenModal">i</span></dt>
+						<dd>
+							Buy & Hold SCAN token on your TRON WALLET to qualify
+							<a href="https://poloniex.org/" class="buy-token">Buy on POLONIDEX</a>
+						</dd>
+					</dl>
+					<div class="show-more"><span class="expand-btn">Show more</span></div>
+					<div class="types">
+						<div class="sub-type basic">
+							<label>
+								<i class="star"></i>
+								Basic
+							</label>
+							<div class="cost">Free</div>
+							<ul>
+								<li>Home</li>
+								<li>Goals</li>
+								<li>Mining</li>
+								<li>Platform</li>
+								<li class="disabled">Calculator</li>
+								<li class="disabled">Drops Pool</li>
+								<li class="disabled">Frozen</li>
+								<li class="disabled">Dilution</li>
+								<li class="disabled">History</li>
+							</ul>
+						</div>
+						<div class="sub-type light">
+							<label>
+								<i class="star"></i>
+								Light
+							</label>
+							<div class="cost">50<span class="token">scan</span></div>
+							<ul>
+								<li>Home</li>
+								<li>Goals</li>
+								<li>Mining</li>
+								<li>Platform</li>
+								<li>Calculator</li>
+								<li>Drops Pool</li>
+								<li class="disabled">Frozen</li>
+								<li class="disabled">Dilution</li>
+								<li class="disabled">History</li>
+							</ul>
+						</div>
+						<div class="sub-type medium">
+							<label>
+								<i class="star"></i>
+								Medium
+							</label>
+							<div class="cost">150<span class="token">scan</span></div>
+							<ul>
+								<li>Home</li>
+								<li>Goals</li>
+								<li>Mining</li>
+								<li>Platform</li>
+								<li>Calculator</li>
+								<li>Drops Pool</li>
+								<li>Frozen</li>
+								<li>Dilution</li>
+								<li class="disabled">History</li>
+							</ul>
+						</div>
+						<div class="sub-type pro">
+							<label>
+								<i class="star"></i>
+								Pro
+							</label>
+							<div class="cost">250<span class="token">scan</span></div>
+							<ul>
+								<li>Home</li>
+								<li>Goals</li>
+								<li>Mining</li>
+								<li>Platform</li>
+								<li>Calculator</li>
+								<li>Drops Pool</li>
+								<li>Frozen</li>
+								<li>Dilution</li>
+								<li>History</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--
+			<div class="row">
 				<div class="col-12 holdings">
 					<div class="heading">
 						<label class="coin">Coin</label>
@@ -196,7 +283,6 @@
 						<div class="coin-price">
 							<span class="price"><i class="icon-trx"></i>22.35</span>
 							<span class="percent up">12%</span>
-							<!--<span class="percent down">12%</span>-->
 						</div>
 						<div class="coin-holdings">
 							<span class="price"><i class="icon-trx"></i>12,322,435.35</span>
@@ -211,8 +297,7 @@
 						</div>
 						<div class="coin-price">
 							<span class="price"><i class="icon-trx"></i>22.35</span>
-							<span class="percent up">12%</span>
-							<!--<span class="percent down">12%</span>-->
+							<span class="percent down">12%</span>
 						</div>
 						<div class="coin-holdings">
 							<span class="price"><i class="icon-trx"></i>12,322,435.35</span>
@@ -228,7 +313,6 @@
 						<div class="coin-price">
 							<span class="price"><i class="icon-trx"></i>22.35</span>
 							<span class="percent up">12%</span>
-							<!--<span class="percent down">12%</span>-->
 						</div>
 						<div class="coin-holdings">
 							<span class="price"><i class="icon-trx"></i>12,322,435.35</span>
@@ -238,6 +322,7 @@
 					</div>
 				</div>
 			</div>
+			-->
 		</div>
 	</section>
 
@@ -245,7 +330,7 @@
 		<div class="container-fluid navigation">
 			<div class="row">
 				<div class="col-12">
-					<a href="javascript:void(0)" class="add-btn" data-toggle="modal" data-target="#exampleModal"><i class="icon-plus"></i></a>
+					<!--<a href="javascript:void(0)" class="add-btn" data-toggle="modal" data-target="#exampleModal"><i class="icon-plus"></i></a>-->
 					<ul>
 						<li class="soon"><a href="index.html" class="active"><i class="icon-home"></i>Home</a></li>
 						<li><a href="divs.html"><i class="icon-drops"></i><span class="notification"><span class="amount">23</span></span>Drops</a></li>
@@ -271,6 +356,9 @@
 	$('.burger').click(function(){
         $('.burger').toggleClass('expand');
         $('.floating-nav').toggleClass('show-nav');
+	});
+	$('.expand-btn').click(function(){
+        $('.types').toggleClass('expand-types');
 	});
 </script>
 
