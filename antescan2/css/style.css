@@ -624,6 +624,17 @@ nav .navigation .row .col-12 ul li a:hover i.icon-news {
 	background-size: 24px;
 }
 
+nav .navigation .row .col-12 ul li a i.icon-game {
+	background: url('../img/icon-game.svg') no-repeat center;
+	background-size: 24px;
+}
+
+nav .navigation .row .col-12 ul li a.active i.icon-game,
+nav .navigation .row .col-12 ul li a:hover i.icon-game {
+	background: url('../img/icon-game-white.svg') no-repeat center;
+	background-size: 24px;
+}
+
 section .content {
 	margin: 0 auto 20px auto;
 }
@@ -4761,6 +4772,301 @@ section .content .row .subscription .types ul li.disabled {
 	color: #5c5e6c;
 	text-decoration: line-through;
 }
+
+/* Burning Game */
+
+section .content .row .game {
+	display: table;
+    padding: 10px 15px 20px 15px;
+    background-image: -webkit-gradient(linear,center top,center bottom,from(#131722),to(#1e2235));
+    background-image: -webkit-linear-gradient(#131722,#1e2235);
+    background-image: linear-gradient(#131722,#1e2235);
+    border-radius: 3px;
+}
+
+section .content .row .game span {
+	float: left;
+}
+
+section .content .row .game span.id,
+section .content .row .game span.rules {
+	width: 50%;
+	padding: 0 0 0 0;
+	font-size: 14px;
+	color: #FFF;
+	font-weight: 700;
+}
+
+section .content .row .game span.rules {
+	text-align: right;
+}
+
+section .content .row .game span.rules a {
+	color: #5c5e6c;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+section .content .row .game span.logo {
+	width: 100%;
+	height: 125px;
+	background: url('../img/bet-win.png') no-repeat center;
+}
+
+section .content .row .game label {
+	width: 100%;
+	padding: 1px 0;
+	font-size: 14px;
+	color: #fbc509;
+	text-align: center;
+	font-weight: normal;
+}
+
+section .content .row .game span.amount {
+	position: relative;
+	width: 100%;
+	padding: 0 0 20px 0;
+	font-size: 48px;
+	line-height: 48px;
+	color: #FFF;
+	white-space: nowrap;
+	letter-spacing: -2px;
+	text-align: center;
+	font-weight: 700;
+}
+
+section .content .row .game span.amount:before {
+	position: absolute;
+	left: -15px;
+	bottom: 0;
+	width: calc(100% + 30px);
+	height: 1px;
+	content:'';
+	background: #3f4150;
+}
+
+section .content .row .game span.amount i.icon-win {
+	display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+	margin: 7px 10px 0 0;
+	width: 23px;
+    height: 34px;
+	background: url('../img/wink-coin-light.svg') no-repeat;
+	background-size: auto 34px;
+}
+
+
+section .content .row .game .form {
+	width: 100%;
+	float: left;
+	padding-bottom: 17px;
+}
+
+
+section .content .row .game .form span.title,
+section .content .row .game .form span.timer {
+	width: 50%;
+	padding: 12px 0;
+	float: left;
+	color: #FFF;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+section .content .row .game .form span.timer {
+	text-align: right;
+}
+
+section .content .row .game .form span.timer i.icon-clock {
+	display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+	margin: 2px 4px 0 0;
+	width: 16px;
+	height: 16px;
+	background: url('../img/icon-clock.svg') no-repeat center;
+	background-size: 14px;
+}
+
+section .content .row .game .form .col {
+	width: 50%;
+	float: left;
+	position: relative;
+}
+
+section .content .row .game .form .current {
+	padding: 0 8px 0 0;
+}
+
+section .content .row .game .form .prediction {
+	padding: 0 0 0 8px;
+}
+
+section .content .row .game .form .col span.pool {
+	display: flex;
+	height: 31px;
+	font-size: 14px;
+	line-height: 1;
+	align-items: center;
+	color: #4e505e;
+}
+
+section .content .row .game .form .col span.current,
+section .content .row .game .form .col input {
+	display: block;
+	z-index: 1;
+	position: relative;
+	margin: 0 0 0 -3px;
+	width: calc(100% + 6px);
+	height: 36px;
+	padding-left: 29px;
+	font-size: 16px;
+	line-height: 1;
+	align-items: center;
+	border-radius: 3px;
+	border: 3px solid;
+}
+
+section .content .row .game .form .col span.current {
+	padding-top: 7px;
+	color: #FFF;
+	background: #0c0e15;
+	border-color: #0c0e15;
+}
+
+section .content .row .game .form .col input {
+	padding-top: 1px;
+	color: #1d1b1c;
+	outline: none;
+	background: #FFF;
+	box-shadow: inset 0 2px 2px rgba(0,0,0,.35);
+	border-color: #1a1e2e;
+}
+
+section .content .row .game .form .col input:focus {
+	border-color: #4e505e;
+	transition: 1s border-color ease-in-out;
+}
+
+section .content .row .game .form .col i.icon-trx {
+	display: block;
+	position: absolute;
+	z-index: 2;
+	width: 15px;
+	height: 16px;
+	bottom: 10px;
+}
+
+section .content .row .game .form .current i.icon-trx {
+	left: 8px;
+	background: url('../img/icon-trx.svg') no-repeat;
+	background-size: 15px auto;
+}
+
+section .content .row .game .form .prediction i.icon-trx {
+	left: 16px;
+	background: url('../img/icon-trx-dark.svg') no-repeat;
+	background-size: 15px auto;
+}
+
+section .content .row .game button {
+	width: 100%;
+    height: 36px;
+    text-decoration: none;
+    outline: none;
+    color: #292628;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    background: #fbc509;
+    border-radius: 18px;
+	border: none;
+}
+
+section .content .row .trans-history .game-grid {
+	max-height: 200px;
+	overflow-y: auto;
+	padding: 0;
+}
+
+section .content .row .trans-history .game-grid .table {
+	margin-bottom: 0;
+}
+
+section .content .row .trans-history .table-responsive .table tbody tr.first-place {
+	background: rgba(255,255,255,0.09);
+}
+
+section .content .row .trans-history .table-responsive .table tbody tr.first-place td {
+	color: #FFF;
+}
+
+section .content .row .trans-history .table-responsive .table tbody tr.second-place {
+	background: rgba(255,255,255,0.06);
+}
+
+section .content .row .trans-history .table-responsive .table tbody tr.second-place td {
+	color: #a6abbf;
+}
+
+section .content .row .trans-history .table-responsive .table tbody tr.third-place {
+	background: rgba(255,255,255,0.03);
+}
+
+section .content .row .trans-history .table-responsive .table tbody tr.third-place td {
+	color: #9598aa;
+}
+
+section .content .row .trans-history .table-responsive .table tbody tr.my-prediction {
+	background: #FFF;
+}
+
+section .content .row .trans-history .table-responsive .table tbody tr.my-prediction td {
+	color: #333;
+}
+
+section .content .row .trans-history .table-responsive .table tbody tr.my-prediction td i.icon-trx {
+	background: url(../img/icon-trx-dark.svg) no-repeat;
+	background-size: 13px auto;
+}
+
+section .content .row .trans-history .table-responsive .table tbody tr.my-prediction td i.icon-win {
+	background: url(../img/wink-coin-dark.svg) no-repeat center;
+    background-size: auto 14px;
+    border-radius: 0;
+}
+
+section .content .row .trans-history .table-responsive .table thead tr th,
+section .content .row .trans-history .table-responsive .table tbody tr td {
+	padding-left: 10px;
+	padding-right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

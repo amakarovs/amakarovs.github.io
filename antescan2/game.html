@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WINkscan.live</title>
+	<link rel="shortcut icon" href="../img/favicon.ico">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+<!-- Modal -->
+<div class="modal fade" id="addGoal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel"><i class="icon-live"></i>Add Transaction</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div class="btn-group" role="group" aria-label="Basic example">
+					<button type="button" class="btn">Buy</button>
+					<button type="button" class="btn">Sell</button>
+					<button type="button" class="btn active">Goal</button>
+					<button type="button" class="btn">Session</button>
+				</div>
+				<div class="form">
+					<div class="form-row">
+						<label>Coin</label>
+						<select class="form-control" id="exampleFormControlSelect1">
+							<option>Win</option>
+							<option>Dice</option>
+							<option>Live</option>
+							<option>Rake</option>
+						</select>
+						<span class="error-message">Error message</span>
+					</div>
+					<div class="form-row">
+						<label>Target</label>
+						<input type="text" class="input" value="1200" />
+						<span class="error-message">Error message</span>
+					</div>
+					<div class="form-row">
+						<label>Projected Monthly Profit</label>
+						<span class="txt"><i class="icon-trx"></i>123,312,000.00</span>
+						<span class="error-message">Error message</span>
+					</div>
+				</div>
+				<!--
+				<div class="projected-profit win-profit">
+					<span class="sub-title">Projected Monthly Profit</span>
+					<span class="dd"><i class="icon-trx"></i>123,312,000.00<span class="usd">$12.00</span></span>
+				</div>
+				-->
+				<div class="submit-nav"><button class="submit-btn">Add Goal</button></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="wrap">
+
+	<header>
+		<div class="container-fluid top-nav">
+			<div class="row">
+				<div class="col-6 logo">
+					<a href="http://winkscan.live"></a><span class="scan"></span>
+				</div>
+				<div class="col-6 wallet">
+					<span class="address">TNirp...1y8Vq</span><button class="burger"><i class="bar"></i></button>
+					<div class="floating-nav">
+						<div class="set-currency">
+							<label>Set Fiat Currency</label>
+							<select class="form-control" id="exampleFormControlSelect1">
+								<option>USD</option>
+								<option>EUR</option>
+								<option>GBP</option>
+								<option>BTC</option>
+								<option>RUB</option>
+								<option>CAD</option>
+								<option>CNY</option>
+								<option>INR</option>
+							</select>
+						</div>
+						<div class="social">
+							<label>Social</label>
+							<a href="https://twitter.com/WNkscan" target="_blank"><i class="icon-twitter"></i></a>
+							<a href="https://t.me/WINkscan" target="_blank"><i class="icon-telegram"></i></a>
+						</div>
+						<div class="donate">
+							<label>Donate</label>
+							<span class="trx">TRX Address</span>
+							<address><i class="icon-copy"></i>TDBq8e8dqopFu6kZYupXNAfWmBvfLPtCVX</address>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<section>
+		<div class="sub-nav">
+			<div class="btn-group tb-sub-nav" role="group" aria-label="Basic example">
+				<a href="game.html" class="btn active">Active</a>
+				<a href="game-history-step1.html" class="btn">History</a>
+			</div>
+		</div>
+		<div class="container-fluid content">
+			<div class="row">
+				<div class="col-12 game">
+					<span class="id">#1</span>
+					<span class="rules"><a href="">Rules</a></span>
+					<span class="logo"></span>
+					<label>Prize Money</label>
+					<span class="amount"><i class="icon-win"></i>1,783,644</i></span>
+					<div class="form">
+						<span class="title">Predict WIN Drops</span>
+						<span class="timer"><i class="icon-clock" data-toggle="tooltip" data-placement="left" title="" data-original-title="Time left before the game end"></i>05:25:23</span>
+						<div class="col current">
+							<span class="pool">Current WIN Drops</span>
+							<i class="icon-trx"></i>
+							<span class="current">1,783,644</span>
+						</div>
+						<div class="col prediction">
+							<span class="pool">Enter your prediction</span>
+							<i class="icon-trx"></i>
+							<input type="text" value="1,783,644">
+						</div>
+					</div>
+					<button>Pay 250 WIN</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 trans-history">
+					<div class="table-responsive game-grid">
+						<table class="table">
+							<thead>
+								<tr>
+									<th scope="col"></th><th scope="col">Player</th><th scope="col">Prediction</th><th scope="col">Time</th><th scope="col">Prize</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="first-place">
+									<td>1</td><td>TDB...CVX</td><td><i class="icon-trx"></i>1,727,582</td><td>15:45:23</td><td><i class="icon-win"></i>8,792,000</td>
+								</tr>
+								<tr class="second-place">
+									<td>2</td><td>TDB...CVX</td><td><i class="icon-trx"></i>1,727,582</td><td>15:45:23</td><td><i class="icon-win"></i>5,792,000</td>
+								</tr>
+								<tr class="third-place">
+									<td>3</td><td>TDB...CVX</td><td><i class="icon-trx"></i>1,727,582</td><td>15:45:23</td><td><i class="icon-win"></i>2,792,000</td>
+								</tr>
+								<tr>
+									<td>4</td><td>TDB...CVX</td><td><i class="icon-trx"></i>1,727,582</td><td>15:45:23</td><td><i class="icon-win"></i>-</td>
+								</tr>
+								<tr class="my-prediction">
+									<td>5</td><td>TDB...CVX</td><td><i class="icon-trx"></i>1,727,582</td><td>15:45:23</td><td><i class="icon-win"></i>-</td>
+								</tr>
+								<tr>
+									<td>6</td><td>TDB...CVX</td><td><i class="icon-trx"></i>1,727,582</td><td>15:45:23</td><td><i class="icon-win"></i>-</td>
+								</tr>
+								<tr class="my-prediction">
+									<td>7</td><td>TDB...CVX</td><td><i class="icon-trx"></i>1,727,582</td><td>15:45:23</td><td><i class="icon-win"></i>-</td>
+								</tr>
+								<tr>
+									<td>8</td><td>TDB...CVX</td><td><i class="icon-trx"></i>1,727,582</td><td>15:45:23</td><td><i class="icon-win"></i>-</td>
+								</tr>
+								<tr>
+									<td>9</td><td>TDB...CVX</td><td><i class="icon-trx"></i>1,727,582</td><td>15:45:23</td><td><i class="icon-win"></i>-</td>
+								</tr>
+								<tr>
+									<td>10</td><td>TDB...CVX</td><td><i class="icon-trx"></i>1,727,582</td><td>15:45:23</td><td><i class="icon-win"></i>-</td>
+								</tr>
+								<tr>
+									<td>11</td><td>TDB...CVX</td><td><i class="icon-trx"></i>1,727,582</td><td>15:45:23</td><td><i class="icon-win"></i>-</td>
+								</tr>
+								<tr>
+									<td>12</td><td>TDB...CVX</td><td><i class="icon-trx"></i>1,727,582</td><td>15:45:23</td><td><i class="icon-win"></i>-</td>
+								</tr>
+								<tr>
+									<td>13</td><td>TDB...CVX</td><td><i class="icon-trx"></i>1,727,582</td><td>15:45:23</td><td><i class="icon-win"></i>-</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<nav>
+		<div class="container-fluid navigation">
+			<div class="row">
+				<div class="col-12">
+					<ul>
+						<li><a href="index.html"><i class="icon-home"></i>Home</a></li>
+						<li><a href="divs.html"><i class="icon-drops"></i><span class="notification"><span class="amount">23</span></span>Drops</a></li>
+						<li><a href="game.html" class="active"><i class="icon-game"></i>Game</a></li>
+						<li><a href="goals.html"><i class="icon-goals"></i>Goals</a></li>
+						<li><a href="mining.html"><i class="icon-mining"></i>Mining</a></li>
+						<li><a href="platform.html"><i class="icon-platform"></i>Platform</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+</div>
+
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
+	
+	$('.burger').click(function(){
+        $('.burger').toggleClass('expand');
+        $('.floating-nav').toggleClass('show-nav');
+	});
+</script>
+
+</body>
+</html>
