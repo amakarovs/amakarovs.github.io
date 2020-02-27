@@ -1,11 +1,10 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>WINkscan.live</title>
-	<link rel="shortcut icon" href="../img/favicon.ico">
+    <title>dicescan.live</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=9" />
-	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -17,32 +16,17 @@
 <body>
 
 <!-- Modal -->
-<div class="modal fade" id="GameModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal xs-popup fade" id="RemoveSession" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel"><i class="icon-live"></i>FAQ</h5>
+				<h5 class="modal-title" id="exampleModalLabel"><i class="icon-live"></i>Remove Session</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
 			</div>
-			<div class="modal-body game-rules-txt">		
-				<label>How to win?</label>
-				<p>You need to make closest prediction of <b>Windrops pool</b> before final payout.</p>
-				<label>How many winners in the game?</label>
-				<p>There is <b>3 winners</b>.</p>
-				<label>How much can I win?</label>
-				<p>3 Winners share <b>85%</b> of $WIN prize pool.<br/>
-				1st Place: 50%<br/>
-				2nd Place: 25%<br/>
-				3rd Place: 10%</p>
-				<label>Where goes other 15% of each prize pool?</label>
-				<p>- <b>13%</b> of $WIN prize pool will be burned<br/>
-				- <b>2%</b> of $WIN prize pool will be used to run and support winkscan.live and antescan.live platforms</p>
-				<label>How many predictions I can make in single game?</label>
-				<p>You can make as many predictions as you wish. Every prediction will cost you <b>250 $WIN</b> (1TRX po kursu podhvativatj)</p>
-				<label>Can I make my prediction 5 minutes before the final result?</label>
-				<p>No! Game will be closed <b>1h</b> before final Windrops amount will be set.</p>
-				<label>I made screenshot of Windrops 1sec before countdown end and it doesn't match with your Windrops amount.</label>
-				<p>All game results will be calculated based on <b>winkscan.live collected data</b>, not wink.org. We pull data from wink.org <b>1 minute</b> before final payout.</p>
+			<div class="modal-body">
+				<label>Are you sure you want to remove mining session?</label>
+				<button class="cancel-btn">Cancel</button>
+				<button class="remove-btn">Remove</button>
 			</div>
 		</div>
 	</div>
@@ -80,7 +64,7 @@
 						<div class="donate">
 							<label>Donate</label>
 							<span class="trx">TRX Address</span>
-							<address><i class="icon-copy"></i>TDBq8e8dqopFu6kZYupXNAfWmBvfLPtCVX</address>
+							<address>TDBq8e8dqopFu6kZYupXNAfWmBvfLPtCVX</address>
 						</div>
 					</div>
 				</div>
@@ -91,38 +75,17 @@
 	<section>
 		<div class="sub-nav">
 			<div class="btn-group tb-sub-nav" role="group" aria-label="Basic example">
-				<a href="game.html" class="btn active">Active</a>
-				<a href="game-history-step1.html" class="btn">History</a>
+				<a href="game.html" class="btn">Active</a>
+				<a href="game-history-step1.html" class="btn active">History</a>
 			</div>
 		</div>
 		<div class="container-fluid content">
 			<div class="row">
-				<div class="col-12 game">
-					<span class="id">#1</span>
-					<span class="rules"><a href="javascript:void(0)" data-toggle="modal" data-target="#GameModal">Game FAQ</a></span>
-					<span class="logo"></span>
-					<label>Prize Money</label>
-					<span class="amount"><i class="icon-win"></i>1,783,644</i></span>
-					<div class="form">
-						<span class="title">Predict WIN Drops</span>
-						<span class="timer"><i class="icon-clock" data-toggle="tooltip" data-placement="left" title="" data-original-title="Time left before the game end"></i>05:25:23</span>
-						<div class="col current">
-							<span class="pool">Current WIN Drops</span>
-							<i class="icon-trx"></i>
-							<span class="current">1,783,644</span>
-						</div>
-						<div class="col prediction">
-							<span class="pool">Enter your prediction</span>
-							<i class="icon-trx"></i>
-							<input type="text" value="1,783,644">
-						</div>
-					</div>
-					<button>Pay 250 WIN</button>
-				</div>
-			</div>
-			<div class="row">
 				<div class="col-12 trans-history">
-					<div class="table-responsive game-grid">
+					<div class="heading-wrap">
+						<label>Game Results</label>
+					</div>
+					<div class="table-responsive game-grid full-grid">
 						<table class="table">
 							<thead>
 								<tr>
@@ -183,11 +146,11 @@
 				<div class="col-12">
 					<ul>
 						<li><a href="index.html"><i class="icon-home"></i>Home</a></li>
-						<li><a href="divs.html"><i class="icon-drops"></i><span class="notification"><span class="amount">23</span></span>Drops</a></li>
-						<li><a href="game.html" class="active"><i class="icon-game"></i>Game</a></li>
+						<li><a href="divs.html" class="active"><i class="icon-divs"></i><span class="notification"><span class="amount">23</span></span>Drops</a></li>
 						<li><a href="goals.html"><i class="icon-goals"></i>Goals</a></li>
 						<li><a href="mining.html"><i class="icon-mining"></i>Mining</a></li>
 						<li><a href="platform.html"><i class="icon-platform"></i>Platform</a></li>
+						<li><a href="news.html"><i class="icon-news"></i>News</a></li>
 					</ul>
 				</div>
 			</div>
